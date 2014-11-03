@@ -1,0 +1,16 @@
+{
+    
+    "127.0.0.1": {
+        "title": "Play & Beauty",
+        "validFrom": "",
+        "validTo": "",
+        "locale": "zh",
+        "home": "/index",
+        "theme": "play",
+        "appKeys": {
+            "wcoim": "",
+            "wdSite": "0270ba59-f545-f757-39ac-c77ae52af28a"
+        },
+        "caCode": "wdSite"
+    }
+}
