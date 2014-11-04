@@ -1,0 +1,92 @@
+/*----左側----*/
+#newsSelector{  
+  width: 230px;
+  border-right: 1px solid #ccc;
+  margin: 0;
+  float: left;
+  /*position: absolute;*/
+  left: 0;
+  z-index: 1;
+}
+#newsSelector ul{  
+  width: 100%;
+  padding: 20px 40px 40px;
+  list-style-type: none !important;
+}
+#newsSelector ul li{
+  font-size: 13px;
+  margin-bottom: 1.5em;
+}
+#newsSelector li h4{
+  display:block;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:#3970a8;
+  line-height: 1.2em;
+}
+#newsSelector li:hover h4{
+  /*white-space: normal;
+  word-wrap: keep-all;*/
+  color: #049D86;  
+}
+#newsSelector li span{
+  line-height:10px;
+  color: #B4B4B4; 
+}
+#newsSelector li:hover span {
+  color: #999;
+}
+#newsSelector a.shadow li{
+  border-top: 2px solid #eee;
+  margin-top: -5px;
+  width: 110%;
+}
+
+/*分頁按鈕*/
+.pagination {
+  font-family: ff-din-web-condensed,Helvetica,sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  clear: both;
+  padding-bottom: 20px;
+}
+.pagination p {
+  width: 100%;
+  padding: 0;
+  margin: 1em auto !important;
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  border: 4px solid #ddd !important;
+  padding: .7em .8em .7em .8em;
+  margin: 0 0.5em;  
+  color: #fff !important;
+}
+.pagination a {
+  background: #42b56e !important;
+}
+.pagination span {  
+  background: #999;
+}
+.pagination a:hover
+/*.pagination a:link,
+.pagination a:active,
+.pagination a:visited*/ {
+  background: #FFF !important;
+  color: #000 !important;
+  border-color: #42b56e !important;
+}

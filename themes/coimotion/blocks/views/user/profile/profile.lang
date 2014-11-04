@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="name">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+	<ph id="nickname">
+		<en>Nickname</en>
+		<zh>暱稱</zh>
+	</ph>
+	<ph id="save">
+		<en>Save</en>
+		<zh>儲存</zh>
+	</ph>
+	<ph id="ok">
+		<en>Save successfully</en>
+		<zh>儲存成功</zh>
+	</ph>
+	<ph id="js_NAME_EMPTY_ERR">
+		<en>Please enter the name.</en>
+		<zh>姓名不可為空白</zh>
+	</ph>
+	<ph id="js_NICKNAME_EMPTY_ERR">
+		<en>Please enter the nickname.</en>
+		<zh>暱稱不可為空白</zh>
+	</ph>
+</phrases>

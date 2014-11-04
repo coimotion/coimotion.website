@@ -1,0 +1,100 @@
+/*--表格設定--*/
+.teamList {
+  padding-bottom: 20px;
+  padding-top:  20px;
+  margin: auto;
+  border: #ccc solid 1px;
+}
+/*--左邊圖片--*/
+.listL{  
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+  padding-left: 15px;
+} 
+/*--右邊內文--*/
+.listR{
+  margin: 0;
+  padding: 0px 20px 5px 40px;
+  /*border-left: #ccc solid 1px;*/
+}
+.listR h3{
+  margin-top: 10px;
+}
+.listR p, 
+.listR3 section{
+  margin-left: 12px;
+} 
+
+/*--大頭貼設定--*/
+/*第二層-灰底*/
+.iconstyle{
+  margin: 10px auto;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle; 
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  height: 160px;  
+}
+/*第三層-頭像位置*/
+.iconFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  position: absolute;
+  left:0px;
+  top:20px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.iconFace i{
+  font-size: 8em;
+  margin: 0px;
+}
+
+/*APP作品圖片設定*/
+.appstyle{
+  /*width: 100%;
+  height: 100%;
+  padding-top:30%; 
+  padding-bottom:30%;*/ 
+  margin:5px 0 0;
+  text-align: center;
+  vertical-align:middle;
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+}
+.appstyle i{
+  font-size: 8em;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+.bk1{
+  border:1px solid #ccc;
+}
+.noPaLR{
+  padding:2px 0px 10px;
+}
+/*APP Name*/
+.name {
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}

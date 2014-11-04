@@ -1,0 +1,74 @@
+<% 
+	var  listHref = "/bkIndexPapers/list",
+		 orgID = bi.uri.split('/')[3];
+	if (orgID)
+		listHref += "/"+orgID;
+	listHref += "?_pn=1&_ps=5";
+	
+	if(!value || value.list.length == 0)
+		listHref = "#";
+%>
+<!-- 右欄開始 -->
+<div class="col-md-6">
+	<!-- 技術文件開始 -->
+	<div class="caption">
+		<!-- 標題開始 -->
+		<div class="caption-head">
+			<div class="pull-left"><a class="indexTitle" href="<%=listHref%>"><%= ph.doc %></a></div>
+			<div class="clear"></div>
+		</div>             
+		<!-- 標題結束 -->
+		<!-- 內容開始 -->
+		<div class="caption-content">                  
+			<div class="padd">
+				<% if(value && value.list.length > 0) { %>
+				<ul class="latest-news">
+					<% value.list.forEach(function(item) { %>
+					<li>
+						<%  
+							var  time = new Date(item.mdTime),
+								 month = (time.getMonth() + 1).toString(),
+								 day = time.getDate().toString(),
+           						 hf = "/bkIndexPapers/view",
+           						 orgID = bi.uri.split('/')[3];
+           					month = (month.length > 1) ? month : "0"+month;
+           					day = (day.length > 1) ? day : "0"+day;
+           					strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+           					
+           					if (orgID)
+           						hf += "/"+orgID;
+           					hf += "?id="+item.ngID;
+           				%>
+						<h5><a href="<%=hf%>"><%= item.title %></a> <span class="pull-right"><h6><%= strMdTime%></h6></span></h5>
+                      	<p><%= item.summary %></p>
+					</li>
+					<% }); %>
+				</ul>
+				<% } %>
+				<!--  
+			 	<ul class="latest-news">
+					<li>
+						<h5><a href="/bkIndexPapers/view">Morbi ac felis nec </a>  <span class="pull-right"><h6>Jan 1, 2012</h6></span></h5>
+					  	<p>Suspendisse potenti. Morbi ac felis fermentum. Aenean lacus hendrerit sed rhoncus erat hendrerit. </p>
+					</li>
+					<li>
+						<h5><a href="/bkIndexPapers/view">Aac felis nec imperdiet</a>  <span class="pull-right"><h6>Jan 1, 2012</h6></span></h5>
+						<p>Suspendisse potenti. Morbi ac felis fermentum. Aenean lacus hendrerit sed rhoncus erat hendrerit. </p>
+					</li>
+				</ul>
+				-->
+			</div>
+			<!-- padd結束 --> 
+			<div class="caption-foot">
+				<p>
+					<% if(value && value.list.length > 0) { %>
+						<a href="<%=listHref%>" class="pull-right"><i class="icon-double-angle-right"></i>&nbsp;more</a>
+					<% } %>
+				</p> 
+			</div>                                  
+		</div>
+		<!-- 內容結束 -->
+	</div>
+	<!-- 技術文件結束 -->
+</div>
+<!-- 右欄結束 -->

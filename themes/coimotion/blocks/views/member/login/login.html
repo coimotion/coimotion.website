@@ -1,0 +1,35 @@
+<!--主要內容開始 -->
+<div class="re_Content">
+	<div class="row">
+		<!-- 左開始 -->
+		<div class="col-md-7 col-xs-10">
+			<div style="padding:50px 0px 20px 200px;">
+				<h2 class="fcW"><strong><%= ph.title1 %>  
+				 <br>&nbsp;&nbsp;<%= ph.title2 %></strong></h2>
+				<h3 class="fcW"><strong><%= ph.sub1 %></strong></h3>
+					<p class="fcW fs13"><%= ph.con1 %></p>                
+				<h3 class="fcW"><strong><%= ph.sub2 %></strong></h3>
+					<p class="fcW fs13"><%= ph.con2 %></p>
+				<h3 class="fcW"><strong><%= ph.sub3 %></strong></h3>				
+					<p class="fcW fs13"><%= ph.con3 %></p>							
+				<img src="../../wcoim/theme/Section.png" class="maT20 img-responsive">
+			</div>
+		</div>
+        <!-- 左結束 -->
+
+		<!-- 右開始 -->
+		<div class="col-md-5 col-xs-12">
+			<div class="section">
+				<h1 class="fcW"><strong><%= ph.login %></strong></h1>
+				<h2 style="text-indent:50px"><strong><%= ph.now %></strong></h2>            
+			</div>
+			<% block('/member/register'); %>
+		</div>
+		<!-- section結束 -->
+	</div>
+	<!-- 右結束 -->
+	<div class="clear"></div>
+</div>
+<!-- row結束 -->
+</div>
+<!--re_Content主要內容結束 -->

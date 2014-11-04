@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>		
+	<ph id="mail">
+		<en>E-mail</en>
+		<zh>電子郵件</zh>
+	</ph>
+	<ph id="name">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>	
+	<ph id="pwd">
+		<en>Password (at least 6 numbers or characters)</en>
+		<zh>設定密碼 (請輸入6碼以上的英數字)</zh>
+	</ph>
+	<ph id="pwd2">
+		<en>Confirm Password</en>
+		<zh>確認密碼</zh>
+	</ph>		
+	<ph id="team">
+		<en>Team Code (at least 6 characters long)</en>
+		<zh>團隊代碼 (至少要六碼長度)</zh>
+	</ph>	
+	<ph id="code">
+		<en>App Code (at least 6 characters long)</en>
+		<zh>子端代碼 (至少要六碼長度)</zh>
+	</ph>
+	<ph id="register">
+		<en>Register</en>
+		<zh>免費註冊</zh>
+	</ph>
+	<ph id="forum">
+		<en>Forum</en>
+		<zh>加入討論</zh>
+	</ph>
+	<ph id="js_WAITING">
+		<en>waiting...</en>
+		<zh>註冊中...</zh>
+	</ph>
+	<ph id="js_REG_SUCC">
+		<en>Congratulations! An account have been successfully created for you.</en>
+		<zh>帳號註冊成功!</zh>
+	</ph>
+	<ph id="js_CONFIRM_EMAIL">
+		<en>Confirmation email sent. Check your inbox for the next step.</en>
+		<zh>請至您的信箱收取驗證信件，並啟用您的帳號。</zh>
+	</ph>
+	<ph id="js_EMAIL_TITLE">
+		<en>Confirm your account on COIMOTION</en>
+		<zh>COIMOTION帳號驗證</zh>
+	</ph>
+	<ph id="js_CODE_ERR">
+		<en>The code has to be alphanumeric characters.</en>
+		<zh>代碼必需是英數字組成</zh>
+	</ph>
+	<ph id="js_MAIL_EMPTY_ERR">
+		<en>Email account cannot be empty.</en>
+		<zh>電子郵件信箱不可為空白</zh>
+	</ph>
+	<ph id="js_NAME_EMPTY_ERR">
+		<en>The name given is too short or empty.</en>
+		<zh>姓名不可為空白</zh>
+	</ph>
+	<ph id="js_PASSWORD_ERR">
+		<en>Password needs to be a combination of letters and digits, and at least 6 characters long.</en>
+		<zh>密碼需為數字、字母，且大於6碼</zh>
+	</ph>
+	<ph id="js_PSWD_NOT_MATCH_ERR">
+		<en>You new password does not match.</en>
+		<zh>二次輸入的密碼不一致</zh>
+	</ph>
+	<ph id="js_MAIL_USED_ERR">
+		<en>The email account entered has been used.</en>
+		<zh>您所輸入的電子郵件帳號可能已被註冊。</zh>
+	</ph>
+</phrases>

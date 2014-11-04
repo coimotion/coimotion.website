@@ -1,0 +1,52 @@
+<% var  locID = ctx.locID; %>
+<div class="modal-header">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title">&nbsp;<%=ph.add%></h3>
+</div>
+<div class="modal-body">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 		<!-- 表單開始 -->
+		<form class="form-horizontal" role="form" appCode="<%= bi.uri.split('/').reverse()[0] %>">
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.code%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="rs" placeholder="<%=ph.key1%>">	
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.title%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="title" placeholder="<%=ph.key2%>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.descTx%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="descText">
+				</div>
+			</div>
+			<!--
+			<div class="form-group">
+				<label class="col-md-2 control-label">語系：</label>
+				<div class="col-md-10">
+					<select class="form-control" name="locID">
+						<option value="1" <%if (locID=='1') {%>selected<%}%>>English</option>
+						<option value="2" <%if (locID=='2') {%>selected<%}%>>繁體中文</option>
+					</select>
+				</div>
+			</div>
+			-->
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.inherit%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<span class="rsParent" rsParent=""></span>
+					<button type="button" class="btn btn-white wc30" onclick="<%=ctrl%>.showRsParent('<%=bi.query.target%>');"><%=ph.select%></button>
+				</div>
+			</div>
+		</form>
+		<!-- 表單結束 -->
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.create();"><%=ph.insert%></button>
+</div>

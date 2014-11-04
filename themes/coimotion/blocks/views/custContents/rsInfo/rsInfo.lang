@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+  <ph id="introduction">
+    <en>Resource :: Introduction</en>
+    <zh>資源 :: 基本資料</zh>
+  </ph>
+  <ph id="rsCode">
+    <en>Code</en>
+    <zh>代碼</zh>
+  </ph>
+  <ph id="title">
+    <en>Title</en>
+    <zh>標題</zh>
+  </ph>
+  <ph id="descTx">
+    <en>Info</en>
+    <zh>說明</zh>
+  </ph>
+  <ph id="key1">
+    <en>Required</en>
+    <zh>必填（代碼不可輸入中文）</zh>
+  </ph>
+  <ph id="key2">
+    <en>Required (Please enter the repository title)</en>
+    <zh>必填（請輸入標題）</zh>
+  </ph>
+  <ph id="extent">
+    <en>Extends</en>
+    <zh>繼承</zh>
+  </ph>
+  <ph id="none">
+    <en>none</en>
+    <zh>無</zh>
+  </ph>
+  <ph id="change">
+    <en>Change</en>
+    <zh>變更</zh>
+  </ph>
+  <ph id="confirm">
+    <en>Set</en>
+    <zh>確認</zh>
+  </ph>  
+  <ph id="js_TITLE_ERR">
+	<en>Please enter the title.</en>
+	<zh>標題不可為空白</zh>
+  </ph>
+</phrases>

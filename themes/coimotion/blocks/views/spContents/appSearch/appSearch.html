@@ -1,0 +1,14 @@
+<!-- 表單開始 -->
+<div class="form-horizontal" role="form">
+	<label class="wc15 control-label float maR10 fs12">搜尋APP：</label>
+	<div class="input-group wc80 maR10">	            		
+	    <input type="text" class="form-control" name="appKey" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.searchApp();">
+	    <span class="input-group-btn">
+	        <button class="btn btn-default" type="button" onclick="<%=ctrl%>.searchApp();">
+	        	<i class="icon-search fs14"></i>
+	        </button>
+	    </span>
+	</div>	                                  
+</div>
+<div style="clear:both;"></div>
+<div class="appShListBlock"><!-- 搜尋得到的APP清單 --></div>

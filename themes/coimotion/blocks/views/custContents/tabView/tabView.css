@@ -1,0 +1,17 @@
+.matter {
+  min-height: 600px;
+}
+.header{
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0px;
+}
+.caret{
+  border-top: 6px solid #fff;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+span.cc{
+  border-top: 6px solid #666; 
+  margin-left: 5px; 
+}

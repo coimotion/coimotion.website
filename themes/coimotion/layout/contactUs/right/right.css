@@ -1,0 +1,12 @@
+#right-bar{
+  width:100%;
+  height:40px;
+  background:#2ecc71;
+}
+.MenuContents {
+  background:#ecf0f1;
+  min-height: 340px;
+}
+.MenuContents ul li{
+  padding:0px 0px 0px 50px;
+}

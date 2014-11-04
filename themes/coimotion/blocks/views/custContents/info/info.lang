@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Repository :: Introduction</en>
+		<zh>內容集 :: 基本資料</zh>
+	</ph>
+	<ph id="appCode">
+		<en>Code Name</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>
+	<ph id="open">
+		<en>Is Public</en>
+		<zh>是否公開</zh>
+	</ph>
+	<ph id="yes">
+		<en>Make this reporitory public</en>
+		<zh>公開此內容集</zh>
+	</ph>
+	<ph id="free">
+		<en>Are Free</en>
+		<zh>是否免費</zh>
+	</ph>
+	<ph id="use">
+		<en>Is set for the free use of content</en>
+		<zh>是為免費使用的內容集</zh>
+	</ph>
+	<ph id="confirm">
+		<en>Update</en>
+		<zh>確認</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,33 @@
+<div class="matter" ngID="<%=bi.query.id%>">       
+	<div id="newside">
+		<div class="row" style="width:600px; margin: 0px auto;">
+			<div>
+				<ul class="newsub">
+					<li><span class="title"></span></li>
+					<li><p style="float:right;">
+						<span class="strMdTime"></span> 
+						<span class="dspName"></span>
+						</p>
+					</li>
+					<li style="border-top: 1px #ccc solid;">
+						<article class="articletext body"></article>
+					</li>
+					<% 
+			 			var  listHref = "/bkIndexNews/list",
+			 				 pn = bi.query._pn,
+			 				 ps = bi.query._ps,
+			 				 orgID = bi.uri.split('/')[3];
+			 			if (orgID)
+          					listHref += "/"+orgID;
+          				if (!pn)
+          					pn = 1;
+          				if (!ps)
+          					ps = 5;
+          				listHref += "?_pn="+pn+"&_ps="+ps;
+           			%>
+					<li><a href="<%=listHref%>" class="pull-right"><button class="btn btn-green" value="回上一頁">back</button></a></li>
+				</ul>          
+			</div>
+		</div>
+	</div>
+</div>

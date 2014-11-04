@@ -1,0 +1,116 @@
+<!-- 舊的畫面:暫時沒用到 -->
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<!-- searchTeam -->
+		<div class="form-horizontal" role="form">	
+			<div class="form-group">
+				<label class="wc20 control-label float">搜尋團隊：</label>       
+	            <div class="wc50 input-group float">
+					<input type="text" class="form-control" id="text" name="searchName" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.searchTeam();">
+					<span class="wc10 input-group-addon" onclick="<%=ctrl%>.searchTeam();">搜尋</span>
+	            </div>            
+	            <div class="wc20 float">
+	              	<button type="button" class="btn btn-green wc50 fs1 maL20" onclick="<%=ctrl%>.showCreatTeam();">建立團隊</button>
+	            </div>
+		    </div>
+		</div>
+
+		<!-- teamList -->
+		<div class="params" psnID="<%=bi.query.psnID%>"></div>
+		<% if (value && value.list.length > 0) { %>
+		<div class="widget-content">   
+				<table class="table table-bordered table-hover">	
+					<% value.list.forEach(function(item) { %>
+					<% var status = item.status; %>
+					<% if (status >= 0) { %>
+						<tr>
+							<td class="col-lg-1 col-md-2 col-sm-2 col-xs-3 text-center">
+                              	<div class="teamiconstyle">
+                                  	<div class="teamiconFace">
+                                      	<i class="fa fa-users"></i>
+									</div>
+								</div>
+							</td>
+							<td class="col-lg-10 col-md-8 col-sm-8 col-xs-6">
+								<h3 class="paL15">團隊名稱：<%= item.fname%></h3>		    
+								<h3 class="paL15">團隊成員：
+									<span class="paT15 fs08 memList<%=item.orgID%>">
+										<%  var memList = item.memList;
+										if(memList) {
+											html+= memList[0].dspName;
+											for (var i=1; i<memList.length; i++)
+												html+= '、'+memList[i].dspName;
+										}
+									 	%>
+						    		</span>
+						 		</h3>
+						 		<h5>
+							 		<a class="pull-right fancybox-effects-c fs1" href="#appTeamDetail<%=item.orgID%>" onclick="<%=ctrl%>.showTeamDetail('<%=item.orgID%>');">更多團隊資訊
+							 			<i class="fa fa-angle-double-right"></i>			
+									</a>								
+								</h5>
+								<div style="display:none;" class="fancybox-hidden">
+									<div id="appTeamDetail"></div>
+								</div>
+							</td>
+							<td class="col-lg-1 col-md-2 col-sm-2 col-xs-3 text-center " style="vertical-align: middle;">			
+								<%	if (status == 0) { %>
+									<button type="button" class="btn btn-danger col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR">退出</button>
+									<button type="button" class="btn btn-green col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR">管理</button>
+								<% } else if (status == 1){ %>
+								<p style="margin-top:30px; margin-bottom:10px;">邀請您加入團隊</p>
+									<button type="button" class="btn btn-primary col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR" onclick="<%=ctrl%>.joinTeam('<%=item.orgID%>',1);">加入</button>
+									<button type="button" class="btn btn-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR" onclick="<%=ctrl%>.joinTeam('<%=item.orgID%>',0, '<%= item.fname%>');">拒絕</button>
+
+								<% } else if (item.status == 2){ %>
+									<p style="margin-top:30px; margin-bottom:10px;">等待回覆</p>
+								<% } else if (item.status == -1){ %>
+									<!-- <button type="button" class="btn btn-primary wc45 text-center fs1 btnLR" onclick="<%=ctrl%>.addTeam('<%=item.orgID%>',2);">申請加入</button> -->
+								<% } %>						     	
+								
+								<div style="display:none;" class="fancybox-hidden<%=item.orgID%>">
+									<div id="appTeamDetail<%=item.orgID%>"></div>
+								</div> 	
+							</td>
+						</tr>
+					<% } %>
+				<% }); %>         
+		    </table>
+		</div>
+	    <!-- widget-content 結束 -->
+	    <% } else { %>
+	    <div class="row text-center">
+	    	<span>你目前未屬於任何開發團隊</span>
+	    </div>
+	    <div class="searchTeamList" style="display:none"></div>
+	<% } %>
+	</div>
+</div>
+
+<!-- 切換團隊 彈跳視窗開始 -->   
+<div class="modal fade modalstyle" id="onTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="onTeam modal-content inner"></div>
+	</div>
+</div>
+
+<!-- 建立團隊 彈跳視窗開始 -->
+<div class="modal fade modalstyle creatTeamModal">
+	<div class="modal-dialog">
+		<div class="modal-content rsParentList">
+			<div class="modal-header">
+				<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title"><i class="icon-table"></i>&nbsp;建立團隊</h3>
+			</div>
+			<div class="modal-body">
+				<div class="col-md-12">
+					<form class="form-horizontal" role="form">      
+						<div class="row maT20">
+							<div class="col-md-12 creatTeamTar"></div>
+						</div>
+					</form>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>

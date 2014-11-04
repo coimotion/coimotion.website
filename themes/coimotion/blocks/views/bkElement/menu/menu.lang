@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="developers">
+		<en>Developers</en>
+		<zh>開發者後台</zh>
+	</ph>
+	<ph id="start">
+		<en>Getting Started</en>
+		<zh>快速入門</zh>
+	</ph>
+	<ph id="doc">
+		<en>Documentation</en>
+		<zh>技術文件</zh>
+	</ph>
+	<ph id="overview">
+		<en>SDK</en>
+		<zh>SDK</zh>
+	</ph>
+	<ph id="core">
+		<en>Core documents</en>
+		<zh>核心技術文件</zh>
+	</ph>
+	<ph id="blog">
+		<en>Blog</en>
+		<zh>部落格</zh>
+	</ph>
+	<ph id="teams">
+		<en>Teams</en>
+		<zh>團隊清單</zh>
+	</ph>
+	<ph id="creat">
+		<en>Creat Team</en>
+		<zh>建立團隊</zh>
+	</ph>
+	<ph id="search">
+		<en>Search Teams</en>
+		<zh>搜尋團隊</zh>
+	</ph>
+	<ph id="account">
+		<en>My Account</en>
+		<zh>個人帳號</zh>
+	</ph>
+	<ph id="myTeams">
+		<en>My Teams</en>
+		<zh>我的團隊</zh>
+	</ph>	
+	<ph id="space">
+		<en>My Space</en>
+		<zh>個人空間</zh>
+	</ph>
+	<ph id="logout">
+		<en>Logout</en>
+		<zh>登出</zh>
+	</ph>
+</phrases>

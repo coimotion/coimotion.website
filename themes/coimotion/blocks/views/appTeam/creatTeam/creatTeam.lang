@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="create">
+		<en>Create a Team</en>
+		<zh>建立團隊</zh>
+	</ph>
+	<ph id="note">
+		<en>By app code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+		<zh>您可以邀請志同道合的夥伴加入您的開發團隊。(團隊代碼建立後無法修改)</zh>
+	</ph>	
+	<ph id="orgCode">
+		<en>Team Code</en>
+		<zh>團隊代碼</zh>
+	</ph>
+	<ph id="text">
+		<en>Please enter the 6 digit or above in English or English plus digital</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>	
+	<ph id="fname">
+		<en>Team Name</en>
+		<zh>團隊名稱</zh>
+	</ph>
+	<ph id="docBody">
+		<en>Basic Info</en>
+		<zh>團隊介紹</zh>
+	</ph>
+	<ph id="close">
+		<en>Close</en>
+		<zh>關閉</zh>
+	</ph>
+        <ph id="send">
+		<en>Send</en>
+		<zh>建立</zh>
+	</ph>
+	<ph id="titleErr">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+	<ph id="orgCodeErr">
+		<en>The team code has been used, please change another one.</en>
+		<zh>團隊代碼可能已被使用，請更換團隊代碼。</zh>
+	</ph>
+</phrases>

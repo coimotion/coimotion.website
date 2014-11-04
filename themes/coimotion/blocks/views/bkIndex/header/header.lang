@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="admin">
+		<en>Admin System</en>
+		<zh>開發者後台</zh>
+	</ph>
+	<ph id="member">
+		<en>MEMBER</en>
+		<zh>會員管理</zh>
+	</ph>
+	<ph id="space">
+		<en>Space</en>
+		<zh>個人空間</zh>
+	</ph>
+</phrases>

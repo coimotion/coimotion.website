@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+  <ph id="insert">
+    <en>New location</en>
+    <zh>新增地理位置</zh>
+  </ph>  
+  <ph id="location">
+    <en>Location</en>
+    <zh>地理位置</zh>
+  </ph>
+   <ph id="address">
+    <en>Address</en>
+    <zh>地址</zh>
+  </ph>
+  <ph id="postal">
+    <en>Postal code</en>
+    <zh>郵遞區號</zh>
+  </ph>
+  <ph id="longitude">
+    <en>Longitude</en>
+    <zh>經度</zh>
+  </ph>
+  <ph id="latitude">
+    <en>Latitude</en>
+    <zh>緯度</zh>
+  </ph>
+  <ph id="title">
+    <en>Title</en>
+    <zh>標題</zh>
+  </ph>
+  <ph id="records">
+    <en>Private Records</en>
+    <zh>私人記錄</zh>
+  </ph>
+  <ph id="noOpen">
+    <en>Not open</en>
+    <zh>不公開</zh>
+  </ph>
+  <ph id="add">
+    <en>Create</en>
+    <zh>新增</zh>
+  </ph>
+  <ph id="delete">
+    <en>Delete</en>
+    <zh>刪除</zh>
+  </ph>
+  <ph id="save">
+    <en>Save</en>
+    <zh>儲存</zh>
+  </ph>
+  <ph id="required">
+    <en>Required</en>
+    <zh>必填</zh>
+  </ph>
+</phrases>

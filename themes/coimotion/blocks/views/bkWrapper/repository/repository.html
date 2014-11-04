@@ -1,0 +1,63 @@
+
+<div class="matter">
+    <h3><%= ph.repository %></h3>
+    
+    <div class="row">
+        <div class="col-lg-1">&nbsp;</div>
+        <!-- 公車資訊 -->        
+        <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 maR setheight">
+            <a href="/bkContents/detail?appCode=twCtBus">
+	            <span class="icon-bus"></span>
+	            <h4><%= ph.bus %></h4>
+            </a>
+            <div class="area"><%= ph.areaBus %></div>
+        </div> -->        
+        <!-- 全台便利商店大補帖 -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 maR setheight">
+        	<a href="/bkContents/detail?appCode=twCvStore">
+	            <span class="icon-stores"></span>
+	            <h4><%= ph.stores %></h4>
+	        </a>
+            <div class="area"><%= ph.areaStores %></div>
+        </div>
+        <!-- 全國路跑賽事 -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 maR setheight">
+        	<a href="/bkContents/detail?appCode=twMarathon">
+	            <span class="icon-race"></span>
+	            <h4><%= ph.road %></h4>
+	        </a>
+            <div class="area"><%= ph.areaRoad %></div>
+        </div>
+        <!-- 藝文活動資訊 -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 maR setheight">
+			<a href="/bkContents/detail?appCode=twShow">
+	            <span class="icon-art"></span>
+	            <h4><%= ph.literary %></h4>
+	        </a>
+            <div class="area"><%= ph.areaLiterary %></div>
+        </div>
+        <!-- 鐵路時刻表 -->
+        <div class="col-lg-2 hidden-md col-sm-4 col-xs-6 maR setheight">
+        	<a href="/bkContents/detail?appCode=twTrain">
+	            <span class="icon-railway"></span>
+	            <h4><%= ph.railway %></h4>
+	        </a>
+            <div class="area"><%= ph.areaRailway %></div>
+        </div>
+        <!-- 書籍內容 -->        
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 maR setheight">
+            <a href="/bkContents/detail?appCode=twBook">
+                <span class="icon-library"></span>
+                <h4><%= ph.library %></h4>
+            </a>
+            <div class="area"><%= ph.areaLibrary %></div>
+        </div>
+    </div>
+    
+    <!-- 更多內容 -->
+    <div class="row">      
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
+          <a href="javascript: <%=ctrl%>.go('/bkContents/manage');" class="inmore"><%= ph.find %></a>
+        </div>   
+    </div>
+</div>

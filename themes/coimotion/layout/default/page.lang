@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="imgList">
+		<en>Picture List</en>
+		<zh>圖檔清單</zh>
+	</ph>
+	<ph id="imgDelete">
+		<en>Delete Pic.</en>
+		<zh>刪除圖檔</zh>
+	</ph>
+	<ph id="insertImg">
+		<en>Add To Page</en>
+		<zh>插入文章</zh>
+	</ph>
+	<ph id="webTitle">
+		<en>Title</en>
+		<zh>網頁標題</zh>
+	</ph>
+	<ph id="summary">
+		<en>Abstract</en>
+		<zh>引文</zh>
+	</ph>
+	<ph id="top">
+		<en>On Top</en>
+		<zh>置頂</zh>
+	</ph>
+</phrases>

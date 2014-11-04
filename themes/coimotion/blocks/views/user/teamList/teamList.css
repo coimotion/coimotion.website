@@ -1,0 +1,143 @@
+/*更多團隊資訊*/
+td h5 a {
+  color: #5ac5cb;
+}
+td h5 a:hover {
+  color: #00503c;
+}
+.widget-content p {
+ padding-top: 0px;
+ text-indent: 0px;
+ font-size: 15px;
+}
+/*特殊設定*/
+.table-bordered > tbody > tr:nth-child(odd) > td {
+  background: #fff;
+}
+.table-bordered > tbody > tr > td {
+  border-right: 1px solid #b8d6d0 !important;
+}
+.table-bordered > tbody > tr > td:first-child {
+  vertical-align: middle;
+}
+.table-hover > tbody > tr:hover > td{
+  background: #f5fcfc!important;
+}
+
+/*按鈕的內距*/
+.btnLR{
+  padding: 5px 0;
+}
+/*圖片 icon設定*/
+/*第二層-灰底*/
+.teamiconstyle{
+  margin: 10px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  width: 100px;
+  height: 97px;
+  left: 0;
+  top: 0;
+  position: relative;
+  overflow: hidden;  
+}
+/*第三層-頭像位置*/
+.teamiconFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  margin: 0 auto;
+  position: absolute;
+  left:0px;
+  top: 5px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.teamiconFace i{
+  font-size: 5.6em;
+  margin: 0px;
+}
+
+/*彈跳視窗的內距設定*/
+.inner{
+  padding: 30px;
+  color:#666;
+}
+.inner:hover{
+  color:#333;
+}
+/*按鈕的內距*/
+.btnTB{
+  padding: 6px 0;
+}
+/*span{
+  color:#2a806e;
+  font-size: 16px;
+}*/
+
+/*-------detail更多團隊資訊 彈跳視窗-------*/
+/*圖片 icon設定*/
+/*第二層-灰底*/
+.detailiconstyle{
+  margin:10px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 56px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  width: 120px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;  
+}
+/*第三層-頭像位置*/
+.detailiconFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  position: absolute;
+  left:0px;
+  top:20px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.detailiconFace i{
+  font-size:8em;
+  margin: 0px;
+}
+
+/*沒有團隊時出現的彈跳視窗*/
+li {
+  list-style-type: none;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 20px;
+  clear: both;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 5px;
+  color: #333;
+  white-space: nowrap;
+}
+li a:hover{
+  color: #1fbbe3;
+}

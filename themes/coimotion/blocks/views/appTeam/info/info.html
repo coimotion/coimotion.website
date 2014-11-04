@@ -1,0 +1,52 @@
+<!--teaminfo 開始-->
+<div class="row" id="<%=bi.id%>">
+	<!-- 表單開始 -->
+	<div style="display:none">
+		<form role="form" id="uploader" name="uploader" action="" enctype="multipart/form-data" method="POST">
+			<input type="file" name="orgIcon" multiple="multiple" class="form-control"><br>
+		</form>
+	</div>
+	<form class="form-horizontal" role="form">
+		<!-- 左側開始 -->
+		<div class="col-lg-2 col-md-4 col-sm-5 col-xs-12 text-center">		
+			<% if (value.orgIconURI) { %>
+			<img src="/images/<%=value.ngID%>?path=<%=value.orgIconURI%>&maxw=150&maxh=150"/>
+			<% } else { %>
+			<div class="iconstyle">
+				<div class="iconFace">
+					<i class="fa fa-users"></i>
+				</div>
+			</div>
+			<% } %>
+			<button id="addIcon" type="button" class="btn btn-default btn-sm wc60 maT5 text-center isManage"><%= ph.upload %></button>
+		</div>
+		<!-- 左側結束 -->
+		<!-- 右側開始 -->
+	 	<div class="col-lg-10 col-md-8 col-sm-7 col-xs-12">
+			<div class="row">
+				<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<label class="col-lg-2 col-md-4 col-sm-5 col-xs-6 control-label text-right"><%= ph.orgCode %>：</label>
+					<div class="col-lg-10 col-md-8 col-sm-7 col-xs-6">
+						<input type="text" class="form-control" name="orgCode" placeholder="<%= value.orgCode %>" disabled>
+		      		</div>
+		      	</div>
+		      	<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	        		<label class="col-lg-2 col-md-4 col-sm-5 col-xs-6 control-label text-right"><%= ph.fname %>：</label>
+			        <div class="col-lg-10 col-md-8 col-sm-7 col-xs-6">
+			            <input type="text" class="form-control" id="fname" name="title" value="<%= value.orgName %>">
+			        </div>
+			    </div>
+			    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			       <label class="col-lg-2 col-md-4 col-sm-5 col-xs-6 control-label text-right"><%= ph.teamDoc %>：</label>
+		            <div class="col-lg-10 col-md-8 col-sm-7 col-xs-6">
+		      	       <textarea class="form-control" rows="5" name="docBody" id="change"><% if(value.docBody) html+=value.docBody; %></textarea>
+					</div>
+			    </div>
+			</div>
+		    <!-- row結束 -->
+		</div>
+		<!-- 右側結束 -->
+	</form>
+	<!-- 表單結束 -->
+</div>
+<!-- row結束 -->

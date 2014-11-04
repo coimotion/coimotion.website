@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="title">
+		<en>Contact Us</en>
+		<zh>聯絡我們</zh>
+	</ph>
+	<ph id="summary">
+		<en>If you have any questions or comments, feel free to drop us a line. Well be glad to hear from your.</en>
+		<zh>如果您有任何問題或意見，歡迎留下訊息給我們。我們很重視您給我們的問題與意見。</zh>
+	</ph>
+	<ph id="name">
+		<en>Your Name</en>
+		<zh>您的姓名</zh>
+	</ph>
+	<ph id="email">
+		<en>Your Email</en>
+		<zh>您的信箱</zh>
+	</ph>
+	<ph id="subject">
+		<en>Subject</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="commentsAndQuestion">
+		<en>Comments / Questions</en>
+		<zh>意見 / 問題</zh>
+	</ph>
+	<ph id="devAccInfo">
+		<en> I also want to sign up as a developer</en>
+		<zh>同時註冊開發者帳號</zh>
+	</ph>
+</phrases>

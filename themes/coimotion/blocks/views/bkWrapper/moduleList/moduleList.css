@@ -1,0 +1,69 @@
+.bkManage {
+  width:100%;    
+  padding: 0 2em 0 0.2em; 
+  margin-bottom: 5em;  
+  margin-top: 5em;
+}
+/*標題*/
+h3 {
+	margin: 2em auto 1em;
+	color: #414f63;
+	font-weight: bold;
+	text-align: center;
+}
+.section { 
+	border-bottom: #dae1e8 1px solid;
+	padding-bottom: 2em; 
+	margin-top: 2em;
+	padding-right: 3em;
+}
+.section h4 {
+	line-height: 24px;
+	font-weight: bold;
+}
+.section h4, .section p {
+	color: #353535;
+	line-height: 24px;
+}
+.section h4:hover {
+	color: #1BBC9B;
+}
+.paL {
+	padding-left: 2.5em;
+}
+.maR {
+	text-align: right;
+	margin-right: 0;
+	margin-top: 2em;
+}
+/*圖示字型*/
+.maR span {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  font-size: 6em;
+  float: right;
+}
+span.icon-bb {
+  color: #48a486;
+}
+span.icon-web {
+  color: #1fbbe3;
+}
+span.icon-core {
+  color: #a8cf69;
+}
+span.icon-event {
+  color: #3a84a9;
+}
+span.icon-virtual {
+  color: #b381bf;
+}
+span.icon-fb {
+  /*color: #999999;*/
+  color: #3e62a3;
+}
+span.icon-book {
+  color: #727272;
+}

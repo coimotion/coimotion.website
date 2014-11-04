@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="members">
+		<en>New members</en>
+		<zh>新增成員</zh>
+	</ph>
+    <ph id="email">
+		<en>Please enter new member's e-mail account</en>
+		<zh>請輸入新成員的電子郵件帳號</zh>
+	</ph>
+	<ph id="query">
+		<en>Query</en>
+		<zh>查詢</zh>
+	</ph>
+    <ph id="icon">
+		<en>Datoutie</en>
+		<zh>大頭貼</zh>
+	</ph>
+    <ph id="psnID">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+    <ph id="again">
+		<en>You have raised an invitation but was turned down each other, once again you sure you want to invite?</en>
+		<zh>我方曾提出邀請但被對方婉拒或我方曾拒絕對方加入，確定要再次邀請嗎？ </zh>
+	</ph>
+    <ph id="think">
+		<en>Have been invited to put forward, the other is still under consideration ...</en>
+		<zh>已送過邀請，等待回覆中...</zh>
+	</ph>
+	<ph id="notConfirm">
+		<en>This developer has submitted to join your team.</en>
+		<zh>對方已主動申請加入，但您尚未確認...</zh>
+	</ph>
+	<ph id="isMember">
+		<en>member</en>
+		<zh>已經是團隊成員</zh>
+	</ph>
+    <ph id="close">
+		<en>Close</en>
+		<zh>關閉</zh>
+	</ph>
+    <ph id="send">
+		<en>Send an invitation</en>
+		<zh>送出邀請</zh>
+	</ph>
+    <ph id="confirm">
+		<en>Confirm the invitation</en>
+		<zh>確認邀請</zh>
+	</ph>
+</phrases>

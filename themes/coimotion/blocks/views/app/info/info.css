@@ -1,0 +1,54 @@
+/*APP解鎖符號*/
+.stopApp{
+  position: absolute;
+  left: 0px;
+  top:20%;
+  width: 20px;
+  height: 20px;
+  z-index: 50;
+}
+.stopApp i{
+  color: #C0C0C0;
+  font-size: 30px;
+}
+
+.form-control[disabled]{
+  background: #e4f3f1;
+}
+input.form-control,
+select.form-control,
+#text.form-control {
+  color: #2a806e;
+}
+.form-group *,
+.btn-green{
+  font-size:16px;
+}
+.arrow {
+  border-right-color: #b8d6d0!important;
+}
+.popover {
+  color: #2a806e;
+  font-size: 16px;
+  max-width: none;
+  background: #e4f3f1;
+  border: 1px solid #b8d6d0;
+}
+.popover-content {
+  display:none;
+}
+
+.modal-body {
+  overflow-y: auto;
+  /*max-height: 600px;*/
+}
+.modal-body > div {
+  margin-top: 20px;
+}
+
+.panel-body {
+  padding-bottom: 0px;
+}
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!-- 左側選單開始 -->
+<div id="pgLeft">	
+	<div class="page-sidebar">
+		<ul class="page-sidebar-menu">
+			<!-- SIDEBAR TOGGLER 按鈕 -->
+			<li>					
+				<div class="sidebar-toggler hidden-phone"></div>
+			</li>
+			<!-- 搜尋 -->
+			<li>
+				<form class="sidebar-search">
+					<div id="input-box">
+						<a href="#">
+							<input type="text" placeholder="Search" class="box">
+							<i class="icon-search submit"></i>
+						</a>
+					</div>
+				</form>
+			</li>
+			<!-- 回首頁 -->
+			<li data-toggle="tab">
+				<a href="#">
+					<span class="arrow_r_out" style="display:none;"></span>    
+					<i class="icon-home"></i> 
+					<span class="title">回首頁</span>				
+				</a>
+			</li>
+			<!-- 內容集 -->
+			<li data-toggle="tab">
+				<a href="#" onclick="<%=ctrl%>.go('/spContents/list');" target="spContents">
+					<span class="arrow_r_out" style="display:none;"></span> 
+					<i class="icon-book"></i>
+					<span class="title">內容集</span>
+				</a>
+			</li>
+			<!-- 帳款相關 -->
+			<li data-toggle="tab">
+				<a href="#">
+					<span class="arrow_r_out" style="display:none;"></span>
+					<i class="icon-dollar"></i>
+					<span class="title">帳款相關</span>				
+				</a>
+			</li>
+			<!-- 統計數字 -->
+			<li data-toggle="tab">
+				<a href="#">				
+					<span class="arrow_r_out" style="display:none;"></span>
+					<i class="icon-bar-chart"></i>
+					<span class="title">統計數字</span>				
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- 左側選單結束 -->

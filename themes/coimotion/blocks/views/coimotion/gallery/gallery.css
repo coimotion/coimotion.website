@@ -1,0 +1,32 @@
+.gallery {
+  height: 419px;
+  position: relative;
+}
+
+.gallery .info {
+  position:absolute;
+  top: 30px;
+  left: 25px;
+  color: #21cc71;
+  font-family: Arial;
+  font-size: 22px;
+}
+
+.gallery .menu {
+  position:absolute;
+  top: 70px;
+  left: 25px;
+}
+
+.gallery .menu .item {
+  float: left;
+  margin-right: 45px;
+}
+
+.gallery .bar {
+  position:absolute;
+  /*top: 100px;
+  left: 25px;*/
+  top: 405px;
+  left: 170px;
+}

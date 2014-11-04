@@ -1,0 +1,23 @@
+/*----------右側內容-----------*/
+.sidebarCon {
+  width: 100%;
+  position: relative;
+  /*min-height:721px;
+  overflow-y: auto;*/
+  background: #fff;
+  margin: 0; 
+  padding: 0 30px;
+  font-size: 16px;
+  color: #2a806e;
+}
+.sidebarCon h4{
+  color: #00503c;
+}
+.sidebarCon p{  
+  text-indent: 15px;
+  line-height: 16px;
+}
+.sidebarCon hr{
+  margin: 15px 0; 
+  border: 1px solid #b8d6d0;
+}

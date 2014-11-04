@@ -1,0 +1,43 @@
+.contactUsBody {
+  	font-family: Arial;
+  	/*margin-left: 20px;*/
+  	margin: 0px auto;
+  	text-align: center;
+}
+
+.contactUsBody .title {
+  	font-size: 30px;
+  	color: #27ae87;
+    /*color: #27ae60;*/
+  	text-align: center;
+  	margin-top: 30px;
+  	margin-bottom: 30px;
+}
+
+.contactUsBody .summary {
+  	font-size: 15px;
+  	margin-bottom: 30px;
+}
+.form-horizontal {
+	margin-left: 200px;
+	text-align: left;
+}
+.form-horizontal .control-group {
+	margin-bottom: 8px;
+}
+
+.form-horizontal .control-label {
+    font-size: 14px;
+	color: #666666;
+}
+
+.form-horizontal .info .info-label{
+    margin-bottom: 15px;
+  	margin-top: 10px;
+	margin-left: 90px;
+}
+
+.form-horizontal .control-label a {
+  	text-decoration: none;
+  	color: #000000;
+}

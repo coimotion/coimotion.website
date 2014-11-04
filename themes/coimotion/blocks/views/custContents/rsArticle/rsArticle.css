@@ -1,0 +1,30 @@
+i.fa-file-text-o {
+	font-size: 20px;
+}
+.ddd {
+	width: 100%;
+	max-height: 1em;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+}
+.va{
+	vertical-align: middle;
+}
+.callout {
+	opacity: 0.5;
+}
+th {
+	word-wrap: break-all;
+}
+td .btn-green,
+td .btn-danger {
+	padding: 2px 0;
+	border: 1px solid #fff;
+}
+.modal-content {
+	max-height: 650px !important; 
+}
+.table-bordered > tbody > tr > td {
+	border: 1px solid #b8d6d0;
+}

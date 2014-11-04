@@ -1,0 +1,31 @@
+.matter {
+  padding: 1% 2%;
+}
+.caret{
+  border-top: 8px solid #fff;
+  border-bottom: 0 dotted;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.maL10{
+  margin-left: 10px;
+}
+.maTB10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.maR5{
+  margin-left: 5px;
+}
+.fs12{
+  font-size: 1.2em;
+}
+.wc20{
+  width: 20%;
+}
+.wc80{
+  width: 80%;
+}
+.applyList{
+  margin-top: 1em;
+}

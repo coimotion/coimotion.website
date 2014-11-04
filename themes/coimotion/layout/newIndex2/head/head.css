@@ -1,0 +1,195 @@
+#header{
+   padding: 0 10px;
+   margin: 0;
+   width: 100%;
+   border-top:3px solid #42b56e;
+   background: rgba(255, 255, 255, 0.92);
+}
+.logo img {   
+   margin-top: 0px;
+   margin-left: 1em;
+}
+.icon-bar {
+	 background: #999;
+}
+
+/* mobile */
+.navbar-collapse.in {
+  overflow-y: visible; 
+}
+/* menu */
+ul.wh {
+  min-width: 590px;
+}
+li.bu {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: #111;
+  font-size: 1.2em !important; 
+  display: inline-block; 
+  float: left;
+  line-height: 20px !important;
+}
+li.bu:hover, 
+li.bu:focus,
+.dropdown-toggle:hover,
+.dropdown-toggle:focus ,
+.dropdown-toggle:active,
+.dropdown-toggle:visited {
+  background: #D3D9DC !important;
+}
+li.dropdown {
+  padding: 0px;
+}
+li.dropdown > a#dropdown {
+  padding: 20px;
+  color: #111;
+}
+/*language*/
+.navbar-nav > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.dropdown {
+  float: right;
+}
+.dropdown-toggle {
+  display: block;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  color: #111;
+  background: transparent;
+  border: none;
+}
+/**/
+.dropdown-menu {
+  min-width: 100px;
+}
+.dropdown-menu > li > a {
+  padding: 5px 20px 5px 20px !important;
+  line-height: 20px;
+  font-size: 16px;
+}
+/* subli onclick staus */
+.navbar-nav > .open,
+.navbar-nav > .open  > a, 
+.navbar-nav > .open  > a:hover,
+.navbar-nav > .open  > a:focus,
+.navbar-nav > .open  > a:active,
+.navbar-nav > .open  > a:visited,
+li.dropdown > a#dropdown:hover {
+  background: #D3D9DC; 
+}
+
+/*login*/
+.dropdown-menu.login {
+  width: 300px;
+  padding: 0px 20px;
+  right: auto;
+  left: 0;
+}
+form{
+   margin: 0px;
+   padding: 5px 15px 10px;
+}
+input {
+  position: relative;
+  color: #000;
+}
+/*placeholder*/
+.form-control:-moz-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-webkit-input-placeholder {
+  color: #bbb;
+}
+.form-control::-moz-placeholder {
+  opacity: 1;
+}
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.wc45 {
+  width: 47%;
+  display: inline-block;
+}
+.wc45:first-child {
+  margin-right: 4%;
+}
+/*按鈕*/
+.btn-login {
+  color: #fff;
+  background: #1bbc9b;
+  width: 45%;
+  padding: 3px;
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active {
+  background: #15957b;
+}
+.sign {
+  color: #aaa !important;  
+  font-size: 0.8em;
+  line-height: 3em !important;
+}
+.sign:hover {
+  color: #666;
+}
+.modal-content {
+   background: #1bbc9b;
+   border: none;
+}
+
+
+@media screen and (max-width: 1112px) {
+  #side-nav {
+    bottom:-4em !important;
+  }
+}
+@media screen and (max-width: 996px) { 
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 1em !important;
+  }
+}
+@media screen and (max-width: 933px) { 
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0 !important;
+  }
+  .logo img {   
+     margin-left: 0;
+  }
+}
+
+/********* Chang collapse *********/
+@media (max-width: 1100px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }    
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav > li.bu {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px; 
+        line-height: 20px;
+        font-size: 28px !important;   
+    }
+    .navbar-nav > a > li.bu {
+        font-size: 28px !important; 
+    }
+}

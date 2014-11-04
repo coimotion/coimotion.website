@@ -1,0 +1,39 @@
+<div class="params" appCode="<%=bi.query.appCode%>"></div>
+<% if (value && value.list.length > 0) { %>
+<% value.list.forEach(function(item) { %>
+  
+<% var workMode = item.workMode; %>
+<% if(workMode == 2) { %>
+  <!--內容集申請者開始-->
+  <div class="widget">
+    <div class="widget-content">
+      <div class="col-md-4">
+        <table class="table table-bordered table-hover">
+          <tr>
+            <td class="wc20 text-center">
+              <div class="memiconstyle">
+                <div class="memiconFace">
+                  <i class="icon-user"></i>
+                </div>
+              </div>
+            </td>
+            <td class="wc80" style="height:150px;">
+              <div class="colH"><%= ph.caTitle %>：<%= item.caTitle %></div>
+              <div class="colH"><%= ph.orgName %>：<%= item.orgName %></div>
+                <div><%=ph.agree%></div>
+                <button class="btn btn-blue col-md-5 fs11 maR5" onclick="<%=ctrl%>.useApp('<%= item.caID %>',1);"><%= ph.yes %></button>
+                <button class="btn btn-default col-md-5 fs11  maR5" onclick="<%=ctrl%>.useApp('<%= item.caID %>',0);"><%= ph.no %></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- widget-content結束 -->
+  </div>
+  <!-- widget結束 -->
+<% } %>
+
+<% }); %>
+<% } else {%>
+  <div><%=ph.null%></div>
+<% } %>

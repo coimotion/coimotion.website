@@ -1,0 +1,19 @@
+.stopApp{
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  width: 20px;
+  height: 20px;
+  z-index: 50;
+}
+.stopApp i{
+  color: #C0C0C0;
+  font-size: 30px;
+}
+.form-control[disabled]{
+  background: #e4f3f1;
+}
+input.form-control,
+#text.form-control{
+  color: #2a806e;
+}

@@ -1,0 +1,33 @@
+.pa5{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.tableChange td{
+	border-top: none;
+	padding:1em;
+}
+.tableChange td{
+	border-top: none;
+	padding:1em;
+}
+.tableChange tr th:first-child ,
+.tableChange tr td:first-child {
+	padding-left: 2em;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f6f6f6;
+}
+.table > thead > tr > th {
+    border-bottom: 1px solid #ddd;
+}
+/*更多資訊*/
+.more {
+	margin-top: 10;
+	text-align: right;
+	cursor:pointer;
+	font-size: 0.8em;
+}
+.more:hover{	
+	color: #48a486;	
+}

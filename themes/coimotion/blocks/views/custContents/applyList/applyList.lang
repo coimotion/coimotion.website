@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="orgName">
+		<en>Team</en>
+		<zh>團隊</zh>
+	</ph>
+    <ph id="caTitle">
+		<en>App</en>
+		<zh>App</zh>
+	</ph>
+  <ph id="set">
+    <en>Set Permissions</en>
+    <zh>設定權限</zh>
+  </ph>
+  <ph id="remove">
+    <en>Remove members</en>
+    <zh>解除權限</zh>
+  </ph>
+	<ph id="agree">
+		<en>Asked to use the contents, agree?</en>
+		<zh>要求使用內容集，是否同意？</zh>
+	</ph>
+	<ph id="ok">
+		<en>Ok</en>
+		<zh>通過</zh>
+	</ph>
+	<ph id="none">
+		<en>Null</en>
+		<zh>不通過</zh>
+	</ph>
+  <ph id="yes">
+    <en>Yes</en>
+    <zh>同意</zh>
+  </ph>
+  <ph id="no">
+    <en>No</en>
+    <zh>不同意</zh>
+  </ph>
+  <ph id="invitation">
+    <en>Invitation...</en>
+    <zh>邀請中...</zh>
+  </ph>
+  <ph id="null">
+    <en>There is no applicants</en>
+    <zh>目前沒有人申請</zh>
+  </ph>
+</phrases>

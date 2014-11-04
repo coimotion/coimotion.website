@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="identity">
+		<en>Use these identity</en>
+		<zh>切換目前的團隊</zh>
+	</ph>	
+	<ph id="user">
+		<en>User Name</en>
+		<zh>使用者名稱</zh>
+	</ph>
+    <ph id="team">
+		<en>Team</en>
+		<zh>團隊管理</zh>
+	</ph>
+	<ph id="search">
+		<en>Search</en>
+		<zh>搜尋團隊</zh>
+	</ph>
+	<ph id="fast">
+		<en>Fast Track</en>
+		<zh>快速建置</zh>
+	</ph>	
+</phrases>

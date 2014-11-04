@@ -1,0 +1,133 @@
+<% var  locID = value.locID; %>
+<div class="modal-header">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title"><i class="icon-mobile-phone"></i>&nbsp;<%= ph.information %></h3>
+</div>
+<div class="_MSG" style="display: none;"
+	caCodeErr="<%=ph.caCodeErr%>" titleErr="<%=ph.titleErr%>" ></div>
+<!-- <div class="modal-body" style="height:470px;"> -->
+<div class="modal-body">
+	<div class="row">
+		<!--  左側開始 -->
+		<div class="col-md-11 col-sm-11 col-xs-11">
+			<!-- 表單開始 -->
+			<form class="form-horizontal" role="form" caID="<%= bi.uri.split('/').reverse()[0] %>">
+				<div class="form-group">
+					<label class="col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.caCode %>：</label>
+					<div class="caCode col-md-9 col-sm-9 col-xs-9">
+						<input type="text" class="form-control" value="<%= value.caCode %>" name="caCode" disabled>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.key %>：</label>
+					<div class="col-md-9 col-sm-9 col-xs-9">
+						<input type="text" class="form-control" value="<%= value.appKey %>" disabled>
+					</div>
+				</div>
+
+				<div class="form-group paL40">
+					<span class="btn btn-lg tip" data-toggle="popover" data-placement="right" title="<%= value.token %>">Token</span>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.title %>：</label>
+					<div class="col-md-9 col-sm-9 col-xs-9">
+						<input type="text" class="form-control" id="text" value="<%= value.title %>" name="title">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.descTx %>：</label>
+					<div class="col-md-9 col-sm-9 col-xs-9">
+						<textarea class="form-control" id="text" name="descTx"><%= value.descTx %></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.languages %>：</label>
+					<div class="col-md-9 col-sm-9 col-xs-9">
+						<select name="locID" class="form-control" locID="<%=locID%>">
+								<option value="1" <% if (locID == 1) {%>selected<%}%>>English</option>
+								<option value="2" <% if (locID == 2) {%>selected<%}%>>繁體中文</option>
+						</select>
+					</div>
+				</div>
+				<ul class="nav nav-tabs paT20">
+					<li><a href="#facebook" data-toggle="tab">Facebook</a></li>
+					<li><a href="#google" data-toggle="tab">Google</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade" id="facebook">
+						<div class="panel-body">
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">appCode：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="appCode" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">appID：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="appID" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">app-secret：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="secret" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="google">
+						<div class="panel-body">
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">appCode：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="appCode" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">appID：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="appID" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 col-sm-3 col-xs-3 control-label">app-secret：</label>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<input type="text" name="secret" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- 表單結束 -->
+		</div>
+		<!--  左側結束 -->
+
+		<!--  右側開始 -->
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<!-- 禁止按鈕列開始 -->
+			<div class="stopApp">
+				<a href="javascript:<%=ctrl%>.unlock();"><i class="fa fa-ban"></i></a>
+			</div>
+			<!-- 禁止按鈕列結束 -->
+		</div>
+		<!--  右側結束 -->
+	</div>
+
+	<div class="modal-footer">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+			<button type="button" class="btn btn-green wc30 isManage" onclick="<%=ctrl%>.update();"><%= ph.confirm %></button>
+		</div>
+	</div>
+
+</div>
+<style type="text/css" media="screen">
+	@media (min-width: 768px) {
+		.modal-dialog {
+			width: 650px;
+			margin: 3px auto;
+		}
+	}
+</style>

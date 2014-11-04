@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>	
+	<ph id="doc">
+		<en>Documentation</en>
+		<zh>技術文件</zh>
+	</ph>
+	<ph id="title">
+		<en>Title Name</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="date">
+		<en>Date</en>
+		<zh>發佈時間</zh>
+	</ph>	
+</phrases>

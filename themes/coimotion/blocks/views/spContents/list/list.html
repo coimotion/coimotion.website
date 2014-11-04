@@ -1,0 +1,57 @@
+<!-- 內容集畫面 --> 	
+<div class="portlet">
+	<div class="page-title">
+		<div class="caption">
+			<i class="icon-book"></i>內容集
+		</div>
+	</div>
+	<div class="portlet-body table-responsive">
+		<% if (value && value.list.length > 0)  { %>
+        <table class="table table-bordered table-hover table-condensed">
+        	<tbody>
+                <tr class="active">
+                    <th class="wc16"><center>內容集代碼</center></th>
+                    <th class="wc30"><center>內容集名稱</center></th>
+                    <th class="wc15"><center>服務點數</center></th>
+                    <th class="wc15"><center>APP總數</center></th>
+                    <th><center>功能</center></th>
+                </tr>
+                <% value.list.forEach(function(item) { %>
+                <tr class="text-left">                            
+                    <td><%=item.appCode%></td>
+                    <td><a href="/spContents/detail"><%=item.title%></a></td>
+                    <td class="text-right">0</td>
+                    <td class="text-right">0</td>
+                    <td class="text-center">
+                    	<div class="btn-group">
+		  					<a href="/spContents/manage?work=1" class="btn btn-info">維護</a>
+		  					<a href="/spContents/manage?work=2" class="btn btn-info">費用</a>
+		  					<!-- <a href="/spContents/manage?work=3" class="btn btn-info">內容</a> -->
+						</div>
+					</td>
+                </tr>
+				<% }); %>
+				<!--  
+                <tr class="text-left">                            
+                    <td>test001</td>
+                    <td>台鐵火車時刻表查詢</td>
+                    <td class="text-right">1000</td>
+                    <td class="text-right">1000</td>
+                    <td class="text-center">
+                    	<div class="btn-group">
+		  					<button type="button" class="btn btn-info active">維護</button>
+		  					<button type="button" class="btn btn-info">費用</button>
+		  					<button type="button" class="btn btn-info">內容</button>
+						</div>
+					</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+		<% } else {%>
+			您目前沒有任何內容集。
+		<% } %>
+    </div>
+    <!-- portlet-body 結束 -->
+</div>
+<!-- portlet 結束 -->	

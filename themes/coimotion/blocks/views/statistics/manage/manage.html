@@ -1,0 +1,58 @@
+<div class="matter">
+	<div>
+		<ul class="nav nav-tabs">
+			<li style="margin-top: 5px; padding-right:25px;">
+				<label><%=ph.start%>：</label>
+				<span class="form-inline">
+				    <input class="form-control _datepicker" name="startDate" type="text" value="" style="width: 110px;">
+				</span>
+			</li>
+			<li style="margin-top: 5px; padding-right:25px;">
+				<label><%=ph.end%>：</label>
+				<span class="form-inline">
+				    <input class="form-control _datepicker" name="endDate" type="text" value="" style="width: 110px;">
+				</span>
+			</li>
+			<li style="margin-top: 5px; padding-right:5px;">
+				<label><%=ph.applications%>：</label>
+				<span class="hasApp">
+					<a href="javascript:<%=ctrl%>.setCaSelf();" class="appID dropdown-toggle">
+						<span caID=""></span>
+					</a>
+				</span>
+				<li class="selApp"></li>
+			</li>
+			<!-- <li>
+				<ul class="nav nav-tabs" style="border-bottom:0px;">					
+					<li class="hasApp">
+						<a href="javascript:<%=ctrl%>.setCaSelf();" class="appID dropdown-toggle">
+							<span caID=""></span>
+						</a>
+					</li>
+					<li class="selApp"></li>
+				</ul>
+			</li> -->
+			
+			
+			<li class="waTitle" style="margin-top: 5px; display:none;">
+				<label><%=ph.repository%>：</label>
+			</li>
+			<li class="waList" style="display:none">
+				<div class="appAll"> 
+					<ul class="nav nav-pills app">            
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 5px 15px;">
+								<span class="waCode"></span>
+								<span class="icon-chevron-down fs04 fcW maL5"></span>
+								<span class="label label-info"></span>
+							</a>    
+							<ul class="dropdown-menu wappMenu" thisCtrl="<%=ctrl%>"> </ul>
+						</li>
+						
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="statList maT20"></div>
+</div>

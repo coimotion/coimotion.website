@@ -1,0 +1,27 @@
+<div class="matter">
+	<div class="control-label maTB10 fs14">
+		<!-- 下拉式選單開始 -->
+		<div class="dropdown">
+			<button type="button" class="btn btn-default dropdown-toggle highlight" data-toggle="dropdown">
+				<span class="appCode fs12"><%= ph.name %></span><span class="caret maL10"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<% if (value && value.list.length > 0) {%>
+				<% value.list.forEach(function(item) {%>
+				<% var title = item.title.replace("'", "\\'"); %>
+				<li><a role="menuitem" tabindex="-1" href="#" onclick="<%=ctrl%>.setApp('<%=title%>', '<%=item.appCode%>'); <%=ctrl%>.loadApplyList();"><%= item.title %></a></li>
+				<% }); %>
+				<% } else {%>
+				<li><%= ph.null %></li>
+				<% } %>
+				<!-- <li><a role="menuitem" tabindex="-1" href="#">民宿資訊</a></li>
+				<li><a role="menuitem" tabindex="-1" href="#">愛票網</a></li>
+				<li><a role="menuitem" tabindex="-1" href="#">悠遊墾丁</a></li>
+				<li><a role="menuitem" tabindex="-1" href="#">藝文活動</a></li>
+				<li><a role="menuitem" tabindex="-1" href="#">高雄公車資訊</a></li> -->
+			</ul>
+		</div>
+		<!-- 下拉式選單結束 -->
+		<div class="applyList"></div>
+	</div>
+</div>

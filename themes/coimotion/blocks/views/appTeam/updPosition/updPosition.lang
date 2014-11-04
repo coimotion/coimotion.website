@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="set">
+		<en>Set Permissions</en>
+		<zh>設定權限</zh>
+	</ph>
+	<ph id="select">
+		<en>Select</en>
+		<zh>選擇</zh>
+	</ph>
+    <ph id="competence">
+		<en>competence</en>
+		<zh>權限</zh>
+	</ph>
+    <ph id="caption">
+		<en>Permission Description</en>
+		<zh>權限說明</zh>
+	</ph>
+    <ph id="manager">
+		<en>Manager</en>
+		<zh>管理者</zh>
+	</ph>
+    <ph id="features">
+		<en>You can use all the features, such as: add, modify, delete .....</en>
+		<zh>新增移除成員、設定成員權限、修改團隊介紹</zh>
+	</ph>
+    <ph id="memList">
+		<en>Team members</en>
+		<zh>團隊成員</zh>
+	</ph>
+    <ph id="function">
+		<en>Use only part of the features, such as: add, modify, delete .....</en>
+		<zh>使用部分的功能，如：添加，修改，删除.....</zh>
+	</ph>
+    <ph id="close">
+		<en>Close</en>
+		<zh>關閉</zh>
+	</ph>  
+    <ph id="update">
+		<en>Update</en>
+		<zh>確定</zh>
+	</ph>
+</phrases>

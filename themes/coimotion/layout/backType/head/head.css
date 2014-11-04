@@ -1,0 +1,75 @@
+ul li {
+  list-style-type: none;
+}
+#header{
+   margin: 0;
+   width:100%;   
+   padding: 0px 10px;
+   border-bottom: 1px solid #ddd;
+}
+.logo img {   
+   margin-top: 0px;
+   width: 80%;
+}
+/* 選單覆寫 */
+.navbar-coim {
+  background: #1bbc9b;
+}
+.navbar-coim .navbar-toggle:hover,
+.navbar-coim .navbar-toggle:focus {
+  background-color: #1bab8e;
+}
+.navbar-coim .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-coim .navbar-collapse li {
+  /*border-left: #1CB093 1px solid;*/
+}
+.navbar-coim .navbar-collapse li:hover,
+.navbar-coim .navbar-collapse li:active,
+.navbar-coim .navbar-collapse li.active {
+  background: #1bab8e;
+}
+
+/* 選單點選後的狀態覆寫 */
+.navbar-nav > .open  > a, 
+.navbar-nav > .open  > a:hover,
+.navbar-nav > .open  > a:focus {
+  background: #1bab8e;  
+  color: rgba(255,255,255,0.8)
+}
+/* 下拉式選單_第一階層 */
+.teamMenu {
+  padding: 0; 
+  border: none !important;
+  right: 0 !important;
+  left: auto !important;   
+}
+.teamMenu .from {
+  /*border-left: 1px solid #eee;*/
+  min-width: 160px;
+  position: relative;
+}
+.teamMenu .from a {
+  font-size: 14px;
+  line-height: 30px!important;
+  color: #fff!important;
+  display: block;
+  padding: 10px 20px;
+}
+.teamMenu .from a:hover{
+  font-size: 14px;
+  color: #000 !important;
+  background: #D0F7EE;
+  cursor: pointer; 
+}
+
+/* 選單分隔線 */
+.teamMenu .divider {
+ /* border-left: 1px solid #eee;*/
+  margin: 0;
+  border-color: #D0F7EE !important;  
+}
+.teamMenu .divider:hover {
+  /*background: #e5e5e5;*/
+}

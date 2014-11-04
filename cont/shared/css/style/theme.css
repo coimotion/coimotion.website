@@ -1,0 +1,1179 @@
+@charset "utf-8";
+/* CSS Document */
+/*寬度*/
+/*寬度-絕對*/
+.wpx2480 {
+width: 2480px;
+}
+.wpx1280 {
+width: 1280px;
+}
+.wpx1024 {
+width: 1024px;
+}
+.wpx1004 {
+width: 1004px;
+}
+.wpx1002 {
+width: 1002px;
+}
+.wpx970 {
+width: 970px;
+}
+.wpx960 {
+width: 960px;
+}
+.wpx800 {
+width: 800px;
+}
+.wpx640 {
+width: 640px;
+}
+.wpx480 {
+width: 480px;
+}
+.wpx430 {
+width: 430px;
+}
+.wpx400 {
+width: 400px;
+}
+.wpx320 {
+width: 320px;
+}
+.wpx150 {
+width: 150px;
+}
+/*寬度-相對*/
+.wc100 {
+width: 100%;
+}
+.wc99 {
+width: 99%;
+}
+.wc98 {
+width: 98%;
+}
+.wc97 {
+width: 97%;
+}
+.wc96 {
+width: 96%;
+}
+.wc95 {
+width: 95%;
+}
+.wc94 {
+width: 94%;
+}
+.wc93 {
+width: 93%;
+}
+.wc92 {
+width: 92%;
+}
+.wc91 {
+width: 91%;
+}
+.wc90 {
+width: 90%;
+}
+.wc89 {
+width: 89%;
+}
+.wc88 {
+width: 88%;
+}
+.wc87 {
+width: 87%;
+}
+.wc86 {
+width: 86%;
+}
+.wc85 {
+width: 85%;
+}
+.wc84 {
+width: 84%;
+}
+.wc83 {
+width: 83%;
+}
+.wc82 {
+width: 82%;
+}
+.wc81 {
+width: 81%;
+}
+.wc80 {
+width: 80%;
+}
+.wc79 {
+width: 79%;
+}
+.wc78 {
+width: 78%;
+}
+.wc77 {
+width: 77%;
+}
+.wc76 {
+width: 76%;
+}
+.wc75 {
+width: 75%;
+}
+.wc74 {
+width: 74%;
+}
+.wc73 {
+width: 73%;
+}
+.wc72 {
+width: 72%;
+}
+.wc71 {
+width: 71%;
+}
+.wc70 {
+width: 70%;
+}
+.wc69 {
+width: 69%;
+}
+.wc68 {
+width: 68%;
+}
+.wc67 {
+width: 67%;
+}
+.wc66 {
+width: 66%;
+}
+.wc65 {
+width: 65%;
+}
+.wc64 {
+width: 64%;
+}
+.wc63 {
+width: 63%;
+}
+.wc62 {
+width: 62%;
+}
+.wc61 {
+width: 61%;
+}
+.wc60 {
+width: 60%;
+}
+.wc59 {
+width: 59%;
+}
+.wc58 {
+width: 58%;
+}
+.wc57 {
+width: 57%;
+}
+.wc56 {
+width: 56%;
+}
+.wc55 {
+width: 55%;
+}
+.wc54 {
+width: 54%;
+}
+.wc53 {
+width: 53%;
+}
+.wc52 {
+width: 52%;
+}
+.wc51 {
+width: 51%;
+}
+.wc50 {
+width: 50%;
+}
+.wc49 {
+width: 49%;
+}
+.wc48 {
+width: 48%;
+}
+.wc47 {
+width: 47%;
+}
+.wc46 {
+width: 46%;
+}
+.wc45 {
+width: 45%;
+}
+.wc44 {
+width: 44%;
+}
+.wc43 {
+width: 43%;
+}
+.wc42 {
+width: 42%;
+}
+.wc41 {
+width: 41%;
+}
+.wc40 {
+width: 40%;
+}
+.wc39 {
+width: 39%;
+}
+.wc38 {
+width: 38%;
+}
+.wc37 {
+width: 37%;
+}
+.wc36 {
+width: 36%;
+}
+.wc35 {
+width: 35%;
+}
+.wc34 {
+width: 34%;
+}
+.wc33 {
+width: 33%;
+}
+.wc32 {
+width: 32%;
+}
+.wc31 {
+width: 31%;
+}
+.wc30 {
+width: 30%;
+}
+.wc29 {
+width: 29%;
+}
+.wc28 {
+width: 28%;
+}
+.wc27 {
+width: 27%;
+}
+.wc26 {
+width: 26%;
+}
+.wc25 {
+width: 25%;
+}
+.wc24 {
+width: 24%;
+}
+.wc23 {
+width: 23%;
+}
+.wc22 {
+width: 22%;
+}
+.wc21 {
+width: 21%;
+}
+.wc20 {
+width: 20%;
+}
+.wc19 {
+width: 19%;
+}
+.wc18 {
+width: 18%;
+}
+.wc17 {
+width: 17%;
+}
+.wc16 {
+width: 16%;
+}
+.wc15 {
+width: 15%;
+}
+.wc14 {
+width: 14%;
+}
+.wc13 {
+width: 13%;
+}
+.wc12 {
+width: 12%;
+}
+.wc11 {
+width: 11%;
+}
+.wc10 {
+width: 10%;
+}
+.wc9 {
+width: 9%;
+}
+.wc8 {
+width: 8%;
+}
+.wc7 {
+width: 7%;
+}
+.wc6 {
+width: 6%;
+}
+.wc5 {
+width: 5%;
+}
+.wc4 {
+width: 4%;
+}
+.wc3 {
+width: 3%;
+}
+.wc2 {
+width: 2%;
+}
+.wc1 {
+width: 1%;
+}
+/*方框對其自動cennter*/
+.automarginLR {
+margin-right: auto;
+margin-left: auto;
+}
+/*--------------------浮動及清除浮動------------**/
+.float {
+float: left;
+}
+/*關*/
+.clear {
+clear:left;
+}
+/*-----------------文字變化----------------------*/
+/*-----------------1.文字大小----------------------*/
+.fs05 {
+font-size: 0.5em;
+}
+.fs06 {
+font-size: 0.6em;
+}
+.fs065 {
+font-size: 0.65em;
+}
+.fs07 {
+font-size: 0.7em;
+}
+.fs075 {
+font-size: 0.75em;
+}
+.fs08 {
+font-size: 0.8em;
+}
+.fs085 {
+font-size: 0.85em;
+}
+.fs09 {
+font-size: 0.9em;
+}
+.fs095 {
+font-size: 0.95em;
+}
+.fs1 {
+font-size: 1em;
+}
+.fs12 {
+font-size: 1.2em;
+}
+.fs14 {
+font-size: 1.4em;
+}
+.fs15 {
+font-size: 1.5em;
+}
+.fs2 {
+font-size: 2em;
+}
+.fs25 {
+font-size: 2.5em;
+}
+.fs3 {
+font-size: 3em;
+}
+.fs35 {
+font-size: 3.5em;
+}
+.fs4 {
+font-size: 4em;
+}
+/*-----------------2.文字顏色----------------------*/
+.fcR {
+color: #F00;
+}
+.fcG {
+color: #0F0;
+}
+.fcB {
+color: #00F;
+}
+.fcC {
+color: #0FF;
+}
+.fcM {
+color: #F0F;
+}
+.fcY {
+color: #FF0;
+}
+.fcK {
+color: #000;
+}
+.fcW {
+color: #FFF;
+}
+.fcG3 {
+color: #333;
+}
+.fcG6 {
+color: #666;
+}
+.fcG9 {
+color: #999;
+}
+.fcGC {
+color: #CCC;
+}
+/*-----------------3.文字行高----------------------*/
+.fh1 {
+line-height: 1em;
+}
+.fh15 {
+line-height: 1.5em;
+}
+.fh2 {
+line-height: 2em;
+}
+.fh25 {
+line-height: 2.5em;
+}
+.fh3 {
+line-height: 3em;
+}
+/*-----------------4.文字底線----------------------*/
+.fdY {
+text-decoration: underline;
+}
+.fdN {
+text-decoration: none;
+}
+/*-----------------5.文字字距----------------------*/
+.fl02 {
+letter-spacing: 0.2em;
+}
+.fl05 {
+letter-spacing: 0.5em;
+}
+.fl1 {
+letter-spacing: 1em;
+}
+/*-----------------6.背景顏色----------------------*/
+.bgcR {
+background-color: #F00;
+}
+.bgcG {
+background-color: #0F0;
+}
+.bgcB {
+background-color: #00F;
+}
+.bgcC {
+background-color: #0FF;
+}
+.bgcM {
+background-color: #F0F;
+}
+.bgcY {
+background-color: #FF0;
+}
+.bgcK {
+background-color: #000;
+}
+.bgcG3 {
+background-color: #333;
+}
+.bgcG6 {
+background-color: #666;
+}
+.bgcG9 {
+background-color: #999;
+}
+.bgcGC {
+background-color: #CCC;
+}
+/*-----------------7.區塊的內外距----------------------*/
+.paTB5 {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.paT5 {
+padding-top: 5px;
+}
+.paTB10 {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.paT10 {
+padding-top: 10px;
+}
+.paTB15 {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.paT15 {
+padding-top: 15px;
+}
+.paTB20 {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.paT20 {
+padding-top: 20px;
+}
+.paTB25 {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+.paT25 {
+padding-top: 25px;
+}
+.paTB30 {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.paT30 {
+padding-top: 30px;
+}
+.paTB35 {
+padding-top: 35px;
+padding-bottom: 35px;
+}
+.paT35 {
+padding-top: 35px;
+}
+.paTB40 {
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.paT40 {
+padding-top: 40px;
+}
+.paTB45 {
+padding-top: 45px;
+padding-bottom: 45px;
+}
+.paT45 {
+padding-top: 45px;
+
+}
+.paTB50 {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.paT50 {
+padding-top: 50px;
+
+}
+.maT0 {
+margin-top: 0px;
+}
+.maTB5 {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.maT5 {
+margin-top: 5px;
+}
+.maB5 {
+margin-bottom: 5px;
+}
+.maTB10 {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.maT10 {
+margin-top: 10px;
+}
+.maB10 {
+margin-bottom: 10px;
+}
+.maTB15 {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.maT15 {
+margin-top: 15px;
+}
+.maB15 {
+margin-bottom: 15px;
+}
+.maTB20 {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.maT20 {
+margin-top: 20px;
+
+}
+.maTB30 {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.maT30 {
+margin-top: 30px;
+}
+.maTB35 {
+margin-top: 35px;
+margin-bottom: 35px;
+}
+.maT35 {
+margin-top: 35px;
+}
+.maTB40 {
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.maT40 {
+margin-top: 40px;
+}
+.maTB45 {
+margin-top: 45px;
+margin-bottom: 45px;
+}
+.maT45 {
+margin-top: 45px;
+
+}
+.maTB50 {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.maT50 {
+margin-top: 50px;
+
+}
+/*-----------------8.區塊的左右內外距----------------------*/
+.paL0 {
+padding-left: 0px;
+}
+.paLR5 {
+padding-left: 5px;
+padding-right: 5px;
+}
+.paLR10 {
+padding-left: 10px;
+padding-right: 10px;
+}
+.paLR15 {
+padding-left: 15px;
+padding-right: 15px;
+}
+.paLR20 {
+padding-left: 20px;
+padding-right: 20px;
+}
+.paLR25 {
+padding-left: 25px;
+padding-right: 25px;
+}
+.paLR30 {
+padding-left: 30px;
+padding-right: 30px;
+}
+.paLR35 {
+padding-left: 35px;
+padding-right: 35px;
+}
+.paLR40 {
+padding-left: 40px;
+padding-right: 40px;
+}
+.paLR45 {
+padding-left: 45px;
+padding-right: 45px;
+}
+.paLR50 {
+padding-left: 50px;
+padding-right: 50px;
+}
+.paL0 {
+padding-left:0px;
+}
+.paL1 {
+padding-left:1px;
+}
+.paL2 {
+padding-left:2px;
+}
+.paL3 {
+padding-left:3px;
+}
+.paL4 {
+padding-left:4px;
+}
+.paL5 {
+padding-left:5px;
+}
+.paL10 {
+padding-left:10px;
+}
+.paL15 {
+padding-left:15px;
+}
+.paL20 {
+padding-left:20px;
+}
+.paL25 {
+padding-left:25px;
+}
+.paL30 {
+padding-left:30px;
+}
+.paL35 {
+padding-left:35px;
+}
+.paL40 {
+padding-left:40px;
+}
+.paR5 {
+padding-right: 5px;
+}
+.paR10 {
+padding-right: 10px;
+}
+.paR15 {
+padding-right: 15px;
+}
+.paR20 {
+padding-right: 20px;
+}
+.paR25 {
+padding-right: 25px;
+}
+.paR30 {
+padding-right: 30px;
+}
+.paR35 {
+padding-right: 35px;
+}
+.paR40 {
+padding-right: 40px;
+}
+.paR50 {
+padding-right: 50px;
+}
+.paR55 {
+padding-right: 55px;
+}
+.paR60 {
+padding-right: 60px;
+}
+
+/**/
+.maLR5 {
+margin-left: 5px;
+margin-right: 5px;
+}
+.maLR10 {
+margin-left: 10px;
+margin-right: 10px;
+}
+.maLR15 {
+margin-left: 15px;
+margin-right: 15px;
+}
+.maLR20 {
+margin-left: 20px;
+margin-right: 20px;
+}
+.maLR25 {
+margin-left:25px;
+margin-right: 25px;
+}
+.maLR30 {
+margin-left: 30px;
+margin-right: 30px;
+}
+.maLR35 {
+margin-left: 35px;
+margin-right: 35px;
+}
+.maLR40 {
+margin-left: 40px;
+margin-right: 40px;
+}
+.maL5 {
+margin-left: 5px;
+}
+.maL10 {
+margin-left: 10px;
+}
+.maL15 {
+margin-left: 15px;
+}
+.maL20 {
+margin-left: 20px;
+}
+.maL25 {
+margin-left: 25px;
+}
+.maL30 {
+margin-left: 30px;
+}
+.maR5 {
+margin-right: 5px;
+}
+.maR10 {
+margin-right: 10px;
+}
+.maR15 {
+margin-right: 15px;
+}
+.maR20 {
+margin-right: 20px;
+}
+.maR25 {
+margin-right: 25px;
+}
+.maR30 {
+margin-right: 30px;
+}
+.pa1 {
+padding: 1px;
+}
+.pa2 {
+padding: 2px;
+}
+.pa3 {
+padding: 3px;
+}
+.pa4 {
+padding: 4px;
+}
+.pa5 {
+padding: 5px;
+}
+.pa10 {
+padding: 10px;
+}
+.pa15 {
+padding: 15px;
+}
+.pa20 {
+padding: 20px;
+}
+.pa25 {
+padding: 25px;
+}
+.pa30 {
+padding: 30px;
+}
+.ma1 {
+margin: 1px;
+}
+.ma2 {
+margin: 2px;
+}
+.ma3 {
+margin: 3px;
+}
+.ma4 {
+margin: 4px;
+}
+.ma5 {
+margin: 5px;
+}
+.ma10 {
+margin: 10px;
+}
+.ma15 {
+margin: 15px;
+}
+.ma20 {
+margin: 20px;
+}
+.ma25 {
+margin: 25px;
+}
+.ma30 {
+margin: 30px;
+}
+/*-----------漸層背景--------------*/
+/* bgg是背景漸層，bggR"L"和bggR"D"是紅色亮色漸層和紅色暗色漸層*/
+.bggRL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmJmM2Y0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzMjMyIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #fbf3f4), color-stop(100%, #c83232));
+background-image: -webkit-linear-gradient(top, #fbf3f4 0%, #c83232 100%);
+background-image: -moz-linear-gradient(top, #fbf3f4 0%, #c83232 100%);
+background-image: -ms-linear-gradient(top, #fbf3f4 0%, #c83232 100%);
+background-image: -o-linear-gradient(top, #fbf3f4 0%, #c83232 100%);
+background-image: linear-gradient(to bottom, #fbf3f4 0%, #c83232 100%);
+}
+.bggRD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjM1ODVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTkxODE4Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #f3585e), color-stop(100%, #591818));
+background-image: -webkit-linear-gradient(top, #f3585e 0%, #591818 100%);
+background-image: -moz-linear-gradient(top, #f3585e 0%, #591818 100%);
+background-image: -ms-linear-gradient(top, #f3585e 0%, #591818 100%);
+background-image: -o-linear-gradient(top, #f3585e 0%, #591818 100%);
+background-image: linear-gradient(to bottom, #f3585e 0%, #591818 100%);
+}
+.bggGL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZDdmOWRjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjVhNTIyIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #d7f9dc), color-stop(100%, #25a522));
+background-image: -webkit-linear-gradient(top, #d7f9dc 0%, #25a522 100%);
+background-image: -moz-linear-gradient(top, #d7f9dc 0%, #25a522 100%);
+background-image: -ms-linear-gradient(top, #d7f9dc 0%, #25a522 100%);
+background-image: -o-linear-gradient(top, #d7f9dc 0%, #25a522 100%);
+background-image: linear-gradient(to bottom, #d7f9dc 0%, #25a522 100%);
+}
+.bggGD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNThmMzZlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWE1OTE4Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #58f36e), color-stop(100%, #1a5918));
+background-image: -webkit-linear-gradient(top, #58f36e 0%, #1a5918 100%);
+background-image: -moz-linear-gradient(top, #58f36e 0%, #1a5918 100%);
+background-image: -ms-linear-gradient(top, #58f36e 0%, #1a5918 100%);
+background-image: -o-linear-gradient(top, #58f36e 0%, #1a5918 100%);
+background-image: linear-gradient(to bottom, #58f36e 0%, #1a5918 100%);
+}
+.bggCL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZDdmNWY5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjI4N2E1Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #d7f5f9), color-stop(100%, #2287a5));
+background-image: -webkit-linear-gradient(top, #d7f5f9 0%, #2287a5 100%);
+background-image: -moz-linear-gradient(top, #d7f5f9 0%, #2287a5 100%);
+background-image: -ms-linear-gradient(top, #d7f5f9 0%, #2287a5 100%);
+background-image: -o-linear-gradient(top, #d7f5f9 0%, #2287a5 100%);
+background-image: linear-gradient(to bottom, #d7f5f9 0%, #2287a5 100%);
+}
+.bggCD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNTFjYmRiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGQ1MDYzIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #51cbdb), color-stop(100%, #0d5063));
+background-image: -webkit-linear-gradient(top, #51cbdb 0%, #0d5063 100%);
+background-image: -moz-linear-gradient(top, #51cbdb 0%, #0d5063 100%);
+background-image: -ms-linear-gradient(top, #51cbdb 0%, #0d5063 100%);
+background-image: -o-linear-gradient(top, #51cbdb 0%, #0d5063 100%);
+background-image: linear-gradient(to bottom, #51cbdb 0%, #0d5063 100%);
+}
+.bggBL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmVjOWYzIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGI2MGUyIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #bec9f3), color-stop(100%, #4b60e2));
+background-image: -webkit-linear-gradient(top, #bec9f3 0%, #4b60e2 100%);
+background-image: -moz-linear-gradient(top, #bec9f3 0%, #4b60e2 100%);
+background-image: -ms-linear-gradient(top, #bec9f3 0%, #4b60e2 100%);
+background-image: -o-linear-gradient(top, #bec9f3 0%, #4b60e2 100%);
+background-image: linear-gradient(to bottom, #bec9f3 0%, #4b60e2 100%);
+}
+.bggBD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNzE4ZmY0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGQxOTYzIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #718ff4), color-stop(100%, #0d1963));
+background-image: -webkit-linear-gradient(top, #718ff4 0%, #0d1963 100%);
+background-image: -moz-linear-gradient(top, #718ff4 0%, #0d1963 100%);
+background-image: -ms-linear-gradient(top, #718ff4 0%, #0d1963 100%);
+background-image: -o-linear-gradient(top, #718ff4 0%, #0d1963 100%);
+background-image: linear-gradient(to bottom, #718ff4 0%, #0d1963 100%);
+}
+.bggML {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjNiZWVmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTI0YmRmIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #f3beef), color-stop(100%, #e24bdf));
+background-image: -webkit-linear-gradient(top, #f3beef 0%, #e24bdf 100%);
+background-image: -moz-linear-gradient(top, #f3beef 0%, #e24bdf 100%);
+background-image: -ms-linear-gradient(top, #f3beef 0%, #e24bdf 100%);
+background-image: -o-linear-gradient(top, #f3beef 0%, #e24bdf 100%);
+background-image: linear-gradient(to bottom, #f3beef 0%, #e24bdf 100%);
+}
+.bggMD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZGIzZGQxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjYxNTY0Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #db3dd1), color-stop(100%, #661564));
+background-image: -webkit-linear-gradient(top, #db3dd1 0%, #661564 100%);
+background-image: -moz-linear-gradient(top, #db3dd1 0%, #661564 100%);
+background-image: -ms-linear-gradient(top, #db3dd1 0%, #661564 100%);
+background-image: -o-linear-gradient(top, #db3dd1 0%, #661564 100%);
+background-image: linear-gradient(to bottom, #db3dd1 0%, #661564 100%);
+}
+.bggYL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZGJkYTNkIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjY2MzE1Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #dbda3d), color-stop(100%, #666315));
+background-image: -webkit-linear-gradient(top, #dbda3d 0%, #666315 100%);
+background-image: -moz-linear-gradient(top, #dbda3d 0%, #666315 100%);
+background-image: -ms-linear-gradient(top, #dbda3d 0%, #666315 100%);
+background-image: -o-linear-gradient(top, #dbda3d 0%, #666315 100%);
+background-image: linear-gradient(to bottom, #dbda3d 0%, #666315 100%);
+}
+.bggYD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjVmNGMyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTRkZDNmIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #f5f4c2), color-stop(100%, #e4dd3f));
+background-image: -webkit-linear-gradient(top, #f5f4c2 0%, #e4dd3f 100%);
+background-image: -moz-linear-gradient(top, #f5f4c2 0%, #e4dd3f 100%);
+background-image: -ms-linear-gradient(top, #f5f4c2 0%, #e4dd3f 100%);
+background-image: -o-linear-gradient(top, #f5f4c2 0%, #e4dd3f 100%);
+background-image: linear-gradient(to bottom, #f5f4c2 0%, #e4dd3f 100%);
+}
+.bggKL {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZDRkNGQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOTE5MTkxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #d4d4d4), color-stop(100%, #919191));
+background-image: -webkit-linear-gradient(top, #d4d4d4 0%, #919191 100%);
+background-image: -moz-linear-gradient(top, #d4d4d4 0%, #919191 100%);
+background-image: -ms-linear-gradient(top, #d4d4d4 0%, #919191 100%);
+background-image: -o-linear-gradient(top, #d4d4d4 0%, #919191 100%);
+background-image: linear-gradient(to bottom, #d4d4d4 0%, #919191 100%);
+}
+.bggKD {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGY4ZjhmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzgzODM4Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #8f8f8f), color-stop(100%, #383838));
+background-image: -webkit-linear-gradient(top, #8f8f8f 0%, #383838 100%);
+background-image: -moz-linear-gradient(top, #8f8f8f 0%, #383838 100%);
+background-image: -ms-linear-gradient(top, #8f8f8f 0%, #383838 100%);
+background-image: -o-linear-gradient(top, #8f8f8f 0%, #383838 100%);
+background-image: linear-gradient(to bottom, #8f8f8f 0%, #383838 100%);
+}
+/*--------線粗顏色位置--------*/
+.borLW1{
+border-left:#FFF 1px solid
+}
+.borLK1{
+border-left:#000 1px solid
+}
+.borRW1{
+border-right:#FFF 1px solid
+}
+.borRK1{
+border-right:#000 1px solid
+}
+.borW1{
+border:#FFF 1px solid
+}
+.borK1{
+border:#000 1px solid
+}
+.borTW1{
+border-top:#FFF 1px solid
+}
+.borBW1{
+border-bottom:#FFF 1px solid
+}
+.borTK1{
+border-top:#000 1px solid
+}
+.borBK1{
+border-bottom:#000 1px solid
+}
+.borLK2{
+border-left:#000 2px solid
+}
+.borRW2{
+border-right:#FFF 2px solid
+}
+.borRK2{
+border-right:#000 2px solid
+}
+.borW2{
+border:#FFF 2px solid
+}
+.borK2{
+border:#000 2px solid
+}
+.borTW2{
+border-top:#FFF 2px solid
+}
+.borBW2{
+border-bottom:#FFF 2px solid
+}
+.borLW3{
+border-left:#FFF 3px solid
+}
+.borLK3{
+border-left:#000 3px solid
+}
+.borRW3{
+border-right:#FFF 3px solid
+}
+.borRK3{
+border-right:#000 3px solid
+}
+.borW3{
+border:#FFF 3px solid
+}
+.borK3{
+border:#000 3px solid
+}
+.borTW3{
+border-top:#FFF 3px solid
+}
+.borBW3{
+border-bottom:#FFF 3px solid
+}
+.borLW5{
+border-left:#FFF 5px solid
+}
+.borLK5{
+border-left:#000 5px solid
+}
+.borRW5{
+border-right:#FFF 5px solid
+}
+.borRK5{
+border-right:#000 5px solid
+}
+.borW5{
+border:#FFF 5px solid
+}
+.borK5{
+border:#000 5px solid
+}
+.borTW5{
+border-top:#FFF 5px solid
+}
+.borBW5{
+border-bottom:#FFF 5px solid
+}
+.borLW10{
+border-left:#FFF 10px solid
+}
+.borLK10{
+border-left:#000 10px solid
+}
+.borRW10{
+border-right:#FFF 10px solid
+}
+.borRK10{
+border-right:#000 10px solid
+}
+.borW10{
+border:#FFF 10px solid
+}
+.borK10{
+border:#000 10px solid
+}
+.borTW10{
+border-top:#FFF 10px solid
+}
+.borBW10{
+border-bottom:#FFF 10px solid
+}
+/*文字對其*/
+.faL {
+	text-align: left;
+}
+.faC {
+	text-align: center;
+}
+.faR {
+	text-align: right;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>	
+	<ph id="advanced">
+		<en>Advanced / Experiments</en>
+		<zh>Advanced / Experiments</zh>
+	</ph>
+	<ph id="construction">
+		<en>Construction...</en>
+		<zh>施工中</zh>
+	</ph>	
+</phrases>

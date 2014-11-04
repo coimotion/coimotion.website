@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="paramsErr">
+		<en>There was a problem with your login.</en>
+		<zh>登入資訊錯誤</zh>
+	</ph>
+	<ph id="loginFail">
+		<en>login failure：You may not register yet. Or check your user ID and password and try again.</en>
+		<zh>登入無效：您可能尚未註冊，或是帳號密碼可能輸入錯誤。請重試一次。</zh>
+	</ph>
+	<ph id="loginFailPS">
+		<en>Attention: For better performance and local relevance, developers are encouraged to use the COIMOTION servers of their regions. If you have an account with www.coimotion.com for North America, you have to register a new one with tw.coimotion.com for Asia.</en>
+		<zh>請注意：為提供最佳連線速度，COIMOTION台灣版與國際版網站採用不同伺服器，若您已在台灣版官網(tw.coimotion.com)註冊，進入國際版官網(www.coimotion.com)仍需重新註冊。</zh>
+	</ph>
+	<ph id="mail">
+		<en>E-mail</en>
+		<zh>電子郵件</zh>
+	</ph>		
+	<ph id="pwd">
+		<en>Password</en>
+		<zh>輸入密碼</zh>
+	</ph>
+	<ph id="LogIn">
+		<en>Log In</en>
+		<zh>登入</zh>
+	</ph>	
+	<ph id="hi">
+		<en>How are you! </en>
+		<zh>您好! </zh>
+	</ph>
+	<ph id="backdoor">
+		<en>Into Backdoor</en>
+		<zh>進入後台</zh>
+	</ph>
+</phrases>

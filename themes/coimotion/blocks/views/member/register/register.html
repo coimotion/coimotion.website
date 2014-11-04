@@ -1,0 +1,50 @@
+<!-- 表單開始 -->
+<div class="form-horizontal paT20">
+	<!-- Email -->
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="text" class="form-control" name="accName" placeholder="<%= ph.mail %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusFname();">
+		</div>
+	</div>
+	<!-- name -->
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="text" class="form-control" name="fname" placeholder="<%= ph.name %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusPw();">
+		</div>
+	</div>
+	<!-- Password -->
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="password" class="form-control" name="passwd" placeholder="<%= ph.pwd %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusPw2();">
+		</div>
+	</div>
+	<!-- Review Password -->
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="password" class="form-control" name="passwd2" placeholder="<%= ph.pwd2 %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusOrg();">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="text" class="optional form-control" id="orgCode" name="orgCode" placeholder="<%= ph.team %>" onchange="$(this).removeClass('active'); if($(this).empty().val())$(this).addClass('active');" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusCa();">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-md-7 maLR15">
+			<input type="text" class="optional form-control" id="caCode" name="caCode" placeholder="<%= ph.code %>" onchange="$(this).removeClass('active'); if($(this).empty().val())$(this).addClass('active');" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.doJoin();">
+		</div>
+	</div>
+	<!-- button -->
+	<div class="form-group maT30">
+		<div class="col-md-7 fcC6 maLR15">
+			<button class="btn btn-warning btn-block btn-lg regBtn" onclick="<%= ctrl %>.doJoin();"><strong><%= ph.register %></strong></button>
+		</div>
+	</div>
+	<!-- talk -->
+	<div class="form-group maT15">
+		<div class="col-md-7 fcC6 maLR15">
+			<a href="/coimotion/forum" class="btn btn-green btn-block btn-lg regBtn"><strong><%= ph.forum %></strong></a>
+		</div>
+	</div>
+</div>
+<!-- 表單結束 -->

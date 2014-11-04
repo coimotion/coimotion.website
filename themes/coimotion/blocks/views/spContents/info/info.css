@@ -1,0 +1,19 @@
+/*開鎖*/
+.stop{
+  margin:45px 0 0 30px;
+}
+.stop a i{
+  color: #C0C0C0;
+  font-size: 22px;
+  text-decoration: none;
+}
+/*頁籤文字*/
+.tabsC li a{
+    letter-spacing: 0.25em;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.checkbox{
+  vertical-align: middle;
+}

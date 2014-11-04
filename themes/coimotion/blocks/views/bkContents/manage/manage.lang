@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="custcontents">
+		<en>My Own</en>
+		<zh>自製內容</zh>
+	</ph>
+	<ph id="free">
+		<en>Public</en>
+		<zh>自由使用</zh>
+	</ph>
+	<ph id="income">
+		<en>Authorized</en>
+		<zh>授權使用</zh>
+	</ph>
+	<ph id="all">
+		<en>All</en>
+		<zh>全部</zh>
+	</ph>
+	<ph id="select">
+		<en>Selected</en>
+		<zh>已選用</zh>
+	</ph>
+
+	<ph id="confirm">
+		<en>Confirm</en>
+		<zh>確認</zh>
+	</ph>
+	<ph id="nochosen">
+		<en>Not chosen</en>
+		<zh>尚未選用</zh>
+	</ph>
+	<ph id="selected">
+		<en>Has selected</en>
+		<zh>已選用</zh>
+	</ph>
+	<ph id="none">
+		<en>Was rejected sponsor</en>
+		<zh>被贊助者拒絕</zh>
+	</ph>
+	<ph id="invitation">
+		<en>Invitation</en>
+		<zh>邀請中</zh>
+	</ph>
+	<ph id="wait">
+		<en>Waiting</en>
+		<zh>等待中</zh>
+	</ph>
+	<ph id="note">
+		<en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+		<zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+	</ph>
+	<ph id="js_SELECT_APP">
+	    <en>Please select your App first.</en>
+	    <zh>請先選擇App。</zh>
+	</ph>
+</phrases>

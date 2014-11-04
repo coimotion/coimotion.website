@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="now">
+		<en>Endpoint</en>
+		<zh>現在的 API 路徑</zh>
+	</ph>
+	<ph id="app">
+		<en>Please select App</en>
+		<zh>請選擇App</zh>
+	</ph>
+	<ph id="rs">
+		<en>Select resource</en>
+		<zh>請選擇資源</zh>
+	</ph>
+	<ph id="title">
+		<en>API path</en>
+		<zh>API 路徑</zh>
+	</ph>
+	<ph id="note">
+		<en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+		<zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+	</ph>	
+</phrases>

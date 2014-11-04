@@ -1,0 +1,19 @@
+.plus i{
+	font-size: 0.8em;
+}
+.plus a span {
+	text-indent: 0;
+}
+
+/*表格*/
+tbody > tr > td > a {
+  color: #2a806e;
+  font-size: 16px;
+  display: block;  
+}
+tbody > tr > td > a:hover{
+  color: #18AB8D !important;
+}
+tbody > tr >td > h3 {
+  color: #2a806e;
+}

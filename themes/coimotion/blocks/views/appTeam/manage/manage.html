@@ -1,0 +1,39 @@
+<!-- 右側內容開始 -->
+<div class="matter">
+	<div class="row plustitle">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 plus">
+			<!-- 新增按鈕列開始 -->
+			<a href="#" class="isManage" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAddMem();">
+				<i class="fa fa-plus"></i><span><%= ph.add %></span>
+			</a>
+			<!-- 新增按鈕列結束 -->
+			<!-- 修改按鈕列開始 -->
+			<a href="#" class="isManage maL20" onclick="<%=ctrl%>.update();">
+				<i class="fa fa-pencil"></i><span><%= ph.update %></span>
+			</a>
+			<!-- 修改按鈕列結束 -->
+		</div>
+	</div>
+
+	<div class="widget">
+ 		<div class="widget-content">
+ 			<!--info開始-->
+			<div class="teamInfo"></div>
+			<!--memList開始-->
+			<div class="teamMemList"></div>
+		</div>
+		<!-- widget-content結束 -->
+	</div>
+	<!-- widget結束 -->
+</div>
+<!-- matter結束 -->
+
+
+<!-- 新增 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="addMember modal-content">
+		</div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->

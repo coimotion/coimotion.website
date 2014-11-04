@@ -1,0 +1,22 @@
+.from {
+  min-width: 160px;
+  color: #fff;
+  background: #1bab8e;
+}
+.from a {
+  color: #fff!important;
+  display: block;
+  padding: 10px 0px 10px 20px !important;
+}
+.from a:hover{
+  color: #000 !important;
+  /*background: #eee;*/
+  padding: 10px 0px 10px 20px !important;
+  cursor: pointer; 
+}
+.from a > i {
+  margin-left: 2px;
+  color: #fff;
+  font-size: 0.4em;
+}
+

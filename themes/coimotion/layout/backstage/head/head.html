@@ -1,0 +1,4 @@
+<nav class="navbar navbar-fixed-top nav-default" role="navigation">
+	<% block('/bkIndex/header', {"id":bi.uri.split('/')[3], "knownAs":"bkHeader"}); %>
+    <% block('/menu/bkMenu', {"id":bi.uri.split('/').reverse()[0], "knownAs":"bkMenu"}); %>
+</nav>

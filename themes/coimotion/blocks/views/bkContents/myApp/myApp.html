@@ -1,0 +1,65 @@
+<!-- 我的APP-下拉式選單開始 -->
+<% 	var  id = bi.uri.split('/')[3]; %>
+<div class="dropdown app col-lg-12 col-md-12 col-sm-6 col-sm-offset-6 col-xs-7 col-sm-offset-5 pa ma">
+	<a id="dLabel" role="button" data-toggle="dropdown" class="btn <% if (!bi.query.caID) { %>highlight<% } %>" data-target="#" href="/page.html">
+		<%  var caID = bi.query.caID;
+
+			if (caID) {
+				value.list.forEach(function(item) {
+					if(caID == item.caID) {
+						html+= "<span caID="+caID+" caCode="+item.caCode+">"+item.title+"</span>";
+					}
+				});
+			} else {
+		%>
+			<%= ph.myApp %>
+		<% } %>
+		<i class="fa fa-chevron-down fs05 fcW maL5"></i>
+		<span class="label label-info"></span>
+	</a>
+	<ul class="dropdown-menu multi-level appmenu" role="menu" aria-labelledby="dropdownMenu">
+		<% if (value) {
+			if (value.list.length > 0) {
+				value.list.forEach(function(item) {
+		%>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="javascript:<%=ctrl%>.selApp('<%= item.caID; %>', '<%= item.caCode; %>')">
+					<%= item.title %>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<div class="iconstyle">
+							<i class="fa fa-mobile-phone"></i>
+						</div>
+					</li>
+					<li><a tabindex="-1" href="#" onclick="<%=ctrl%>.showInfo('<%= item.caID %>');"><%=item.caCode%></a></li>
+					<li class="divider"></li>
+					<li><a href="/app/manage/<%= id %>?caID=<%= item.caID %>&title=<%= item.title %>" id="<%=id%>"><%= ph.module %></a></li>
+					<!-- <li><a href="/bkContents/manage/<%= id %>?caID=<%= item.caID %>&used=1" target="AppUsedWApp">內容集</a></li> -->
+				</ul>
+			</li>
+		<%
+						});
+					} else {
+		%>
+			<a href="/bkIndex/menu"><li><%= ph.app %></li></a>
+		<%
+				}
+			}
+		%>
+		<li class="divider"></li>
+
+		<% if (id) { %>
+		<li><a href="/app/list/<%=id%>" style="letter-spacing: 0;"><%= ph.manage %></a></li>
+		<% } %>
+	</ul>
+</div>
+<!-- 我的APP-下拉式選單結束 -->
+
+<!-- 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="appInfo modal-content"></div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 彈跳視窗結束 -->

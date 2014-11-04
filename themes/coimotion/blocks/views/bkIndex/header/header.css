@@ -1,0 +1,31 @@
+.dropdown a .caret{
+  border-top-color: #999;
+  border-bottom-color: #999;
+}
+.dropdown a:hover .caret,
+.dropdown a:focus .caret{
+  border-top-color: #555;
+  border-bottom-color: #555;
+}
+.dropdown a,
+.dropdown .dropdown-menu a,
+.teamMenu li a {
+  font-size: 16px;
+  color: #666;
+}
+.dropdown .dropdown-menu a{
+  line-height: 26px;
+  display:block;
+}
+/*右邊會員設定-下拉式選單*/
+.teamMenu li a{
+  padding-left:20px;
+  line-height: 32px;
+  display:block;
+}
+.teamMenu li a:hover{
+  color:#000;
+}
+.teamMenu{
+  width:180px;
+}

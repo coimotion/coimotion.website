@@ -1,0 +1,41 @@
+<!-- Header 固定上方列開始 -->
+<nav class="navbar navbar-fixed-top nav-default" role="navigation" style="border-bottom: 3px solid #ddd;">
+	<div class="_ERRORMSG" style="display:none;"
+	paramsErr="<%= ph.paramsErr %>" loginFail="<%= ph.loginFail %>" loginFailPS="<%= ph.loginFailPS %>"></div>
+	
+	<!-- 左邊Logo 開始 -->
+	<div class="alignL">
+		<a class="navbar-brand" href="/">
+			<img src="../../wcoim/backstage/logo.png" alt="logo"/><p class="backdoor"><!--開發者後台--></p>
+		</a>
+	</div>
+	<!-- 左邊Logo 結束-->
+	<!-- 右邊登入表單 開始 -->
+	<div class="alignR notMember" style="display:none;">
+		<div class="form-group col-md-5">
+			<label class="col-md-12 control-label"><%= ph.mail %></label>
+			<div class="col-md-12">
+				<input type="mail" class="form-control" id="mail" name="email" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusPw();">
+			</div>
+		</div>
+		<div class="form-group col-md-5">
+        	<label class="col-md-12 control-label"><%= ph.pwd %></label>
+        	<div class="col-md-12">
+				<input type="password" class="form-control" id="password" name="loginPasswd" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.doLogin();">
+			</div>
+		</div>
+		<div class="form-group col-md-2">
+        	<div style="margin: 25px 0 0 15px;">
+				<button class="btn btn-default" onclick="<%=ctrl%>.doLogin();"><%= ph.LogIn %></button>
+			</div>
+		</div>
+	</div>
+	<div class="alignR isMember" style="display:none;" orgID="">
+		<label><%= ph.hi %><span class="dspName"></span>
+			<a href="" class="btn btn-default"><%= ph.backdoor %></a>
+		</label>
+	</div>
+	<!-- 右邊登入表單 結束 -->
+	<div class="clear"></div>
+</nav>
+<!-- Header 固定上方列結束 -->

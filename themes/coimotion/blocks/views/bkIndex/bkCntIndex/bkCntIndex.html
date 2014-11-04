@@ -1,0 +1,41 @@
+<%
+  var pn = bi.query._pn;
+  var orgID = bi.query.orgID;
+%>
+<%
+  var listHref = "/bkContents/detail";
+  if (orgID && orgID != 'undefined') {
+    listHref += '/'+orgID;
+  }
+%>
+
+<% if(value && value.list.length > 0) { %>
+<table class="table table-hover tableChange">
+  <% value.list.forEach(function(item) { %>
+    <%
+      var  time = new Date(item.mdTime),
+              month = (time.getMonth() + 1).toString(),
+              day = time.getDate().toString(),
+                     hf = "appCode="+item.appCode,
+                     orgID = bi.uri.split('/')[3];
+                  month = (month.length > 1) ? month : "0"+month;
+                  day = (day.length > 1) ? day : "0"+day;
+                  strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+
+                %>
+  <tr onclick="document.location='<%=listHref%>?<%=hf%>'">
+    <td class="wc30"><%= item.title %></td>
+    <td class="wc70"><%= item.descTx%></td>
+  </tr>
+  <% }); %>
+</table>
+<% } %>
+
+<!-- 左右換頁控制鈕 -->
+<!-- <div class="row text-center maT">
+  <div class="col-md-offset-3 col-md-6">
+    <a href="#" onclick="<%=ctrl%>.prev(<%=pn%>);"><span class="icon-angle-left arrow"></span></a>
+    <a href="#" onclick="<%=ctrl%>.next(<%=pn%>);"><span class="icon-angle-right arrow"></span></a>
+  </div>
+</div> -->
+<!-- 左右換頁控結束 -->

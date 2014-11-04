@@ -1,0 +1,98 @@
+<!-- 個人資訊>>我的團隊 -->
+<div class="matter">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="widget">
+				<!-- Widget title -->
+				<div class="widget-head">
+					<span><%= ph.myTeam %></span>
+				</div>	
+				<!-- Widget-content -->
+				<div class="widget-content">
+					<!-- 第一列開始 -->
+						<% if (value && value.list.length > 0) { %>
+
+							<table class="table table-bordered table-hover">
+								<% value.list.forEach(function(item) { %>
+									<% var status = item.status; %>
+									<% if (status >= 0) { %>
+										<tr>
+											<td class="col-lg-1 col-md-2 col-sm-2 col-xs-3 text-center">
+											<% if (item.orgIconURI) { %>
+												<img src="/images/<%=item.ngID%>?path=<%=item.orgIconURI%>&maxw=100&maxh=110"/>
+											<% } else { %>
+				                              	<div class="teamiconstyle">
+				                                  	<div class="teamiconFace">
+				                                      	<i class="fa fa-users"></i> 
+													</div>
+												</div>
+											<% } %>
+											</td>
+											<td class="col-lg-10 col-md-8 col-sm-8 col-xs-6">
+												<h3 class="paL15"><%= ph.teamName %>：<%= item.orgName%></h3>
+												<h3 class="paL15"><%= ph.teamMembers %>：
+													<span class="paT15 fs08 memList<%=item.orgID%>">
+													<%  var memList = item.memList;
+													if(memList) {
+														html+= memList[0].dspName;
+														for (var i=1; i<memList.length; i++)
+															html+= '、'+memList[i].dspName;
+														}
+													 	%>
+											    	</span>
+												</h3>
+												<h5>
+													<a class="pull-right fancybox-effects-c fs1" href="#appTeamDetail<%=item.orgID%>" onclick="<%=ctrl%>.showTeamDetail('<%=item.orgID%>');"><%= ph.more %>
+														<i class="fa fa-angle-double-right"></i>
+													</a>
+												</h5>
+											</td>
+											<td class="col-lg-1 col-md-2 col-sm-2 col-xs-3 text-center" style="vertical-align:middle;">
+												<%	if (status == 0) { %>
+													<button type="button" class="btn btn-danger col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR maT10" onclick="<%=ctrl%>.quitTeam('<%=item.orgID%>','<%= item.orgName%>','<%=item.orgCode%>');"><%= ph.quit %></button>
+													<button type="button" class="btn btn-green col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR maT10" onclick="<%=ctrl%>.teamManage('<%=item.orgID%>');"><%= ph.manage %></button>
+												<% } else if (status == 1){ %>
+													<p class="va center-block"><%= ph.invite %></p>
+													<button type="button" class="btn btn-primary col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR maT10" onclick="<%=ctrl%>.joinTeam('<%=item.orgID%>',1);"><%= ph.join %></button>
+													<button type="button" class="btn btn-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs1 btnLR maT10" onclick="<%=ctrl%>.joinTeam('<%=item.orgID%>',0, '<%= item.orgName%>');"><%= ph.reject %></button>
+												<% } else if (item.status == 2){ %>
+													<p class="va center-block"><%= ph.reply %></p>
+												<% } else if (item.status == -1){ %>
+													<!-- <button type="button" class="btn btn-primary wc45 text-center fs1 btnLR" onclick="<%=ctrl%>.addTeam('<%=item.orgID%>',2);">申請加入</button> -->
+												<% } %>
+
+												<!-- <a class="fancybox-effects-c fs1" href="#appTeamDetail<%=item.orgID%>" onclick="<%=ctrl%>.showTeamDetail('<%=item.orgID%>');">更多團隊資訊
+													<i class="icon-double-angle-right"></i>
+												</a> -->
+												<div style="display:none;" class="fancybox-hidden<%=item.orgID%>">
+													<div id="appTeamDetail<%=item.orgID%>"></div>
+												</div>
+											</td>
+										</tr>
+									<% } %>
+								<% }); %>
+					        </table>
+
+					<% } else { %>
+						<div class="row text-center">
+					    	<span><%= ph.status %></span>
+					    </div>
+					<% } %>
+
+				</div>
+				<!-- widget-content結束 -->
+			</div>
+			<!-- widget結束 -->
+		</div>
+		<!-- col 結束-->	
+	</div>
+	<!-- row 結束-->
+</div>
+<!-- matter 結束-->
+
+<!-- 切換團隊 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="onTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="onTeam modal-content inner"></div>
+	</div>
+</div>

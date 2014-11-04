@@ -1,16 +1,16 @@
 {
-    
-    "127.0.0.1": {
-        "title": "coimotoin",
-        "validFrom": "",
-        "validTo": "",
-        "locale": "zh",
-        "home": "/index",
-        "theme": "play",
-        "appKeys": {
-            "wcoim": "",
-            "wdSite": "0270ba59-f545-f757-39ac-c77ae52af28a"
-        },
-        "caCode": "wdSite"
+
+    "127.0.0.1": {       
+       "title": "The official API website",
+       "validFrom": "",
+       "validTo":"",
+       "locale": "zh",
+       "home": "/coim/manage",
+       "theme": "coimotion",
+       "appKeys": {
+           "tryApp": "386d4e63-1044-c268-efd1-2de1b2e5b4e1",
+           "wcoim": ""
+       },
+       "caCode": "wcoim"
     }
 }

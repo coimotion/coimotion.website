@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="select">
+		<en>Please select a resource and functional elements.</en>
+		<zh>請選擇資源與功能元。</zh>
+	</ph>
+	<ph id="sample">
+		<en>Sample</en>
+		<zh>範例</zh>
+	</ph>	
+	<ph id="parameter">
+		<en>Input Parameters</en>
+		<zh>輸入參數</zh>
+	</ph>
+	<ph id="parName">
+		<en>Parameter name</en>
+		<zh>參數名稱</zh>
+	</ph>
+	<ph id="parTx">
+		<en>Parameter Description</en>
+		<zh>參數說明</zh>
+	</ph>
+	<ph id="return">
+		<en>Return value</en>
+		<zh>傳回值</zh>
+	</ph>
+	<ph id="var">
+		<en>Outgoing variables</en>
+		<zh>傳出變數</zh>
+	</ph>
+	<ph id="varTx">
+		<en>Variable Description</en>
+		<zh>變數說明</zh>
+	</ph>
+	<ph id="APIspec">
+		<en>API spec</en>
+		<zh>API規範</zh>
+	</ph>
+</phrases>

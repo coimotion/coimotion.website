@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="info">
+		<en>Information</en>
+		<zh>基本資料</zh>
+	</ph>
+	<ph id="password">
+		<en>Change Password</en>
+		<zh>修改密碼</zh>
+	</ph>
+</phrases>

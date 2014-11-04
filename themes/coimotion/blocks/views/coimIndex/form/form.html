@@ -1,0 +1,40 @@
+<div class="contentInner" id="content6">
+		<p class="conHeader">
+			<span>連絡我們</span>
+			<hr class="hr1">
+		</p>
+		<p class="conBody">
+			<form role="form" id="sendQA" name="sendQA" action="" enctype="multipart/form-data" method="POST" accept-charset="UTF-8">
+				<div class="formUp">
+					<div class="group">
+				    	<label>姓名</label>
+				    	<input type="name" placeholder="" name="name">
+				  	</div>
+					<div class="group">
+				    	<label>電子信箱</label>
+				    	<input type="email" placeholder="" name="email">
+				  	</div>
+				    <div class="group noM">
+				        <label>主旨</label>
+				        <input type="title" placeholder="" name="title">
+				    </div>
+				    <div class="clear"></div>
+				</div>
+				<div class="formContent">
+					<label>連絡內容</label>
+					<textarea rows="8" placeholder="" name="summary"></textarea>
+				</div>
+				<div class="formDown">
+					<a href="#" class="btn btn-info" onclick="<%=ctrl%>.send();">
+						<i class="fa fa-location-arrow"></i>送出
+					</a>
+				</div>
+			</form>
+		</p>
+		<p class="conBu">
+			<a href="#" id="backtop">
+				<i class="fa fa-chevron-circle-up fa-3x"></i>
+			</a>
+		</p>
+	</div>
+</div>

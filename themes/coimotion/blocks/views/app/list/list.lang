@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="title">
+		<en>App List</en>
+		<zh>App列表</zh>
+	</ph>
+	<ph id="note">
+		<en>Here shows all the Apps of your team. A mobile application, web application,  or website is regarded as an App. You can divide the mobile and web applications into different Apps, even if they ontained the same repository.
+		</en>
+		<zh>這裡會顯示團隊所有 App 的清單。一個行動應用、網路應用或是網站都會是一個 App。建議可以將行動和網路應用拆成不同的 App，即使它們引用了相同的內容集。
+		</zh>
+	</ph>
+	<ph id="caCode">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>	
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>	
+	<ph id="api">
+		<en>App Domain Name</en>
+		<zh>API網域名稱</zh>
+	</ph>
+    <ph id="reList">
+		<en>Repository List</en>
+		<zh>內容集清單</zh>
+	</ph>
+    <ph id="moduleList">
+		<en>Module List</en>
+		<zh>模組清單</zh>
+	</ph>
+    <ph id="module">
+		<en>Module</en>
+		<zh>模組管理</zh>
+	</ph>
+	<ph id="repository">
+		<en>Repository</en>
+		<zh>內容集</zh>
+	</ph>
+	<ph id="app">
+		<en>There is no any App</en>
+		<zh>尚無任何App</zh>
+	</ph>
+	<ph id="notMangerErr">
+		<en>You are not manager.</en>
+		<zh>團隊的管理者才能新增App</zh>
+	</ph>	
+</phrases>

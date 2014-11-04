@@ -1,0 +1,16 @@
+.region{
+  width: 90%;
+  /*margin:0px auto 10px;*/
+  padding:5px 15px 30px 0;
+  /*font-size: 15px;*/
+  line-height: 20px;
+}
+/*分隔線*/
+.borBG2{
+  border-bottom:#ccc 2px dotted;
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+  height:1px;
+  margin-bottom: 10px;
+}

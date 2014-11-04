@@ -1,0 +1,71 @@
+<!--主要內容開始 -->
+<div class="logincontent"> 
+	<div class="admin-form">      
+		<!-- 左開始 -->
+		<div class="col-md-3">
+			<!-- 左半部 -->
+			<div class="widgetleft"> 
+				<!-- key圖開始-->
+				<div class="key">
+					<img src="../../wcoim/backstage/key.png" alt="" class="img-responsive">
+				</div>
+				<!-- key圖結束-->
+				<!-- 標題開始-->
+				<h3>welcome to</h3>
+				<div class="widget-headlogin"><i class="icon-lock"></i> Login</div>
+				<!-- 標題結束-->	
+			</div>
+		</div>
+		<!-- 左結束 -->
+
+		<!-- 右開始 -->
+		<div class="col-md-9">
+			<!-- 三角形 -->
+			<div class="triangle"></div>
+			<!-- 右半部 -->
+			<div class="widgetright"> 
+			<!-- 表單開始 -->
+				<form class="form-horizontal">
+					<!-- Email -->
+					<div class="form-group">
+						<label class="control-label col-md-3 " for="inputEmail">Email</label>
+						<div class="col-md-9 ">
+							<input type="text" class="form-control" name="accName" id="inputEmail" placeholder="Email">
+						</div>
+					</div>
+					<!-- Password -->
+					<div class="form-group">
+						<label class="control-label col-md-3 " for="inputPassword">Password</label>
+						<div class="col-md-9 ">
+							<input type="password" class="form-control" name="passwd" id="inputPassword" placeholder="Password">
+						</div>
+					</div>
+					<!-- Remember me checkbox and sign in button -->
+					<div class="form-group">
+						<div class="col-md-9 col-md-offset-3">
+							<div class="checkbox">
+								<label><input type="checkbox">Remember me</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!-- 表單結束 -->
+				<!-- button -->
+				<div class="row">
+					<div class="col-md-9 col-md-offset-3  paL30">
+						<button class="btn btn-green wc30" onclick="<%=ctrl%>.doLogin();">Sign in</button>
+						<button type="reset" class="btn btn-white wc30" onclick="<%=ctrl%>.reset();">Reset</button>
+					</div>
+					<div class="col-md-9 col-md-offset-3 paT10 paL30">
+						<a href="#">Lost your password?</a>
+					</div>
+				</div>
+			</div> 
+			<!-- widget結束 -->               
+		</div>
+		<!-- 右結束 -->
+ 		<div class="clear"></div>
+ 	</div>
+ 	<!-- admin-form結束 -->
+</div>
+<!--logincontent主要內容結束 -->

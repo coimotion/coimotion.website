@@ -1,0 +1,71 @@
+/***********搜尋團隊 彈跳視窗************/
+/*表格去除線框*/
+.noBor{
+  border: none;
+}
+/*tr 的灰色上框線*/
+.b_line{
+  border-top: 1px #ddd solid;
+  display: inline-table;
+}
+/*第二層-灰底*/
+.searchStyle{
+  margin:5px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  background: #E4E6E1;
+  /*圓角*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");  
+  width: 100px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+}
+/*第三層-頭像位置_團隊*/
+.searchFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0;
+  position: absolute;
+  left:0px;
+  top:10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/*第三層-頭像位置_APP*/
+.searchApp{ 
+  color: #fff;
+  background: transparent;
+  padding: 0;
+  position: absolute;
+  left:0px;
+  top:-7px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/*第四層-頭像大小_團隊*/
+.searchFace i{
+  font-size:4.5em;
+  margin: 0px;
+}
+/*第四層-頭像大小_APP*/
+.searchApp i{
+  font-size:6.5em;
+  margin: 0px;
+}
+.tdC{
+  vertical-align:top;
+  padding: 10px 0 0 10px;
+}
+.tdR a{
+  display: inline-block;
+  margin-top: 50px;
+}

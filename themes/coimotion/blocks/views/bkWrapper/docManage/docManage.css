@@ -1,0 +1,88 @@
+.bkManage {
+  width:100%; 
+  padding: 1em 1em 1em 2em;   
+  /*padding: 0px 5em; 
+  margin-bottom: 5em;
+  margin-top: 5em;*/  
+}
+.section {
+  width:100%;  
+  border-bottom: #dae1e8 1px solid;
+  padding-bottom: 2em; 
+  margin-top: 1em;
+}
+.section:nth-child(2) {
+   margin-top: 3em;
+}
+.section:last-child {
+  border-bottom: none;
+}
+/*右側GitHub選單*/
+.github-nav {
+	opacity: 1;	
+	position: fixed;
+	right: 20px;
+	top: 60px;	
+	z-index: 9999;
+	-webkit-transition: right .3s;
+	-moz-transition: right .3s;
+	-ms-transition: right .3s;
+	-o-transition: right .3s;
+	transition: right .3s;
+}
+.github-nav a {
+	display: block;
+	color: #29a088;
+	text-decoration: none;
+	text-align: center;	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.github-nav a i {
+	font-size: 3em;
+	display: block;
+}
+.github-nav a .text {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 12px;
+	-webkit-transition: width .2s;
+	-moz-transition: width .2s;
+	-ms-transition: width .2s;
+	-o-transition: width .2s;
+	transition: width .2s;
+}
+.github-nav a:hover {
+	color: #14e5b8;
+}
+
+/******區塊共同設定******/
+a, a:hover {
+	text-decoration: none;
+}
+/*內距設定*/
+.maR {
+	/*margin-right: 2em;*/
+	text-align: center;
+	vertical-align: middle;
+}
+.maR:last-child {
+	margin-right: 0;
+}
+/*icon*/
+.maR img {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+}
+/*標題*/
+h3 {
+	margin: 1.5em auto;
+	color: #414f63;
+	font-weight: bold;
+	text-align: center;
+}

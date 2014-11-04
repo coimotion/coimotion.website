@@ -1,0 +1,32 @@
+ul{
+	margin: 0px;
+	
+	list-style-type: none;
+	padding: 0px;
+}
+
+ul li{
+	float: left;
+	text-align: center;
+	font-family: arial;
+	font-size: 13px;
+}
+
+.muStdUl ul li.text a{	
+	text-decoration: none;
+	display: block;
+
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px;
+  	color:#ffd700;
+}
+
+.muStdUl ul li.text a:hover{	
+	text-decoration: none;
+  	color:#FFF;
+}
+
+.muStdUl ul li.text:hover{
+	color:#000;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="overview">
+		<en>Overview</en>
+		<zh>總覽</zh>
+	</ph>
+	<ph id="core">
+		<en>Core documents</en>
+		<zh>核心技術文件</zh>
+	</ph>
+	<ph id="subtitleAb">
+		<en>Android</en>
+		<zh>Android</zh>
+	</ph>
+	<ph id="subtitleAs">
+		<en>Android(social)</en>
+		<zh>Android(社群)</zh>
+	</ph>	
+	<ph id="subtitleA1">
+		<en>簡介</en>
+		<zh>簡介</zh>
+	</ph>
+	<ph id="subtitleA2">
+		<en>安裝設定</en>
+		<zh>安裝設定</zh>
+	</ph>
+	<ph id="subtitleA3">
+		<en>使用說明</en>
+		<zh>使用說明</zh>
+	</ph>
+	<ph id="subtitleA4">
+		<en>Appendix</en>
+		<zh>附錄</zh>
+	</ph>
+	<ph id="subtitleIb">
+		<en>iOS</en>
+		<zh>iOS</zh>
+	</ph>
+	<ph id="subtitleIs">
+		<en>iOS(social)</en>
+		<zh>iOS(社群)</zh>
+	</ph>	
+	<ph id="subtitleI1">
+		<en>簡介</en>
+		<zh>簡介</zh>
+	</ph>
+	<ph id="subtitleI2">
+		<en>安裝設定</en>
+		<zh>安裝設定</zh>
+	</ph>
+	<ph id="subtitleI3">
+		<en>使用說明</en>
+		<zh>使用說明</zh>
+	</ph>
+	<ph id="subtitleI4">
+		<en>Appendix</en>
+		<zh>附錄</zh>
+	</ph>
+	<ph id="subtitleS1">
+		<en>簡介</en>
+		<zh>簡介</zh>
+	</ph>
+	<ph id="subtitleS2">
+		<en>安裝設定</en>
+		<zh>安裝設定</zh>
+	</ph>
+	<ph id="subtitleS3">
+		<en>使用說明</en>
+		<zh>使用說明</zh>
+	</ph>
+	<ph id="subtitleS4">
+		<en>Appendix</en>
+		<zh>附錄</zh>
+	</ph>
+	<ph id="subtitleP1">
+		<en>簡介</en>
+		<zh>簡介</zh>
+	</ph>
+	<ph id="subtitleP2">
+		<en>安裝設定</en>
+		<zh>安裝設定</zh>
+	</ph>
+	<ph id="subtitleP3">
+		<en>使用說明</en>
+		<zh>使用說明</zh>
+	</ph>
+	<ph id="subtitleP4">
+		<en>Appendix</en>
+		<zh>附錄</zh>
+	</ph>
+	<ph id="subtitleN1">
+		<en>簡介</en>
+		<zh>簡介</zh>
+	</ph>
+	<ph id="subtitleN2">
+		<en>安裝設定</en>
+		<zh>安裝設定</zh>
+	</ph>
+	<ph id="subtitleN3">
+		<en>使用說明</en>
+		<zh>使用說明</zh>
+	</ph>
+	<ph id="subtitleN4">
+		<en>Appendix</en>
+		<zh>附錄</zh>
+	</ph>
+	<ph id="blog">
+		<en>Blog</en>
+		<zh>部落格</zh>
+	</ph>
+	<ph id="blog1">
+		<en>Welcome to the coServ wiki</en>
+		<zh>Welcome to the coServ wiki</zh>
+	</ph>
+	<ph id="blog2">
+		<en>File Structure</en>
+		<zh>File Structure</zh>
+	</ph>
+	<ph id="blog3">
+		<en>Layout Scheme</en>
+		<zh>Layout Scheme</zh>
+	</ph>
+	<ph id="blog4">
+		<en>Coim_node</en>
+		<zh>Coim_node</zh>
+	</ph>
+</phrases>

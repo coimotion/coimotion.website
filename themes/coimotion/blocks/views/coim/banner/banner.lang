@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>		
+	<ph id="cover">
+		<en>cover</en>
+		<zh>介紹</zh>
+	</ph>
+	<ph id="apis">
+		<en>APIs</en>
+		<zh>完整方案</zh>
+	</ph>
+	<ph id="storage">
+		<en>storage</en>
+		<zh>智慧儲存</zh>
+	</ph>
+	<ph id="application">
+		<en>Application</en>
+		<zh>專業應用</zh>
+	</ph>
+	<ph id="safety">
+		<en>Data Safety</en>
+		<zh>系統安全</zh>
+	</ph>
+</phrases>

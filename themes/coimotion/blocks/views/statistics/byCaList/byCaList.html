@@ -1,0 +1,29 @@
+<% if (value && value.list.length > 0) {%>
+<table class="table table-striped table-bordered table-hover" caID="<%=bi.query.caID%>">
+	<tr>
+		<th class="wc20"><center><%=ph.date%></center></th>
+		<th class="wc20"><center><%=ph.repository%></center></th>
+		<th class="wc15"><center><%=ph.number%></center></th>
+		<th class="wc15"><center><%=ph.times%></center></th>
+	</tr>
+	<%  value.list.forEach(function(item) {	%>
+	<tr>
+		<td><center><%=item.date%></center></td>
+		<td class="wa" waCode="<%=item.webApp%>">
+			<center>
+				<a href="#" onclick="<%=ctrl%>.byWa('<%=item.webApp%>');">
+					<%=item.webApp%>
+				</a>
+			</center>
+		</td>
+		<td style="text-align:center;"><%=item.users%></td>
+		<td style="text-align:center;"><%=item.count%></td>
+	</tr>
+	<% }); %>
+</table>
+<% } else { %>
+<div class="noStat">
+	<p><img src="../../wcoim/backstage/noNumber.png"></p>
+	<p><%=ph.none%></p>
+</div>
+<% } %>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>	
+	<ph id="module">
+		<en>Module Overview</en>
+		<zh>功能總覽</zh>
+	</ph>
+	<ph id="bb">
+		<en>BnB APIs</en>
+		<zh>民宿管理</zh>
+	</ph>
+	<ph id="areabb">
+		<en>A must-have tool for bnb and hostel management applications. The APIs allow hosts to easily manage (to add, edit, categorize, etc.) a bnb introduction article. Moreover, advanced functions such as room type settings, price settings, coupon management are provided. By using BnB APIs, you can be the next Airbnb! (When selecting BnB APIs, remember to select Store APIs as well.)</en>
+		<zh>旅遊或民宿管理應用必備工具。模組提供了民宿店家的管理方法（新增、修改、分類等），可輕鬆的加入民宿介紹文章。此外還有房型管理、價格履歷設定、優惠券管理等各項進階功能。利用民宿管理功能，你也可以是下一個 AirBnB!（若要選用這個功能，也要同時選用「虛擬商店管理」功能）</zh>
+	</ph>	
+	<ph id="web">
+		<en>Web APIs</en>
+		<zh>網頁管理</zh>
+	</ph>
+	<ph id="areaWeb">
+		<en>Whether on webs or Apps, the attracting contents matter the most. HTML still is the first choice to do the real-time demonstration of the contents. The Web APIs help users to manage their own contents by the convenient web editor. What’s more, Web APIs provide advanced functions such as geolocation search, which make you to build more powerful applications!</en>
+		<zh>不論是 web 或是 App，吸引人的內容依然是必備條件，而快速有效顯示內容的方式仍是以網頁（HTML）為首選。「網頁管理模組」提供了完整的網頁管理功能，包含便捷的網頁編輯器讓一般使用者也可以管理自己的內容。「網頁管理」還提供了前所未見的地理位置查詢等進階功能，讓你打造比別人更強大的網路應用！</zh>
+	</ph>
+	<ph id="core">
+		<en>Core APIs</en>
+		<zh>核心功能</zh>
+	</ph>
+	<ph id="areaCore">
+		<en>Core APIs require the basic function for building an App, such as user register, login, and management.</en>
+		<zh>這個功能提供了建置一個 App 所需的各種必備功能，如使用者註冊、登入與管理等相關功能。</zh>
+	</ph>
+	<ph id="event">
+		<en>Event APIs</en>
+		<zh>活動管理</zh>
+	</ph>
+	<ph id="areaEvent">
+		<en>Races, meetups, concerts…our life are full of numerous diversified activities. You definitely need an App to manage all these events. If you are holding a campaign or activity. The powerful backend functions of Event APIs are ready for you to build an awesome App!</en>
+		<zh>慢跑活動、小型劇場、讀書會、演講...我們的生活充滿了各式各樣的活動，怎麼可以沒有 App 來管理呢？活動管理功能幫你考慮了宣傳或說明一項活動所需要的後台功能，讓你可以開發出很棒的 App，來幫自己或他人推廣活動。</zh>
+	</ph>
+	<ph id="virtual">
+		<en>Store APIs</en>
+		<zh>虛擬商店管理</zh>
+	</ph>
+	<ph id="areaVirtual">
+		<en>Attention! O2O and m-commerce is coming! It’s not an easy task to open an online store. You have to manage the product information, set the price, design coupons, and also make the beautiful DMs….No worries, store APIs help you nailed it!</en>
+		<zh>請注意！網路和行動商務來襲！！現在做生意還不懂得搞虛擬商店，就真的落伍了。可是要搞網路虛擬商店，要能做商品管理、價格履歷設定、甚至要有優惠券的設計，還有店家和產品的精美說明也是免不了的。做起來可不是一個小系統所能解決的。別擔心，就用「虛擬商店管理」輕鬆搞定吧！</zh>
+	</ph>
+	<ph id="fb">
+		<en>Social WebSite APIs</en>
+		<zh>社群網站管理</zh>
+	</ph>
+	<ph id="areaFb">
+		<en>With more and more user-friendly applications, social networking service is the basic requirement of Apps. However, it’s not easy to support FB and Google+ in your applications. The APIs provided by the major social websites are usually updated, let alone the tedious documents which seem to only offer for the top-tier geeks. Fortunately, you have SWS (Social WebSite) APIs to simplify the task to support FB or Google+, and make you Apps become “socialable”.</en>
+		<zh>隨著軟體應用越來越人性化，網路和社群幾乎快成同一件事了。現在開發程式如果沒有支援社群的功能，那可就大大遜色了。可是主要社群網站的API常常變動，文件又好像只打算寫給神人看的，要在程式中支援FB或Google+，真不是件容易的事。還好，SWS (Social WebSite) 管理大幅簡化了支援FB或Google+的工作，讓你的程式馬上變得很 social 哦！</zh>
+	</ph>
+	<ph id="book">
+		<en>Book APIs</en>
+		<zh>書目管理</zh>
+	</ph>
+	<ph id="areaBook">
+		<en>Book APIs provide various functions for you to easily manage the book information. No matter tens or thousands of books, just bring it on! What’s more, you might have the experience searching a book by keywords, but the search results usually disappoint you. Try Book APIs, the fuzzy string matching will give you surprisingly effective search results!</en>
+		<zh>Book API提供書籍資訊的管理維護以及讀者資訊回饋等豐富功能。你是否曾以關鍵字搜尋一本書，結果吐出一堆關聯性低的搜尋結果？Book API提供了比目前網路書店還精準的關鍵字搜尋功能，你也可以來打造強大的行動圖書館！</zh>
+	</ph>
+</phrases>

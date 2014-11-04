@@ -1,0 +1,56 @@
+<div class="_MSG" style="display: none;"
+	dismissMemberMsg="<%=ph.dismissMemberMsg%>"></div>
+	
+<!--memList開始-->
+<div class="control-label maTB10 fs14 fB"><%= ph.memList %>：</div>
+<div class="row">
+	<% if (value.list && value.list.length > 0) { %>
+	<% value.list.forEach(function(item) { %>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		<table class="table table-bordered table-hover">
+			<tr>
+				<td class="wc20 text-center">
+						<div class="memiconstyle">
+							<div class="memiconFace">
+								<i class="fa fa-user"></i>
+							</div>
+						</div>
+				</td>
+				<td class="wc80">
+					<div class="colH"><%= ph.accName %>：<%= item.dspName %></div>
+					<% var status = item.status; %>
+
+					<div class="colH"><%= ph.accPer %>：<%= item.position %></div>
+					<div class="colH">
+						<% if (status === 0) { %>
+						<a href="#" data-toggle="modal" data-target="#setPosition">
+							<button class="btn btn-green col-lg-5 col-md-12 col-sm-12 col-xs-5 isManage" onclick="<%=ctrl%>.showUpdPosition('<%= item.psnID %>','<%= item.position %>');"><%= ph.set %></button>
+						</a>
+							<% if (item.position != 'manager') { %>
+							<button class="btn btn-danger col-lg-5 col-md-12 col-sm-12 col-xs-5 isManage" onclick="<%=ctrl%>.delMember('<%= item.psnID %>','<%= item.dspName %>');"><%= ph.remove %></button>
+							<% } %>
+						<% } else if(status == 2) { %>
+						<div><%=ph.agree%></div>
+						<button class="btn btn-blue col-lg-5 col-md-12 col-sm-12 col-xs-5" onclick="<%=ctrl%>.cfmMember('<%= item.psnID %>',1);"><%= ph.yes %></button>
+						<button class="btn btn-default col-lg-5 col-md-12 col-sm-12 col-xs-5" onclick="<%=ctrl%>.cfmMember('<%= item.psnID %>',0);"><%= ph.no %></button>
+						<% } else if(status == 1) { %>
+						<div><%= ph.invitation %></div>
+						<% } %>
+					</div>
+				</td>				
+			</tr>
+		</table>
+	</div>
+	<% }); %>
+	<% } %>
+</div>
+<!--memList結束-->
+
+<!-- 設定權限  彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="setPosition">
+	<div class="modal-dialog">
+		<div class="updPosition modal-content">
+		</div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->

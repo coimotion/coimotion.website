@@ -1,0 +1,99 @@
+<div class="widget">
+	<!-- Widget title -->
+	<div class="widget-head">				
+		<div class="row plustitle">
+			<!-- 新增按鈕列開始 -->
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 pull-right plus">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAddOp();">
+					<i class="fa fa-plus"></i><span><%= ph.add %></span>
+				</a>
+			</div>
+			<!-- 新增按鈕列結束 -->
+			<!-- title -->
+			<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 text-left">
+			 <a href="/custContents/manage/<%=bi.query.orgID%>?appCode=<%=bi.query.appCode%>"><%=bi.query.appCode%></a>
+		    	::&nbsp;<%=bi.query.rs%><i class="fa fa-angle-double-right"></i><%=ph.opList%>
+			</div>		
+			<!-- title結束 -->			
+		</div>		
+		<div class="clearfix"></div>
+	</div>
+		
+	<!-- Widget content -->
+	<div class="opListParams widget-content" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" orgID="<%=bi.query.orgID%>" op="">		
+		<% if (value && value.list.length > 0)  { %>
+		<table class="table table-striped table-bordered table-hover">
+			<tr>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><center><%= ph.appCode %></center></th>
+				<th class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><center><%= ph.title %></center></th>
+				<th class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><center><%= ph.inherit %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><center><%= ph.del %></center></th>
+			</tr>
+			
+			<% value.list.forEach(function(item) { %>
+			<tr>
+				<td>
+					<% if(!item.inherit) { %>
+					<a href="#" data-toggle="modal" data-target="#myModal2" onclick="<%=ctrl%>.showOpInfo('<%=item.op%>');"><%= item.op %></a>
+					<% } else { %>
+					<%= item.op %>
+					<% } %>
+				</td>
+			    <td>
+			    	<% if(!item.inherit) { %>
+					<a href="#" data-toggle="modal" data-target="#myModal2" onclick="<%=ctrl%>.showOpInfo('<%=item.op%>');"><%= item.title %></a>
+					<% } else { %>
+					<%= item.title %>
+					<% } %>
+			    </td>
+			    <!-- <td><%= item.descTx %></td> -->
+			    <td><% if(item.parent) html+=item.parent; else if(item.inherit) html+=item.inherit; %></td>
+			    <td class="text-center">
+				    <% if(!item.inherit) { %>
+				    <button type="button" class="btn btn-danger btn-xs delBtn fs1" onclick="<%=ctrl%>.deleteOp('<%=item.op%>','<%= item.title %>');"><%= ph.del %></button>
+			    	<% } %>
+		    	</td>
+		    </tr>
+		    <% }); %>
+		</table>
+		<% } else {%>
+		<table class="table table-striped table-bordered table-hover">
+			<tr>
+				<th><center><%= ph.docTx %></center></th>
+			</tr>
+		</table>
+		<% } %>
+	</div>
+	<!-- widget-content結束 -->
+</div>
+<!-- widget結束 -->
+<!-- 提示字 
+<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12 col-xs-12 maT15">
+	<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+	<strong><%= ph.opList %></strong>
+		<%= ph.note %>
+</div>
+-->
+<!-- 新增功能元 的彈跳視窗開始 -->   
+<div class="modal fade modalstyle" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="addOp modal-content"></div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->
+
+<!-- 功能元管理 opInfo的彈跳視窗開始 -->   
+<div class="modal fade modalstyle" id="myModal2">
+	<div class="modal-dialog">
+		<div class="opInfoBody modal-content"></div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->
+    
+<!-- 變更→下拉式選單 opParentList的彈跳視窗開始 (功能元繼承選單)-->
+<div class="modal fade modalstyle" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="opParentList modal-content"></div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->

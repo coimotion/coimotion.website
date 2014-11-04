@@ -1,0 +1,47 @@
+<!-- 更多團隊資訊 彈跳視窗-->
+<div class="detailParams" orgID="<%=bi.uri.split('/').reverse()[0]%>"></div>
+	<div class="row teamList">
+		<!-- 左開始 -->
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 listL">
+			
+			<% if (value.orgIconURI) { %>
+			<img src="/images/<%=value.ngID%>?path=<%=value.orgIconURI%>&maxw=180&maxh=200"/>
+			<% } else { %>
+			<div class="iconstyle">
+				<div class="iconFace">
+					<i class="fa fa-group"></i>
+				</div>
+			</div>
+			<% } %>
+			
+		</div>
+		<!-- 左結束 -->
+        <!-- 右開始 -->
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 listR">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3><%= ph.orgName %>：<%=value.orgName%></h3>                                  
+            </div>
+            <% if(bi.query.memStr) { %>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3><%= ph.memStr %>：<%=bi.query.memStr;%></h3>
+            </div>
+            <% } %>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="float"><%= ph.docBody %>：</h3>
+                <section style="padding:15px 20px 0px 80px">
+                <%
+                	if (value.docBody)
+                		html+= value.docBody;
+                	else
+                		html+= " ";
+                %>       
+                </section>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom:5px;">
+                <h3><%= ph.works %>：</h3>
+                <div class="row teamAppList" style="margin:5px 0;"></div>
+          </div>    
+        </div>
+        <!-- 右結束 -->
+    </div>
+</div>

@@ -1,0 +1,110 @@
+<% 	
+	var  id = bi.uri.split('/').reverse()[0];
+	var  locale = bi.locale;
+	var  apiRoot = '.coimapi.tw';
+	if (locale == 'en')
+		apiRoot = '.coimapi.net';
+%>
+<div class="_MSG" style="display: none;"
+	notMangerErr="<%=ph.notMangerErr%>" ></div>
+	
+<div class="matter">
+	<!-- 新增按鈕列開始 -->
+	<div class="row plustitle">
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 pull-right plus">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAdd();"> -->
+			<a href="#" onclick="<%=ctrl%>.showAdd();">
+				<i class="fa fa-plus"></i><span><%= ph.add %></span>
+			</a>
+		</div>
+	</div>
+	<!-- 新增按鈕列結束 -->
+
+    <% if (value && value.list.length > 0)  { %>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">				
+				
+            <table class="table table-bordered table-hover">
+
+				<% value.list.forEach(function(item) { %>
+                    <tr>
+                        <td class="col-lg-1 col-md-1 col-sm-1 col-xs-2 text-center va">
+                        	<!-- <a href="/app/manage/<%= id %>?caID=<%= item.caID %>&title=<%= item.title %>"> -->
+                            <div class="iconstyle" title="APP" alt="APP"><i class="fa fa-mobile-phone"></i></div>
+                            <!-- </a> -->
+                        </td>
+                        <td class="col-lg-10 col-md-10 col-sm-10 col-xs-8">
+                        <!--<td class="wc35" style="padding:15px 30px;">-->
+							<div class="info">
+								<a href="#" onclick="<%=ctrl%>.showInfo('<%= item.caID %>');">
+										<i class="fa fa-pencil pull-right"></i>
+								</a>	                            
+                            	<a href="#" onclick="<%=ctrl%>.showInfo('<%= item.caID %>');">
+									<h2><% if(item.title) html+=item.title; %></h2>
+								</a>
+								<span class="code"><%= ph.caCode %>：<%= item.caCode %></span>			                            
+	                            <p class="apistyle"><%= ph.api %>：<%=item.caCode%><%=apiRoot%></p>
+	                            <%if (item.waList && item.waList.length > 0) { %>
+									<p class="reList"><%= ph.reList %>：
+										<% item.waList.forEach(function(wa) { %> <%=wa.appCode%> <% }); %>
+									</p>
+								<% } %>
+								<%if (item.modList && item.modList.length > 0) { %>
+									<p><%= ph.moduleList %>：
+										<% item.modList.forEach(function(mod) { %> <%=mod.appCode%> <% }); %>
+									</p>
+								<% } %>
+	                            <p><%= ph.descTx %>：<% if(item.descTx) html+=item.descTx; %></p>
+							</div>
+                        </td>
+						<td class="col-lg-1 col-md-1 col-sm-1 col-xs-2 text-center va">
+                        <!-- <td class="text-center pa20 wc10" style="vertical-align:middle;"> -->
+								<a href="/app/manage/<%= id %>?caID=<%= item.caID %>&title=<%= item.title %>">
+									<button class="btn btn-blue wc100"><%= ph.module %></button>
+								</a>
+	                            <a href="/bkContents/manage/<%= id %>?caID=<%= item.caID %>&used=1" target="AppUsedWApp">
+	                            	<button class="btn btn-green wc100 maT10"><%= ph.repository %></button>
+	                            </a>
+                       	</td>
+                    </tr>
+					
+				<% }); %>
+			</table>
+		</div>
+	</div>
+
+	<% } else { %>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+			<center><%= ph.app %></center>
+		</div>
+	</div>
+	<% } %>
+	
+	<!-- 提示字 -->			
+	<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12 col-xs-12 maTR text-left">
+		<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+		<strong><%= ph.title %></strong>
+		<%= ph.note %>
+	</div>
+
+</div>
+<!-- matter 主題內容結束 -->
+
+
+
+ <!-- 彈跳視窗開始 -->
+ <div class="modal fade modalstyle" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="appAdd modal-content"></div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 彈跳視窗結束 -->
+
+<!-- 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="appInfo modal-content"></div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 彈跳視窗結束 -->

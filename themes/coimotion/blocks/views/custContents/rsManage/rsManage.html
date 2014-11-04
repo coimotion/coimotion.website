@@ -1,0 +1,17 @@
+<div class="matter">
+	<!-- 分頁 -->
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<!-- 頁籤開始 -->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#c2" data-toggle="tab"><%=ph.op%></a></li>
+				<li><a href="#c3" data-toggle="tab" onclick="<%=ctrl%>.showOpControl();"><%=ph.control%></a></li>
+			</ul>			
+			<!-- 分頁開始 -->       
+			<div class="rsManageParams tab-content" appCode="<%= bi.query.appCode %>" rs="<%= bi.query.rs %>" orgID="<%= bi.uri.split('/').reverse()[0] %>">				
+				<div class="opList tab-pane fade in active fh15" id="c2"></div>
+				<div class="opControl tab-pane fade fh15" id="c3"></div>   
+			</div>
+		</div>
+	</div>	
+</div>

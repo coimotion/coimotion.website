@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="myTeam">
+		<en>My Team</en>
+		<zh>我的團隊</zh>
+	</ph>
+	<ph id="teamName">
+		<en>Team Name</en>
+		<zh>團隊名稱</zh>
+	</ph>
+	<ph id="teamMembers">
+		<en>Team Members</en>
+		<zh>團隊成員</zh>
+	</ph>
+	<ph id="more">
+		<en>More</en>
+		<zh>更多團隊資訊</zh>
+	</ph>
+	<ph id="quit">
+		<en>Quit</en>
+		<zh>退出</zh>
+	</ph>
+    <ph id="manage">
+		<en>Manage</en>
+		<zh>管理</zh>
+	</ph>
+	<ph id="invite">
+		<en>Invite you to join the team</en>
+		<zh>邀請您加入團隊</zh>
+	</ph>
+    <ph id="join">
+		<en>Join</en>
+		<zh>加入</zh>
+	</ph>
+	<ph id="reject">
+		<en>Reject</en>
+		<zh>拒绝</zh>
+	</ph>
+	<ph id="reply">
+		<en>Waiting for reply</en>
+		<zh>等待回覆</zh>
+	</ph>
+	<ph id="status">
+		<en>You haven't join any team yet</en>
+		<zh>你目前未屬於任何開發團隊</zh>
+	</ph>	
+	<ph id="js_REJECT_MSG_ONE">
+		<en>Are you sure to reject the invitation from</en>
+		<zh>確定拒絕</zh>
+	</ph>
+	<ph id="js_REJECT_MSG_TWO">
+		<en>?</en>
+		<zh>團隊的邀請?</zh>
+	</ph>
+	<ph id="js_IS_WITHDRAW_MSG">
+		<en>Are you sure to withdraw from</en>
+		<zh>確定退出</zh>
+	</ph>
+	<ph id="js_WITHDRAW_MSG">
+		<en>Withdrew from</en>
+		<zh>已退出</zh>
+	</ph>
+</phrases>

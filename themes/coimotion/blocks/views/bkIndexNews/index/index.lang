@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="news">
+		<en>News</en>
+		<zh>最新消息</zh>
+	</ph>
+	<ph id="title">
+		<en>News Bulletin</en>
+		<zh>消息公告</zh>
+	</ph>
+</phrases>

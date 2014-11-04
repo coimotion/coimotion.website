@@ -1,0 +1,214 @@
+<%
+	var  orgID = bi.uri.split('/').reverse()[0];
+%>
+
+<% if (!value) { %>
+<!-- 綠色底開始 -->
+<div class="col-md-12 subbg visible-lg visible-md">
+	<!-- 半圓形 -->
+	<div id="circleSmall" class="circleSmall automarginLR" onclick="<%=ctrl%>.showTab('createTeam'); <%=ctrl%>.setClick();">
+		<span class="fs10 fcW" style="font-size:18px; line-height:30px; vertical-align:bottom;"><%= ph.team %></span>
+		<span class="icon-chevron-down fs06 fcW"></span>
+	</div>
+	<!-- 白色背景 -->
+	<div id="sub" class="automarginLR">
+		<div class="col-md-12">
+			<h3><i class="icon-user"></i>&nbsp;<%= ph.team %></h3>
+		</div>
+		<div class="col-md-12">
+			<!-- 滑動區塊-表單開始 -->
+			<form class="form-horizontal" role="form">
+				<div class="row maT20">
+					<div class="col-md-12 col-xs-12">
+						<% block('/appTeam/creatTeam'); %>
+					</div>
+				</div>
+			</form>
+				<!-- 表單結束 -->
+		</div><!-- /.col-md-12 -->
+	</div><!-- /.sub-->
+</div><!-- subbg結束 -->
+<div class="col-md-12 subbg fastTrack visible-lg visible-md">
+	<div id="circleSmall" class="circleSmall ft automarginLR" onclick="<%=ctrl%>.showTab('fastTrack'); <%=ctrl%>.setClick();">
+		<!-- 快速建置 -->
+		<span class="fs10 fcW" style="font-size:18px; line-height:30px; vertical-align:bottom;"><%= ph.fast %></span>
+		<span class="icon-chevron-down fs06 fcW"></span>
+		<!-- <div class="row text-center maTB">
+			<button class="btn btn-cyan" onclick=""></button>
+		</div> -->
+	</div>
+	<div id="sub" class="automarginLR">
+		<div class="col-md-12">
+			<h3><i class="icon-user"></i>&nbsp;<%= ph.fast %></h3>
+		</div>
+		<div class="col-md-12">
+			<!-- 滑動區塊-表單開始 -->
+			<form class="form-horizontal" role="form">
+				<div class="row maT20">
+					<div class="col-md-12 col-xs-12">
+						<% block('/appTeam/fastTrack'); %>
+					</div>
+				</div>
+			</form>
+				<!-- 表單結束 -->
+		</div><!-- /.col-md-12 -->
+	</div><!-- /.sub-->
+</div><!-- subbg結束 -->
+
+<% } %>
+<div class="matter">
+	<div class="row">
+		<!------------------------------------------- 左側 ------------------------------------------------>
+		<div class="col-md-5">
+
+				<div class="circle row">
+					<% if (!value) { %>
+					<a href="/bkContents/manage">
+					<% } else { %>
+					<a href="/bkContents/manage/<%= orgID %>">
+					<% } %>
+						<div class="circlePic col-md-1 col-sm-1 col-xs-1">
+							<!-- <div class="circleBack">
+				        <span><%= ph.content %></span>
+					    </div> -->
+							<div class="circleNav">
+								<i class="icon-inbox" style="font-size: 4em; line-height: 1.2em;"></i>
+								<p style="margin-top:0.5em"><%= ph.content %></p>
+							</div>
+						</div>
+						<div class="circleText col-md-9 col-sm-9 col-xs-9">
+							<%= ph.text2 %>
+						</div>
+					</a>
+				</div>
+
+				<div class="circle row">
+					<% if (!value) { %>
+					<a href="javascript: alert('<%= ph.alert %>');">
+					<% } else { %>
+					<a href="/statistics/manage/<%= orgID %>">
+					<% } %>
+						<div class="circlePic col-md-1 col-sm-1 col-xs-1">
+							<!-- <div class="circleBack">
+				        <span><%= ph.statistics %></span>
+					    </div> -->
+							<div class="circleNav">
+								<i class="icon-signal" style="font-size: 3em; line-height: 1.8em;"></i>
+								<p><%= ph.statistics %></p>
+							</div>
+						</div>
+						<div class="circleText col-md-9 col-sm-9 col-xs-9">
+							<%= ph.text4 %>
+						</div>
+					</a>
+				</div>
+				<div class="horizon"></div>
+				<% if (value) { %>
+				<div class="circle row">
+					<!-- <% if (!value) { %>
+					<a href="javascript: alert('<%= ph.alert %>');">
+					<% } else { %>
+					<a href="/app/list/<%= orgID %>">
+					<% } %> -->
+					<a href="/app/list/<%= orgID %>">
+						<div class="circlePic col-md-1 col-sm-1 col-xs-1">
+							<!-- <div class="circleBack">
+					      <span><%= ph.app %></span>
+					    </div> -->
+							<div class="circleNav">
+								<i class="icon-mobile-phone"></i>
+								<p><%= ph.app %></p>
+							</div>
+						</div>
+						<div class="circleText col-md-9 col-sm-9 col-xs-9">
+							<%= ph.text1 %>
+						</div>
+					</a>
+				</div>
+				<% } %>
+
+				<% if (value) { %>
+				<div class="circle row">
+					<!-- <% if (!value) { %>
+					<a href="javascript: alert('<%= ph.alert %>');">
+					<% } else { %>
+					<a href="/custContents/list/<%= orgID %>">
+					<% } %> -->
+					<a href="/custContents/list/<%= orgID %>">
+						<div class="circlePic col-md-1 col-sm-1 col-xs-1">
+							<!-- <div class="circleBack">
+				        <span><%= ph.custContent %></span>
+					    </div> -->
+							<div class="circleNav">
+								<i class="icon-table" style="font-size: 3.3em; line-height: 1.6em;"></i>
+								<p><%= ph.custContent %></p>
+							</div>
+						</div>
+						<div class="circleText col-md-9 col-sm-9 col-xs-9">
+							<%= ph.text3 %>
+						</div>
+					</a>
+				</div>
+				<div class="horizon visible-sm"></div>
+				<% } %>
+				<!-- <% if (orgID === 'undefined') { %>
+				<div class="row text-center maTB">
+					<button class="btn btn-cyan">快速建置</button>
+				</div>
+				<% } %> -->
+		</div>
+		<!---------------------------------------------- 右側 ---------------------------------------------------->
+		<div class="col-md-7 maT1">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#b1" data-toggle="tab" onclick="<%=ctrl%>.loadInfoBoard(0);">內容寶庫</a></li>
+				<li><a href="#b2" data-toggle="tab" onclick="<%=ctrl%>.loadInfoBoard(1);">最新消息</a></li>
+				<li><a href="#b3" data-toggle="tab" onclick="<%=ctrl%>.loadInfoBoard(2);">技術文件</a></li>
+			</ul>
+			<!-- 分頁開始 -->
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="b1">
+					<div class="bkCntIndex table-responsive" filter="0"></div>
+				</div>
+				<div class="tab-pane fade" id="b2">
+					<div class="newsIndex table-responsive" filter="0"></div>
+				</div>
+				<div class="tab-pane fade" id="b3">
+					<div class="paperIndex table-responsive" filter="0"></div>
+				</div>
+			</div>
+			<!-- 分頁結束 -->
+		</div>
+
+	</div>
+</div>
+
+<% if (!value) { %>
+<!------------------------------------------- 網頁開啟初始頁面_彈跳視窗開始 ------------------------------------------------>
+<div class="modal fade modalstyle firstLoginView">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header nobor">
+				<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center fs13 fh2">
+					感謝您成為&nbsp;<font color="#1bbc9b"><b>COIMOTION</b></font>&nbsp;的會員<br>
+					目前您只能瀏覽&nbsp;<font color="#1bbc9b"><b>內容寶庫</b></font>&nbsp;提供的內容<br>
+					若您想進一步使用其他的功能<br>
+					請先&nbsp;<font color="#1bbc9b"><b>建立一個團隊</b></font><br>
+					就能充分體驗&nbsp;COIMOTION&nbsp;的各項功能<br>
+				</div>
+			</div>
+			<div class="modal-footer nobor"></div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<% } %>
+
+<!-- 切換團隊 彈跳視窗開始 -->
+<div class="modal fade modalstyle teamListView" id="onTeam">
+	<div class="modal-dialog">
+		<div class="teamListBody modal-content inner">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="title">
+		<en>Join Now</en>
+		<zh>申請帳號</zh>
+	</ph>
+	<ph id="accName">
+		<en>Email</en>
+		<zh>信箱</zh>
+	</ph>
+	<ph id="name">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+	<ph id="passwd">
+		<en>Password</en>
+		<zh>密碼</zh>
+	</ph>
+	<ph id="passwdInfo">
+		<en>Should be at least 6 characters</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>
+	<ph id="confirmPasswd">
+		<en>Confirm Password</en>
+		<zh>確認密碼</zh>
+	</ph>
+	<ph id="devAcc">
+		<en>Developer Account</en>
+		<zh>開發者帳號</zh>
+	</ph>
+	<ph id="devAccInfo">
+		<en> I also want to sign up as a developer</en>
+		<zh>同時註冊開發者帳號</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="module">
+		<en>Module management</en>
+		<zh>模組管理</zh>
+	</ph>
+	<ph id="note">
+		<en>API modules are the functions provided by COIMOTION, and are categorized by properties. "Module Management" shows all the modules that allow to use, and the modules that have been selected into your Apps.
+		</en>
+		<zh>模組是指 COIMOTION 平台所提供的功能，依性質歸納成不同的模組。「模組管理」顯示平台目前所有可用的模組，以及 App 目前使用了哪些模組。
+		</zh>
+	</ph>
+	<ph id="selection">
+		<en>Selection</en>
+		<zh>選用</zh>
+	</ph>
+	<ph id="caCode">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>	
+	<ph id="api">
+		<en>API</en>
+		<zh>API 說明</zh>
+	</ph>
+	<ph id="null">
+		<en>There is no APIs to use.</en>
+		<zh>目前沒有模組可供使用。</zh>
+	</ph>	
+</phrases>

@@ -1,0 +1,30 @@
+#footer-bg{
+background-color:#454749;
+    width: 1024px;
+	height:100px;
+    font-family:sans-serif;
+}
+#footer{
+	width: 100%;
+	padding-top: 30px;
+	text-align: center;
+    background-color:#46474b; 
+    background: url("../../wcoim/theme/shadow.png") no-repeat center 0px;
+}
+#footerUP{
+	font-size: 14px;
+	color: #FFF;
+}
+#footerDOWN{
+	font-size: 14px;
+	color: #FFF;
+	padding-top: 15px
+}
+#footerUP>a{
+  color:#FFF; 
+  text-decoration:none;
+}
+#footerUP>a:hover{
+  color:#FFF;
+   text-decoration:none;
+}

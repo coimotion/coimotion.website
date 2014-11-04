@@ -1,0 +1,82 @@
+$height1: 638px;
+
+#scrollbar1 {
+    width: 920px;
+    margin:0px auto;
+    position: relative;
+    left: 0;
+    top: 18px;
+    height: $height1;	
+}
+//文章內容
+.viewport {
+    background: url("/play/content_bg.png") -10px -5px repeat-y;   
+    -moz-box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);    
+    position: relative;
+    width: 900px;
+    height: $height1;
+    left: 0px;
+    top: 0px;      
+    overflow-y: hidden;
+}
+.overview {
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    z-index: 1;
+}
+//捲軸設定
+.scrollbar {
+    background:transparent url("play/bg-scrollbar-track-y.png") no-repeat 0 0;
+    position:absolute;
+    background-position:0 0;
+    right: 5px;
+    top:0;
+    width:15px;
+    height: $height1;
+}
+.track {
+    background:transparent url("/play/bg-scrollbar-trackend-y.png") no-repeat 0 100%;
+    height:100%;
+    width:13px;
+    position:relative;
+    padding:0 1px;
+}
+.track_start{
+    background:transparent url("/play/bg-scrollbar-trackend-s.png") no-repeat 0 0;
+    height:100%;
+    width:13px;
+    position:absolute;
+    padding:0 1px;
+}
+.thumb{
+    background:transparent url("/play/bg-scrollbar-thumb-y.png") no-repeat 50% 2px;
+    height: 100%;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    margin-top:10px;
+    top:0px;
+    left:-5px;
+}
+
+.disable {
+    display:none;
+}
+
+.noSelect {
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+
+

@@ -1,0 +1,44 @@
+<% var pn = bi.query._pn ; %>
+<%
+  var  listHref = "/bkIndexPapers/list",
+     orgID = bi.query.orgID;
+  if (orgID)
+    listHref += "/"+orgID;
+  listHref += "?_pn=1&_ps=5";
+
+  if(!value || value.list.length == 0)
+    listHref = "#";
+%>
+<% if(value && value.list.length > 0) { %>
+<table class="table table-hover tableChange">
+  <% value.list.forEach(function(item) { %>
+    <%
+      var  time = new Date(item.mdTime),
+              month = (time.getMonth() + 1).toString(),
+              day = time.getDate().toString(),
+                     hf = "/bkIndexPapers/view",
+                     orgID = bi.query.orgID;
+                  month = (month.length > 1) ? month : "0"+month;
+                  day = (day.length > 1) ? day : "0"+day;
+                  strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+
+                  if (orgID)
+                    hf += "/"+orgID;
+                  hf += "?id="+item.ngID;
+                %>
+  <tr onclick="document.location='<%=hf%>'">
+    <td class="wc70"><%= item.title %></td>
+    <td class="wc30"><%= strMdTime%></td>
+  </tr>
+  <% }); %>
+</table>
+<% } %>
+
+<!-- 左右換頁控制鈕 -->
+<!-- <div class="row text-center maT">
+  <div class="col-md-offset-3 col-md-6">
+    <span class="icon-angle-left arrow"><a href="#" onclick="<%=ctrl%>.prev(<%=pn%>);"></a></span>
+    <span class="icon-angle-right arrow"><a href="#" onclick="<%=ctrl%>.next(<%=pn%>);"></a></span>
+  </div>
+</div> -->
+<!-- 左右換頁控結束 -->

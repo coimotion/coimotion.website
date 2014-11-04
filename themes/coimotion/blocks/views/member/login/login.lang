@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="title1">
+		<en>The Whole New API Services</en>
+		<zh>全新的API服務</zh>
+	</ph>
+	<ph id="title2">
+		<en>Changing The Way We Program</en>
+		<zh>開發者的最好夥伴</zh>
+	</ph>
+	<ph id="sub1">
+		<en>APIs for Developers</en>
+		<zh>API服務</zh>
+	</ph>
+	<ph id="con1">
+		<en>Carefully designed APIs, easy to read and program.</en>
+		<zh>對開發者友善的API服務，大幅簡化App開發的複雜度。</zh>
+	</ph>
+	<ph id="sub2">
+		<en>Smart Storage</en>
+		<zh>豐富的內容</zh>
+	</ph>
+	<ph id="con2">
+		<en>Give you the benefits of both relational and NoSQL. </en>
+		<zh>COIMOTION提供各式資料協助您開發實用的App。</zh>
+	</ph>
+	<ph id="sub3">
+		<en>Security</en>
+		<zh>獲利</zh>
+	</ph>
+	<ph id="con3">
+		<en>Get your own SSL domain and start protecting your App.</en>
+		<zh>COIMOTION提供開發App的簡易獲利方法。</zh>
+	</ph>
+	<ph id="login">
+		<en>Free Registeration</en>
+		<zh>開發者免費註冊</zh>
+	</ph>
+	<ph id="now">
+		<en>Try It Now！</en>
+		<zh>加入即刻體驗！</zh>
+	</ph>
+</phrases>

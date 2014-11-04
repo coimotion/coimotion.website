@@ -1,0 +1,35 @@
+<!--左側導覽列開始 -->
+<% var link = 1;%>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pa">               
+	<div class="sidebar" appCode="<%=bi.uri.split('/').reverse()[0]%>">
+		<% if (value && value.rsList.length > 0) { %>
+		<ul id="nav">
+			<% value.rsList.forEach(function(item) { %>
+			<li class="has_sub" id="link<%=link%>">
+				<a href="#link<%=(link-1)%>" onclick="<%=ctrl%>.openOpList('<%=item.rs%>')">
+					[<%= item.rs %>]<%= item.title; %>
+					<span class="pull-right"><i class="icon-chevron-right"></i></span>
+				</a>
+				<ul class="opList <%=item.rs%>" style="display: none;">
+					<% if (item.opList && item.opList.length > 0) { %>
+					<% item.opList.forEach(function(opItem) { %>
+					<li class="_<%=opItem.op%>">
+						<a href="#link0" onclick="<%=ctrl%>.selRsOp('<%=item.rs%>','<%=opItem.op%>')">
+							<%= opItem.op; %>：<%= opItem.title; %>
+						</a>
+					</li>
+					<% }); %>
+					<% } else { %>
+					<li><%=ph.noOp%></li>
+					<% } %>
+				</ul>
+				<% link++;%>
+			</li>
+			<% }); %>			
+		</ul>
+		<% } else {%>
+			<center><span class="text"><%=ph.noRs%></span></center>
+		<% } %>
+	</div>	
+</div>
+<!-- 左側導覽列結束 -->

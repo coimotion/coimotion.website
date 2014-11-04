@@ -1,0 +1,116 @@
+<% 	var  id = bi.uri.split('/').reverse()[0]; %>
+<%  
+	var  locale = bi.locale; 
+	var  _loc = 1;
+	if (locale == 'zh')
+		_loc = 2;
+%>
+<!-- 主題內容開始 -->
+<div class="matter" rs="<%=bi.query.rs%>" geo="<%=bi.query.geo%>" _loc="<%=_loc%>">
+	<!-- 提示字 -->
+	<div class="row maT10"> 
+		<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+			<strong><%= ph.title %>：</strong>
+				<%= ph.note %>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="header">
+				<h3>
+					<%= ph.now %>					
+					<span><a href="#"><i class="fa fa-question-circle" id="aboutPath" style="font-size: 20px;"></i></a></span>
+					 :
+					<!-- CA分類-下拉式選單開始 -->
+					<div class="btn-group">
+						<button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle highlight" data-toggle="dropdown">
+							<span id="ca" ca="<%=bi.query.ca%>">
+								<%= ph.app %>
+							</span>
+							<!-- 目前CA是以div.matter的CA為主 -->
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1" cate="ca">
+							<!--  改成js動態載入 -->
+						</ul>
+					</div>
+					<% if (_loc == 2) { %>
+					.coimapi.tw /
+					<% } else { %>
+					.coimapi.net /
+					<% } %>
+					<!-- CA分類-下拉式選單結束 -->
+					<!-- WA分類 -->
+					<p type="button" class="btn btn-default">
+						<span id="wa" ><%=bi.query.appCode%></span>
+						<!-- 目前wa是以div.matter的wa為主 -->
+					</p>
+					<!-- WA分類 -->
+					<!-- <span style="font-size: 20px">/</span> -->
+					/
+					<!-- RS分類-下拉式選單開始 -->
+					<div class="btn-group">
+						<button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<span id="rs">
+								<%= ph.rs %>
+							</span>
+							<!-- 目前CA是以div.matter的CA為主 -->
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1" cate="rs">
+							<!--  改成js動態載入 -->
+						</ul>
+					</div>
+					<!-- RS分類-下拉式選單結束 -->
+
+					<div class="btn-group pull-right">
+						<button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<span id="locale">
+								<% if (_loc == 1) { %>
+								English
+								<% } else if (_loc == 2) { %>
+								繁體中文
+								<% } %>
+							</span>
+							<span class="caret cc"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3" cate="locale">
+							<li value="1"><a href="#">English</a></li>
+							<li value="2"><a href="#">繁體中文</a></li>
+						</ul>
+					</div>
+
+				</h3>
+			</div>
+			<!-- header結束 -->
+		</div>
+	</div>	
+	
+	<!-- 分頁 -->
+	<div id="tabContent"></div>
+
+
+	<!-- 未選擇CA時的提示訊息 開始 -->
+ 	<!--<div class="widget">
+		<div class="widget-content">
+			<table class="table table-striped table-bordered table-hover">
+				<tr><th><center>尚無任何內容</center></th></tr>
+			</table>
+		</div>
+	</div> -->
+	<!-- 未選擇CA時的提示訊息 結束 -->
+</div>
+<!-- matter 主題內容結束 -->
+
+
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$('#pathInfo').hide();
+		$("#aboutPath").click(function() {
+			$('#pathInfo').fadeToggle();
+		});
+	});
+</script>

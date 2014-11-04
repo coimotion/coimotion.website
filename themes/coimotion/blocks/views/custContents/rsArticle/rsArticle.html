@@ -1,0 +1,108 @@
+<% 	var  id = bi.uri.split('/').reverse()[0]; %>
+<div class="row">
+	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 text-left paT15">
+		<i class="fa fa-file-text-o"></i>&nbsp;<%= ph.article %>
+	</div>
+	<!-- 文章分類-下拉式選單開始 -->
+	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">		
+		<div class="btn-group" style="visibility: hidden">
+			<button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				<span id="article" ca="<%=bi.query.ca%>" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" geo="<%=bi.query.geo%>" locale="<%=bi.query._loc%>">
+					<% if (bi.query.rs) { %>
+						<%=bi.query.rs%>
+					<% } else { %>
+						<%= ph.sel %>
+					<% } %>
+				</span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1" cate="article">
+		  	</ul>
+		</div>		
+	</div>
+	<!-- 文章分類-下拉式選單結束 -->
+	<!-- 新增按鈕列開始 -->
+	<div class="row plustitle">	
+		<% if (bi.query.geo === 'false') { %>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 pull-right plus" id="addBtn">
+			<a href="#" data-toggle="modal" data-target="#editorModal" onclick="<%=ctrl%>.embedEditor('undefined');">
+				<i class="fa fa-plus"></i><span><%= ph.add %></span>
+			</a>
+		</div>
+		<% } else { %>
+		<div class="col-lg-9 col-md-8 col-sm-7 col-xs-6 plus" id="addBtn">
+			<div><%= ph.docTx %></div>
+		</div>
+		<% } %>
+	</div>
+	<!-- 新增按鈕列結束 -->
+</div>
+
+<!-- widget開始 -->
+<div class="widget">
+	<% if (value && value.list.length > 0)  { %>
+	<div class="widget-content">
+		<!-- Widget content -->
+		<table class="table table-striped table-bordered table-hover allArticle" style="table-layout: fixed;">
+			<tr>
+				<th class="wc10"><%=ph.code%></a></th>
+				<th class="wc20"><%=ph.title%></th>
+				<th class="wc15"><%=ph.summary%></th>
+				<th class="wc8"><%=ph.author%></th>
+				<th class="wc10"><center><%=ph.file%></center></th>
+				<th class="wc10"><center><%=ph.location%></center></th>
+				<th class="wc17"><%=ph.time%></th>
+				<th class="wc10"><center><%=ph.function%></center></th>
+			</tr>
+			<% value.list.forEach(function(item) { %>
+			<tr class="<% if (item.noCont === true) { %> callout <% } %>">
+				<td>  <%= item.ngID %>  </td>
+				<td> <%= item.title %> </td>
+				<td class="ddd"> <%=item.summary%> </td>
+				<td> <%= item.dspName %> </td>
+				<td><% if (item.attCount > 0) { %><center><span class="icon-ok"></span></center><% } else { %><center>--</center><% } %></td>
+				<td><% if (item.geoCount > 0) { %><center><span class="icon-ok"></span></center><% } else { %><center>--</center><% } %></td>
+				<% var t = new Date(item.mdTime) %>
+				<td>  <%= ('0'+(t.getMonth()+1)).slice(-2) +'-'+ ('0'+t.getDate()).slice(-2) +'-'+ t.getFullYear() +' '+ t.getHours() +':'+t.getMinutes() %></center></td>
+				<td class="va" style="padding:6px;">
+					<center>
+						<a href="#">
+							<% if (item.noCont === true) { %>
+							<button class="btn btn-green btn-sm col-lg-12 col-md-12 col-sm-12 col-xs-12 maT10 text-center" data-toggle="modal" data-target="#editorModal" onclick="<%=ctrl%>.embedEditor('<%=item.ngID%>', '<%=item.noCont%>');"><%=ph.insert%></button>
+							<% } else { %>
+							<button class="btn btn-green btn-sm col-lg-12 col-md-12 col-sm-12 col-xs-12 maT10 text-center pa" data-toggle="modal" data-target="#editorModal" onclick="<%=ctrl%>.embedEditor('<%=item.ngID%>', '<%=item.noCont%>');"><%=ph.edit%></button>
+							<button class="btn btn-danger btn-sm col-lg-12 col-md-12 col-sm-12 col-xs-12 maT10 text-center pa" onclick="<%=ctrl%>.delRs('<%=item.ngID%>', '<%=item.title%>')"><%=ph.delete%></button>
+							<% } %>
+						</a>
+					</center>
+				</td>
+			</tr>
+			<% }); %>
+		</table>
+	</div>
+	<% } else { %>
+	<div class="widget-content">
+		<table class="table table-striped table-bordered table-hover">
+			<tr><th><center><%=ph.none%></center></th></tr>
+		</table>
+	</div>
+	<% } %>
+</div>
+<!-- widget結束 -->
+
+<!-- 編輯器開始 -->
+<div class="modal fade modalstyle" id="editorModal" data-backdrop="static" role="dialog" aria-labelledby="editorModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="editor modal-content">
+		</div>
+	</div>
+</div>
+<!-- 編輯器結束 -->
+
+<style type="text/css" media="screen">
+	@media (max-height: 800px) {
+		.modal-dialog {
+			margin: 0 auto;
+		}
+	}
+</style>

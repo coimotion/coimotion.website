@@ -1,0 +1,61 @@
+<!--內容集詳細資料中的團隊頁籤中的團隊清單-->
+<!-- 分頁內容 -->
+<div class="widget">											
+	<!-- Widget content-->
+	<div class="widget-content">
+		<% if (value && value.list.length > 0)  { %>
+		<table class="table table-bordered table-hover table-condensed">
+           	<tbody>
+                <tr class="active">
+                    <th class="wc20"><center>引用的團隊代碼</center></th>
+                    <th class="wc40"><center>團隊名稱</center></th>
+                    <th class="wc20"><center>合作關係</center></th>
+                    <th class="wc20"><center>團隊詳細資料</center></th>	                    
+                </tr>
+                 <% value.list.forEach(function(item) { %>
+                 <% var status = parseInt(item.status);
+                 	if (item.status > 0) { 
+                 %>
+                <tr class="text-left">                            
+                    <td><%=item.orgCode%></td>
+                    <td><%=item.name%></td>
+                    <%  
+                    	var ss = "";
+                    	if (status === 1)
+                    		ss = "已合作";
+                    	else if (status === 2)
+                    		ss = "主動要求加入";
+                    	else if (status === 3)
+                    		ss = "邀請中";
+                    %>
+                    <td><%=ss%></td>			                    
+                    <td class="text-center">                                          		                    	
+                    	<a href="#" class="btn btn-info" onclick="<%=ctrl%>.showTeamDetail();">
+                    	團隊介紹
+                    	<i class="icon-double-angle-right paL5"></i></a>
+					</td>
+                </tr>
+                <% } %>
+                <% }); %>
+                <!-- 
+                <tr class="text-left">                            
+                    <td>gocharm002</td>
+                    <td>gocharm002</td>
+                    <td>邀請中</td>			                    
+                    <td class="text-center">			                    	
+                    	<a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                    	團隊介紹
+                    	<i class="icon-double-angle-right paL5"></i></a>
+					</td>								
+                </tr>
+				 -->        
+			</tbody>
+		</table>
+		<% } else {%>
+			此內容集尚無團隊引用或邀請使用。
+		<% } %>					
+	</div>
+	<!-- widget-content結束 -->
+</div>
+<!-- widget結束 -->
+ 

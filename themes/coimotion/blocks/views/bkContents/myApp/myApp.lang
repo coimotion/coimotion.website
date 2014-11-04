@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="myApp">
+		<en>My App</en>
+		<zh>我的App</zh>
+	</ph>
+	<ph id="module">
+		<en>Module</en>
+		<zh>模組管理</zh>
+	</ph>
+	<ph id="app">
+		<en>ModulePlease create App</en>
+		<zh>請先建立APP</zh>
+	</ph>
+	<ph id="manage">
+		<en>App management</en>
+		<zh>App管理</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,66 @@
+<% var orgID = bi.uri.split('/')[3]; %>
+<!-- Responsive: 800x600 -->
+<div class="matter" defUsed="<%=bi.query.used%>">
+	<div class="row">
+	    <!--頁籤開始 -->
+		<ul class="nav nav-tabs col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
+			<% if (orgID) { %>
+			<li class="selApp col-lg-2 col-md-3 col-sm-12 col-xs-12 paR ma">
+				<% block('/bkContents/myApp', {"id": bi.uri.split('/').reverse()[0]}); %>
+			</li>
+			<% } %>
+			<li class="custlistBlockHref  text-center" style="display: none;">
+				<a href="#b0" class="tabWidth" data-toggle="tab" onclick="<%=ctrl%>.custlistBlockReload();"><%= ph.custcontents %></a>
+			</li>
+			<li class="active  text-center">
+				<a href="#b1" class="tabWidth" data-toggle="tab" onclick="<%=ctrl%>.freeBlockReload();"><%= ph.free %></a>
+			</li>
+			<li class="incomeBlockHref  text-center" style="display: none;">
+				<a href="#b2" class="tabWidth" data-toggle="tab" onclick="<%=ctrl%>.incomeBlockReload();"><%= ph.income %></a>
+			</li>
+
+			<% if (orgID) { %>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-3 pull-right pa ma">				
+				<span class="btn-group wc100">
+					<button type="button" class="selAll btn btn-default buA active" filter="0" onclick="<%=ctrl%>.selUsed(0);"><%= ph.all %></button>
+					<button type="button" class="selUsed btn btn-default buB" filter="1" onclick="<%=ctrl%>.selUsed(1);"><%= ph.select %></button>
+				</span>
+			</li>
+			<!-- <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-right pa ma">
+				<span class="btn-group col-lg-3 col-lg-offset-7 col-md-5 col-md-offset-4 col-sm-4 col-sm-offset-6 col-xs-6 col-xs-offset-1 pa">
+					<button type="button" class="selAll btn btn-default buA
+					 active" filter="0" onclick="<%=ctrl%>.selUsed(0);"><%= ph.all %></button>
+					<button type="button" class="selUsed btn btn-default buB" filter="1" onclick="<%=ctrl%>.selUsed(1);"><%= ph.selected %></button>
+				</span> -->
+				<!--自製內容設定/新增自製內容設定-->
+				<!-- <span class="btn-group col-lg-2 col-md-3 col-sm-2 col-xs-5 pa text-right">					
+					<a href="/custContents/list/<%=orgID%>"><i class="fa fa-cog"></i></a>					
+					<a href="#" data-toggle="modal" data-target="#myModal" style="visibility:hidden"><i class="fa fa-plus"></i></a>
+				</span>
+			</li> 
+			-->
+			<% } %>
+		</ul>
+		<!-- 頁籤結束-->
+	<!-- </div> -->
+	
+	<!-- <div class="row"> -->
+		<!-- 分頁開始 -->
+		<div class="tab-content">
+			<!--自製內容-->
+			<div class="tab-pane fade fh15" id="b0">
+				<div class="custlistBlock" filter="0"></div>
+			</div>
+			<!--自由使用-->
+			<div class="tab-pane fade in active fh15" id="b1">
+				<div class="freeBlock" filter="0"></div>
+			</div>
+			<!-- 授權使用-->
+			<div class="tab-pane fade fh15" id="b2">
+				<div class="incomeBlock" filter="0"></div>
+			</div>
+		</div>
+		<!-- 分頁結束 -->
+	</div>
+</div>
+

@@ -1,0 +1,9 @@
+/*左右換頁控制鈕*/
+.arrow{
+  font-size: 3em;
+  margin: 0 50px;
+  cursor: pointer;
+}
+.maT{
+  margin-top: 3.25em;
+}

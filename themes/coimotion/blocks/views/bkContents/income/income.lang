@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Repository :: Introduction</en>
+		<zh>內容集 :: 基本資料</zh>
+	</ph>
+	<ph id="code">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>
+	<ph id="selection">
+	    <en>Choosed</en>
+	    <zh>選用</zh>
+	</ph>
+	<ph id="function">
+		<en>APIs</en>
+		<zh>功能</zh>
+	</ph>
+	<ph id="confirm">
+		<en>Confirm</en>
+		<zh>確認</zh>
+	</ph>
+	<ph id="nochosen">
+		<en>Not chosen</en>
+		<zh>尚未選用</zh>
+	</ph>
+	<ph id="selected">
+		<en>Chosen</en>
+		<zh>已選用</zh>
+	</ph>
+	<ph id="none">
+		<en>Rejected by owner</en>
+		<zh>被贊助者拒絕</zh>
+	</ph>
+	<ph id="invitation">
+		<en>Invitation</en>
+		<zh>邀請中</zh>
+	</ph>
+	<ph id="wait">
+		<en>Waiting</en>
+		<zh>等待中</zh>
+	</ph>
+	<ph id="note">
+		<en>Repositories: App contents are stored in repositories. Developers can access public repositories or the ones created by their own.</en>
+		<zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+	</ph>
+	<ph id="js_SELECT_APP">
+	    <en>Please select your App first.</en>
+	    <zh>請先選擇App。</zh>
+	</ph>
+	<ph id="js_CANCEL_SEL">
+	    <en>Cancel the selection of </en>
+	    <zh>確定取消選用 </zh>
+	</ph>
+</phrases>

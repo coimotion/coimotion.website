@@ -1,0 +1,133 @@
+$w1: 100%;
+//內文字
+$ff1: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B", Arial, sans-serif;
+$ff2: ff-din-web-condensed,Helvetica,sans-serif;
+$fs1: 1em;
+$fc1: #111;
+//標題字
+$fc2: #2A6496;
+//項目及部落格標題
+$fc3: #2EA0D1;
+$fc4: #4a4a4a;
+//對齊
+$faC: center;
+$faL: left;
+$faR: right;
+
+
+@mixin wrapper {
+	margin: 0;
+	padding: 0;	
+	width: $w1;
+	@content;
+}
+@mixin link {
+	a {
+		text-decoration: none;
+		&:hover, &:link, &:active {
+			text-decoration: none;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}	
+}
+@mixin float($float: left){
+	float: $float;
+}
+@mixin clear($clear: both){
+	clear: $clear;
+}
+@mixin github {
+	position: fixed;
+	left: -48px;
+	top: -27px;
+}
+@mixin bolder ($width: 4px, $style: solid, $color: #599CCE){
+    border-bottom: $width $style $color;
+}
+
+@mixin content ($top:3em, $bottom:3em){
+	margin-top: $top;
+	margin-bottom: $bottom;	
+}
+@mixin h1 {
+	margin: 2em auto;
+	text-align: center;	
+	height: 22px;
+	@include bolder(1px, solid, #888);		
+}
+@mixin span {
+	font-size: $fs1;
+	color: $fc2;	
+	font-weight: 600;
+	padding: 0 20px;
+	background-color: #fff;
+}
+@mixin pa($left:4em, $right: 4em){
+	padding-left: $left;
+	padding-right: $right;
+}
+@mixin ma($left: auto, $right: auto){
+	padding-left: $left;
+	padding-right: $right;
+}
+@mixin h4 {
+	font-size: $fs1 * 1.5;
+	color: #555;
+	@content;
+	&:hover {
+		color: #299DB6;
+	}
+}
+@mixin imgStyle {
+	img {
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+@mixin sub {
+	font-size: $fs1 * 1.5;
+	color: $fc2;
+	line-height: $fs1 * 2;	
+	@content;
+}
+@mixin p {
+	font-family: $ff1;
+	font-size: $fs1 * 1.3;
+	color: #000;
+	line-height: $fs1 * 1.6;
+	margin: 0 auto 3em;
+	@include pa(5px, 5px);
+}
+@mixin more {
+	display: block;
+	padding: 10px 0;
+	margin: 1em auto;
+	width: 150px;
+	font-size: $fs1 * 1.3;
+	font-weight: 600;
+	color: #555;
+	text-align: center;
+	-webkit-border: 2px solid #888;
+    -moz-border: 2px solid #888;
+    -o-border: 2px solid #888;
+    -ms-border: 2px solid #888;
+    border: 2px solid #888;
+  	//+border-radius(5px)  
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    &:hover {
+		color: #fff;
+		-webkit-border-color: #ccc;
+	    -moz-border-color: #ccc;
+	    -o-border-color: #ccc;
+	    -ms-border-color: #ccc;
+	    border-color: #ccc;
+	    background: #888;
+    }
+}

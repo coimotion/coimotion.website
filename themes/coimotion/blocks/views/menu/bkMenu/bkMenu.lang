@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="app">
+		<en>APP Management</en>
+		<zh>APP管理</zh>
+	</ph>
+	<ph id="content">
+		<en>Content Treasure</en>
+		<zh>內容寶庫</zh>
+	</ph>
+	<ph id="custContent">
+		<en>Self Content</en>
+		<zh>自製內容</zh>
+	</ph>
+	<ph id="statistics">
+		<en>Statistics</en>
+		<zh>統計數字</zh>
+	</ph>
+	<ph id="alert">
+		<en>Please create or join a team.</en>
+		<zh>請先建立或加入團隊。</zh>
+	</ph>
+</phrases>

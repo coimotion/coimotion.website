@@ -1,0 +1,280 @@
+<!-- 右側內容開始 -->
+
+<!--<div class="bkManage" id="bkManage">-->
+	<!-- 右側下載選單 -->
+    <!-- <div class="download-nav">
+    	<h5>Useful Resources</h5>
+        <a href="/wcoim/SDK/COIMOTION-SDK-iOS.zip">
+            <i class="fa fa-download"></i><span>SDK Download</span>
+        </a>
+        <a href="https://github.com/coimotion/iOS-Demo-App">
+            <i class="fa fa-tablet"></i><span>Demo APP</span>
+        </a>
+      	<a href="https://github.com/coimotion/coimotion.github.io">
+            <i class="fa fa-github"></i><span>GitHub</span>
+        </a>        
+    </div> -->
+	<!-- 右側下載選單結束 -->
+
+	<!-- <div class="pageBody">
+		<h2>iOS coim SDK</h2>						
+		<div class="pagetext body">				
+			<h3> I.簡介 </h3>
+			<p>
+				本SDK此版本提供COIMOTION API的呼叫，開發者可透過SDK的使用簡化API的呼叫與處理，並提供登入/註冊的API，簡化開發者的作業流程，省去處理token更新與發送步驟，不過開發者亦可透過一般的HTTP request方法使用COIMOTION API。
+			</p>
+			<h3> II.安裝設定 </h3>
+			<p>
+				開發者想要在自己的專案中使用coimSDK的話，可以透過以下步驟來完程SDK的使用設定：
+			</p>
+
+			<h4>A.取得COIMOTION SDK</h4>				
+				<ol>
+					<li>
+						由網址下載 ( http://tw.coimotion.com/wcoim/SDK/COIMOTION-SDK-iOS.zip ) 
+					</li>
+					<li>
+						COIMOTION網站亦提供載點連結，開發者們可以在開發者後台的”捷徑”→”下載”進入工具下載專業，選擇下載iOS 壓縮檔即可
+						<img src="/wcoim/backType/a.jpg" alt="">
+					</li>
+				</ol>
+
+			<h4>B.在xcode 專案中安裝及設定使用SDK</h4>
+			
+			<ol>
+				<li>xcode專案中，project navigator中右鍵”file” -> “Add Files To [project name]”，選擇下載的coimtion SDK目錄，把coimSDK.h與libcoimSDK.a加入專案目錄。</li>
+				<li>接下來在專案的[project name]-info.plist右鍵->”Add Row”，加入coim_app_code與coim_app_key兩個property。</li>
+				<li>登入COIMOTION網站，進入”APP管理”點選要使用的APP，會顯示”APP: :基本資料”的視窗，將其中的代碼填入coim_app_code的值，程式金鑰則填入coim_app_key的值。</li>
+				<li>初始化SDK
+					<p>建議可在AppDelegate.m的didFinishLaunchWithOptions中進行。</p></li>
+				<li>debug訊息
+					<p>在[project-name]-info.plist中右鍵→”Add Row”，加入”coim_debug”的property，type為Boolean，值為YES以開啟除錯模式，SDK會將送出的API URL/參數以及收到的結果輸出在console下供開發者除錯。</p></li>
+				<li>timeout設定
+					<p>API呼叫加上timeout機制，預設為30秒。如果API呼叫超過timeout的時間還沒有完成的話，SDK的中斷連線並以coimConnection: (NSURLConnection *)connection didFailWithError: (NSError *)</p>
+					<p>error的方法傳回timeout的錯誤訊息。如果開發者要使用其它的timeout時間的話，可在[project-name]-info.plist中右鍵->”Add Row”加入”coim_timeout”，type為number，值則是要自訂的timeout時間，單位為秒。</p></li>
+			</ol>
+
+			<h3>III.SDK文件</h3>
+				<p>
+					目前COIMOTION SDK提供iOS下呼叫COIMOTION API 方法以及一些便利的方法簡化開發者處理資料的工作，未來會隨著COIMOTION的成長逐步增加更多的功能。
+				</p>
+				<h4>A.Delegator</h4>
+				<p>
+					此SDK使用delegate的方式做callback，因此開發者使用SDK方法時需要傳入delegate時，請傳入一個有實作下敘方法的物件，並在其中實作對應的處理方法。
+				</p>
+  			    <ol>
+					<li>coimConnectionDidFinishLoading: (NSURLConnection *)connection withData:(NSDictionary *)responseData
+						<p>當API呼叫完成時，會把回應的JSON解析為NSDictionary物件，開發者在此方法中可直接從responseData取出對應key值的物件進行處理。</p>
+						API回傳的JSON物件中會包含以下四大類
+						<ul>
+							<li>i.errCode
+								<p>整數，API的處理結果，成功的話會回傳0，server的錯誤的話會回傳負整數，如果是操作上的邏輯錯誤的話，會回傳正整數。</p>
+							</li>
+							<li>ii.message
+								<p>對應errCode的訊息，進一步解釋errCode，字串。</p>
+							</li>
+							<li>iii.value
+								<p>value為開發者API 要求的資源內容，為JSON物件。</p>
+							</li>
+							<li>iv.token
+								<p>進行API呼叫時，COIMOTION server會判斷使用者的token是否有安全性問題，有的話會透過此欄位告知更新。如果token已失效，API會回傳token=””(空字串)告知開發者目前的token已失效。</p>
+							</li>
+						</ul>
+					</li>
+					<li>coimConnection: (NSURLConnection *)connection didFailWithError: (NSError *)error
+						<p>SDK在處理、發送API或解析回應資料時有任何錯誤，會呼叫此方法並將error做為參數傳入，開發者可以在此方法中處理各種錯誤的對應。</p>
+					</li>
+					<li>coimConnection: (NSURLConnection *)connection progresss: (float)percentage
+					<p>如果是上傳或下載資料時，可由此方法取得傳輸進度</p>
+					<li>coimConnectionInvalidToken: (NSURLConnection *)connection
+						<p>API呼叫時的token驗證更新，當發送的token已失效且該API權限為可暱名使的話，API除了回傳的該API的結果外，會加註<span class="warn">[token=””]</span>欄位提示開發者此token已失效。因應此機制，coimDelegate新增對應的coimConnectionInvalidToken:方法。SDK同時會將儲存的token更新為””，如果開發的APP需要使用到使用者的身份的話，那開發者就必須在此callback中執行登出/使用者登入的步驟以取得有效的token。否則 使用者在後續的操作上會遭遇到無法取得個人資料之類的的錯誤。</p>
+					</li>						
+				</ol>
+
+				
+				<pre><code>
+	範例
+	- (void)coimConnectionDidFinishLoading:(NSURLConnection *)connection
+	      withData:(NSDictionary *)responseData
+	{
+		NSLog(@"login: %@", responseData);
+		if([[responseData objectForKey:@"errCode"] intValue] == 0) {        
+			if ([[_connection accessibilityLabel]
+				isEqualToString:REGISTER_CONNECTION_LABEL]) {
+		 	//do your stuff for register connection
+			}
+	       else if ([[_connection accessibilityLabel] 
+			isEqualToString:LOGIN_CONNECTION_LABEL]) {
+				[appUtil enterApp];
+				//do your stuff for login connection
+	      }
+	    }
+	    else {
+	        [coimSDK alertMessage:[coimSDK getMessageFrom:responseData]];
+			  // or do your stuff for non successed API call
+	    }
+	    [self setEnable]; 
+	}
+
+	- (void)coimConnection:(NSURLConnection *)connection
+	      didFailWithError:(NSError *)error
+	{ 
+		 //do your stuff for fail API request
+	 	 [coimSDK alertMessage:[error localizedDescription]];
+		 [self setEnable];
+	}
+				</code></pre>
+
+				<h4>B.coimSDK</h4>
+				<p>
+				coimSDK為iOS SDK的主要物件，其中對於API呼叫部份提供了以下方法，這些方法同時會回傳NSURLConnection物件，開發者可為connection物件設置accessibilityLabel以便在delegate方法中用來判斷，因應不同的connection來處理回傳結果。
+				</p>
+				<p>
+					<h5>initSDK:(void(^)(NSError *))errBlock</h5>
+					初始化SDK，此SDK在使用前要先執行[coimSDK initSDK:^(NSError *err){}]，如果有SDK設定相關的錯誤，可在block中透過NSError物件得知。
+				</p>				
+				<pre><code>
+	範例
+	[coimSDK initSDK:^(NSError *err){
+	    if(err)
+	        NSLog(@"err: %@", [err localizedDescription]);
+	    }];
+				</code></pre>
+				<p>
+				<h5>sendTo:(NSString *)relativeURL withParameter:(NSDictionary *)params delegate: (id)delegate</h5>
+				</p>
+				<p>
+					<ul>發送API至開發者設定的功能元
+						<li>relativeURL格式為$WA/$RS/$OP[/$ID]。
+						$WA為內容集或模組代碼；$RS為資源代碼；$OP為功能元代碼；$ID則是在需要指定操作目標時給予的目標ID。								
+						</li>
+						<li>
+						parameter為NSDictionary物件，將要發送的參數以key-			value的方式儲存至NSDictionary後一併發送，如果沒有參數的話，可輸入nil。</li>
+						delegate通常會實作在同一個class中，然後以傳入self便可，或是傳入一個有實作delegate方法物件供callback亦可。
+						</li>
+					</ul>
+				</p>
+				<pre><code>
+	範例
+	[coimSDK sendTo:@"core/user/profile" withParameter:nil delegate:self];
+				</code></pre>
+
+				<p>
+					<h5>attachFiles:(NSArray *)files To:(NSString)relatieURL withParams:(NSDictionary *)params delegate: (id)delegatet</h5>
+					上傳檔案至相關功能元(須繼承cms/page/attach或cms/geoLoc/attach)，params請參照相對應的功能元，其中nType參數為必要參數，在SDK可用”nType.NICON”, ”nType.NFILE”, ”nType.NIMAGE”, ”nType.NAUDIO”及”nType.NVIDEO”以方便選擇。files為欲上傳檔案的路徑的字串陣列，類型為NSArray，目前上傳限制為一次三個檔案或1mB。
+				</p>
+
+				<pre><code>
+	範例
+	[coimSDK attachFiles:files To:@"cms/geoLoc/attach/99999" withParameter:params delegate:self];
+				</code></pre>
+
+				<p>
+					<h5>loginTo:(NSString *)relativeURL withParameter:(NSDictionary *)params delegate: (id)delegate</h5>
+					發送登入的API 。<br>
+					params必須有”accName”與”passwd” 。
+				</p>
+
+				<pre><code>
+	範例
+	[coimSDK loginTo:@"core/user/login" withParameter:parameters delegate:self];
+				</code></pre>
+
+				<h5>registerWithParameter:(NSDictionary *)params delegate: (id)delegate</h5>
+				<p>註冊使用者，COIMOTION在註冊流程分為兩步。首先註冊取得actID後再啟用該actID，考量到app使用者的註冊順暢度，在SDK中自動幫註冊的使用者啟用帳號，開發者使用此方法時，如果有成功取得回應即表示該帳號已啟用並取得token可進行之後的API操作。
+					params必須有”accName”、”passwd”與”passwd2”。
+				</p>
+
+				<pre><code>
+	範例
+	[coimSDK registerWithParameter:parameters delegate:self];
+				</code></pre>
+				<h5>updatePasswd:(NSDictionary *)params delegate: (id)delegate</h5>
+				<p>發送密碼修改的API<br>
+					parameters必需有”oldPasswd”、”passwd”與”passwd2” 。
+				</p>
+				<pre><code>
+	範例
+	[coimSDK updatePasswd:parameters delegate:self];
+				</code></pre>
+				<h5>logoutFrom:(NSStroing *)relativeURL delegate: (id)delegate 或
+					logout:(id)delegate	</h5>
+				<p>發送登出使用者的API。relativeURL的功能元必需繼承自core/user/logout。</p>
+				<pre><code>
+	範例
+	[coimSDK logoutFrom:@"core/user/logout" delegate:self]; OR
+	[coimSDK logout:self];
+				</code></pre>
+				<p>
+					<h4><span class="warn">※在SDK中，有關傳送密碼的方法，會將使用者的密碼做加密後才傳出。</span></h4>
+				</p>
+
+				<h4>C.輔助方法</h4>
+				<p>SDK中另外提供了工具類方法，以簡化開發者在寫程式時的手續，
+					<h4>showAlert: (NSString *)msg</h4>
+					將傳入的msg字串以UIAlertView顯示
+				</p>					
+				<pre><code>
+	範例
+	[coimSDK alertMessage:[coimSDK getMessageFrom:responseData]];
+				</code></pre>
+				<h5>getErrCodeFrom: (NSDictionary *) dic</h5>
+				<h5>getMessageFrom: (NSDictionary *) dic</h5>
+				<h5>getValueFrom: (NSDictionary *) dic</h5>
+				<h5>getListFrom: (NSDictionary *) dic</h5>
+
+				<p>分別為從API回傳結果的NSDictionary中取出errCode/message/value/list(value之中的) 。如果該目標不存在dic中的話，會回傳-5000/””(空字串)/{}(空dictionary)/[](空陣列)。</p>
+
+				<pre><code>
+	範例
+	int errCode = [coimSDK getErrCodeFrom:responseData];
+	NSString *message = [coimSDK getMessageFrom:responseData];
+	NSDictionary *value = [coimSDK getValueFrom:responseData];
+	NSArray *[list = [coimSDK getListFrom:responseData];
+				</code></pre>
+				<h5>checkNetwork</h5>
+				<p>回傳網路狀態，如果有網路連線的話，會回傳YES，反之回傳NO。如果要使用此功能的話，APP必須加入SystemConfiguration.framework。</p>
+				<pre><code>
+	範例
+	If([coimSDK checkNetwork])
+	//do your stuff with network
+				</code></pre>
+				<h4>IV.	如有問題的話，可到COIMOTION網站留言</h4>
+									
+		</div> -->
+		<!-- 編輯內文結束 -->
+
+		<!-- 版本記錄開始 -->
+		<!-- <div class="log">
+			<a href="/wcoim/SDK/COIMOTION-SDK-iOS.zip" class="load">
+			<i class="fa fa-download"></i><span>SDK Download</span></a>
+			<h5><strong>iOS / OS X Changelog<strong></h5>
+			<h5>v1.2.20 — July 16, 2014</h5>
+    		<h5>NOTE: v1.2.20 introduced bugs in PFLogInViewController and PFSignUpViewController, which will be fixed in v1.2.21. See this bug report for more info.</h5>
+	    		<ul>
+	    			<li>Added PFParseErrorDomain.</li>
+	    			<li>Improved cold start time.</li>
+	    			<li>Update iOS login and signup UI.</li>
+	    		</ul>
+			<h5>v1.2.19 — April 4, 2014</h5>
+    		<h5>Fixed some memory leaks.</h5>
+    		<h5>PFTwitterUtils now supports system Twitter accounts (SSO). The following dependencies should be added to Xcode projects that use PFTwitterUtils:</h5>
+	     		<ul>
+	     			<li>Accounts.framework</li>
+	     			<li>Social.framework</li>
+	     		</ul>
+		</div> --> 
+		<!-- 版本記錄結束 -->
+
+		<!-- 捲至頂端 -->
+		<!-- <a href="#bkManage" class="gotop"><i class="fa fa-chevron-up"></i></a>
+	</div> -->         
+
+<div class="bkManage" id="bkManage" ngID="<%=bi.id%>" logID="<%=bi.query.logID%>">
+	<%=value.body%>
+	<!-- <a href="#bkManage" class="gotop"><i class="fa fa-chevron-up"></i></a> -->
+	<div class="log"></div>
+	<div class="gotop-nav">
+		<a href="#bkManage" class="gotop"><i class="fa fa-chevron-up"></i></a>
+	</div>
+</div>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>		
+	<ph id="title">
+		<en>Contact Us</en>
+		<zh>連絡我們</zh>
+	</ph>
+	<ph id="name">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+	<ph id="mail">
+		<en>E-mail</en>
+		<zh>電郵</zh>
+	</ph>
+	<ph id="sub">
+		<en>Title</en>
+		<zh>主旨</zh>
+	</ph>
+	<ph id="massage">
+		<en>Massage</en>
+		<zh>內容</zh>
+	</ph>
+	<ph id="js_PARAMS_ERR">
+		<en>Please enter the complete information.</en>
+		<zh>請輸入完整資料。</zh>
+	</ph>
+	<ph id="js_SEND_MSG">
+		<en>The message has been sent. We will contact you as soon as possible.</en>
+		<zh>訊息已送出，我們會儘快與您聯繫。</zh>
+	</ph>
+</phrases>

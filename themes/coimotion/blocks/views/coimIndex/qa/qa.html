@@ -1,0 +1,22 @@
+<% if (value && value.list.length > 0) { %>
+  <% value.list.forEach(function(item) { %>
+  <div class="alert">
+    <span class="label label-default"><%=item.ngID%></span>
+  <!--   <span>公開</span> -->
+    <span><%=item.title%></span>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success"><%=item.summary%></li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+    </ul>
+  </div>
+  <% }); %>
+<% } else { %>
+  <div class="alert">無資料</div>
+<% } %>
+
+<style type="text/css" media="screen">
+  .alert {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+</style>

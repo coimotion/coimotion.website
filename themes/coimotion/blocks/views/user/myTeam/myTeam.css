@@ -1,0 +1,210 @@
+/* ----------------- searchTeam ----------------------*/
+label{
+  color: #2a806e;
+}
+.input-group input{
+  border: 1px  solid  #b8d6d0; 
+  color: #2a806e;
+}
+.input-group-addon{
+  cursor: pointer;
+  background-color: #E4F3F1;
+  border-color: #b8d6d0;
+}
+.input-group-addon:hover{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);  
+  color: #00503c;
+  background-color: #E4F3F1;
+}
+.form-group,
+.form-group input,
+.form-group span{
+  font-size:16px;
+  font-family: sans-serif;
+  color: #2a806e;
+}
+
+/*-----------------------teamList----------------------*/
+.widget-content{
+  padding: 2%;
+}
+/*按鈕的內距*/
+.btnLR{
+  padding: 5px 0;
+}
+
+/*圖片 icon設定*/
+/*第二層-灰底*/
+.teamiconstyle{
+  margin:10px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  width: 100px;
+  height:110px;
+  left: 0;
+  top: 0;
+  position: relative;
+  overflow: hidden;  
+}
+/*第三層-頭像位置*/
+.teamiconFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  position: absolute;
+  left:0px;
+  top:15px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.teamiconFace i{
+  font-size: 5.6em;
+  margin: 0px;
+}
+
+/* --表格設定-- */
+.widget-content table tr td a{
+ color: #2a806e;
+ font-size:10px;
+ display:block;
+ margin-top:20px; 
+}
+.widget-content table tr td a:hover{
+ color: #28695b;
+ font-size:10px;
+}
+/*彈跳視窗的內距設定*/
+.inner{
+  padding: 30px;
+  color:#666;
+}
+.inner:hover{
+  color:#333;
+}
+
+span{
+  color:#2a806e;
+  font-size: 16px;
+}
+
+/*-------detail 彈跳視窗-------*/
+/*圖片 icon設定*/
+/*第二層-灰底*/
+.detailiconstyle{
+  margin:10px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  background: #E4E6E1;
+  /*圓角*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 56px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  /*position: absolute;
+  left:4px;
+  top: -6px;
+  z-index: 2;*/
+  width: 120px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;  
+}
+/*第三層-頭像位置*/
+.detailiconFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  position: absolute;
+  left:0px;
+  top:20px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.detailiconFace i{
+  font-size:8em;
+  margin: 0px;
+}
+/*section設定*/
+.s1{
+  padding:15px 20px 0px 80px;
+  font-size: 16px;
+}
+/*APP圖片設定*/
+.appstyle{
+  width: 100%;
+  height: 100%;
+  padding:0; 
+  margin:5px 0;
+  text-align: center;
+  vertical-align:middle;
+  background: #E4E6E1;
+  /*圓角*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+}
+.appstyle i{
+  font-size: 8em;
+  color: #fff;
+}
+.bk1{
+  border:1px solid #ccc;
+}
+.noPaLR{
+  padding-left:0px;
+  padding-right: 0px;
+}
+.maL{
+  margin-left: 2%;
+}
+/*--表格設定--*/
+.userTeamlist{
+  display:block;
+  width:96%;
+  margin: 20px 100px 20px 20px;
+  padding: 0px;  
+  border: #ccc solid 1px;
+  overflow-x: hidden !important;
+}
+/*--左邊圖片--*/
+.userTeamlistL{  
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+  padding-bottom: 0px;
+  float: left;
+} 
+/*--右邊內文--*/
+.userTeamlistR{
+ margin:0px;
+ padding: 0px 10px 5px 20px;
+ border-left: #ccc solid 1px;
+ float: left;
+}
+.userTeamlistR h3{
+ margin-top: 10px;
+}
+.userTeamlistR p, .userTeamlistR3 section{
+ margin-left: 12px;
+}

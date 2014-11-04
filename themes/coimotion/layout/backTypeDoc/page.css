@@ -1,0 +1,56 @@
+body{
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;   
+  direction: ltr;  
+}
+#pgContainer{
+  padding:0;
+  margin: 0 auto;
+  /*width: 1280px;*/
+}
+#pgHead, #pgMain, #pgFooter {
+  padding:0;
+  margin: 0;
+  width: 100%;
+}
+#pgMain {
+  background: #f7f7f7;
+}
+
+#pgLeft {
+  width: 180px;
+  min-height: 600px;
+  float: left;
+  padding: 1em 0;
+  margin: 0;
+  background: #f7f7f7; 
+  position: absolute;
+  left: 0;
+  margin-top: 2em;
+}
+#pgContent{
+  margin: 0;
+  padding: 0;
+  /*float: left;*/
+  min-width: 400px;  
+  min-height: 600px;  
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  margin-left: 177px;
+  border-left: 1px solid #dae3e9;
+  border-bottom: 1px solid #dae3e9;
+  box-shadow: -3px 3px 3px -2px #f1f1f3;
+  border-radius: 0px 0px 0px 5px;
+  -webkit-transition: margin-left .3s ease;
+  -moz-transition: margin-left .3s ease;
+  -o-transition: margin-left .3s ease;
+  -ms-transition: margin-left .3s ease;
+  transition: margin-left .3s ease;
+}

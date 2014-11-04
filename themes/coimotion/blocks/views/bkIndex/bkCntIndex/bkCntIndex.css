@@ -1,0 +1,20 @@
+/*左右換頁控制鈕*/
+.arrow{
+  font-size: 3em;
+  margin: 0 50px;
+  cursor: pointer;
+}
+.maT{
+  margin-top: 3.25em;
+}
+table{
+  table-layout:fixed;
+}
+
+td {
+  overflow:hidden;
+}
+
+.tableChange > tbody > tr > td:nth-child(2) {
+  text-align: left;
+}

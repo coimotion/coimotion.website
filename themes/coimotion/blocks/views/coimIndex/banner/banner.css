@@ -1,0 +1,32 @@
+.carousel-caption{
+	text-align: center;
+	padding-top: 4em;
+	bottom: 50px;
+}
+h1{
+	font-size: 42px;
+}
+.iconAn1{
+	width: 100%;
+	-webkit-animation: cssAnimation 2s 1 ease-out;
+	-moz-animation: cssAnimation 2s 1 ease-out;
+	-o-animation: cssAnimation 2s 1 ease-out;
+	}
+	@-webkit-keyframes cssAnimation {
+	0%{ -webkit-transform: rotate(0deg) scale(1) skew(60deg) translate(-500px); }
+	20% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(300px); }
+	80% { -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(80px); }
+	100% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+	}
+	@-moz-keyframes cssAnimation {
+	0%{ -webkit-transform: rotate(0deg) scale(1) skew(60deg) translate(-500px); }
+	20% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(300px); }
+	80% { -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(80px); }
+	100% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+	}
+	@-o-keyframes cssAnimation {
+	0%{ -webkit-transform: rotate(0deg) scale(1) skew(60deg) translate(-500px); }
+	20% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(300px); }
+	80% { -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(80px); }
+	100% { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+}

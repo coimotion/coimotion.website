@@ -1,0 +1,1 @@
+/shared/css/font/font-awesome.css

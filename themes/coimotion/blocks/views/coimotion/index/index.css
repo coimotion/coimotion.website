@@ -1,0 +1,48 @@
+.pageListContainer {
+	width: 1024px;
+}
+.pageItem {
+    //height: 370px;
+  	padding-bottom: 25px;
+  	width: 1024px;
+  	float: left;
+  	font-family: Arial;
+  	padding-left: 25px;
+  	padding-right: 25px;
+}
+
+.pageListContainer .title {
+  	font-size: 35px;
+  	color: #27ae60;
+  	margin-bottom: 20px;
+  	margin-top : 15px;
+  	font-weight: bold;
+}
+
+.pageListContainer .title a{
+  	color: #27ae60;
+  	text-decoration: none;
+}
+
+.pageListContainer .summary {
+    font-weight: bold;
+  	font-size: 20px;
+  	margin-bottom: 15px;
+}
+
+.pageListContainer .body {
+  	font-size: 17px;
+  	line-height: 25px;
+}
+/*
+.pageListContainer .body {
+  	font-size: 17px;
+  	line-height: 25px;
+}
+*/
+
+p {
+    line-height: 1.5em;
+    font-family: sans-serif;
+    margin:15px 0 20px;
+}

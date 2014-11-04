@@ -1,0 +1,72 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal">
+    <span aria-hidden="true">&times;</span>
+    <span class="sr-only">Close</span>
+  </button>        
+</div>
+<div class="modal-body">
+  <div class="row">
+    <!-- 左側開始 -->
+    <div class="col-md-3 col-sm-3 col-xs-3">            
+        <img src="../../wcoim/backstage/key.png" alt="coimotion" class="img-responsive key">
+        <h4>Welcome to COIMOTION</h4>
+    </div>
+    <!-- 左側結束 -->
+    <!-- 右側開始 -->
+    <div class="col-md-9 col-sm-9 col-xs-9">                    
+      <div class="right">
+        <div class="arrow"></div>                
+          <form class="form-horizontal" role="form" action="" method="post">
+            <div class="form-group">                     
+              <div>
+                  <input type="text" class="form-control" id="name" name="fname" placeholder="<%= ph.name %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusAccNme();">
+                  <span class="user"><i class="fa fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form-group">            
+              <div>
+                  <input type="text" class="form-control" id="mail" name="accName" placeholder="<%= ph.mail %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusPw();">
+                  <span class="envelope"><i class="fa fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form-group">            
+              <div>
+                  <input type="password" class="form-control" id="password" name="passwd" placeholder="<%= ph.pwd %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusPw2();">
+                  <span class="key-1"><i class="fa fa-key no1"></i></span>
+              </div>
+            </div>
+            <div class="form-group">            
+              <div>
+                  <input type="password" class="form-control" id="confirm" name="passwd2" placeholder="<%= ph.confirm %>" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusOrg();">
+                  <span class="key-2"><i class="fa fa-key"></i></span>
+              </div>
+            </div> 
+            <div class="form-group">            
+              <div>
+                  <input type="text" class="form-control" id="orgCode" name="orgCode" placeholder="<%= ph.team %>" onchange="$(this).removeClass('active'); if($(this).empty().val())$(this).addClass('active');" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.focusCa();">
+                  <span class="users"><i class="fa fa-users"></i></span>
+              </div>
+            </div>            
+            <div class="form-group">            
+              <div>
+                  <input type="text" class="form-control" id="caCode" name="caCode" placeholder="<%= ph.code %>" onchange="$(this).removeClass('active'); if($(this).empty().val())$(this).addClass('active');" onkeydown="if(window.event.keyCode==13)<%=ctrl%>.doJoin();">
+                  <span class="phone"><i class="fa fa-mobile-phone"></i></span>
+              </div>
+            </div>
+            <!-- 
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"><%= ph.remember %>
+              </label>
+            </div>
+             -->
+            <div class="text-center">
+              <button type="button" class="btn btn-sign regBtn" onclick="<%=ctrl%>.doJoin();">
+                <%= ph.sign %>
+              </button>
+            </div>             
+          </form>
+        </div><!-- right結束-->
+      </div><!-- 右側結束-->
+  </div><!-- row結束-->
+</div><!-- /.modal-body -->

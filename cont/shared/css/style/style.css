@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+@import url("normalize.css");
+@import url("bootstrap.css");
+@import url("theme.css");
+
+html{
+    background-color: #f8f8f8 !important;
+}
+body{
+	font-size: 12px;
+	line-height: 22px;
+	color: #666;
+	border-top: 3px solid #eee;
+	padding-top: 37px;
+	-webkit-font-smoothing: antialiased;
+	font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+    font-style: normal;
+	margin:0 auto;
+	overflow-x:hidden;
+	background-color: #f8f8f8;
+  	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+  	background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+  	background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+  	background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+  	background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+  	background: linear-gradient(top, #f8f8f8, #f2f2f2);
+}
+
+/* ---------------------------------nav 固定上方列----------------------------------*/
+
+.navbar *{
+	font-weight: normal !important;
+	text-shadow:none !important;
+}
+
+.navbar{
+  background-color: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+  background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: linear-gradient(top, #f8f8f8, #f2f2f2);
+  border-bottom: 1px solid #ddd;
+  box-shadow: inset 0px 1px 1px #fff;
+}
+
+nav{
+  background: #FFFFFF;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  margin-top: -5px;
+}
+
+/*logo後台管理系統文字*/
+nav .meta{
+  text-align:center;
+  color: #888;
+  padding-top: 3px;
+  /*padding-left: 16px;*/
+  padding-left: 10px;
+  font-size: 0.8em;
+  /*letter-spacing: 1.2em;*/
+  letter-spacing: 0.55em;
+  margin-bottom: -20px;
+}
+/*右邊會員設定*/
+nav .member {
+  padding-top: 25px;
+  font-size:1.1em;
+}
+nav .member a, nav .member i{
+  color: #888;
+  font-size:1.1em;
+}
+nav .member a:hover, nav .member i:hover{
+  color: #000;
+}
+/*右邊會員設定-通知*/
+.dropdown-toggle i{
+ font-size: 16px;
+}
+.badge {
+position: absolute;
+font-size: 12px !important;
+font-weight: 300;
+top: 8px;
+right: 24px;
+z-index: 2;
+text-align: center;
+height: 16px;
+background-color: #e02222;
+padding: 3px 6px;
+-webkit-border-radius: 16px !important;
+-moz-border-radius: 16px !important;
+border-radius: 16px !important;
+text-shadow: none !important;
+}
+.subject {
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.subject .from {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+}
+.subject .time{
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  position: absolute;
+  right: 20px;
+  color:#888;
+}
+.message {
+  display: block !important;
+  font-size: 12px;
+}
+.external{
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.external > a {
+  font-size: 12px;
+  font-weight: 400;
+}
+.external > a > i{
+  margin-top: 6px;
+}
+/* ----------------------------header 上方導覽列----------------------------*/
+header{
+  padding:0px 40px 0px 0px;
+  background: #1bbc9b;
+  /*border-top: 1px solid #ccc;*/
+  border-bottom: 1px solid #ddd;
+}
+header .container {
+  max-width: 100%;
+}
+/* Header 左上方導覽列 */
+header .page-head{
+  float: left;
+  padding: 5px 30px 0;
+  margin: 0;
+}
+header .page-head h3{
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  margin: 5px;
+  padding: 0;
+  float: left;
+  display: inline-block;
+}
+header .page-head .bread-crumb{
+  font-size: 10px;
+  margin: 8px 0 0 15px;
+  color: #fff;
+  float: left;
+}
+header .page-head .bread-crumb i{
+  margin-right: 3px;
+  color: #fff;
+}
+header .page-head .bread-crumb .divider{
+  margin: 0px 3px;
+  color: #fff;
+}
+header .page-head .bread-crumb span{
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Header 右上方導覽列 */
+/* header .container {
+  max-width: 100%;
+}*/
+
+/* Header 右上方導覽列 */
+header .header-data{
+  float: right;
+}
+/*導覽列寬度*/
+header .header-data .hdata{
+  display: inline-block;
+  /*width: 110px;*/
+  margin-right: 5px;
+  padding-left: 10px;
+}
+/*導覽列圓框*/
+header .header-data .hdata i{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  //font-size: 14px;
+  font-size: 18px;
+  padding-top: 1px;
+  text-align: center;
+  color: #1bbc9b;
+  border-radius: 50px;
+  margin-right:15px;
+}
+/*導覽列文字樣式*/
+header .header-data a .hdata{
+  display:inline-block;
+  line-height: 16px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+}
+header .header-data a .hdata p{
+  padding-top:8px;
+}
+/*導覽列滑過的變化*/
+header .header-data a:hover{
+  display:inline-block;
+  padding-bottom:7px;
+  background: #3da28c;
+}
+
+/*icon及文字寬度*/
+.mcol-left{
+	width: 20%;
+	float: left;
+}
+.mcol-right{
+	width: 80%;
+	float: right;
+}
+
+/* -------------------------  Footer 頁腳 ------------------------------*/
+
+footer{
+  background-color: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+  background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: linear-gradient(top, #f8f8f8, #f2f2f2);
+  padding:25px 0px;
+  color: #777;
+  font-size: 12px;
+  border-top: 3px solid #ddd;
+}
+
+footer .container{
+  max-width:100% !important;
+}
+
+footer .copy{
+  font-size: 11px;
+  font-style: normal;
+  text-align: center;
+}
+
+
+/*----------------------共用設定的部份-------------------------*/
+
+.alpha80{
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+ol, ul {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding: 2px 0px;
+	margin: 2px 0px;
+	color: #777;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+}
+
+h2{
+	font-size: 25px;
+	line-height: 35px;
+}
+
+h3{
+	font-size: 18px;
+	line-height: 23px;
+}
+
+h4{
+	font-size: 15px;
+	line-height: 20px;
+}
+
+h5{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+h6{
+	font-size: 12px;
+	line-height: 17px;
+}
+
+p{
+	padding: 0px;
+	margin:0px;
+}
+
+a{
+	color: #026b9c;
+}
+
+a:hover{
+	color: #003f5c;
+	text-decoration: none;
+}
+
+a:hover,a:active,a:focus {
+	outline: 0;
+}
+
+hr{
+margin:15px 0px 10px 0px;
+padding:0px;
+border-top:0px;
+border-bottom:1px solid #f4f4f4;
+height:0px;
+}
+
+/*icon顏色*/
+.bblue{  background:#5eb2d9;}
+.bbrown{  background:#b46e4c;}
+.bgreen{  background: #4ac344;}
+.borange{  background:#ff8421;}
+.bred{  background: #ff5d5e;}
+.byellow{  background: #d7a443;}
+.bpurple{  background: #CD60F7;}
+.bwhite{  background: #fff;}
+.bblue{  background: #01afd1;}
+.borange{  background: #f37936;}
+.bpink{  background: #FE8DB5;}
+
+/*按鈕*/
+.btn-blue{
+  color: #fff;
+  background: #5ac5cb;
+  border: #52c0c6;
+  /*background-color: #01afd1;
+  border-color: #03a4c3;*/
+}
+.btn-blue:hover,
+.btn-blue:focus{
+  color: #fff;
+  background: #53b4b9;
+  border: #50aaaf;
+}
+.btn-lightGreen{
+  color: #fff;
+  background: #B8D6D0;
+  border: #afd1ca;
+}
+.btn-lightGreen:hover,
+.btn-lightGreen:focus{
+  color: #fff;
+  background: #28af91;
+  border: #1ca081;
+}
+.btn-orange{
+  color: #fff;
+  background-color: #f37936;
+  border-color: #dc6b2d;
+}
+.btn-pink{
+  color: #fff;
+  background-color: #FE8DB5;
+  border-color: #FF80C0;
+}
+/*提示色*/
+.highlight {
+  background: #4ACEDA !important;
+  border: #4ebfc9;
+}
+.highlight span {
+  color: #fff !important;
+}
+.highlight span:active,
+.highlight span:focus,
+.highlight span:visited {
+  color: #2a806e !important;
+}
+
+#pgContent{
+ background:#fff;
+}
+
+/*彈跳視窗的覆寫*/
+.modalstyle{
+  top: 10%;
+  overflow: hidden;
+  outline: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 480px){
+	.mainbar .page-head h2{
+		float: none;
+	}
+	.mainbar .bread-crumb{
+		float: none;
+		margin-top: 10px;
+	}
+	.col-left{
+		width: 100%;
+		float: none;
+		margin-right: none;
+	}
+	.col-right{
+		width: 100%;
+		float: none;
+	}
+	.fc-button-month, .fc-button-agendaWeek, .fc-button-agendaDay {
+		display: none;
+	}
+}
+
+@media (max-width: 550px){
+  header {
+    padding:3%;
+  }
+  .header-data {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+
+@media (max-width: 767px){
+
+	.form-inline button{
+   		margin-left:0px;
+   	}
+	header{
+		padding-top: 0px !important;
+		/*padding-bottom: 20px !important;*/
+    padding-bottom: 0 !important;
+	}
+	header .logo{
+		padding: 0px;
+		display: none;
+	}
+	header .nav.nav-pills{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		margin-left:20px;
+	}
+	header .header-data {
+		/*margin-top: 15px;
+		margin-left: 20px;*/
+    margin-top: 0;
+    margin-left: 0;
+	}
+
+	.navbar{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	.nav-collapse .dropdown-menu{
+		padding: 10px 10px !important;
+	}
+	.nav-collapse .dropdown-menu > li{
+		color: #999 !important;
+	}
+	.nav-collapse .dropdown-menu a {
+		color: #777;
+	}
+	.nav-collapse .dropdown-menu a:hover{
+		color: #888;
+		background:transparent !important;
+	}
+	.nav-collapse .dropdown-menu hr{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #ccc;
+	}
+	.sidebar{
+		float: none;
+		width: 100%;
+	}
+	.sidebar .sidebar-dropdown{
+		display: block;
+	}
+	.sidebar #nav{
+		display: none;
+	}
+	.mainbar{
+		float: none;
+		margin:0px;
+		border:0px;
+	}
+	.today-datas{
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+  .form{
+		margin: 0px !important;
+	}
+	form .control-group{
+		margin:0px !important;
+	}
+	form .control-label{
+		float: none !important;
+		width: auto !important;
+		text-align: left !important;
+	}
+	form .controls{
+		float: none !important;
+		margin-left: 0px !important;
+	}
+	form .form-actions{
+		padding-left: 0px !important;
+	}
+	.navbar{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	.nav-collapse .dropdown-menu{
+		padding: 10px 10px !important;
+	}
+	.nav-collapse .dropdown-menu > li{
+		color: #999 !important;
+	}
+	.nav-collapse .dropdown-menu a {
+		color: #777;
+	}
+	.nav-collapse .dropdown-menu a:hover{
+		color: #888;
+		background:transparent !important;
+	}
+	.nav-collapse .dropdown-menu hr{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #ccc;
+	}
+	/*.sidebar{
+		width: 200px;
+	}*/
+	/*.mainbar{
+		margin-left: 200px;
+	}*/
+
+   header{
+      /*padding-top:10px;*/
+      padding-top:0;
+   }
+
+	header .nav.nav-pills{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		margin-left:20px;
+	}
+	header .header-data {
+		/*margin-top: 15px;
+		margin-left: 20px;*/
+    margin-top: 0;
+    margin-left: 0;
+	}
+
+	header .logo{
+		padding: 0px;
+		display: none;
+	}
+}

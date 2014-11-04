@@ -1,0 +1,103 @@
+/* 左側選單 */
+.subMenu{
+  width: 100%;
+  padding: 0;
+  margin: 2em auto;
+}
+ul.sidebar-menu {
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-size: 0.7em;
+}
+/*選單預設樣式*/
+ul.sidebar-menu > li {  
+  width: 100%;
+  display: block;
+  position:relative;
+  overflow: visible;
+  margin: 0;
+  padding: 15px 10px 10px;
+  border-bottom: #dae1e8 solid 1px;
+  -moz-box-shadow: 0 2px 1px -1px #fff;
+  -webkit-box-shadow: 0 2px 1px -1px #fff;
+  -ms-box-shadow: 0 2px 1px -1px #fff;
+  -o-box-shadow: 0 2px 1px -1px #fff;
+  box-shadow: 0 2px 1px -1px #FFFFFF;
+}
+/*選單連結樣式*/
+ul.sidebar-menu > li > a {
+  line-height: 30px; 
+  text-decoration: none;
+  font-size: 16px;
+  color: #66808d;
+}
+/*前置圖案*/
+ul.sidebar-menu > li > a > i {
+  font-size: 8px;
+  color: #8098A4;
+  margin-left: 0px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+/*文字*/
+ul.sidebar-menu > li > a > span {
+  font-size: 14px;
+  margin-left: -5px;
+  color: #66808d;
+}
+/*li 啟動樣式、滑過*/
+ul.sidebar-menu > li.active > a, 
+ul.sidebar-menu > li.active > a > i,
+ul.sidebar-menu > li:hover > a > i,
+ul.sidebar-menu > li:hover > a > span {
+  color: #28313E;  
+}
+
+/****子選單****/
+ul.submenu {
+	display: none;
+	list-style-type: none;	
+	margin: 7px 5px 15px 2px;
+	padding-left: 3px;
+	padding-bottom: 10px;
+}
+ul.submenu a {
+	font-size: 13px;
+	color: #4c535a;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 2px;
+}
+ul.submenu a:hover {
+	color: #262626;
+}
+ 
+/*右邊白箭頭*/
+.arrow, .arrow_border {
+  width: 0;  
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  font-size: 0;  
+  line-height: 0;  
+  position: absolute;
+  top: 30%;
+  left: 49%;  
+  z-index: 1002; 
+  margin: 0 auto;
+  margin-left: 45%;
+}
+.arrow_border {
+  border-color: transparent #dae1e8 transparent transparent;
+  border-width: 11px;
+  border-style: solid;
+  margin-left: -1px;  
+  z-index: 1001;
+  top: 30%;
+  left:94%;
+}

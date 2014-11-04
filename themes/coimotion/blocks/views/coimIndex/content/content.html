@@ -1,0 +1,188 @@
+<div id="nav">
+  <div class="navLeft"><a href="./"><img src="../../wcoim/theme/logo.png" alt="coimotion" title="coimotion"></a></div>
+  <div class="navRight">
+    <div class="bu siderBar navbar-step" style="padding: 20px 0;">
+      <img src="../wcoim/theme/off.png" id="off" style="padding: 3px 0;">
+      <ul class="nav" style="margin-top:20px; margin-bottom: -26px">
+        <li><a class="lk" href="#content1">API服務</a></li>
+        <li><a class="lk" href="#content2">內容集</a></li>
+        <li><a class="lk" href="#content3">獲利模式</a></li>
+        <li><a class="lk" href="#content4">示範App</a></li>
+        <li><a class="lk" href="#content5">如何使用</a></li>
+        <li><a class="lk" href="#content6">連絡我們</a></li>
+      </ul>
+    </div>
+    <a href="/member/login"><div class="bu">開發者</div></a>
+    <a href="#content6"><div class="bu">連絡我們</div></a>
+    <a href="../coimIndexNews/list?_pn=1&_ps=5"><div class="bu newsTab">最新消息</div></a>
+
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+<div id="content">
+  <div id="news">
+    <ul>
+      <% if (value && value.list.length > 0) { %>
+        <% var item = value.list; length = item.length %>
+        <% for (var i = 0; i < length && i < 4; i++) { %>
+        <li><a href="/coimIndexNews/view?id=<%=item[i].ngID%>">
+          <div class="thumbnail <% if (item[i].tagList.length === 0) {%>activity<%}else{%><%=item[i].tagList[0].tword%><%}%>"></div>
+          <p><%=item[i].title%></p>
+          <% var t = new Date(item[i].mdTime) %>
+          <h5 class="time"><%= t.getFullYear() +'-'+ ('0'+(t.getMonth()+1)).slice(-2) +'-'+ ('0'+t.getDate()).slice(-2) %></h5>
+        </a></li>
+        <% }; %>
+      <% } %>
+
+    </ul>
+    <div class="more"><a href="./coimIndexNews/list?_pn=1&_ps=5">>> more</a></div>
+  </div>
+  <!-- step1 -->
+  <div class="contentInner" id="content1">
+    <div class="conImg left" style="padding-left: 5%;">
+      <img src="../wcoim/theme/api.png" alt="coimotion">
+    </div>
+    <div class="conText right">
+    <p class="conHeader">
+    </p>
+    <p class="conBody">
+      <span>友善開發的API服務</span>
+    </p>
+    <p class="conFooter">
+      提供便利操作的模組，輕鬆應用便能打造功能完整的App。
+      <br>大幅簡化App開發的複雜度，為您省去一半以上的開發時間。
+    </p>
+    </div>
+    <p class="conBu clear">
+      <a href="#content2">
+        <i class="fa fa-chevron-circle-down fa-3x"></i>
+      </a>
+    </p>
+  </div>
+  <!-- step2 -->
+  <div class="contentInner" id="content2">
+    <div class="conImg right" style="padding-right: 5%;">
+      <img src="../wcoim/theme/app.png" alt="coimotion">
+    </div>
+    <div class="conText left">
+      <p class="conHeader">
+      </p>
+      <p class="conBody">
+        <span>豐富的內容集</span>
+      </p>
+      <p class="conFooter">
+        提供多元豐富的原始資料，資料涵蓋各式開放資料及民間資料，
+        <br>您可以從中尋找開發感，任意混搭資料玩出新創意。
+      </p>
+    </div>
+    <p class="conBu clear">
+      <a href="#content3">
+        <i class="fa fa-chevron-circle-down fa-3x"></i>
+      </a>
+    </p>
+  </div>
+  <!-- step3 -->
+  <div class="contentInner" id="content3">
+    <div class="conImg left" style="padding-left: 5%;">
+      <img src="../wcoim/theme/money.png" alt="coimotion">
+    </div>
+    <div class="conText right">
+      <p class="conHeader">
+      </p>
+      <p class="conBody">
+        <span>創意的獲利模式</span>
+      </p>
+      <p class="conFooter">
+        除了付費軟體、行動廣告的獲利管道之外，
+        <br>在COIMOTION還提供其他有創意的獲利模式，
+        <br>像是開放自建的內容集進行收費，獲得收益。
+      </p>
+    </div>
+    <p class="conBu clear">
+      <a href="#content4">
+        <i class="fa fa-chevron-circle-down fa-3x"></i>
+      </a>
+    </p>
+  </div>
+  <!-- step4 -->
+  <div class="contentInner" id="content4">
+    <img src="../wcoim/theme/phone.png" style="float: right; height: 38em; padding-right:5%; overflow:hidden;">
+    <p class="conHeader">
+    </p>
+    <p class="conBody" style="padding-left: 50px">
+      <span>「瘋藝文」示範App</span>
+    </p>
+    <p class="conFooter">
+      「瘋藝文」主要以高雄市藝文活動查詢，搭配上公車路線查詢
+      <br>與公車到站即時資訊。Android/iOS版本的程式碼皆已開放在GitHub上。
+      <br>
+      <br>您可下載後改寫成屬於自己的App，
+      <br>並歡迎您套用您所熟悉的行動廣告方案，將App上架後帶來收益！
+    </p>
+    <p class="conFooter">
+      <br>
+      GitHub 下載連結
+      <br>
+      <a href="https://github.com/coimotion/Android-Demo-App">
+        <img src="../wcoim/theme/android-1.png" alt="" />
+      </a>
+      <a href="https://github.com/coimotion/iOS-Demo-App">
+        <img src="../wcoim/theme/apple-2.png" alt="" />
+      </a>
+      <br>
+      <br>
+      <br>
+    </p>
+    <p class="conBu">
+      <a href="#content5">
+        <i class="fa fa-chevron-circle-down fa-3x"></i>
+      </a>
+    </p>
+  </div>
+  <div class="contentInner" id="content5">
+    <p class="conHeader">
+<!-- 			<span>特點4</span>
+      <hr class="hr1"> -->
+    </p>
+    <p class="conBody">
+      <span>如何使用COIMOTION</span>
+    </p>
+    <div class="bannerBlock"></div>
+    <p class="conBu">
+      <a href="#content6">
+        <i class="fa fa-chevron-circle-down fa-3x"></i>
+      </a>
+    </p>
+  </div>
+  <div class="formBlock"></div>
+</div>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $(window).scroll(function () {
+      $('#news').hide();
+      if ($(window).scrollTop() > 1) {
+        $('#nav').fadeIn(500);
+      } else {
+        $('#nav').fadeOut(500);
+      }
+    });
+    $('.bu').hover(function() {
+      $('#news').hide();
+      $('.newsTab').css('background', 'white');
+    });
+    $('.newsTab').hover(function(e) {
+      e.preventDefault();
+      $('#news').show();
+      $(this).css('background', '#f6ac54');
+    });
+
+    $('#news').hide().mouseleave(function(e) {
+      e.preventDefault();
+      $('#news').hide();
+      $('.newsTab').css('background', 'white');
+    });
+  });
+</script>

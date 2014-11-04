@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+  <ph id="track">
+    <en>Quickly create</en>
+    <zh>快速建置</zh>
+  </ph>
+  <ph id="orgCode">
+    <en>Team Code</en>
+    <zh>團隊代碼</zh>
+  </ph>
+  <ph id="text">
+    <en>Please enter the 6 digit or above in English or English plus digital</en>
+    <zh>請輸入6碼以上的英數字</zh>
+  </ph>
+  <ph id="caCode">
+    <en>caCode</en>
+    <zh>App代碼</zh>
+  </ph>
+  <ph id="close">
+    <en>Close</en>
+    <zh>關閉</zh>
+  </ph>
+  <ph id="send">
+    <en>Send</en>
+    <zh>建立</zh>
+  </ph>
+  <ph id="note">
+    <en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+    <zh>一次幫您將團隊與App建立完成，建立後團隊代碼與App代碼是不可更改的!</zh>
+  </ph>
+</phrases>

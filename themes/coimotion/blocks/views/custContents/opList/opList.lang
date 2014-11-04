@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="opList">
+		<en>OpList</en>
+		<zh>功能元清單</zh>
+	</ph>
+	<ph id="appCode">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="inherit">
+		<en>Alias</en>
+		<zh>繼承</zh>
+	</ph>
+	<ph id="del">
+		<en>Delete</en>
+		<zh>刪除</zh>
+	</ph>
+	<ph id="docTx">
+		<en>No additional resources yuan or any feature inherited object no choice.</en>
+		<zh>資源尚無新增任何功能元或沒有選擇繼承對象。</zh>
+	</ph>
+	<ph id="note">
+    	<en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+    	<zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+  	</ph>
+  	<ph id="js_DEL_MSG">
+		<en>Are you sure to delete</en>
+		<zh>確定刪除</zh>
+	</ph>
+</phrases>

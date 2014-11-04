@@ -1,0 +1,104 @@
+<%
+	var  appCode = bi.id,
+		 id = bi.query.orgID,
+		 idParms = id+"?appCode="+appCode;
+%>
+
+<div class="widget">
+	<div class="widget-head">		
+		<div class="row plustitle">
+			<!-- 新增按鈕列開始 -->
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 pull-right plus">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAddRs();">
+					<i class="fa fa-plus"></i><span><%=ph.add%></span>
+				</a>
+			</div>
+			<!-- 新增按鈕列結束 -->
+			<!-- title -->
+			<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 text-left">
+				<a href='/custContents/list/<%=id%>'><%=appCode%></a>::<%=ph.list%>
+			</div>	
+			<!-- title結束 -->			
+		</div>		
+		<div class="clearfix"></div>
+	</div>
+	<% if (value && value.list.length > 0) { %>
+	<!-- Widget-center -->
+	<div class="widget-content">
+		<table class="table table-striped table-bordered table-hover">			
+			<tr class="text-center">
+				<th class="col-lg-1 col-md-2 col-sm-2 col-xs-2"><center><%=ph.code%></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><center><%=ph.title%></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><center><%=ph.descTx%></center></th>
+				<th class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><center><%=ph.opList%></center></th>
+				<th class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><center><%=ph.extent%></center></th>
+				<th class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><center><%=ph.operation%></center></th>
+			</tr>
+
+			<% value.list.forEach(function(item) { %>
+			<tr>
+				<%  allParms = idParms + "&rs=" + item.rs; %>
+				<!-- <td><a href="#" data-toggle="modal" data-target="#basicModal"><%= item.rs %></a></td> -->
+		        <td><a href="#" onclick="<%=ctrl%>.showRsInfo('<%= bi.id %>','<%=item.rs%>', '<%=bi.query.orgID%>');"><%= item.rs %></a></td>
+				<td><a href="#" onclick="<%=ctrl%>.showRsInfo('<%= bi.id %>','<%=item.rs%>', '<%=bi.query.orgID%>');"><%= item.title %></a></td>
+				<td><a href="/custContents/rsManage/<%= allParms %>"><%= item.descTx %></a></td>
+				<td>
+					<% if (item.opList && item.opList.length) { %>
+						<% item.opList.forEach(function(opL) { %>
+							<%= opL.op %>
+						<% }); %>
+					<% } %>
+				</td>
+				<td><% if(item.parent) html+=item.parent; %></td>
+				<td class="text-center">
+					<a href="/custContents/rsManage/<%= allParms %>">
+						<button type="button" class="btn btn-blue wc100 fs1 maT5 text-center"><%=ph.manage%></button>
+					</a>
+					<button type="button" class="btn btn-danger wc100 delBtn fs1 maT5 text-center" onclick="<%=ctrl%>.delRs('<%=appCode%>','<%=item.rs%>','<%= item.title %>')"><%=ph.delete%></button>
+				</td>
+			</tr>
+			<% }); %>
+		</table>
+	</div>
+	<%	} else { %>
+	<div class="widget-content">
+		<table class="table table-striped table-bordered table-hover">
+			<tr>
+				<td class="fs1"><center><%=ph.notFoundMsg%></center></td>
+			</tr>
+		</table>
+	</div>
+	<% } %>
+	<!-- widget-content結束 -->
+</div>
+<!-- widget結束 -->
+<!-- 提示字 
+<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12 col-xs-12 maT15">
+	<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+	<strong><%= ph.opList %></strong>
+		<%= ph.note %>
+</div>
+-->
+<!-- 新增資源 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="addRs modal-content" appCode="<%=appCode%>"></div>
+	</div>
+</div>
+<!-- 新增資源 彈跳視窗結束 -->
+
+<!-- 資源基本資料 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content rsInfo"></div>
+	</div>
+</div>
+<!-- 資源基本資料 彈跳視窗結束 -->
+
+<!-- 資源繼承 彈跳視窗開始 -->
+<div class="modal fade modalstyle rsParentModal" >
+	<div class="modal-dialog">
+		<div class="modal-content rsParentList"></div>
+	</div>
+</div>
+<!-- 資源繼承 彈跳視窗結束 -->

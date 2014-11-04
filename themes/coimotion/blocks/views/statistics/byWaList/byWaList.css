@@ -1,0 +1,37 @@
+.noStat {
+	text-align: center;
+	font-size: 16px;
+	line-height: 38px;
+}
+/*表格*/
+.table-bordered > tbody > tr >th {
+  border: 1px  solid  #b8d6d0; 
+  background: #f5fcfc; 
+  color: #00503c;
+  font-size:16px; 
+}
+.table-bordered > tbody > tr >td{
+  border: 1px solid #b8d6d0;
+  color: #2a806e;
+  font-size:16px;
+}
+.table-bordered > tbody > tr:nth-child(odd) > td,
+.table-bordered> tbody > tr:nth-child(odd) > th {
+  background: #f5fcfc;
+}
+.table-bordered > tbody > tr:nth-child(even) > td {
+  background: #fff;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background: #e4f3f1;
+}
+tbody >tr > td > a{
+  color: #2a806e;
+  font-size:16px;
+  display:block;
+  margin-top:20px;
+}
+tbody > tr > td > a:hover{
+  color: #28695b;
+}

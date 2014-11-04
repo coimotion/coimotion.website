@@ -1,0 +1,46 @@
+ /*form的右邊-login送出按鈕*/
+.btn-green{
+  color: #ffffff;
+  background-color: #1bbc9b;
+  border-color: #24b39a;
+  text-align: center;
+}
+.btn-green:hover,.btn-green:focus,.btn-green:active,.btn-green.active{
+  color: #ffffff;
+  background-color: #15957b;
+  border-color: #206c5d;
+}
+.btn-white{
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.btn-white:hover,.btn-white:focus,.btn-white:active,.btn-white.active{
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+/*團隊管理同意的按鈕*/
+.btn-blue{
+  color: #fff;
+  background-color: #01afd1;
+  border-color: #03a4c3;
+}
+.btn-blue:hover,.btn-blue:focus,.btn-blue:active,.btn-blue.active{
+  color: #ffffff;
+  background-color: #0094b1;
+  border-color: #01859e;
+}
+/*其它顏色的按鈕*/
+.btn-orange{
+  color: #fff;
+  background-color: #f37936;
+  border-color: #dc6b2d;
+}
+.btn-pink{
+  color: #fff;
+  background-color: #FE8DB5;
+  border-color: #FF80C0;
+}
+

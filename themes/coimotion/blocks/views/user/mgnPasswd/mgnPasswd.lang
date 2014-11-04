@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="oldPasswd">
+		<en>Old Password</en>
+		<zh>舊密碼</zh>
+	</ph>
+	<ph id="newPasswd">
+		<en>New Password</en>
+		<zh>新密碼</zh>
+	</ph>
+	<ph id="least">
+		<en>At least 6 numbers or characters</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>
+	<ph id="confirm">
+		<en>Confirm Password</en>
+		<zh>確認密碼</zh>
+	</ph>
+	<ph id="save">
+		<en>Save</en>
+		<zh>儲存</zh>
+	</ph>
+	<ph id="js_PASSWORD_ERR">
+		<en>Password needs to be a combination of letters and digits, and at least 6 characters long.</en>
+		<zh>密碼需為數字、字母，且大於6碼</zh>
+	</ph>
+	<ph id="js_PSWD_NOT_MATCH_ERR">
+		<en>You new password does not match.</en>
+		<zh>二次輸入的密碼不一致</zh>
+	</ph>
+	<ph id="js_UPDATE_PSSWD_MSG">
+		<en>Are you sure to update password?</en>
+		<zh>確定修改密碼?</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,37 @@
+<div class="modal-header mheader">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title">&nbsp;<%= ph.opList %></h3>
+</div>
+
+<div class="modal-body mbody">
+	<!-- 左側 -->
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">  
+		<div class="sidebar" ctrl="<%=ctrl%>">
+			<ul id="nav">
+				<% value.list.forEach(function(item) { %>
+				<li class="has_sub <%= item.appCode %>" appCode="<%= item.appCode %>">
+					<a href="javascript:<%=ctrl%>.showOpList('<%= item.appCode %>');">
+						<%= item.appCode %><span class="pull-right"><i class="icon-chevron-right"></i></span>
+					</a>
+				</li>
+				<% }); %>
+			</ul>
+		</div>
+		<!-- sidebar結束 -->
+	</div>
+	<!-- 左側結束 -->
+   
+	<!-- 右側 -->
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">  
+		<div class="sidebarCon">
+			<ul class="opList nav nav-pills nav-stacked"></ul>
+		</div>
+	</div>
+	<!-- 右側結束 -->
+	<div class="clearfix"></div>
+</div>
+<!-- modal-body結束 -->
+<div class="modal-footer mfooter text-center paT20" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" op="<%=bi.query.op%>">
+	<button type="button" class="btn btn-white wc30" data-dismiss="modal" onclick="<%=ctrl%>.confirm(0);"><%= ph.clear %></button>
+	<button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.confirm(1);"><%= ph.confirm %></button>
+</div>

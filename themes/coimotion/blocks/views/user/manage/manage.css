@@ -1,0 +1,14 @@
+.matter {
+  min-height: 600px;
+}
+ul {
+  margin-top: 10px;
+}
+
+/* 分頁內容 - 特別設定 */
+.tab-content{
+  border: 1px solid #b8d6d0;
+  border-top: none;
+  margin-top: 52px;
+  padding: 40px 0 20px;
+}

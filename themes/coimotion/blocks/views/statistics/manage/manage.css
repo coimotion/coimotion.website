@@ -1,0 +1,39 @@
+.matter {
+  min-height: 600px;
+}
+.form-inline .form-group input {
+	text-align: right;
+	font-size: 15px;
+	color: #00503c;
+}
+.form-control {
+    color: #00503c;
+}
+ul li {
+	border-bottom:0px;
+	font-size: 16px;
+	color: #00503c;
+}
+ul li:hover {
+	border-bottom:0px;
+}
+
+.selApp .app a{
+  background: #6AC18E;
+  color:#fff;
+}
+.selApp .app a:hover,
+.selApp .app a:focus,
+.selApp .app a:active{
+  background: #57AA78;
+  color:#fff;
+}
+.selApp .appmenu a{
+  color:#000;
+  background:#fff;
+}
+.selApp .appmenu a:hover,
+.selApp .appmenu a:focus {
+  color:#000;
+  background:#eee;
+}

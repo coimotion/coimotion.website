@@ -1,0 +1,77 @@
+        <h2 class="tagline">簡介</h2>
+        <p>COIMOTION 試圖從 API 的語法格式、開發者所需的後台功能以及提供資料內容等三個面向來解決開發網路應用的問題。簡單但有彈性的 API 格式讓程式好寫、好讀且容易維護。開箱立即可用的功能可以讓開發團隊省下重造輪子的時間，把精力集中在程式的獨特之處。至於提供內容，能夠讓應用程式不單單只能以創意吸引使用者，而是利用內容提供更好的使用價值。</p>
+
+        <h2 class="tagline">改良 API 的格式</h2>
+        <p>目前的 API 服務絕大多數是遵從 RESTful 的規範來定義其 API 格式。相對於以前隨興定義的網址格式，RESTful 確實讓 API 的定義比較明確、清楚，適合用來進行程式開發。然而 RESTful 只是一個開始，對於未來 API 可以使用的情境，RESTful 有其局限性。不加思索的完全套用 RESTful 在 API 上，將嚴重影響 API 的使用範圍和功能。為了完全實現 API 對程式開發模式所造成的重大影響，COIMOTION 對 RESTful 做了一些必要的修正。想要了解 RESTful 的限制的讀者，可以參考我們在 <a href="http://www.slideshare.net/BenLue/hack-go" target="new">MOPCON 2014</a> 的講題。</p>
+
+        <p>COIMOTION 所使用的 API 格式稱為 SEF (Semantic Endpoint Format)。意思是 API 端點 (endpoint) 的格式像一個英文句子，是有語意可以讀懂的。SEF 基本上是由一個名詞、一個動詞、有時再加上一個識別碼所構成。例如：</p>
+        <pre><code>
+        page/view/23
+        </code></pre>
+        <p>表示要檢視編號為 23 的網頁。</p>
+        <pre><code>
+        hackathon/attend/58
+        </code></pre>
+        <p>則表示要參加第 58 號的黑客松活動。把上面的例子改用專有名詞來表示，就會變成以下的格式：</p>
+        <pre><code>
+        resource/op/id
+        </code></pre>
+        <p>這個格式其實和 RESTful 是很類似的，差別只是將 HTTP method 變成 op ，並移入到網址路徑中。如此一來，從網址就可以清楚的看出我們所要執行的動作，以免在程式中發生意外的結果。此外，op 不再受限為只是「增、刪、改、查」，可以是各種不同的行為，例如搜尋、加註標籤等，解決了 RESTful 所產生的限制。</p>
+
+        <p>在 COIMOTION 中，完整的 API 端點 (endpoint) 是像以下的格式：</p>
+        <pre><code>
+        https://client_app_code.coimapi.tw/reposiroty/rs/op/id
+        </code></pre>
+        <p>其中 client_app_code 是應用程式的代碼，而 reposiroty 則是內容集的代碼。內容集的意義會在下面的內容做更進一步的說明。</p>
+
+        <p class="subtitle"><h3>選項參數</h3></p>
+        <p class="p_h3">為了避免產生過多相類似的 API 端點 (endpoint)，大多數 COIMOTION 所提供的 API 都可以透過選項參數 (option) 來調整 API 的功能或行為。例如在 COIMOTION 的 CMS (Content Management System) 模組有 page/list 的端點 (endpoint) 可以條列出所有的網頁。使用這個 API 若只想列出私人的網頁，就可以使用 pri 的選項參數來達成，如同下例所示：</p>
+        <pre><code>
+        page/list?pri=1
+        </code></pre>
+        <p class="p_h3">究竟有哪些選項參數可用、以及這些選項的意義為何，這會因每個 API 而有所不同。不過有二組選項參數例外。這二組選項參數適用在許多的 COIMOTON API 中。其一是分頁設定。當 COIMOTION 的執行結果是一個清單時，多數的 COIMOTION APIs 允許你將結果以分頁的方式傳回。你可以用 _ps 來設定每個分頁的筆數，用 _pn 來設定傳回第幾頁（從 1 起算）。另一組常用的選項參數是「回傳欄位設定」。每一個 COIMOTION API 的執行結果都有預設好的回傳欄位，但有時候你可能不需要系統所預設的所有欄位。此時你可以用 _fld 的選項參數來指定回傳的欄位（_fld 參數中沒有指定的欄位將會被忽略），或是用 _xfld 選項參數來指定要排除的欄位。以下以檢視地理位置為例：</p>
+        <pre><code>
+        geoLoc/info/533
+        </code></pre>
+        <p class="p_h3">這將傳回識別碼為 533 的地理位置的經度(longitude)、緯度(latitude)、標題(title)、地址(address)、是否為公開(isPublic)等資訊。如果你只需要經緯度以及地址，那麼可以使用下列的呼叫方式</p>
+        <pre><code>
+        geoLoc/info/533?_fld=['longitude', 'latitude', 'address']
+        </code></pre>
+        <p class="p_h3">或是</p>
+        <pre><code>
+        geoLoc/info/533?_xfld=['title', 'isPublic']
+        </code></pre>
+        <p class="p_h3">也可以得到相同的結果。</p>
+
+        <p class="subtitle"><h3>安全措施</h3></p>
+        <p class="p_h3">許多 API 服務為了讓開發者能快速上手，在安全性上做了妥協。我們認為安全性是在使用 API 服務的第一秒鐘就必須要妥善處理的，否則 API 用的越多，未來的傷害越大。COIMOTION 在安全性上，至少提供了以下的保護機制：</p>
+        <ul>
+            <li>每個應用程式都會被賦與一個次網域(your_app.coimapi.tw)，並且可以用 https 保護。</li>
+            <li>每個 API 呼叫都以 POST 的方式送出，而且 content-type 必須設定為 application/json。</li>
+            <li>每個 API 呼叫都必須送出程式金鑰或是使用者的 token，以防止未被授權的呼叫。</li>
+            <li>每個 API 是否可被呼叫，可以由開發者以「權控角色」的方式在開發者後台進行設定。</li>
+            <li>如果某些資料是屬於某個個人或組織的，COIMOTION 還會檢查呼叫者是否擁有資料的所有權。</li>
+        </ul>
+
+        <p class="p_h3">關於程式金鑰和使用者 token 的部分，有一些細節值得多加解釋。基本上，每一個 API 的呼叫都必須伴隨一個 token，而這個 token 可以用來辨識使用者是否有權去呼叫這個 API。但是 token 一開始是怎麼來的呢？它是在登入程式成功後，由系統產生並傳遞給子端（app 或網路瀏覽器）。子端必須把 token 儲存起來，並在每次呼叫 API 時傳回給 COIMOTION 進行授權辨識。</p>
+
+        <p class="p_h3">Token 是目前被常用的授權機制(authorization)，因為它提供了隔離保護的效果。不過 token 若是被盜取，還是會造成該使用者相當程度的損失。因此 COIMOTION 更進一步提供了 dynamic token 的機制，當 COIMOTION 發現 token 有可能被盜用時，就會再產生一個新的 token，盡量減少被盜取 token 可以被使用的機會。這讓 COIMOTION 的使用過程更安全，但也增加了呼叫 API 的複雜度。因此我們建議開發者使用我們所提供的各種 SDK，就不需要自己處理這個問題。</p>
+
+        <p class="p_h3">使用 token 是基本的授權機制，但有例外。如果程式所有存取的資料是公開的，例如讀取公開的網頁，此時送出程式金鑰也能成功取得使用 API 的授權。所以在使用者未登入前，應用程式必須送出程式金鑰才能順利讀取資料。必須注意的是，程式金鑰盡量不要 hard code 在程式碼中，尤其是 Android App 或是網站程式，以免被反解譯或研究程式碼取得。如果你使用 COIMOTION 所提供的各式 App SDK，就不會有這個問題。但若是網頁程式，則幾乎無法避免。所以我們建議如果你開發的是網頁程式（PhoneGap App, 網站等），可以考慮使用 <a href="http://www.coservjs.org" target="new">coServ</a> 來和 COIMOTION 對談，然後由子端向 coServ 取得執行結果。這樣就可避免將程式金鑰暴露在外。</p>
+
+        <h2 class="tagline">模組</h2>
+        <p>我們認為一個好的 API 服務應該要能提供開箱即用的功能，讓開發者能快速實作自己的想法，甚至達到 hack and go （開發完成即上線）的目標。後台開箱即用的功能，在 COIMOTION 上是透過「模組」來達成的。每個模組中都會包含一些資源型態，而每個資源型態都有一組已預先定義好的功能。例如 CMS 模組就包含了 page 以及 geoLoc 等資源，當開發者需要處理網頁與地理位置等資料時，就可以直接引用 CMS 模組而不需自己再重造一次輪子。</p>
+
+        <p>如果我們仔細檢視模組，還會發現它們分成二大類。第一類是系統性模組(system modules)，他們所產生的資料會是與整個 COIMOTION 平台相關的，而不是與個別的 App 應用相關。Core（核心模組）和 SWS（社群網站支援模組）就是屬於這類的模組。這一類系統性的模組可以不需要透過別名 (alias) 的方式而被直接引用。第二類是應用性模組(application modules)，這類的模組無法被應用程式直接引用，而是必須透過自建內容集的方式。使用方式是這樣的：開發者首先為自己所要儲存的資料定義一個自製的內容集。但是這樣一個內容集並沒有任何的程式邏輯（功能）來儲存與管理內容，所以我們可以在自製的內容集引用「應用性模組」裏的資源，並為這個資源取一個別名, alias（實際操作時，開發者會先新增一個資源，然後再套用現有的、系統提供的資源）。透過別名，我們可以引用原有資源中所有的功能，卻可以將所產生的資料封閉在新取的別名裡面。如此一來，不同的別名資源即使源自於同一個應用性模組的資源，他們的資料仍可被清楚的隔離。COIMOTION 目前已提供了核心模組、網頁管理、活動管理、虛擬商店管理、社群網站支援、書目管理和民宿管理等模組，可以滿足多數開發者的需求。</p>
+
+        <p>如果 COIMOTION 目前所提供的模組仍不足以支援你所有的後端需求，我們提供了 coServ 來解決這樣的問題。面對這種使用情境，有一些 API 服務是讓開發者上傳自己的程式碼，來支援客製的功能。但我們認為這種模式是不具彈性，且容易造成問題的。原因有二。第一，透過遠端的雲端 server 開發程式，會讓整個開發、測試和維護的工作變得非常困難。第二，在佈建(deployment)上，這類的服務缺乏其它 PaaS 服務所能提供的彈性和效能。除非是原形的開發，否則在實際產品佈建時會遭遇非常多的困難。</p>
+
+        <p>COIMOTION 的解決方式，是以 coServ 來提供客製的功能。coServ 是以 node.js 實作的一個非常簡潔但完整的 web framework。如果你遇到 COIMOTION 未提供而需要自行客製的功能時，可以使用 coServ 來快速完成客製功能的實作。coServ 本身已內建與 COIMOTION 溝通的能力，因此開發者可以輕易的透過 coServ 來整合 COIMOTION 與客製的功能。未來在產品佈建時，你可以選擇 AWS, Linode, Heroku 等 PaaS 服務來達到最大的彈性。</p>
+
+        <h2 class="tagline">內容寶庫</h2>
+        <p>經由改良 API 格式以及開箱即用的功能模組，COIMOTION 在技術層面上讓網路應用程式的開發更為便捷有效。但我們認為只有解決技術層面的問題還不足以讓開發者能有效的開發出具有高使用價值和高黏著度的應用。因此 COIMOTION 也為開發者提供了非常多有趣的資料，讓開發者經由資料的整合，開發更多的價值和創意。</p>
+
+        <p>內容寶庫在定義上，就是在 COIMOTION 平台上所提供公開的、或需經過授權的內容集（相對於自製內容集是由開發者所自行建立且專用的）。開發者可以在 COIMOTION 的開發後台上，設定應用程式所能參考或使用的內容集。</p>
+
+        <h2 class="tagline">結論</h2>
+        <p>經由以上的說明，相信你會了解 COIMOTIN 是目前世界上整體架構最完整，也是最貼近開發者思維的 API 服務。在可預見的將來，API 將大幅改變網路應用程式開發的模式，而 COIMOTION 也會不斷進步，為開發者提供最先進的 API 服務。</p>

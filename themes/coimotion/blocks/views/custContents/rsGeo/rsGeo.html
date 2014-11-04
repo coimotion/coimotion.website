@@ -1,0 +1,94 @@
+<div class="row plustitle">
+	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 text-left paT15">
+		<i class="fa fa-map-marker"></i>&nbsp;<%=ph.location%>
+	</div>
+	<!-- 文章分類-下拉式選單開始 -->
+	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">		
+		<div class="btn-group inline" style="visibility:hidden;">
+			<button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    	<span id="geo" ca="<%=bi.query.ca%>" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" geo="<%=bi.query.geo%>" locale="<%=bi.query._loc%>">
+						<% if (bi.query.rs) { %>
+							<%=bi.query.rs%>
+						<% } else { %>
+							<%=ph.select%>
+						<% } %>
+					</span>
+		    	<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1" cate="geo">
+		    </ul>
+		</div>		
+	</div>
+	<!-- 文章分類-下拉式選單結束 -->
+	<!-- 新增按鈕列開始 -->
+	<div class="plus">
+		<% if (bi.query.geo === "true") { %>
+		<a href="#" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAddCnt('undefined');">
+			<i class="fa fa-plus"></i><span><%=ph.add%></span>
+		</a>
+		<% } else { %>
+			<%=ph.docTx%>
+		<% } %>
+	</div>
+	<!-- 新增按鈕列結束 -->
+</div>
+
+<!-- widget開始 -->
+<div class="widget">
+	<% if (value && value.list.length > 0) { %>
+	<div class="widget-content">
+		<!-- Widget content -->
+		<table class="table table-striped table-bordered table-hover allGeo">
+			<tr>
+				<th class="wc10"> <%=ph.code%> </th>
+				<th class="wc50"> <%=ph.address%> </th>
+				<!-- <th class="wc10"> 設定者 </th> -->
+				<th class="wc10"> <%=ph.longitude%> </th>
+				<th class="wc10"> <%=ph.latitude%> </th>
+				<th class="wc20"><center><%=ph.op%></center></th>
+			</tr>
+			<% value.list.forEach(function(item) { %>
+				<tr>
+					<td> <%= item.geID %> </td>
+					<td> <%= item.addr %> </td>
+					<!-- <td> <%= item.psnID %> </td> -->
+					<td> <%= item.latitude %> </td>
+					<td> <%= item.longitude %> </td>
+					<td style="padding:6px;">
+						<center>
+							<button class="btn btn-warning btn-sm wc30" data-toggle="modal" data-target="#editorModal" onclick="<%=ctrl%>.embedEditor('<%=item.geID%>');"><%=ph.articles%></button>
+							<button class="btn btn-green btn-sm wc30" data-toggle="modal" data-target="#myModal" onclick="<%=ctrl%>.showAddCnt('<%=item.geID%>');"><%=ph.edit%></button>
+							<button class="btn btn-danger btn-sm wc30" onclick="<%=ctrl%>.delRs('<%=item.geID%>', '<%=item.addr%>')"><%=ph.delete%></button>
+						</center>
+					</td>
+				</tr>
+			<% }); %>
+		</table>
+	</div>
+	<% } else { %>
+	<div class="widget-content">
+		<table class="table table-striped table-bordered table-hover">
+			<tr><th><center><%=ph.null%></center></th></tr>
+		</table>
+	</div>
+	<% } %>
+</div>
+<!-- widget結束 -->
+
+<!-- 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="addGeoCnt modal-content">
+		</div>
+	</div>
+</div>
+<!-- 彈跳視窗結束 -->
+
+<!-- 編輯器開始 -->
+<div class="modal fade modalstyle" id="editorModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="editorModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="editor modal-content">
+		</div>
+	</div>
+</div>
+<!-- 編輯器結束 -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="date">
+		<en>Date</en>
+		<zh>日期</zh>
+	</ph>
+	<ph id="rs">
+		<en>Resource</en>
+		<zh>資源</zh>
+	</ph>
+	<ph id="op">
+		<en>Operator</en>
+		<zh>功能元</zh>
+	</ph>
+	<ph id="number">
+		<en>Number of People</en>
+		<zh>人數</zh>
+	</ph>
+	<ph id="times">
+		<en>Number of Times</en>
+		<zh>次數</zh>
+	</ph>
+	<ph id="none">
+		<en>No related statistical figures</en>
+		<zh>沒有相關的統計數字</zh>
+	</ph>	
+</phrases>

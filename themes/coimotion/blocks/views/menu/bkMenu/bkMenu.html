@@ -1,0 +1,116 @@
+<%
+	var  id = bi.uri.split('/').reverse()[0];
+%>
+<!-- header 上方導覽列開始 -->
+		<header>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+
+					<!-- 左方導覽列 -->
+					<div class="page-head col-md-5 col-sm-5 col-xs-5">
+					<!--<div class="page-head col-md-3 col-sm-3 col-xs-5">-->
+					<!-- <div class="page-head col-md-6 col-sm-6 col-xs-8"> -->
+							<h3>
+								<i class="icon-table"></i>
+								<span class="mainPath"></span>
+								<i class="icon-chevron-right fs07"></i>
+							</h3>
+							<div class="bread-crumb subPath hidden-xs">
+								<!-- <i class="icon-chevron-right"></i><span class="divider">/</span> <span></span> -->
+							</div>
+
+					</div>
+
+					<!-- 右方導覽列 -->
+					<div class="header-data col-md-7 col-sm-7 col-xs-7 text-right">
+					<!--<div class="header-data col-md-9 col-sm-9 col-xs-7 text-right">-->
+					<!-- <div class="header-data col-md-6 col-sm-6 col-xs-4 text-right"> -->
+						<% if (value) { %>
+						<!-- APP管理 -->
+						<a href="/app/list/<%= id %>" title="<%= ph.app %>">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-mobile-phone bwhite" style="font-size: 21px;"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.app %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+
+						<!-- 內容寶庫 -->
+						<a href="/bkContents/manage/<%= id %>" title="<%= ph.content %>">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-inbox bwhite"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.content %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+		
+						<!-- 自製內容 -->
+						<a href="/custContents/list/<%= id %>" title="<%= ph.custContent %>">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-table bwhite"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.custContent %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+		
+						<!-- 統計數字 -->
+						<a href="/statistics/manage/<%= id %>" title="<%= ph.statistics %>">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-signal bwhite"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.statistics %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+		
+						<% } else { %>
+						<!-- 內容寶庫 -->
+						<a href="/bkContents/manage" title="<%= ph.content %>">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-inbox bwhite"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.content %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+		
+						<!-- 統計數字 -->
+						<a href="javascript: alert('<%= ph.alert %>');">
+							<div class="hdata">
+								<div class="mcol-left">
+									<i class="icon-signal bwhite"></i>
+								</div>
+								<div class="mcol-right hidden-xs">
+									<p><%= ph.statistics %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</a>
+		
+						<% } %>
+					</div>
+					<!-- header-data 結束 -->
+		</div>
+		<!-- col 結束 -->
+	</div>
+	<!-- row 結束 -->
+</header>
+<!-- header 上方導覽列結束 -->

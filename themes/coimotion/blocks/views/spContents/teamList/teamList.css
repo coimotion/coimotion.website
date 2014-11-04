@@ -1,0 +1,18 @@
+/***********所有彈跳視窗的覆寫************/
+/*model-header 無下底線*/
+#noBr {
+  border-bottom: none;
+}
+/*關閉按鈕*/
+.close {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.close:hover,
+.close:focus {
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+button.close {
+  outline: 0;
+}

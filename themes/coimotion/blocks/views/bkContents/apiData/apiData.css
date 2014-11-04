@@ -1,0 +1,59 @@
+/* 內容查詢的資料列表 */
+.region{
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 20px;   
+}
+.region .region-head{
+  background: #66c4ac;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  font-style: normal;
+}
+.region .region-head .region-icons i{
+  font-size: 14px;
+  margin: 0px 4px;
+}
+
+/* 資料列表-內容 */
+.region-content .padd{
+  padding: 13px 15px;
+  font-size: 16px;
+}
+
+/*資料列表-結尾*/
+.region-foot{
+  background-color: #d6d6d6;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-bottom-right-radius: 2px;
+  -o-border-bottom-right-radius: 2px;
+  -ms-borde-bottom-right-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-bottom-left-radius: 2px;
+  -o-border-bottom-left-radius: 2px;
+  -ms-borde-bottom-left-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-bottom-left-radius: 2px;
+  padding: 0px 15px 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 資料列表 more 更多*/
+.region .region-foot p{
+  padding: 5px 0px 15px;
+  font-style: normal;
+}
+.region .region-foot p a{
+  color: #fff;
+}
+.region .region-foot p a:hover{
+  color: #ddd;
+}

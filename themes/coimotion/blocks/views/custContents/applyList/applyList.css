@@ -1,0 +1,68 @@
+/*-------內容集申請者的設定-------*/
+/*表格*/
+.nomarR {
+  margin-right: 0;
+}
+.table > tr > td{
+  color: #2a806e;
+  vertical-align: middle;
+}
+.table-bordered{
+  border-radius: 0px;
+  border: 1px solid #b8d6d0;
+}
+.table-bordered td{
+  border-radius: 0px !important;
+  border: 1px solid #b8d6d0;
+}
+.table-hover > tbody > tr:hover > td {
+  background: #e4f3f1;
+}
+.colH{
+  padding: 3% 5%;
+  height: 30px;
+  font-size: 16px;
+  line-height:1em;
+}
+.colH .btn{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+/*--大頭貼設定--*/
+/*第二層-灰底*/
+.memiconstyle{
+  margin:10px auto;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle;
+  background: #E4E6E1;
+  /*圓角*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 56px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+  height: 110px;
+}
+/*第三層-頭像位置*/
+.memiconFace{
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  position: absolute;
+  left:0px;
+  top: 7px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.memiconFace i{
+  font-size: 7em;
+  margin: 0px;
+}

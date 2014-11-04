@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases> 
+  <ph id="name">
+    <en>Please select the content name</en>
+    <zh>請選擇內容集名稱</zh>
+  </ph> 
+  <ph id="null">
+    <en>There is no pay $ () content</en>
+    <zh>目前沒有付費＄（）內容集</zh>
+  </ph>
+</phrases>

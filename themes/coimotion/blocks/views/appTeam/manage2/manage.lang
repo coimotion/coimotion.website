@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="create">
+		<en>Team Building</en>
+		<zh>建立團隊</zh>
+	</ph>
+    <ph id="searchTeam">
+		<en>Search Team</en>
+		<zh>搜尋團隊</zh>
+	</ph>
+	<ph id="search">
+		<en>Search</en>
+		<zh>搜尋</zh>
+	</ph>
+	<ph id="searchName">
+		<en>Please key in the team's name that you want to search</en>
+		<zh>請輸入欲搜尋的團隊名稱</zh>
+	</ph>
+</phrases>

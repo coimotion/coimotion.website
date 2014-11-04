@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="introduction">
+		<en>Introduction</en>
+		<zh>基本資料</zh>
+	</ph>
+	<ph id="function">
+		<en>Function</en>
+		<zh>功能設定</zh>
+	</ph>
+	<ph id="articles">
+		<en>Articles</en>
+		<zh>文章</zh>
+	</ph>
+	<ph id="location">
+		<en>Location</en>
+		<zh>地理位置</zh>
+	</ph>
+</phrases>

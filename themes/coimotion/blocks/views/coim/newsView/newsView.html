@@ -1,0 +1,77 @@
+<!-- 右側 -->
+<div id="newsPage" >
+	<%
+		var	 time = new Date(value.mdTime);
+			
+		var  month = (time.getMonth() + 1).toString(),
+			 day = time.getDate().toString(),
+			 href = "/coim/newsManage";
+			 
+ 		month = (month.length > 1) ? month : "0"+month;
+      	day = (day.length > 1) ? day : "0"+day;
+      	strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+	%>
+	<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<ul class="newsub">
+			<li><span class="title"><%=value.title%></span></li>
+			<li>
+				<p class="faR">
+					<span class="strMdTime"><%=strMdTime%></span>
+					<!-- <span class="dspName">chloe</span> -->
+				</p>
+			</li>
+			<li class="articlePage">
+				<article class="articletext body">
+					<%=value.body%>
+				</article>
+			</li>
+			<!-- 
+			<li><span class="title">API 回傳格式調整</span></li>
+			<li>
+				<p class="faR">
+					<span class="strMdTime">2014-07-30</span>
+					<span class="dspName">chloe</span>
+				</p>
+			</li>
+			<li class="articlePage">
+				<article class="articletext body">
+					<h3><span>調整說明</span></h3>
+					所有API有關於「新增」資料的功能，<br>統一回傳的資料格式與變數名稱。
+					<div><br>
+						API新增資料成功後，都會回傳新資料的識別碼。<br>回傳結果的value將為json物件，<br>其識別碼的變數名稱統一為：id。
+						<h3><span>範例</span></h3>
+						<div>以page/create為範例：</div>
+						<div>原本回傳結果如下</div>
+						<div>
+							<div>{</div>
+							<div>&nbsp; &nbsp; errCode: 0,</div>
+							<div>&nbsp; &nbsp; message: Ok,</div>
+							<div>&nbsp; &nbsp; value: {</div>
+							<div>&nbsp; &nbsp; &nbsp; &nbsp; ngID: 1</div>
+							<div>&nbsp; &nbsp; }</div>
+							<div>}</div>
+						</div>
+						<div><br></div>
+						<div>目前回傳結果如下</div>
+						<div>{</div>
+						<div>&nbsp; &nbsp; errCode: 0,</div>
+						<div>&nbsp; &nbsp; message: Ok,</div>
+						<div>&nbsp; &nbsp; value: {</div>
+						<div>&nbsp; &nbsp; &nbsp; &nbsp; id: 1</div>
+						<div>&nbsp; &nbsp; }</div>
+						<div>}</div>
+					</div>
+				</article>
+			</li>
+			<li>
+				<button class="btn btn-gray pull-right" value="回上一頁" onclick="window.history.back();">back</button>
+			</li>
+			 -->
+		</ul>
+	</div>
+	</div>
+</div>	
+
+
+

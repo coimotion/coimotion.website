@@ -1,0 +1,67 @@
+<!-- 檢查是否登入狀態 -->
+<!--右邊主選單開始 -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<% if(value) { %>
+	<input type='hidden' class="coimParams" 
+		errCode="<%=errCode%>" orgID="<%=value.lastOrgID%>" ctr="<%=ctrl%>" psnID="<%=value.psnID%>"/>
+  	<% if(value.profile) { %>
+  	<input type='hidden' class="coimParamsPF" 
+  		position="<%=value.profile.position%>" orgCode="<%=value.profile.orgCode%>"
+  		orgName="<%=value.profile.title%>" orgIcon="<%=value.profile.orgIconURI%>"
+  		ngID="<%=value.profile.ngID%>"/>
+  	<% } %>
+	<% } %>
+	<ul class="nav navbar-nav navbar-right member">  
+    <!-- home -->
+  	<li><a href="/bkWrapper/manage"><%= ph.developers %></a></li>
+
+    <!-- getstarted -->
+    <li><a href="/bkWrapper/started"><%= ph.start %></a></li>
+
+    <!-- doc -->
+    <li class="dropdown">
+      <a href="bkWrapper/docManage" class="dropdown-toggle" data-toggle="dropdown">
+        <%= ph.doc %><i class="fa fa-chevron-down"></i>
+      </a>        
+        <ul class="dropdown-menu teamMenu">            
+            <li class="from corePage">
+              <a href="/bkWrapper/core/35213" id="defaultLink"><%= ph.core %></a>
+            </li>
+            <li class="from">
+              <a href="/bkWrapper/docManage"><%= ph.overview %></a>                             
+            </li>
+            <li class="from blogPage">
+              <a href="/bkWrapper/blog/35204" id="defaultLink"><%= ph.blog %></a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- teamlist -->        
+		<li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" onMouseOver="<%=ctrl%>.showTeamList();">
+      	<%= ph.teams %><i class="fa fa-chevron-down"></i>
+      </a>        
+        <ul class="dropdown-menu teamMenu">
+        	<div class="teamList"></div>
+      		<li class="from">
+            	<a href="/appTeam/creatTeam"><%= ph.creat %></a>
+            </li>
+      		<li class="from"><a href="/appTeam/manage2"><%= ph.search %></a></li>
+        </ul>
+    </li>		
+
+    <!-- user -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      	<%= ph.account %><i class="fa fa-chevron-down"></i> 
+      </a>        
+        <ul class="dropdown-menu teamMenu">           
+            <li class="from">
+              <a href="/user/manage"><%= ph.space %></a>
+            </li>
+            <li class="from"><a href="/user/teamList?mb=1"><%= ph.myTeams %></a></li>
+            <li class="from"><a href="javascript: <%=ctrl%>.doLogout();"><%= ph.logout %></a></li>
+        </ul>
+    </li>
+  </ul>
+</div>

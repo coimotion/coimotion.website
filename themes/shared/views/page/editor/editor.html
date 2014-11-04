@@ -1,0 +1,173 @@
+<%
+  var langNeedSpace = (bi.query._loc == "en");
+  var _loc = bi.query.locale;
+%>
+<button type="button" class="close alpha80 buE" data-dismiss="modal" aria-hidden="true">&times;</button>
+<!-- 主題內容開始 -->
+<div class="matter">
+  <div class="row">
+    <!-- 左側內容開始 -->
+    <div>
+      <button class="fa fa-reorder" id="menuBtn" onclick="<%=ctrl%>.showMenu();"></button>
+    </div>
+    <div class="col-md-3 col-xs-12 left-Con leftMenu" id="leftSide" style="padding: 0 5px">
+        <div class="Box-group">
+            <div class="Box-heading">
+              <a class="Box-toggle" data-toggle="collapse" data-parent="#pgEditImgClps" href="#Box1"><%= ph.geoloc%></a>
+            </div>
+            <div id="Box1" class="Box-body collapse in">
+              <div class="Box-inner">
+                <div class="Box-List" id="geoList" ctrl="<%=ctrl%>"></div>
+              </div>
+              <div class="Box-footer">
+                  <a href="#" data-toggle="modal" data-target="#geoModal" onclick="<%=ctrl%>.showAddCnt('<%=bi.query.ngID%>', 'undefined');"><i class="fa fa-plus"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="Box-group"  data-toggle="collapse" data-parent="#pgEditImgClps" href="#Box2">
+            <div class="Box-heading">
+              <a class="Box-toggle collapsed"><%= ph.image%></a>
+            </div>
+            <div id="Box2" class="Box-body collapse">
+              <div class="Box-inner">
+                <div class="Box-List" id="picList"></div>
+              </div>
+              <div class="Box-footer">
+                  <a id="addPic" href="#"><i class="fa fa-plus"></i></a>
+                  <a id="delPic" href="#"><i class="fa fa-minus" onclick="<%=ctrl%>.delCnt(3);"></i></a>
+                  <a id="insertPic" href="#"><i class="fa fa-arrow-right" onclick="<%=ctrl%>.insertCnt()"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="Box-group" data-toggle="collapse" data-parent="#pgEditImgClps" href="#Box3">
+            <div class="Box-heading">
+              <a class="Box-toggle collapsed"><%= ph.attach%></a>
+            </div>
+            <div id="Box3" class="Box-body collapse">
+              <div class="Box-inner">
+                <div class="Box-List" id="attList"></div>
+              </div>
+              <div class="Box-footer">
+                  <a id="addAtt" href="#"><i class="fa fa-plus"></i></a>
+                  <a href="#"><i class="fa fa-minus" onclick="<%=ctrl%>.delCnt(2);"></i></a>
+              </div>
+            </div>
+        </div>
+        <div style="display:none">
+          <form role="form" id="uploader" name="uploader" action="" enctype="multipart/form-data" method="POST">
+            <input type="hidden" name="nType" value="3" >
+            <input type="hidden" name="hasCA" value="1" >
+            <input type="hidden" name="_loc" value="<%=_loc%>" >
+            <input type="file" name="aaa" multiple="multiple" class="form-control"><br>
+          </form>
+        </div>
+    </div>
+    <!-- 左側內容結束 -->
+
+    <!-- 右側內容開始 -->
+    <div class="col-md-9 col-xs-12 rightMenu" id="rightSide">
+      <div class="rightCon">
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <!-- 左側頭像開始 -->
+                <div class="col-md-2 col-xs-2 col-Left leftMenu" id="iconField">
+                    <div id="icon" title="<%= ph.icon%>" alt="<%= ph.icon%>">
+                      <%= ph.icon%>
+                    </div>
+                    <div class="form-group">
+                        <button id="addIcon" type="button" class="btn btn-default btn-sm wc60 maT5 text-center"><%= ph.upload %></button>
+                    </div>
+                </div>
+                <!-- 左側頭像結束 -->
+
+                <!-- 右側欄位開始 -->
+                <div class="col-md-10 col-xs-10 col-Right rightMenu" id="iconRelate" style="margin-left:-2em; float:right">
+
+                  <div class="form-group" id="ng" srvPath="<%=bi.query.srvPath%>" ca="<%=bi.query.ca%>" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" ng="<%=bi.query.ngID%>" ge="<%=bi.query.geID%>" disable="<%=bi.query.disable%>" noCont="<%=bi.query.noCont%>">
+                    <% if (langNeedSpace) {%>
+                    <label class="col-md-3 col-xs-3 control-label rightLabel" for="title"><%= ph.title%></label>
+                    <div class="col-md-9 col-xs-9">
+                    <% }else{ %>
+                    <label class="col-md-2 col-xs-2 control-label rightLabel" for="title"><%= ph.title%></label>
+                    <div class="col-md-10 col-xs-10">
+                    <%}%>
+                      <input type="text" class="form-control" name="title" id="title" placeholder="<%= ph.title%>">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <% if (langNeedSpace) {%>
+                    <label class="col-md-3 col-xs-3 control-label rightLabel" for="summary"><%= ph.summary%></label>
+                    <div class="col-md-9 col-xs-9">
+                    <% }else{ %>
+                      <label class="col-md-2 col-xs-2 control-label rightLabel" for="summary"><%= ph.summary%></label>
+                    <div class="col-md-10 col-xs-10">
+                    <% } %>
+                      <input type="text" class="form-control" name="summary" id="summary" placeholder="<%= ph.summary%>">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <% if (langNeedSpace) {%>
+                    <label class="col-md-3 col-xs-3 control-label"></label>
+                    <% }else{ %>
+                    <label class="col-md-2 col-xs-2 control-label"></label>
+                    <% } %>
+                    <div class="col-md-5 col-xs-5">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="isPublic" val="1"><%= ph.isPub%>
+                        </label>
+                      </div>
+                    </div>
+                    <% if (langNeedSpace) {%>
+                    <div class="col-md-4 col-xs-4">
+                    <% }else{ %>
+                    <div class="col-md-5 col-xs-5">
+                    <% } %>
+                      <select name="locID" class="form-control">
+                          <option value="1" <% if (_loc == 1) {%>selected<%}%>>English</option>
+                          <option value="2" <% if (_loc == 2) {%>selected<%}%>>繁體中文</option>
+                          <!-- <option value="3" >简体中文</option> -->
+                      </select>
+                    </div>
+                    <div class="col-md-7 hidden-xs"></div>
+                  </div>
+                </div><!-- 右側欄位結束 -->
+            </div><!-- row結束 -->
+
+          <!-- 下半部開始 -->
+          <div class="row" style="margin-left: 5px">
+            <div class="form-group">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <textarea class="cleditor" name="body_cnt" id="body_cnt"></textarea>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 maT20 fs1">
+                <div class="pull-left paL60" id="mdTime"></div>
+                <div class="btn-group btn-group-sm pull-right" id="fg">
+                    <button id="richText" type="button" class="btn btn-default" style="display:none"><%= ph.preview%></button>
+                    <button id="source" type="button" class="btn btn-default"><%= ph.source%></button>
+                    <button type="button" class="btn btn-green" onclick="<%=ctrl%>.save();" id="save">
+                      <% if (bi.query.ngID) { %>
+                        <%= ph.save %>
+                      <% } else { %>
+                        <%= ph.new %>
+                      <% } %>
+                    </button>
+                </div>
+              </div>
+          </div><!-- form-group結束 -->
+        </div><!-- row下半部結束 -->
+
+      </form><!-- form結束 -->
+     </div><!-- rightCon結束 -->
+    </div><!-- 右側內容結束 -->
+  </div><!-- row結束 -->
+</div><!-- matter主題內容結束 -->
+
+<!-- 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="geoModal" tabindex="-1" role="dialog" aria-labelledby="geoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="addGeo modal-content">
+    </div>
+  </div>
+</div>
+<!-- 彈跳視窗結束 -->

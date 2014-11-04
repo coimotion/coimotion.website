@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Basic Information</en>
+		<zh>基本資料</zh>
+	</ph>
+	<ph id="photo">
+		<en>Team photo</en>
+		<zh>團隊照片</zh>
+	</ph>
+	<ph id="upload">
+		<en>upload</en>
+		<zh>上傳</zh>
+	</ph>
+	<ph id="language">
+		<en>Select Language</en>
+		<zh>選擇語系</zh>
+	</ph>
+	<ph id="orgCode">
+		<en>Team Code</en>
+		<zh>團隊代碼</zh>
+	</ph>
+       <ph id="fname">
+		<en>Team Name</en>
+		<zh>團隊名稱</zh>
+	</ph>
+        <ph id="teamDoc">
+		<en>Basic Info</en>
+		<zh>團隊介紹</zh>
+	</ph>
+	<ph id="save">
+		<en>Save</en>
+		<zh>儲存</zh>
+	</ph>
+</phrases>

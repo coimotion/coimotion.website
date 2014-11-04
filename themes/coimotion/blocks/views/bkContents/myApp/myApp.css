@@ -1,0 +1,101 @@
+/*我的APP按鈕*/
+.app{
+  border-radius: 5px; 
+  text-align: center;
+}
+.app a{
+  color:#fff !important;
+  background:#30d4b0;
+  display: block;
+  letter-spacing: 0;
+  padding: 10px 0px; 
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  /**/
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap; 
+}
+.app a:hover{
+  color:#fff;
+  background:#2cc3a2;
+}
+.app a:focus{
+  color:#fff;
+  background:#30d4b0;
+}
+/*下拉式選單*/
+.appmenu a{
+  color:#666 !important;
+  background:#fff;
+  letter-spacing: 0;
+}
+.appmenu a:hover{
+  color:#262626;
+  background:#fafafa;
+}
+.dropdown-menu {
+  padding: 5px 15px;
+}
+
+/*APP圖片 icon設定*/
+.iconstyle{
+  background: #E4E6E1;
+  font-size: 6em;
+  color:#fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 2px 6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+}
+
+/* 第二層下拉選單 */
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;    
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+/*.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}*/

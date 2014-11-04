@@ -1,0 +1,146 @@
+ /*左側選單開始 */
+ .leftMenu {
+  width: 100%;
+  padding: 0;
+  margin: 0;  
+ }
+ul.sidebar-menu {
+  list-style: none;
+  padding-right: 12px;
+  padding-left: 12px;  
+  font-size: 0.7em;
+  margin: 0 auto;
+  width: 180px;
+  position: fixed;
+  left: center;
+  top: 5.5em;
+}
+/*選單預設樣式*/
+ul.sidebar-menu > a > li {  
+  width: 90%;
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 15px 10px 10px;
+  text-align: center;
+  border-bottom: #dae1e8 solid 1px;
+  -moz-box-shadow: 0 2px 1px -1px #fff;
+  -webkit-box-shadow: 0 2px 1px -1px #fff;
+  -ms-box-shadow: 0 2px 1px -1px #fff;
+  -o-box-shadow: 0 2px 1px -1px #fff;
+  box-shadow: 0 2px 1px -1px #FFFFFF;
+}
+/*選單連結樣式*/
+ul.sidebar-menu > a > li {
+  text-decoration: none;
+  color: #66808d;
+}
+
+/*前置圖案*/
+ul.sidebar-menu > a > li > i {
+  font-size: 16px;
+  display: inline-block;
+  width: 18px;
+  margin-left: 10px;
+  margin-top: 8px;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*文字*/
+ul.sidebar-menu > a > li > span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 7px;
+  font-weight: bold;
+  text-align: left !important;
+  width: 80px;
+}
+/*li 啟動樣式、滑過*/
+ul.sidebar-menu > a:hover > li {
+  color: #28313E;
+}
+
+/*大頭貼icon設定*/
+/*第二層-灰底*/
+.teamStyle{
+  margin: 20px auto 10px;
+  display: block;
+  text-align: center;
+  vertical-align: middle; 
+  background: #E4E6E1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -ms-behavior: url("htc/PIE.htc");
+  width: 75px;
+  height: 80px;
+  left: 0;
+  top: 0;
+  position: relative;
+  overflow: hidden;  
+}
+/*第三層-頭像位置*/
+.teamFace{ 
+  color: #fff;
+  background: transparent;
+  padding: 0px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/*第四層-頭像大小*/
+.teamFace i{
+  font-size: 5.8em;
+  margin: 0px;
+}
+
+/*上傳的大頭貼*/
+.needOrg img {
+  margin: 20px auto 10px !important;
+  display: block;
+}
+
+/*團隊名稱*/
+.teamName {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28313E;  
+  line-height: 1.2em; 
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+ 
+/*右邊白箭頭*/
+.arrow, .arrow_border {
+  width: 0;  
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  font-size: 0;  
+  line-height: 0;  
+  position: absolute;
+  top: 30%;
+  left: 56%;  
+  z-index: 9001; 
+  margin: 0 auto;
+  margin-left: 42%;
+}
+.arrow_border {
+  border-color: transparent #dae1e8 transparent transparent;
+  border-width: 11px;
+  border-style: solid;
+  margin-left: -1px;  
+  z-index: 9000;
+  top: 30%;
+  left: 98%;
+}

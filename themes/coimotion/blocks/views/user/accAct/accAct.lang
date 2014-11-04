@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="check">
+		<en>Your account is being verified...</en>
+		<zh>帳號驗證中...</zh>
+	</ph>
+	<ph id="js_ACC_SUCCESS_MSG">
+		<en>Your account have been activated.</en>
+		<zh>帳號驗證成功</zh>
+	</ph>
+	<ph id="js_BUILT_MSG">
+		<en>We have created a team, a default App and data repository for you.</en>
+		<zh>您的團隊、APP與內容集已建立成功!</zh>
+	</ph>
+	<ph id="js_REDIRECTIONG_MSG">
+		<en>You&quot;re redirected to the developer home page.</en>
+		<zh>網站自動導向中，請稍候...</zh>
+	</ph>
+	
+</phrases>

@@ -1,0 +1,90 @@
+.matter {
+  min-height: 600px;
+}
+.matter ul li{
+  font-size: 16px;    
+}
+.matter ul li a {
+  color: #2a806e;
+  padding-right: 5px;
+  padding-left: 5px;  
+}
+.tabWidth{
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+.matter ul li.active a{
+  color: #00503c;
+}
+.matter ul li a{
+  letter-spacing: 0;
+}
+.matter ul li.selApp {
+  letter-spacing: 0.2em;
+}
+/*覆寫*/
+.nav-tabs {
+  border-bottom: none;
+}
+.widget {
+  border:none;
+}
+.paR {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.ma {
+  margin-right: 0;
+  margin-left: 0;
+}
+/*群組按鈕*/
+.buA{
+  width:45%;
+}
+.buB{
+  width:55%;
+}
+.buA, .buB{
+  font-size:12px;
+  text-align: center;
+  float: left;
+  padding: 8px 0px 7px;
+}
+.btn-default {
+padding: 5px 0px !important;
+}
+
+/*自製內容的新增icon預設樣式*/
+.btn-group {
+  padding: 0;
+}
+.btn-group > a > i{
+  display: inline-block;
+  background: #b8d6d0;
+  color:#fff;
+  text-align: center;
+  border: 1px solid #b8d6d0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 3px 0 0 3px;
+}
+/*自製內容的新增icon滑過的變化*/
+.btn-group > a:hover i{
+  color: #fff;
+  background: #28af91 !important;
+  border: 1px solid #28af91;
+}
+.btn-warning,
+.btn-default{
+  padding: 5px 10px;
+}
+
+ .table-hover > tbody > tr.warning:hover > td, 
+ .table-hover > tbody > tr:hover > .warning, 
+ .table-hover > tbody > tr.warning:hover > th {
+  background-color: #f5fcfc !important; 
+}

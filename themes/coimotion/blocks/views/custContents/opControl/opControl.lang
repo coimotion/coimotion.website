@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="opControl">
+		<en>OpControl</en>
+		<zh>權控設定</zh>
+	</ph>
+	<ph id="op">
+		<en>OP</en>
+		<zh>功能元</zh>
+	</ph>
+	<ph id="design">
+		<en>Designer</en>
+		<zh>設計者</zh>
+	</ph>
+	<ph id="manager">
+		<en>Manager</en>
+		<zh>管理者</zh>
+	</ph>
+	<ph id="vip">
+		<en>VIP Member</en>
+		<zh>VIP會員</zh>
+	</ph>
+	<ph id="member">
+		<en>Member</en>
+		<zh>一般會員</zh>
+	</ph>
+	<ph id="visitors">
+		<en>Visitors</en>
+		<zh>訪客</zh>
+	</ph>
+	<ph id="open">
+		<en>Open</en>
+		<zh>開啟</zh>
+	</ph>
+	<ph id="close">
+		<en>Close</en>
+		<zh>關閉</zh>
+	</ph>
+	<ph id="docTx">
+		<en>This resource does not belong to its functional elements.</en>
+		<zh>沒有屬於此資源自身的功能元。</zh>
+	</ph>
+	<ph id="note">
+    	<en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+    	<zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+  	</ph>
+</phrases>

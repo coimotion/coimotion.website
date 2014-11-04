@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>	
+	<ph id="orgName">
+		<en>Team Name</en>
+		<zh>團隊名稱</zh>
+	</ph>
+	<ph id="memStr">
+		<en>Team members</en>
+		<zh>團隊成員</zh>
+	</ph>
+	<ph id="docBody">
+		<en>Basic Info</en>
+		<zh>團隊介紹</zh>
+	</ph>
+	<ph id="works">
+		<en>works</en>
+		<zh>團隊作品</zh>
+	</ph>	
+</phrases>

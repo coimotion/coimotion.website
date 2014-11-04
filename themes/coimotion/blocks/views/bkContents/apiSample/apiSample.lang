@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="api">
+		<en>API Sample</en>
+		<zh>API範例</zh>
+	</ph>
+	<ph id="output">
+		<en>The output</en>
+		<zh>輸出結果</zh>
+	</ph>	
+</phrases>

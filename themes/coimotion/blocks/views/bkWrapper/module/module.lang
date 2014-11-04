@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="modu">
+		<en>Module Management</en>
+		<zh>內容集功能</zh>
+	</ph>
+	<ph id="bb">
+		<en>BnB</en>
+		<zh>民宿</zh>
+	</ph>
+	<ph id="manage">
+		<en>Management Module</en>
+		<zh>管理模組</zh>
+	</ph>	
+	<ph id="web">
+		<en>Web</en>
+		<zh>網頁</zh>
+	</ph>
+	<ph id="core">
+		<en>Core</en>
+		<zh>核心</zh>
+	</ph>
+	<ph id="event">
+		<en>Event</en>
+		<zh>活動</zh>
+	</ph>
+	<ph id="virtual">
+		<en>Store</en>
+		<zh>虛擬商店</zh>
+	</ph>
+	<ph id="fb">
+		<en>Social WebSite</en>
+		<zh>社群網站</zh>
+	</ph>
+	<ph id="book">
+		<en>Book</en>
+		<zh>書目管理</zh>
+	</ph>	
+	<ph id="find">
+		<en>find out more modules</en>
+		<zh>更多功能</zh>
+	</ph>
+</phrases>

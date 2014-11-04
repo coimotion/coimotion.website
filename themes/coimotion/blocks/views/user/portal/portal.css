@@ -1,0 +1,114 @@
+ /*主要內容背景*/
+.logincontent{
+   background: #1bbc9b;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   min-height: 750px;
+}
+ /*form的最外層*/
+.admin-form{
+   max-width: 900px;
+   margin: 0px auto;
+   padding-top: 10%;
+   padding-bottom: 10%;
+}
+.admin-form form{
+   padding: 10px 0px;
+  }
+
+/*form的左邊*/
+.widgetleft {
+  text-align: center;
+}
+ /*form的左邊-key*/
+.key{
+  padding-left: 40px;
+  margin-top: 10px;
+}
+ /*form的左邊-標題*/
+h3{
+  margin-top: 10px;
+  font-size:18px;
+  color:#919191;
+}
+.widget-headlogin{
+  color: #fff;
+  font-size: 1.9em;
+}
+ /*form的左邊-註冊*/
+.widget-footlogin{
+  padding: 15px 0px 5px;
+  font-size: 12px;
+  color:#919191;
+}
+ /*form的左邊-Register here連結文字*/
+.widget .widget-footlogin a{
+  color: #454749;
+}
+ /*form的左邊-Register here文字滑過*/
+.widget .widget-footlogin a:hover{
+  color: #454749;
+  text-decoration: none;
+}
+
+ /*form的右邊*/
+.widgetright {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 30px 30px 15px 20px;
+  background: #fff;
+}
+ /*form的右邊-三角形*/
+.triangle {
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    z-index: 1;
+}
+.control-label{
+    color:#919191;
+}
+.col-md-9 a{
+   font-size:12px;
+}
+.col-md-9 a:hover{
+   text-decoration:none;
+}
+/*form的右邊-login送出按鈕*/
+.btn-green{
+  color: #ffffff;
+  background-color: #1bbc9b;
+  border-color: #24b39a;
+  text-align: center;  
+}
+.btn-green:hover,.btn-green:focus,.btn-green:active,.btn-green.active{
+  color: #ffffff;
+  background-color: #15957b;
+  border-color: #206c5d;
+}
+.btn-green a{
+  color: #ffffff;
+  background-color: #1bbc9b;
+  border-color: #24b39a;
+  text-align: center;  
+}
+.btn-green a:hover,.btn-green a:focus,.btn-green a:active,.btn-green a.active{
+  color: #ffffff;
+  background-color: #15957b;
+  border-color: #206c5d;
+}
+.btn-white{
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.btn-white:hover,.btn-white:focus,.btn-white:active,.btn-white.active{
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}

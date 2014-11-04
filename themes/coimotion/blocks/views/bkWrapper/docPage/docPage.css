@@ -1,0 +1,51 @@
+.bkManage {
+  width:100%;    
+  padding: 0px 5em; 
+  margin-bottom: 5em; 
+  margin-top: 5em;  
+}
+h3 {
+	margin: 2em auto;
+	color: #414f63;
+	font-weight: bold;
+	text-align: center;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.pa5{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.tableChange td{
+	border-top: none;
+	padding:1em;
+}
+.tableChange td a{
+	color: #414f63;
+}
+.tableChange tr th:first-child ,
+.tableChange tr td:first-child {
+	padding-left: 2em;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f6f6f6;
+}
+.table > thead > tr > th {
+    border-bottom: 1px solid #ddd;
+}
+
+/*左右換頁控制鈕*/
+.auto {
+	text-align: center;
+}
+.chang li a {
+	font-size: 0.8em;
+	color:#666;
+}
+.chang li a:hover,
+.chang li a.active {
+	background: #ddd;
+}
+

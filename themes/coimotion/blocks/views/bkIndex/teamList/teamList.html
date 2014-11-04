@@ -1,0 +1,22 @@
+<% if (value && value.list.length == 0) { %>
+	<li class="from">
+		<a href="/appTeam/fastTrack">
+			<%= ph.fast %>
+		</a>
+	</li>
+<% 
+} else {
+	value.list.forEach(function(item) { 
+%>
+	<% if (item.status == 0) { %>
+	<li class="from">
+		<a href="#" onclick="<%=ctrl%>.selTeam('<%=item.orgID%>');">
+			<%= item.orgName %>
+		</a>
+	</li>
+	<% } %>
+<%
+	}); 
+}
+%>
+

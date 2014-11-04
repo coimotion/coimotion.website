@@ -1,0 +1,67 @@
+<% var  locID = ctx.locID; %>
+<div class="modal-header">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title">&nbsp;<%= ph.information %></h3>
+</div>
+<div class="modal-body">
+	<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">		
+		<form class="form-horizontal" role="form" appCode="<%= bi.uri.split('/').reverse()[0] %>">
+			<div class="form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.appCode %>：</label>
+				<div class="appCode col-lg-9 col-md-9 col-sm-9 col-xs-9">
+					<input type="text" class="form-control" id="text" value="<%= value.appCode %>" name="appCode" disabled>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.title %>：</label>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+					<input type="text" class="form-control" id="text" value="<%= value.title %>" name="title">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.descTx %>：</label>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+					<textarea class="form-control" id="text" name="descTx"><%= value.descTx %></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.open %>：</label>
+				<div class="checkbox col-lg-9 col-md-9 col-sm-9 col-xs-9">
+					<label>
+						<input type="checkbox" name="isPub" value="1" onclick="<%=ctrl%>.isShowFree();" <%if(value.isPub){%>checked<%}%> > <%= ph.yes %>
+					</label>
+				</div>
+			</div>
+			<div class="form-group isFreeBox" <%if(!value.isPub){%>style="display:none;"<%}%>>
+				<label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.free %>：</label>
+				<div class="checkbox col-lg-9 col-md-9 col-sm-9 col-xs-9">
+					<label>
+					    <input type="checkbox" name="isFree" value="1" <%if(value.isFree){%>checked<%}%>>
+					    <%= ph.use %>
+					</label>
+				</div>
+			</div>
+		</form>		
+	</div>
+	
+	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 maTB20">		
+		<div class="stopApp">
+			<a href="javascript:<%=ctrl%>.unlock();"><i class="icon-ban-circle"></i></a>
+		</div>		
+	</div>
+
+	<div class="clearfix"></div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.update();"><%= ph.confirm %></button>
+	</div>
+</div>
+
+
+<style type="text/css" media="screen">
+	@media (min-width: 768px) {
+		.modal-dialog {
+			width: 650px;
+			margin: 3px auto;
+		}
+	}
+</style>

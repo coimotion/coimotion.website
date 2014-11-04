@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Create a repository</en>
+		<zh>新增內容</zh>
+	</ph>
+	<ph id="select">
+		<en>Is Public</en>
+		<zh>是否公開</zh>
+	</ph>
+	<ph id="open">
+		<en>open</en>
+		<zh>公開</zh>
+	</ph>
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="title">
+	    <en>Title of webpage</en>
+	    <zh>網頁標題</zh>
+	</ph>
+	<ph id="summary">
+	    <en>Summary of webpage</en>
+	    <zh>網頁引文</zh>
+	</ph>
+	<ph id="body">
+	    <en>Context body</en>
+	    <zh>網頁內文</zh>
+	</ph>
+</phrases>

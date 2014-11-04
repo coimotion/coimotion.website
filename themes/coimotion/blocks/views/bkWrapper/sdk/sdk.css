@@ -1,0 +1,118 @@
+.maR span, .maR h4 {
+	color: #353535;
+	font-weight: bold;
+}
+.maR h4 {
+	height: 30px;
+	line-height: 18px;
+}
+.maR span {
+	font-size: 12px;
+	line-height: 20px;
+}
+.maR p a{
+	color: #39749d;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.maR p a:hover{
+	color: #0b5aa8;
+}
+.link p + p{
+  margin-top: -5px;
+}
+.setheight{
+  height: 380px;
+}
+/*icomoon字型*/
+span.icon {
+  display: block;
+  margin: 40px auto -30px;
+  width: auto;
+  height: 100px;
+  padding: 0;
+}
+span.icon-android {
+  color: #1db633;
+  font-size: 6em;
+}
+span.icon-iOS {
+  color: #21aed2;
+  font-size: 6em;
+}
+span.icon-swift {
+  color: #e66d00;
+  font-size: 6em;
+}
+span.icon-phoneGap {
+  color: #999999;
+  font-size: 6em;
+}
+span.icon-nodeJs {
+  color: #90cc50;
+  font-size: 6em;
+}
+/*fontAwesome字型*/
+.maR i.fa-android,
+.maR i.fa-apple {
+  display: block;
+  margin: 5px auto;
+  /*width: 100px;*/
+  height: 100px;
+}
+.maR i.fa-android {
+  color: #1db633;
+  font-size: 6.2em;
+}
+.maR i.fa-apple {
+  color: #21aed2;
+  font-size: 6.2em;
+}
+
+/* 下載 */
+.btn-github {   
+  width: 100%;
+  display: block;  
+  text-align: center; 
+  vertical-align: middle;  
+  font-size: 14px;
+  color: #FFF;
+  /*background: #0b5aa8;*/
+  background: #4387bf;
+  border: 1px solid #3883c0;
+  padding: 2px 0;
+  margin: 0 0 0.7em;  
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgba(7, 75, 140, 0.5) 0px 1px 0px 0px inset;
+  box-shadow: rgba(7, 75, 140, 0.5) 0px 1px 0px 0px inset;
+  box-sizing: border-box;
+  -webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+transition: all .1s linear;
+}
+
+.btn-github + .btn-github { 
+  /*margin: -1.5em 0 2em;*/
+  margin: 0.7em 0;
+}
+.btn-github:hover,
+.btn-github:focus,
+.btn-github:active {
+  background: #07417A;  
+}
+.btn-github span,
+.btn-github span:hover,
+.btn-github i {
+   color: #fff;
+}
+.btn-github i {
+  display: inline-block;
+}

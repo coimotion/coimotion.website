@@ -1,0 +1,122 @@
+/* 左側選單底塊 */
+.page-sidebar {
+  width: 225px;
+  float:left;
+  /*background: #42bdd8;*/
+  /*background: #01afd18;*/
+  background: #00a3df;
+  padding: 45px 0 49px;
+  margin:0;
+}
+/* 左側選單開始 */
+ul.page-sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*選單預設樣式*/
+ul.page-sidebar-menu > li {  
+  width: 100%;
+  display: block;
+  position:relative;
+  overflow: visible;
+  margin: 0;
+  padding: 0; 
+  border: 0px;
+  /*background: #2297c0;*/
+  /*background: #019ebd;*/
+  background: #0092d3;
+}
+/*選單連結樣式*/
+ul.page-sidebar-menu > li > a {
+  display: block;
+  width:100%;
+  margin: 0;
+  border: 0px;
+  padding: 15px 15px 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  /*border-top: 1px solid #58adcb;*/
+  /*border-top: 1px solid #01afd1;*/
+  border-top: 1px solid #00a3df;
+  color: #ffffff;
+}
+/*選單最後一個*/
+ul.page-sidebar-menu > li:last-child > a {
+   border-bottom: 1px solid transparent;
+}
+/*前置圖案*/
+ul.page-sidebar-menu > li.active > a > i ,
+ul.page-sidebar-menu > li > a > i {
+  font-size: 18px;
+  margin-right: 6px;
+  margin-left: 15px;
+  color: #fff;
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+}
+/*li 啟動樣式*/
+ul.page-sidebar-menu > li.active > a {
+  /*background: #1f7b9b;*/
+  /*background:#0186a0;*/
+  background: #008cd3;
+  border-top-color: transparent;
+  color: #ffffff;
+}
+/*選單-滑過*/
+ul.page-sidebar-menu > li > a:hover,
+ul.page-sidebar-menu > li:hover > a {
+  /*background: #1f7b9b;*/
+  /*background:#0186a0;*/
+  background: #008cd3;
+  text-decoration: none;
+} 
+/*右白箭頭-邊框*/
+.arrow_r_out{
+  width:0px;
+  height:0px;
+  border-width:11px;
+  border-style:solid;
+  border-color:transparent #fff transparent transparent ;
+  position:absolute;
+  top:28%;
+  left:204px;
+  z-index: 1;
+}
+
+/* sidebar-search */
+.page-sidebar .sidebar-search #input-box {
+  /*background:#42bdd8;*/
+  /*background:#01afd1;*/
+  background: #00a3df;
+}
+.page-sidebar .sidebar-search .box {
+  width:160px;
+  height: 30px;
+  margin:5px 32px 20px;
+  padding:20px;
+  color: #ccc;
+  background: #fff;
+  border:none;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px; 
+  position:relative; 
+  font-size:16px;
+  outline:none;
+}
+.submit{
+  position:absolute;
+  left:165px;
+  top:15px;
+  z-index:2;
+  font-size:18px;
+  color:#ccc;
+}
+a .submit:hover,
+a .submit:sel{
+  text-decoration:none;
+}

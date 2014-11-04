@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="team">
+		<en>Team Building</en>
+		<zh>建立團隊</zh>
+	</ph>
+	<ph id="fast">
+		<en>Fast Track</en>
+		<zh>快速建置</zh>
+	</ph>
+	<ph id="app">
+		<en>App Management</en>
+		<zh>App管理</zh>
+	</ph>
+	<ph id="content">
+		<en>Content Treasure</en>
+		<zh>內容寶庫</zh>
+	</ph>
+	<ph id="custContent">
+		<en>CustContent</en>
+		<zh>自製內容</zh>
+	</ph>
+	<ph id="statistics">
+		<en>Statistics</en>
+		<zh>統計數字</zh>
+	</ph>
+	<ph id="text1">
+		<en>開發團隊常會有多個行動應用程式，利用「APP管理」來統一進行管理。COIMOTION提供了一些功能模組，來支援App開發時所需的各項後台功能。「APP管理」可以讓開發者設定每個 APP中會用到哪些後台功能。</en>
+		<zh>開發團隊常有多個行動應用，可利用「App管理」統一管理。平台提供各式功能模組，支援App開發所需的後台功能；利用「App管理」來設定 App 中使用的模組。</zh>
+	</ph>
+	<ph id="text2">
+		<en>除了API服務之外，COIMOTION提供了各式各樣的原始資料，包括政府的Open Data、各式的民間資料等，做為開發App的素材。趕快進入「內容寶庫」，尋找開發 App的靈感，讓你的 App更實用。</en>
+		<zh>除了API服務之外，COIMOTION提供了活動、交通、民宿、媒體等多樣化的原始資料，做為開發App的素材。趕快到「內容寶庫」找靈感，讓你的 App 更實用。</zh>
+	</ph>
+	<ph id="text3">
+		<en>除了使用 COIMOTION所提供的內容外，開發者也可以自訂內容集，利用 COIMOTION所提供的 API服務，以 App來收集或儲存內容。類似打卡、評價、或是記事等行動應用功能，都能以自製內容的方式輕易解決。</en>
+		<zh>除了平台所提供的內容外，開發者也可以自訂內容集。利用 CMS, BnB, Event 或 Store 等模組來產製與維護內容。不需要自搞資料庫或後台系統就可輕鬆搞定。</zh>
+	</ph>
+	<ph id="text4">
+		<en>COIMOTION提供了各式的統計報表，協助開發者瞭解使用者使用 App的狀況，做為改進 App的依據。如果開發者在 App中引用了授權使用的內容集，也可以透過統計報表來瞭解每個 App的收益狀況。</en>
+		<zh>COIMOTION提供各式統計報表，協助開發者瞭解 App 的使用狀況，作為改進的依據。如果引用了授權使用的內容集，也可以透過統計報表來瞭解收益狀況。</zh>
+	</ph>
+	<ph id="alert">
+		<en>Please create or join a team.</en>
+		<zh>請先建立或加入團隊。</zh>
+	</ph>
+</phrases>

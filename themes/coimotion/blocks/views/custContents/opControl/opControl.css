@@ -1,0 +1,28 @@
+.widget-head{
+  margin-top: -5.5em;
+  float:left;
+  width: 100%;
+}
+i.fa-angle-double-right {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*按鈕設定*/
+.btn-green i ,
+.btn-green i {
+  font-size: 14px;
+  color:#fff;
+}
+.btn-green i ,
+.btn-default i {
+  margin-right: 10px;
+}
+.btn-default i,
+.btn-default:hover i{
+  font-size: 14px;
+  color: #777;
+}
+.widget-content > p, p{
+  color: #2a806e !important;
+  font-size: 14px;
+}

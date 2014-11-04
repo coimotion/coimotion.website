@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>	
+	<ph id="repository">
+		<en>Repository</en>
+		<zh>內容寶庫</zh>
+	</ph>
+	<ph id="bus">
+		<en>Bus Information</en>
+		<zh>公車資訊</zh>
+	</ph>
+	<ph id="areaBus">
+		<en>Bus information (currently only Kaohsiung) allows using bus stop ID to query bus routes, the upcoming bus arrivals and the name of stop. The nearby stops can also be searched by latitudes and longitudes.</en>
+		<zh>本內容集提供公車資訊查詢（目前僅高雄市），可由站牌識別碼查詢經過的公車路線或查詢即將到站的公車，公車路線上的站名，亦可由經緯度查詢周遭站牌。</zh>
+	</ph>	
+	<ph id="stores">
+		<en>Convenient Stores</en>
+		<zh>全台便利商店大補帖</zh>
+	</ph>
+	<ph id="areaStores">
+		<en>The locations of 7-11 and FamiMart all over Taiwan. By geolocations, you can search the information of the nearby convenient stores. The results include geolocation, address, and facilities (ATM/Wifi/WC…etc.).</en>
+		<zh>7-11和全家在全台灣便利商店的營業據點。提供以地理位置查詢周圍所有便利商店的功能。查詢結果包含地理位置、地址、電話與設施（有無ATM，有無WiFi，有無廁所等）等各種資訊。</zh>
+	</ph>
+	<ph id="road">
+		<en>Race Events</en>
+		<zh>全國路跑賽事</zh>
+	</ph>
+	<ph id="areaRoad">
+		<en>The race event information includes races, marathons, and triathlons held in Taiwan. By setting geolocations, regions, and time interval, you can easily find the detailed information such as dates, distances and locations.</en>
+		<zh>全台灣的路跑、馬拉松、鐵人運動等賽事資訊，查詢結果包含日期、里程、地點、資訊來源網址等各種資訊。可設定地理位置、縣市區域與時間區間搜尋所需的資訊。</zh>
+	</ph>
+	<ph id="literary">
+		<en>Cultural Events</en>
+		<zh>藝文活動資訊</zh>
+	</ph>
+	<ph id="areaLiterary">
+		<en>The information of cultural events in Taiwan. The 13 versatile types of events include music, drama, dance, family activity, indie music, exhibition, speech, movie, variety activity, competition, audition, other culture events, and concert. All the events can be queried by regions and geolocations.</en>
+		<zh>文化部公開的全台藝文活動資訊，共收錄13種類型，可依縣市或地理位置搜尋。活動類型有：音樂表演、戲劇表演、舞蹈表演、親子活動、獨立音樂、展覽、講座、電影、綜藝活動、競賽活動、徵選活動、其他藝文資訊、演唱會。</zh>
+	</ph>	
+	<ph id="railway">
+		<en>Railway Schedule</en>
+		<zh>鐵路時刻表</zh>
+	</ph>
+	<ph id="areaRailway">
+		<en>It provides the information of railway schedule, station information and timetable. The setting of the arrival and terminal stations, time intervals can be used to query the train information.</en>
+		<zh>本內容集提供台鐵車站/車班資訊查詢，可查詢車站資訊、列車資訊、特定日期的行車資訊，也可設定起訖站、時間區間或列車特徵(是否提供殘障設施或是列車等級)以查詢火車班次訊息。</zh>
+	</ph>
+	<ph id="library">
+		<en>COIMOTION Library</en>
+		<zh>COIMOTION圖書館</zh>
+	</ph>
+	<ph id="areaLibrary">
+		<en>The collections include more than 60,000 book information. The information such as book covers, introduction, summary and sample can further be searched by keywords. The search results can also be listed by authors, publishers or series. All the book information will be updated irregularly.</en>
+		<zh>提供關鍵字模糊搜尋與精準搜尋，或可依作者、出版社或系列別條列出書籍資訊。資訊包含：封面、書籍基本資料、摘要、試讀等其他附加資訊。目前收錄上萬筆中文書籍，亦將不定期新增書籍資訊。</zh>
+	</ph>	
+	<ph id="find">
+		<en>find out more repository</en>
+		<zh>更多內容寶庫</zh>
+	</ph>
+</phrases>

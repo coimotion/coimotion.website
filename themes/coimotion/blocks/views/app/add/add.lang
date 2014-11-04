@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="app">
+		<en>Create an App</en>
+		<zh>新增App</zh>
+	</ph>
+	<ph id="caCode">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>
+	<ph id="locID">
+		<en>Default language</en>
+		<zh>預設語系</zh>
+	</ph>
+	<ph id="isntMobile">
+		<en>Whether mobile applications</en>
+		<zh>是否為行動應用</zh>
+	</ph>
+	<ph id="isMobile">
+		<en>For mobile applications</en>
+		<zh>是為行動應用</zh>
+	</ph>
+	<ph id="close">
+		<en>Close</en>
+		<zh>關閉</zh>
+	</ph>
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="required">
+		<en>Required (Please enter alphanumeric more than 6 yards)</en>
+		<zh>必填（請輸入6碼以上的英數字）</zh>
+	</ph>
+	<ph id="required2">
+		<en>Required (Please enter App title)</en>
+		<zh>必填（請輸入App的標題）</zh>
+	</ph>
+	<ph id="js_CACORD_ERR">
+		<en>Please enter alphanumeric more than 6 yards.</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,68 @@
+<%
+	var  locID = ctx.locID;
+%>
+<div style="height: 85px">
+    <div class="logo">
+      	<a href="/coimotion/index">
+          	<img src="../../wcoim/theme/logo.png"/>
+      	</a>
+    </div>
+	<div class="rightTop">
+	    <span style="margin-right:10px;">
+	        <a href="/contents/regPage">
+	        	<% if(locID == 1) { %>
+	          	<img src="../../wcoim/theme/Join-Now.png"
+	          		onmouseover="this.src='../../wcoim/theme/Join-Now-hover.png'"
+	          		onmouseout="this.src='../../wcoim/theme/Join-Now.png'"/>
+	          	<% } else if(locID == 2) { %>
+	          		<img src="../../wcoim/theme/ch_Now.png"
+	          		onmouseover="this.src='../../wcoim/theme/ch_Now-hover.png'"
+	          		onmouseout="this.src='../../wcoim/theme/ch_Now.png'"/>
+	          	<% } %>
+	        </a>
+	    </span>
+	    <span style="margin-right:10px;">
+	        <a href="/user/login">
+	        	<% if(locID == 1) { %>
+	            <img src="../../wcoim/theme/Login.png" 
+	          		onmouseover="this.src='../../wcoim/theme/Login-hover.png'"
+	          		onmouseout="this.src='../../wcoim/theme/Login.png'"/>
+	          	<% } else if(locID == 2) { %>
+	          	<img src="../../wcoim/theme/ch_Login.png" 
+	          		onmouseover="this.src='../../wcoim/theme/ch_Login-hover.png'"
+	          		onmouseout="this.src='../../wcoim/theme/ch_Login.png'"/>
+	          	<% } %>
+	        </a>
+	    </span>
+	<!--<span>  --> 
+	    <!--<a href="#"><img src="../../wcoim/theme/Language.png"/></a>  -->
+		    <!--<select name="locID" onchange="<%=ctrl%>.selLocale();">  -->
+			<!--<option value="1" <%if (locID=='1') {%>selected<%}%>>English</option>  -->
+			<!--<option value="2" <%if (locID=='2') {%>selected<%}%>>繁體中文</option>  -->
+			<!--<option value="3" <%if (locID=='3') {%>selected<%}%>>简体中文</option>  -->
+			<!--</select>  -->
+	<!--</span>  -->
+<!--</select>  -->	
+		
+		<span style="margin-right:10px;float:right"> 
+			<div class="selectBox">
+				<span class='selected'></span>
+				<span class="selectArrow"><i class="icon-chevron-down" style="margin-top:5px"></i></span>
+				<div class="selectOptions">
+					<% if(locID == 1) { %>
+					<span class="selectOption" value="Option 2" onclick="<%=ctrl%>.selLocale(1);">English</span>
+					<span class="selectOption" value="Option 1" onclick="<%=ctrl%>.selLocale(2);">繁體中文</span>
+					<% } else { %>
+					<span class="selectOption" value="Option 1" onclick="<%=ctrl%>.selLocale(2);">繁體中文</span>
+					<span class="selectOption" value="Option 2" onclick="<%=ctrl%>.selLocale(1);">English</span>
+					
+					<% } %>
+					
+					
+					<!-- <span class="selectOption" value="Option 3">简体中文</span> -->
+				</div>
+			</div>
+		</span>	 
+
+	</div>
+</div>

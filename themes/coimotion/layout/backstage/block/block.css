@@ -1,0 +1,57 @@
+/*所有主題上方標題列*/
+.mainbar{
+  position: relative;
+  width:100%;
+  /*min-height: 600px;*/
+  /* tune for mbp13 */
+  min-height: 500px;
+  margin:0 auto;
+  background:#fff;
+  background-size: cover;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ddd;
+  margin-top:70px;
+}
+
+/*上方標題列右方小字*/
+.mainbar .page-head{
+  background-color: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+  background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+  background: linear-gradient(top, #f8f8f8, #f2f2f2);
+  padding: 3px 20px;
+  border-bottom: 1px solid #fff;
+  box-shadow: inset 0px 1px 1px #fff;
+  font-style: normal;
+}
+/*上方標題列左方標題字*/
+.mainbar .page-head h3{
+  font-weight: normal;
+  font-style: normal;
+}
+/* Bread crumb 標題列小icon */
+.mainbar .bread-crumb{
+  font-size: 11px;
+  margin-top: 10px;
+  color: #aaa;
+}
+.mainbar .bread-crumb i{
+  margin-right: 3px;
+}
+.mainbar .bread-crumb .divider{
+  margin: 0px 3px;
+}
+.mainbar .bread-crumb a{
+  color: #666;
+}
+.mainbar .bread-crumb a.bread-current{
+  color: #888;
+}
+/*自製內容的表格設定*/
+.widget-content table{
+	font-size:16px;
+	vertical-align:middle;
+}

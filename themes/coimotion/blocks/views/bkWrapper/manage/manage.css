@@ -1,0 +1,76 @@
+.bkManage {
+  width:100%; 
+  padding: 1em 1em 1em 2em;   
+  /*padding: 0px 8em 0px 5em; 
+  margin-bottom: 5em;
+  margin-top: 5em;*/  
+}
+.section {
+  width:100%;  
+  border-bottom: #dae1e8 1px solid;
+  padding-bottom: 2em; 
+  margin-top: 1em;
+}
+.section:last-child {
+	border-bottom: none;
+}
+
+/******區塊共同設定******/
+
+/*主題內容*/
+.matter {
+  padding: 0px;
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+a, a:hover {
+	text-decoration: none;
+}
+/*欄位設定*/
+.maR {
+	text-align: center;
+	vertical-align: middle;
+}
+/*icon*/
+.maR img {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+}
+/*標題*/
+h3 {
+	margin: 1.5em auto;
+	color: #414f63;
+	font-weight: bold;
+	text-align: center;
+}
+/*更多內容按鈕*/
+.inmore {
+    /*-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	-webkit-box-shadow: rgba(255,255,255,0.5) 0px 2px 1px 0px inset;
+	box-shadow: rgba(255,255,255,0.5) 0px 2px 1px 0px inset;
+	box-sizing: border-box;
+	color: #FFF;
+	background: #4d6975;*/
+	display: block;
+	font-size: 1em;
+	line-height: 24px;
+	height: 35px;	
+	margin: 1em auto 0;
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;	
+}
+/*.inmore:hover{	
+	color: #fff;
+	background: #48a486;	
+}*/

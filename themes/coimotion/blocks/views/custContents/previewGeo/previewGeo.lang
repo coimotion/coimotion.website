@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+   <ph id="address">
+    <en>Address</en>
+    <zh>地址</zh>
+  </ph>
+  <ph id="longitude">
+    <en>Longitude</en>
+    <zh>經度</zh>
+  </ph>
+  <ph id="latitude">
+    <en>Latitude</en>
+    <zh>緯度</zh>
+  </ph>
+  <ph id="open">
+    <en>Is Public</en>
+    <zh>是否開放</zh>
+  </ph>
+</phrases>

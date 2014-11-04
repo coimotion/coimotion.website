@@ -1,0 +1,101 @@
+.rightTop {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.rightTop span a {
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  margin-top: 20px;
+}
+
+.selectBox{
+  position:relative;
+  display:inline-block;
+  cursor:default;
+  text-align:left;
+  line-height:20px;
+  clear:both;
+  width:100px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.selected{
+  position:relative;
+  float:left;
+  width:100px;
+  height:24px;  
+  z-index:1;
+  text-indent:10px;
+  border:1px solid #ccc;
+  /*border-right:none;*/
+  border-radius:4px;
+  background:#f6f6f6;
+  overflow:hidden;
+  padding: 0px;  
+}
+.selected a{
+  font-family:sans-serif; 
+  font-size: 12px;
+  line-height: 0px;
+  padding: 0px;
+  color:#555;
+  display: block;
+  margin: -13px 0 0 -10px;
+}
+.selected a:hover{
+  color: #333;
+}
+.selectArrow{
+  position:absolute;
+  top:0px;
+  left:79px;
+  width:20px;
+  height:24px;
+  z-index:2;
+  border:1px solid #ccc;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+  text-align:center;
+  vertical-align:middle; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background:#30d4b0;
+  font-size:12px;
+  color: #fff;
+}
+.selectArrow i{
+  font-size:12px;
+  color: #fff;
+  display: block;
+}
+.selectOptions{
+  position:absolute;
+  top:24px;
+  left:0px;
+  width:100px;
+  z-index: 7;
+  border:1px solid #ccc;
+  border-bottom-right-radius:4px;
+  border-bottom-left-radius:4px;
+  overflow:hidden;
+  background:#fff;
+  text-indent: 10px;
+  display:none;
+}       
+.selectOption{
+  display:block;
+  width:100%;
+  line-height:20px;
+  padding:5px 10%;
+}
+.selectOption:hover{
+  color:#999;
+  background:#e5e4e2; 
+}

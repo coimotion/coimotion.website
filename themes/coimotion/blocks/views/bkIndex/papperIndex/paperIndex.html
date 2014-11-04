@@ -1,0 +1,64 @@
+<%
+  var  listHref = "/bkIndexPapers/list",
+     orgID = bi.uri.split('/')[3];
+  if (orgID)
+    listHref += "/"+orgID;
+  listHref += "?_pn=1&_ps=5";
+
+  if(!value || value.list.length == 0)
+    listHref = "#";
+%>
+<!-- Example -->
+  <!-- 技術文件 -->
+  <!-- <tr>
+    <td class="wc80"></td>
+    <td class="wc20"></td>
+  </tr>
+  <tr>
+    <td>COIMOTION phoneGap/Cordova Plugin技術文件</td>
+    <td>2014-06-03</td>
+  </tr>
+  <tr>
+    <td>Android Demo App技術文件</td>
+    <td>2014-04-15</td>
+  </tr>
+  <tr>
+    <td>iOS Demo App技術文件</td>
+    <td>2014-04-14</td>
+  </tr> -->
+<!-- ------- -->
+<% if(value && value.list.length > 0) { %>
+<table class="table table-hover tableChange">
+  <tr>
+    <td class="wc70"></td>
+    <td class="wc30"></td>
+  </tr>
+  <% value.list.forEach(function(item) { %>
+  <tr>
+    <%
+      var  time = new Date(item.mdTime),
+              month = (time.getMonth() + 1).toString(),
+              day = time.getDate().toString(),
+                     hf = "/bkIndexPapers/view",
+                     orgID = bi.uri.split('/')[3];
+                  month = (month.length > 1) ? month : "0"+month;
+                  day = (day.length > 1) ? day : "0"+day;
+                  strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+
+                  if (orgID)
+                    hf += "/"+orgID;
+                  hf += "?id="+item.ngID;
+                %>
+    <td><a href="<%=hf%>"><%= item.title %></a></td>
+    <td><%= strMdTime%></td>
+  </tr>
+  <% }); %>
+</table>
+<% } %>
+
+<div class="row text-center maT">
+	<div class="col-md-offset-3 col-md-6">
+		<span class="icon-angle-left"></span>
+		<span class="icon-angle-right"></span>
+	</div>
+</div>

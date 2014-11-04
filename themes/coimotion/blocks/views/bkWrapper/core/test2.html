@@ -1,0 +1,159 @@
+<h2 class="tagline"></h2>
+<p>不論是哪一種網路應用 （旅遊、電子商務、社群等)，大概都離不開網頁式的說明資料以及地理位置的處理。也就是說網頁和地理位置已成了網路與行動應用基本的資料組成元素。這二個基本組成元素在COIMOTION上被對應到 page 和 geoLoc 這二種資源型態。</p>
+
+<p>在應用上這二者常會相互連結，例如查看網頁所被標示的地理位置，或是看看某個地理位置有沒有類似網頁的內容介紹。要達成這樣的效果，一種方式是在 page 上提供與 geoLoc 相關的功能元，例如 addGeo, delGeo, updateGeo, geoInfo 等；然後在 geoLoc 也加上對應到 page 的功能元。這樣可以 為 page 和 geoLoc 提供了互相連結的辦法，但有一些缺點：</p>
+<ol>
+	<li>
+	為了讓 geoLoc 有網頁的功能，geoLoc 必須繼承 cms/page。如此一來造成geoLoc 的功能元膨脹。對 page 來說也是類似的狀況。</li>
+	<li>
+	更大的問題是，利用擴充page以及geoLoc功能元的方式會讓網頁和地理位置資料共同隸屬於同一個 resource name，如此將造成網頁和地理位置其中一個面相的資料變成隱形不可見。例如附屬於 geoLoc 下的網頁資料，就無法使用 list 功能元來取得網頁清單。因為資源名稱已被對應到地理位置而非網頁，所以下 list 命令時傳回的是地理位置清單而不是網頁清單。</li>
+</ol>
+<p>
+對於 COIMOTION 來說，簡潔清楚的API 定義是我們設計時的最高優先順位。對於上述的問題，我們希望不論是附屬於網頁的地理位置，或是附屬於地理位置下的網頁，都能像他們在單獨運作時一樣的被處理。同時原有的 API 不會因為這項交互連結的功能而變得肥胖不堪。</p>
+
+<h2 class="tagline">附屬資源</h2>
+<p>
+COIMOTION 為傳統的所謂 RESTful 格式引入新的語法。一般的 API 端點在 COIMOTION 上是以下列的格式表示：</p>
+	<pre><code>
+	  repo/rs/op/[id]
+	</code></pre>
+<p>現在要交互連結網頁內容和地理位置，所以引入「附屬資源」的觀念。所謂附屬資源是指與主資源相關的網頁內容或是地理資訊。例如一個店家可以有多篇介紹的文章，此時店家 (store) 可以是主資源，而店家的介紹文 (page) 就成了附屬資源。要對店家的介紹文做各種操作，就可以使用以下的方式：</p>
+	<pre><code>
+	  store.page/list/[storeID]			// 列出某個店家所有的介紹文
+	  store.page/view/[storeID.pageID]	// 列出某個店家的某篇介紹文
+	</code></pre>
+<p>
+也就是說要對某個資源的網頁內容進行操作，可以使用如下的格式：</p>
+	<pre><code>
+	  resource.page/op/[resourceID.pageID]
+	</code></pre>
+<p>
+同樣的，如果要對某個資源的地理位置進行操作，可以使用如下的格式：</p>
+	<pre><code>
+	  resource.geoLoc/op/[resourceID.geoID]
+	</code></pre>
+<p>
+以下舉一些簡單的範例。假設有一個資源 article 繼承了 cms/page，那麼用以下的語法可以用來處理附加於 article 上的地理位置：</p>
+	<pre><code>
+	  article.geoLoc/list/25133
+	  article.geoLoc/info/25133.3840
+	</code></pre>
+<p>
+第一個範例列出25133號 article 的所有地理位置。第二個範例則會顯示附加於25133號 article 的第3840號地理位置。 需要注意的是在這種格式下，功能元所對應的是附屬資源（geoLoc）的功能元，而不再是原來 article 功能元。</p>
+<p>
+接著是以地理位置作為附屬資源的範例。假設有一個 vista 的地理位置資源（繼承了 cms/geoLoc），那麼用以下的方式可以用來處理附加於 vista 的網頁資訊：</p>
+	<pre><code>
+	  vista.page/create/3990
+	  vista.page/view/3990.57288
+	</code></pre>
+<p>
+第一個範例用來為3990號的vista地理位置新增一個網頁。第二個範例則是用來顯示與3990號的vista地理位置相關的一篇57288號網頁。需要注意的是，如果57288號網頁和3990號的vista地理位置沒有關連，系統將不會執行要求，並送出錯誤訊息。</p>
+
+<h3>擁有附屬資源的主資源</h3>
+<p class="p_h3">前面介紹了使用附屬資源的端點 (endpoint) 格式。那麼究竟有哪些資源是可以使用附屬資源的呢？截至目前 COIMOTION 支援的版本 (10/29/2014)，以下是可以使用附屬資源的（主）資源：</p>
+<ul>
+	<li>所有引用 getLoc 和 stInfo 的客製資源都能使用 page 做為其附屬資源</li>
+	<li>所有引用 page 和 stInfo 的客製資源都能使用 geoLoc 做為其附屬資源</li>
+</ul>
+
+<h3>附屬資源功能表</h3>
+<p class="p_h3">
+並不是所有的功能元都會支援附屬資源，因為某些功能元在附屬資源的狀況下沒有合理的意義。以下的表格列出各附屬資源所能支援的功能元：</p>
+
+<table>
+	<thead>
+		<tr>
+			<th class="wc25">附屬資源</th>
+			<th class="wc25">功能元</th>
+			<th class="wc50">說明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>page</td>
+			<td>attach</td>
+			<td>為附屬文加附件</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>create</td>
+			<td>新增附屬文</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>delete</td>
+			<td>刪除附屬文</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>detach</td>
+			<td>為附屬文移除附件</td>
+		</tr>		
+		<tr>
+			<td> </td>
+			<td>list</td>
+			<td>列出地理位置所有的附屬文</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>listAux</td>
+			<td>列出附屬文的附件</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>search</td>
+			<td>搜尋與主資源相關的附屬文</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>tag</td>
+			<td>為附屬文加標籤（或移除標籤）</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>update</td>
+			<td>更改附屬文</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>view</td>
+			<td>檢視附屬文</td>
+		</tr>
+		<tr>
+			<td>geoLoc</td>
+			<td>add</td>
+			<td>新增附屬地理位置</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>delete</td>
+			<td>刪除附屬地理位置</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>info</td>
+			<td>檢視附屬地理位置的詳細資訊</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>list</td>
+			<td>列出網頁所有的附屬地理位置</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>search</td>
+			<td>搜尋與主資源相關的附屬地理位置</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>tag</td>
+			<td>為附屬地理位置加標籤（或移除標籤）</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>update</td>
+			<td>修改附屬地理位置</td>
+		</tr>
+	</tbody>
+</table>
+<p class="p_h3">功能元所參考的參數，在附屬資源的狀況下依然都支援。</p>

@@ -1,0 +1,89 @@
+<div class="matter">
+	<div class="newside">
+		<div class="row">
+			<div>
+				<% if(value && value.list.length > 0) { %>
+				<ul class="newtitle">
+					<% value.list.forEach(function(item) { %>
+					<li>
+						<%  
+							var  time = new Date(item.mdTime),
+								 pn = bi.query._pn,
+								 ps = bi.query._ps,
+								 month = (time.getMonth() + 1).toString(),
+								 day = time.getDate().toString(),
+					 			 href = "/bkIndexPapers/view",
+					 			 orgID = bi.uri.split('/')[3];
+					 		month = (month.length > 1) ? month : "0"+month;
+           					day = (day.length > 1) ? day : "0"+day;
+           					strMdTime = time.getFullYear()+"-"+month+"-"+ day;
+           					
+					 		if (orgID)
+	           					href += "/"+orgID;
+	           				href += "?id="+item.ngID+"&_pn="+pn+"&_ps="+ps;
+	           			%>
+						<span class="icon-play"></span>
+						<a href="<%=href%>"><%= item.title %> <small style="float: right;"><%= strMdTime%></small></a>
+						<p><%= item.summary %></p>
+					</li>
+					<% }); %>
+				</ul>
+				<% 
+				var  hf = "/bkIndexPapers/list",
+					 orgID = bi.uri.split('/')[3];
+					 
+				if (orgID)
+	           		hf += "/"+orgID;
+	           		
+				var  viewNum = 3,
+					 pn = parseInt(bi.query._pn),
+					 ps = parseInt(bi.query._ps),
+					 entries = parseInt(value.entries),
+					 pnTotal = Math.ceil(entries / ps);
+					 
+				if (pnTotal > 1) { 
+				%>
+				<ul class="pagination chang">
+					
+					<%  if (pn != 1) { %>
+					<%  var prev = pn - 1; %>
+					<li><a href="<%=hf%>?_pn=<%=prev%>&_ps=<%=ps%>">&laquo;</a></li>
+					<li><a href="<%=hf%>?_pn=1&_ps=<%=ps%>">1</a></li>
+					<% } else { %>
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<% } %>
+					<% if ((pn - viewNum) > viewNum) { %>
+					<li class="disabled"><a href="#">...</a></li>
+					<% } %>
+					<%  var start = pn - viewNum;
+						if (start < 2)
+							start = 2;
+						for (var i=start; i<pn; i++) {
+					%>
+					<li><a href="<%=hf%>?_pn=<%=i%>&_ps=<%=ps%>"><%=i%></a></li>
+					<% } %>
+					<li class="now"><a href="#"><%=pn%></a></li>
+					<%  var start = pn + 1,
+						 	end = pn + viewNum;
+						if (end > pnTotal)
+							end = pnTotal;
+						for (var i=start; i<=end; i++) {
+					%>
+					<li><a href="<%=hf%>?_pn=<%=i%>&_ps=<%=ps%>"><%=i%></a></li>
+					<% } %>
+					<% if ((pnTotal-pn) > viewNum) { %>
+					 <li class="disabled"><a href="#">...</a></li>
+					<% } %>
+					<%  
+						var  next = pn + 1;
+						if (pn !== pnTotal) { 
+					%>
+					<li><a href="<%=hf%>?_pn=<%=next%>&_ps=<%=ps%>">&raquo;</a></li>
+					<% } %>
+				</ul>
+				<% } %>
+				<% } %>        
+			</div>
+		</div>
+	</div>
+</div>

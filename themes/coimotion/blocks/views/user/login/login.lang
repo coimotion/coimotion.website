@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="login">
+		<en>Login</en>
+		<zh>會員登入</zh>
+	</ph>
+	<ph id="account">
+		<en>User Account</en>
+		<zh>帳號</zh>
+	</ph>
+	<ph id="passwd">
+		<en>Password</en>
+		<zh>密碼</zh>
+	</ph>
+	<ph id="signin">
+		<en>Sign in</en>
+		<zh>登入</zh>
+	</ph>
+	<ph id="js_MAIL_EMPTY_ERR">
+		<en>Email account cannot be empty.</en>
+		<zh>Email(帳號)不可空白</zh>
+	</ph>
+	<ph id="js_PASSWD_EMPTY_ERR">
+		<en>Password cannot be empty.</en>
+		<zh>密碼不可空白</zh>
+	</ph>
+</phrases>

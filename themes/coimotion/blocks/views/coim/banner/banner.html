@@ -1,0 +1,68 @@
+<div id="banner" class="row">    
+	<div id="indexCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->		
+		<ol class="carousel-indicators">
+			<li data-target="#indexCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#indexCarousel" data-slide-to="1"></li>
+			<li data-target="#indexCarousel" data-slide-to="2"></li>
+		</ol>
+		
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">			
+			<div class="item active">
+				<div class="carousel-caption">			
+					<img src="<%=value.list[0].imgTitle%>" alt="coimotion" class="img1">	
+					<img src="<%=value.list[0].imgSub%>" alt="coimotion" class="img2">	
+				</div>					
+			</div>
+			<div class="item">			 
+				<div class="carousel-caption" style="padding-top: 130px">					
+					<span>2014.10.25/26</span>
+					<hr class="hr1">					
+					<img src="<%=value.list[1].imgTitle%>" alt="coimotion" class="img01">
+					<hr class="hr2">
+					<img src="<%=value.list[1].imgSub%>" alt="coimotion" class="img02">						
+				</div>	            
+			</div>
+			<div class="item">			 
+				<div class="carousel-caption">					
+					<span class="span3">2014.10.11/12</span>										
+					<img src="<%=value.list[2].imgTitle%>" alt="coimotion" class="img001">							
+				</div>	            
+			</div>						
+		</div>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#indexCarousel" data-slide="prev">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		<a class="right carousel-control" href="#indexCarousel" data-slide="next">
+			<i class="fa fa-angle-right"></i>
+		</a>
+	</div>
+</div>
+
+<!-- side-nav -->
+<div id="side-nav" class="hidden-sm hidden-xs">
+    <ul>
+        <li class="navLi active-nav">
+        	<span class="link"><%= ph.cover %></span>
+        	<span class="circle active-circle"></span>
+        </li>        
+        <li class="navLi">
+        	<span class="link" style="display:none"><%= ph.apis %></span>
+        	<span class="circle"></span>
+        </li>
+        <li class="navLi">
+        	<span class="link" style="display:none"><%= ph.storage %></span>
+        	<span class="circle"></span>
+        </li>
+        <li class="navLi">
+        	<span class="link" style="display:none"><%= ph.application %></span>
+        	<span class="circle"></span>
+        </li>
+        <li class="navLi">
+        	<span class="link" style="display:none"><%= ph.safety %></span>
+        	<span class="circle"></span>
+        </li>
+    </ul>
+</div>

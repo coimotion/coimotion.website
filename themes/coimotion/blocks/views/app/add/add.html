@@ -1,0 +1,58 @@
+<% var locID = ctx.locID; %>
+<div class="modal-header">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title">&nbsp;<%= ph.app %></h3>
+</div>
+<div class="modal-body">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paT10">
+ 		<!-- 表單開始 -->
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%= ph.caCode %>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="caCode" placeholder="<%= ph.required %>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%= ph.title %>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="title" placeholder="<%= ph.required2 %>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%= ph.descTx %>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<textarea type="text" class="form-control" id="text" name="descTx"></textarea>
+				</div>
+			</div>
+			<!-- 
+			<div class="form-group">
+				<label class="col-md-2 control-label"><%= ph.locID %>：</label>
+				<div class="col-md-10">
+					<select class="form-control" name="locID">
+						<option value="1" <%if (locID=='1') {%>selected<%}%>>English</option>
+						<option value="2" <%if (locID=='2') {%>selected<%}%>>繁體中文</option>
+					</select>
+				</div>
+			</div>
+			 -->
+			<!-- 
+			<div class="form-group">
+				<label class="col-md-2 control-label"><%= ph.isntMobile %>：</label>
+				<div class="checkbox col-md-10">
+	                <label>
+	                	<input type="checkbox" name="isMobile" value="true"> <%= ph.isMobile %>
+	            	</label>
+				</div>
+			</div>
+			 -->
+		</form>
+		<!-- 表單結束 -->
+	</div>
+</div>
+<!-- /.modal-body -->
+<div class="modal-footer">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paR30">
+		<button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.create();"><%= ph.add %></button>
+	</div>
+</div>

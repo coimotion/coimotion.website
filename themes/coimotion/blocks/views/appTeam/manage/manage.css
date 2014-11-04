@@ -1,0 +1,36 @@
+.matter {
+  min-height: 600px;
+}
+/* 分頁內容 */
+.widget {
+  /*border: 1px solid #b8d6d0;*/
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0;   
+}
+.widget-content{
+  /*padding: 2%;*/
+}
+.widget-content form,
+.widget-content form input{
+  font-size:16px;
+}
+.widget-content form label{
+  color: #00503c;
+}
+.widget-content form input,
+#change {
+  border: 1px solid #b8d6d0;
+  color: #2a806e;
+}
+
+/*彈跳視窗的覆寫*/
+.modalstyle{
+  top: 10%;
+  overflow: hidden;
+  outline: 0;
+}
+.fB{
+  font-weight: bold;
+  color: #00503c;
+}

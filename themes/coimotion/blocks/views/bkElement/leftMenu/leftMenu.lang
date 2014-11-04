@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="team">
+		<en>Team</en>
+		<zh>團隊管理</zh>
+	</ph>
+	<ph id="app">
+		<en>App</en>
+		<zh>App管理</zh>
+	</ph>
+	<ph id="repository">
+		<en>Repository</en>
+		<zh>內容寶庫</zh>
+	</ph>
+	<ph id="customized">
+		<en>Customized</en>
+		<zh>自製內容</zh>
+	</ph>
+	<ph id="statistics">
+		<en>Statistics</en>
+		<zh>統計數字</zh>
+	</ph>
+	<ph id="js_TEAM_ERR">
+		<en>Please create a team or join a team first.</en>
+		<zh>請先建立或加入團隊</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,119 @@
+<% var rs = bi.uri.split('/')[1] %>
+
+<!-- 收合按鈕 -->
+<div class="navbar navbar-side" role="banner">    
+	<button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>    
+</div>
+<!-- 左側選單開始 -->
+<div class="leftMenu">
+		<ul class="sidebar-menu">
+			<!-- 團隊名稱 -->
+			<li class="needOrg">
+				<div class="teamStyle">
+					<div class="teamFace">
+						<i class="fa fa-users"></i>
+					</div>
+				</div>
+				<div class="teamName"></div>				
+			</li> 
+			<!-- 團隊管理 -->
+			<a href="javascript:<%=ctrl%>.go('/appTeam/manage');" title="<%= ph.team %>">
+				<li class="needOrg active">
+				<% if (rs == 'appTeam') { %>
+					<div class="arrow"></div>
+					<div class="arrow_border"></div> 
+				<% } %>
+					<i class="fa fa-group"></i> 
+					<span><%= ph.team %></span>				
+				</li>
+			</a>			
+			<!-- APP -->
+			<a href="javascript:<%=ctrl%>.go('/app/list');" title="<%= ph.app %>">
+				<li class="needOrg">	 
+				<% if (rs == 'app') { %>
+					<div class="arrow"></div>
+					<div class="arrow_border"></div> 
+				<% } %>
+					<i class="fa fa-mobile-phone" style="font-size: 24px; margin-top: 4px;"></i> 
+					<span><%= ph.app %></span>				
+				</li>
+			</a>
+			<!-- 內容寶庫 -->			
+			<a href="javascript:<%=ctrl%>.go('/bkContents/manage');" title="<%= ph.content %>">	
+				<li>				
+				<% if (rs == 'bkContents') { %>
+					<div class="arrow"></div>
+					<div class="arrow_border"></div> 
+				<% } %>
+					<i class="fa fa-inbox"></i>
+					<span><%= ph.repository %></span>
+				<li>
+			</a>
+			</li>
+			<!-- 自製內容 -->
+			<a href="javascript:<%=ctrl%>.go('/custContents/list');" title="<%= ph.customize %>">
+				<li class="needOrg">					 
+				<% if (rs == 'custContents') { %>
+					<div class="arrow"></div>
+					<div class="arrow_border"></div> 
+				<% } %>
+					<i class="fa fa-database"></i>
+					<span><%= ph.customized %></span>				
+				</li>
+			</a>
+			<!-- 統計數字 -->
+			<a href="javascript:<%=ctrl%>.go('/statistics/manage');" title="<%= ph.statistics %>">
+				<li class="needOrg">					
+				<% if (rs == 'statistics') { %>
+					<div class="arrow"></div>
+					<div class="arrow_border"></div> 
+				<% } %>
+					<i class="fa fa-signal"></i>
+					<span><%= ph.statistics %></span>				
+				</li>
+			</a>			
+		</ul>
+</div>
+<!-- 左側選單結束 -->
+
+<script>
+	// mobile side-menu slide toggler     
+     
+     // $(function() {        
+     //      // var $menu = $(".sidebar-menu");
+     //      // $("body").click(function () {
+     //      //   if ($(this).hasClass("menu")) {
+     //      //     $(this).removeClass("menu");
+     //      //   }
+     //      // });
+     //      // $menu.click(function(e) {
+     //      //   e.stopPropagation();
+     //      // });
+     //      // $("#menu-toggler").click(function (e) {
+     //      //   // e.stopPropagation();
+     //      //   // $("body").toggleClass("menu");
+     //      //   $(".sidebar-menu").animate({
+            	
+     //      //   });
+     //      // });
+	      
+	 
+	    //     });
+     //      $(window).resize(function() { 
+     //        // $(this).width() > 769 && $("body.menu").removeClass("menu");
+     //        if ($(this).width() > 769){
+     //        	$("#pgLeft").animate({left:0},1000);
+     //        }
+     //        else {
+     //        	$("#pgLeft").animate({left:-180},1000);
+     //        }
+            
+     //      });
+// });
+       
+</script>

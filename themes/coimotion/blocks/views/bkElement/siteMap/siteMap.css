@@ -1,0 +1,20 @@
+/*右邊主選單*/
+a, a:hover {
+  text-decoration: none;
+}
+.subMenu {
+  text-align: center!important;
+}
+.subMenu a{
+  color: #414f63;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.subMenu a:hover{
+  color: #000;
+  font-weight: bolder;
+}
+.col-md-2 {
+  padding-right: 0px;
+  padding-left: 0px;
+}

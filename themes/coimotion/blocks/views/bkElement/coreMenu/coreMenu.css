@@ -1,0 +1,87 @@
+/*---------右側選單----------*/
+.coreMenu{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+}
+ul li {
+  list-style-type: none !important;
+}
+ul{
+  -webkit-padding-start: -10px;  
+}
+ul.sidebar-menu{
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 0px;
+  font-size: 0.7em;
+  margin: 0;
+  width: 190px;
+  position: fixed;
+  right: 1em;
+  top: 5.5em;
+}
+/*選單預設樣式*/
+ul.sidebar-menu li{    
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin: 0;
+  padding: 15px 15px 10px;
+  border-bottom: #dae1e8 solid 1px;
+  -moz-box-shadow: 0 2px 1px -1px #fff;
+  -webkit-box-shadow: 0 2px 1px -1px #fff;
+  -ms-box-shadow: 0 2px 1px -1px #fff;
+  -o-box-shadow: 0 2px 1px -1px #fff;
+  box-shadow: 0 2px 1px -1px #fff;
+}
+/*標題*/
+ul.sidebar-menu li.overview {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: visible; 
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  color: #049D86;
+  font-weight: bold;
+  margin: 1em auto;
+  border-bottom: none;
+  box-shadow: none;
+}
+ul.sidebar-menu li a {
+  line-height: 24px; 
+  text-decoration: none;
+  font-size: 16px;
+  color: #66808d;
+  cursor: pointer;
+}
+ul.sidebar-menu li.active,
+ul.sidebar-menu li a:hover {
+  color: #049D86;
+}
+/*左邊白箭頭*/
+.arrow, 
+.arrow_border {
+  width: 0;  
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  font-size: 0;  
+  line-height: 0;  
+  position: absolute;
+  top: 30%;  
+}
+.arrow {  
+  border-color: transparent transparent transparent #fff;
+  right: 104%;  
+  z-index: 1002; 
+}
+.arrow_border { 
+  border-color: transparent transparent transparent #dae1e8;   
+  right:103%;
+  z-index: 1001;  
+}

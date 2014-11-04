@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+    <ph id="insert">
+		<en>Add Member</en>
+		<zh>新增</zh>
+	</ph>
+    <ph id="memList">
+		<en>Team members</en>
+		<zh>團隊成員</zh>
+	</ph>
+    <ph id="accName">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+	<ph id="remove">
+		<en>Remove members</en>
+		<zh>解除成員</zh>
+	</ph>
+	<ph id="accPer">
+		<en>Permissions</en>
+		<zh>權限</zh>
+	</ph>
+	<ph id="set">
+		<en>Set Permissions</en>
+		<zh>設定權限</zh>
+	</ph>
+	<ph id="agree">
+		<en>Asked to join the team, agree?</en>
+		<zh>要求加入團隊，是否同意？</zh>
+	</ph>
+	<ph id="yes">
+		<en>Yes</en>
+		<zh>同意</zh>
+	</ph>
+	<ph id="no">
+		<en>No</en>
+		<zh>不同意</zh>
+	</ph>
+    <ph id="invitation">
+		<en>Invitation...</en>
+		<zh>邀請中...</zh>
+	</ph>
+	<ph id="dismissMemberMsg">
+		<en>Are you sure to dismiss the team member</en>
+		<zh>確定解除成員</zh>
+	</ph>
+</phrases>

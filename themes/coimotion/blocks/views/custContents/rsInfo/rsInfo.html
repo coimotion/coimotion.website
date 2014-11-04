@@ -1,0 +1,47 @@
+<% var  locID = ctx.locID; %>
+
+<div class="modal-header">
+	<button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3 class="modal-title">&nbsp;<%=ph.introduction%></h3>
+</div>
+<div class="modal-body">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+		<form class="form-horizontal" role="form" appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>" orgID="<%=bi.query.orgID%>">
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.rsCode%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="rs" value="<%=value.rs%>" placeholder="<%=ph.key1%>" disabled>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.title%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="title" value="<%=value.title%>" placeholder="<%=ph.key2%>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.descTx%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<input type="text" class="form-control" id="text" name="descText" value="<%=value.descTx%>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label"><%=ph.extent%>：</label>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<span class="rsParent" rsParent="" changeRsPath="">
+						<% if (value.parent) { %>
+						<%= value.parent %>
+						<% } else { %>
+						<%=ph.none%>
+						<% } %>
+					</span>
+					<button type="button" class="btn btn-white wc30" onclick="<%=ctrl%>.showRsParent('<%=bi.query.target%>');"><%=ph.change%></button>
+				</div>
+
+			</div>
+		</form>		
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.update();"><%=ph.confirm%></button>
+</div>

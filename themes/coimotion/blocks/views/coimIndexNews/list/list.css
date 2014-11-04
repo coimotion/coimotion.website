@@ -1,0 +1,85 @@
+.matter{
+  border-top: 1px solid #ddd;
+  padding: 2%;
+}
+.row {
+	width: 600px;
+	margin: 0px auto;
+}
+.newside{
+  padding: 3%;
+  margin-top: 20px;
+}
+
+.newtitle{
+  margin-bottom: 20px;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+}
+.newtitle li span{
+    display:inline-block;
+    font-size: 15px;
+    color: #049D86;
+    margin-right: 10px;
+}
+.newtitle li{
+    line-height: 24px;
+    padding-bottom: 15px;
+	padding-top: 15px;
+	border-bottom: 1px #ccc solid;
+}
+.newtitle li a{
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+.newtitle li a:hover{
+    color: #049D86;
+}
+.newtitle li p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #9E9E9E;
+    text-indent: 20px;
+}
+/*分頁按鈕*/
+.chang{
+  /*margin: 30px 0 0 30px;*/
+  float: right;
+}
+.chang > li > a{
+  color:#049D86;
+}
+.chang > li > span {
+  background-color: #049D86;
+}
+.chang > .now > a,
+.chang > li > a:hover,
+.chang > li > span:hover,
+.chang > li > a:focus,
+.chang > li > span:focus {
+  background-color: #eeeeee;
+  color:#049D86;
+}
+.chang > .active > a,
+.chang > .active > span,
+.chang > .active > a:hover,
+.chang > .active > span:hover,
+.chang > .active > a:focus,
+.chang > .active > span:focus {
+  z-index: 2;
+  color: #ffffff;
+  cursor: default;
+  background-color: #049D86;
+  border-color: #049D86;
+}
+.chang > .disabled > span,
+.chang > .disabled > span:hover,
+.chang > .disabled > span:focus,
+.chang > .disabled > a,
+.chang > .disabled > a:hover,
+.chang > .disabled > a:focus {
+  color: #999999;
+  cursor: not-allowed;
+  background-color: #ffffff;
+  border-color: #dddddd;
+}

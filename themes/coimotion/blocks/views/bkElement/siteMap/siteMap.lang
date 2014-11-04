@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="developers">
+		<en>Developers</en>
+		<zh>開發者後台</zh>
+	</ph>
+	<ph id="doc">
+		<en>Documentation</en>
+		<zh>技術文件</zh>
+	</ph>
+	<ph id="blog">
+		<en>Blog</en>
+		<zh>部落格</zh>
+	</ph>
+	<ph id="forum">
+		<en>Forum</en>
+		<zh>討論版</zh>
+	</ph>
+</phrases>

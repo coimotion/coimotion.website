@@ -1,0 +1,39 @@
+#header{
+	width: 100%;
+	border-top:3px solid #42b56e;
+}
+.headerLeft{
+	float:left;
+	text-align: center;
+}
+.headerRight{
+	float:right;
+}
+.headerLeft{
+	width: 20%;
+	padding: 15px 5px 0;
+}
+.headerRight{
+	width: 80%;
+	padding-left: 45%;
+}
+.headerRight .bu{
+	width:30%;
+	float:right;
+	text-align: center;
+	padding: 20px;
+}
+.headerRight a{
+	font-size: 16px;
+	color:#111;
+	text-decoration: none;
+}
+.headerRight .bu:hover{
+	background:#f6ac54;
+}
+float{
+	float:left;
+}
+.clear{
+	clear:both;
+}

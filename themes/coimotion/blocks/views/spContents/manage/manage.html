@@ -1,0 +1,55 @@
+<!--三個功能頁籤的統整-->
+<!-- 右側內容開始 -->	 			
+<!--<div id="pgContent">-->
+ 	<!-- 欄框開始 -->	
+	<div class="portlet spManage" work="<%=bi.query.work%>">
+		<div class="page-title">
+			<div class="caption">
+				<i class="icon-book"></i>內容集 
+				<i class="icon-angle-right"></i> 功能 
+				<i class="icon-double-angle-right"></i> 維護
+			</div>
+		</div>
+		<!-- page-title 結束 -->
+		<div class="portlet-body table-responsive">	
+
+	        <!-- 頁籤開始 -->
+	        <ul class="nav nav-tabs tabsC">
+		          <li class="work1"><a href="#c1" data-toggle="tab" onclick="<%=ctrl%>.embedInfo();">維護</a></li>
+		          <li class="work2"><a href="#c2" data-toggle="tab" onclick="<%=ctrl%>.embedExpense();">費用</a></li>
+		          <!-- <li class="type3"><a href="#c3" data-toggle="tab">內容</a></li> -->
+	        </ul>
+	        <!-- 分頁開始 -->
+	        <div class="tab-content">
+		        <!-- 分頁一開始 -->
+		        <div class="tab-pane fade in" id="c1">        
+					<!-- 維護頁籤的內容 -->				          	
+			    </div>
+			    <!-- tab-pane 分頁一結束 -->
+	
+			    <!-- 分頁二開始 -->
+		        <div class="tab-pane fade" id="c2">
+		        	<!-- 費用頁籤的內容 -->	
+			    </div>
+			    <!-- tab-pane 分頁二結束 -->
+				<!-- 
+		        <div class="tab-pane fade" id="c3">
+		            <div class="widget">											
+						<div class="widget-content">
+							<div class="region">
+								<div class="wc100 text-center maT40">
+									<button type="button" class="btn btn-info wc20">確認</button>
+								</div>
+							</div>
+						</div>
+					</div>
+		      	</div>
+		      	 -->
+		      	<!-- tab-pane 分頁三結束 -->
+	    	</div>
+	    <!-- portlet-body 結束 -->
+		</div>
+	</div>
+	<!-- portlet 結束 -->	
+<!-- </div> -->
+<!-- 右側內容結束 -->

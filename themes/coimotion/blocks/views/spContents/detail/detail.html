@@ -1,0 +1,113 @@
+<!-- 欄框開始 -->	
+<div class="portlet">
+	<div class="page-title">
+		<div class="caption">
+			<i class="icon-book"></i>內容集 
+			<i class="icon-angle-right"></i> <%=value.title%>
+		</div>
+	</div>
+	<div class="portlet-body">
+		<div id="area">
+			<div class="areaRow">
+				<label class="wc10 float control-label text-right">內容集說明：</label>
+				<div class="wc90 float paLR10">
+				<% if (value.descTx) { %>
+				<%= value.descTx %>
+				<% } %>
+				</div>
+			</div>
+		</div>
+
+        <!-- 頁籤開始 -->
+        <ul class="nav nav-tabs tabsC maT30">
+	        <li class="active"><a href="#c1" data-toggle="tab">團隊</a></li>
+	        <li><a href="#c2" data-toggle="tab" onclick="<%=ctrl%>.embedAppList();">APP</a></li>	
+	        <li class="pull-right maR10">                   
+				<a href="#" onclick="<%=ctrl%>.embedAppSearch();" class="btn btn-default active" data-toggle="modal" data-target="#searchApp">
+            	 	搜尋APP
+				</a>                    
+          	</li>
+          	<li class="pull-right maR10">                   
+				<a href="#" onclick="<%=ctrl%>.embedTeamSearch();" class="btn btn-default active" data-toggle="modal" data-target="#searchTeam">
+					 搜尋團隊
+				</a>                    
+          	</li>          	         
+        </ul>
+        <!-- 分頁開始 -->
+        <div class="tab-content">	        
+	        <div class="tab-pane fade in active" id="c1">
+	         	<!-- 團隊分頁中的清單 -->				 	
+          	</div>
+	        <div class="tab-pane fade" id="c2">
+	          	<!-- APP分頁中的清單 -->	
+          	</div>
+		</div>
+	</div>
+    <!-- portlet-body 結束 -->
+</div>
+<!-- portlet 結束 -->	
+
+<!----------------------------- 搜尋團隊 彈跳視窗 開始 ---------------------------> 
+<div class="modal fade modalstyle" id="searchTeam">
+    <div class="modal-dialog wpx800">
+      	<div class="modal-content">
+      		<div class="modal-header" id="noBr">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       		</div>
+      		<div class="modal-body teamSearch"><!-- 搜尋團隊的Block --></div>
+        </div>
+    </div>
+</div>
+<!---------------------------- 搜尋團隊 彈跳視窗結束 -------------------------->
+
+<!----------------------------- 搜尋APP 彈跳視窗開始 -------------------------->
+<div class="modal fade modalstyle" id="searchApp">
+    <div class="modal-dialog wpx800">
+      	<div class="modal-content">
+      		<div class="modal-header" id="noBr">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       		</div>
+      		<div class="modal-body appSearch"><!-- 搜尋APP的Block --></div>
+        </div>
+    </div>
+</div>
+<!----------------------------- 搜尋APP 彈跳視窗結束 -------------------------->
+
+<!-----------------------------團隊介紹 彈跳視窗 開始-------------------------->
+<div class="modal fade modalstyle" id="teamDetail">
+    <div class="modal-dialog wpx800">
+      	<div class="modal-content">
+	      	<div class="modal-header" id="noBr">
+	        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       	</div>
+	      	<div class="modal-body teamDetail"><!--團隊的詳細介紹--></div>
+        </div>
+    </div>
+</div>
+<!---------------------------- 團隊介紹 彈跳視窗結束 ---------------------------->  
+
+<!----------------------------- APP介紹 彈跳視窗開始 --------------------------> 
+<div class="modal fade modalstyle" id="appDetail">
+    <div class="modal-dialog wpx800">
+      	<div class="modal-content">
+	      	<div class="modal-header" id="noBr">
+	        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       	</div>
+	      	<div class="modal-body appDetail"></div>
+        </div>
+    </div>
+</div>
+<!------------------------------ APP 介紹 彈跳視窗結束 ---------------------------->
+
+<!------------------------------- 邀請團隊 彈跳視窗 開始 ----------------------------> 
+<div class="modal fade modalstyle" id="invite">
+    <div class="modal-dialog wpx800">
+      	<div class="modal-content">
+	      	<div class="modal-header" id="noBr">
+	        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       	</div>
+	      	<div class="modal-body invite"><!--送出邀請的畫面C4-2--></div>
+        </div>
+    </div>
+</div>
+<!------------------------------ 邀請團隊 彈跳視窗結束 ------------------------------>  

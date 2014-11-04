@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="home">
+		<en>Home</en>
+		<zh>首頁</zh>
+	</ph>
+	<ph id="contents">
+		<en>Contents</en>
+		<zh>內容贊助者</zh>
+	</ph>
+	<ph id="developers">
+		<en>Developers</en>
+		<zh>開發者</zh>
+	</ph>
+	<ph id="contactUs">
+		<en>Contact Us</en>
+		<zh>聯絡我們</zh>
+	</ph>
+</phrases>

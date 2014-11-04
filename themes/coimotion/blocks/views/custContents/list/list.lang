@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="code">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="docTx">
+		<en>Description</en>
+		<zh>內容集說明</zh>
+	</ph>
+	<ph id="rsList">
+		<en>Resource List</en>
+		<zh>資源清單</zh>
+	</ph>
+	<ph id="status">
+		<en>No repositories</en>
+		<zh>尚無任何內容集</zh>
+	</ph>	
+	<ph id="information">
+		<en>Customizing Repository</en>
+		<zh>自製內容</zh>
+	</ph>
+	<ph id="note">
+		<en>you can group related resource types together and package them as a repository. 
+		 	Repository is similar to the 'package' concept in Java, 
+		 	and resources are like 'classes'.
+		</en>
+		<zh>自製內容把有相互關係的一群資源型態 (resource type) 整合成一組完整的資料內容。資源型態類似「類別」(class) 或是資料庫中「資料表」(table) 的概念。按下’RS’鍵就能進行資料型態的管理。
+		</zh>
+	</ph>		
+	<ph id="addR">
+		<en>Create a repository</en>
+		<zh>新增內容集</zh>
+	</ph>
+	<ph id="key1">
+		<en>Required. At least 6 characters long</en>
+		<zh>必填（請輸入6碼以上的英數字）</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="key2">
+		<en>Please enter the repository title</en>
+		<zh>請輸入標題</zh>
+	</ph>
+	<ph id="info">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>
+	<ph id="select">
+		<en>Public</en>
+		<zh>是否公開</zh>
+	</ph>
+	<ph id="open">
+		<en>Make this reporitory public</en>
+		<zh>公開此內容集</zh>
+	</ph>
+	<ph id="select2">
+		<en>Free</en>
+		<zh>是否免費</zh>
+	</ph>
+	<ph id="free">
+		<en>Make this repository free to use</en>
+		<zh>是為免費使用的內容集</zh>
+	</ph>	
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="js_IS_MANAGER">
+		<en>Only manager is permitted to access.</en>
+		<zh>必須是管理者權限才能執行。</zh>
+	</ph>
+	<ph id="js_CACORD_ERR">
+		<en>Please enter alphanumeric more than 6 yards.</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+	<ph id="js_DEL_MSG">
+		<en>Are you sure to delete</en>
+		<zh>確定刪除</zh>
+	</ph>
+</phrases>

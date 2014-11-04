@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Create new operator</en>
+		<zh>新增功能元</zh>
+	</ph>
+	<ph id="code">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="type">
+		<en>Type</en>
+		<zh>型態</zh>
+	</ph>
+	<ph id="inherit">
+		<en>Alias</en>
+		<zh>繼承</zh>
+	</ph>
+	<ph id="select">
+		<en>Select</en>
+		<zh>選擇</zh>
+	</ph>
+	<ph id="insert">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+    <ph id="js_CODE_ERR">
+		<en>The code has to be alphanumeric characters.</en>
+		<zh>代碼必需是英數字組成</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+	<ph id="key1">
+	    <en>Required</en>
+	    <zh>必填（代碼不可輸入中文）</zh>
+	</ph>
+	<ph id="key2">
+	    <en>Required (Please enter the repository title)</en>
+	    <zh>必填（請輸入標題）</zh>
+	</ph>
+</phrases>

@@ -1,0 +1,28 @@
+var  request = require('request');
+var  EventEmitter = require('events').EventEmitter;
+
+var  redir = new EventEmitter();
+
+var  config = { "host": 'http://127.0.0.1:7070',
+                "srvPath": '/redir.wsj'
+              };
+
+redir.run = function run(inData)  {
+    var  url = config.host + config.srvPath +'?path='+inData.path;
+
+    delete inData.path;
+    for (var key in inData)
+      url += '&' + key + '=' + inData[key];
+
+    request(url, function(err, resp, body) {
+        if (err)
+            console.log('Error:'+error);
+        else  {
+            var  result = JSON.parse(body);
+            console.log(JSON.stringify(result));
+            redir.emit('done', result);
+        }
+    });
+};
+
+module.exports = redir;

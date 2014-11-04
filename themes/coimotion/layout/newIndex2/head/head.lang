@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="developers">
+		<en>Developers</en>
+		<zh>開發者</zh>
+	</ph>
+	<ph id="news">
+		<en>News</en>
+		<zh>最新消息</zh>
+	</ph>
+	<ph id="blog">
+		<en>Blog</en>
+		<zh>部落格</zh>
+	</ph>
+	<ph id="project">
+		<en>Project</en>
+		<zh>相關技術</zh>
+	</ph>
+	<ph id="forget">
+		<en>Forget Password</en>
+		<zh>忘記密碼</zh>
+	</ph>
+	<ph id="login">
+		<en>Login</en>
+		<zh>登入</zh>
+	</ph>
+	<ph id="sign">
+		<en>Sign Up Now</en>
+		<zh>立即註冊</zh>
+	</ph>
+	<ph id="mail">
+		<en>Email</en>
+		<zh>電子郵件</zh>
+	</ph>
+	<ph id="pwd">
+		<en>Password</en>
+		<zh>密碼</zh>
+	</ph>
+	<ph id="login">
+		<en>login</en>
+		<zh>登入</zh>
+	</ph>
+	<ph id="language">
+		<en>English</en>
+		<zh>中文(繁體)</zh>
+	</ph>
+	<ph id="chinese">
+		<en>中文(繁體)</en>
+		<zh>中文(繁體)</zh>
+	</ph>
+	<ph id="english">
+		<en>English</en>
+		<zh>English</zh>
+	</ph>
+	<ph id="contact">
+		<en>Contact Us</en>
+		<zh>連絡我們</zh>
+	</ph>
+	<ph id="name">
+		<en>Name</en>
+		<zh>姓名</zh>
+	</ph>
+	<ph id="sub">
+		<en>Title</en>
+		<zh>主旨</zh>
+	</ph>
+	<ph id="massage">
+		<en>Massage</en>
+		<zh>內容</zh>
+	</ph>
+	<ph id="js_PARAMS_ERR">
+		<en>There was a problem with your login.</en>
+		<zh>登入資訊錯誤</zh>
+	</ph>
+	<ph id="js_LOGIN_FAIL">
+		<en>login failure：You may not register yet. Or check your user ID and password and try again.</en>
+		<zh>登入無效：您可能尚未註冊，或是帳號密碼可能輸入錯誤。請重試一次。</zh>
+	</ph>
+	<ph id="js_LOGIN_FAIL_PS">
+		<en>Attention: For better performance and local relevance, developers are encouraged to use the COIMOTION servers of their regions. If you have an account with www.coimotion.com for North America, you have to register a new one with tw.coimotion.com for Asia.</en>
+		<zh>請注意：為提供最佳連線速度，COIMOTION台灣版與國際版網站採用不同伺服器，若您已在台灣版官網(tw.coimotion.com)註冊，進入國際版官網(www.coimotion.com)仍需重新註冊。</zh>
+	</ph>
+</phrases>

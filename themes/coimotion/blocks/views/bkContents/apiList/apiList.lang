@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="noOp">
+		<en>No function</en>
+		<zh>沒有任何功能元</zh>
+	</ph>
+	<ph id="noRs">
+		<en>No resources</en>
+		<zh>沒有任何資源</zh>
+	</ph>	
+</phrases>

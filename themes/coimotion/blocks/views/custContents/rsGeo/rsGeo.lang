@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+  <ph id="add">
+    <en>Create</en>
+    <zh>新增</zh>
+  </ph>
+  <ph id="docTx">
+    <en>Through this resource can not add location</en>
+    <zh>無法透過此資源新增位置</zh>
+  </ph>
+  <ph id="location">
+    <en>Location</en>
+    <zh>地理位置</zh>
+  </ph>
+  <ph id="select">
+    <en>Please select location category</en>
+    <zh>請選擇 地理位置類別</zh>
+  </ph>
+  <ph id="code">
+    <en>ID</en>
+    <zh>識別碼</zh>
+  </ph>
+  <ph id="address">
+    <en>Address</en>
+    <zh>地址</zh>
+  </ph>
+  <ph id="longitude">
+    <en>Longitude</en>
+    <zh>經度</zh>
+  </ph>
+  <ph id="latitude">
+    <en>Latitude</en>
+    <zh>緯度</zh>
+  </ph>
+  <ph id="op">
+    <en>Function</en>
+    <zh>功能</zh>
+  </ph>
+  <ph id="articles">
+    <en>Articles</en>
+    <zh>文章</zh>
+  </ph>
+  <ph id="edit">
+    <en>Edit</en>
+    <zh>編輯</zh>
+  </ph>
+  <ph id="delete">
+    <en>Delete</en>
+    <zh>刪除</zh>
+  </ph>
+  <ph id="null">
+    <en>Nothing</en>
+    <zh>尚無任何內容</zh>
+  </ph>
+  <ph id="js_DEL_MSG">
+	<en>Are you sure to delete</en>
+	<zh>確定刪除</zh>
+  </ph>
+</phrases>

@@ -1,0 +1,140 @@
+.modal-content {
+   background: #1bbc9b;
+   border: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+.key{  
+  margin: 60px 0px 0 20px;
+}
+h4 {
+  line-height: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin: 1em -1em 0 0.5em;
+}
+.right {
+  border-radius: 10px;  
+  background: #fff;
+  color: #919191;
+  font-size: 12px;
+  position: relative;
+  padding: 15px 30px 5px;
+  margin: 20px 0 10px;
+}
+.arrow {
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    position: absolute;
+    /*left: -15px;*/
+    left: -12px;
+    top: 150px;
+    z-index: 1;
+}
+form{
+   margin: 0px;
+   padding: 15px;
+}
+input {
+  position: relative;
+  color: #000;
+  text-indent: 40px;
+}
+.form-group {
+  margin-top: 5px;
+}
+input + span {
+  font-size: 1.5em;
+  color: #777;
+  position: absolute;
+  left: 31px;  
+  z-index: 1;
+  display: block;
+  background: #ddd;
+  padding: 6px 9px 6px;
+  height: 1.8em;
+  width: 36px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -ms-border-radius-topleft: 4px;
+  -ms-border-radius-bottomleft: 4px;
+  -o-border-radius-topleft: 4px;
+  -o-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+span.user {
+  top: 36px;  
+}
+span.envelope {
+  top: 85px;
+}
+span.key-1 {
+  top: 134px;
+}
+span.key-2 {
+  top: 183px;
+}
+span.users {
+  top: 232px;
+}
+span.phone {
+  top: 281px;
+}
+i.fa-mobile-phone {
+  margin-top: -6px;
+  margin-left: 3px;
+  font-size: 1.8em;
+}
+/*placeholder*/
+.form-control:-moz-placeholder {
+  text-indent: 40px;
+  color: #bbb;
+}
+
+.form-control::-moz-placeholder {
+  text-indent: 40px;
+  color: #bbb;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  text-indent: 40px;
+  color: #bbb;
+}
+
+.form-control::-webkit-input-placeholder {
+  text-indent: 40px;
+  color: #bbb;
+}
+
+/*按鈕*/
+.btn-sign{
+  color: #ffffff;
+  background: #1bbc9b;
+  border-color: #24b39a;
+  text-align: center; 
+  width: 50%;
+  margin: 15px auto 0px; 
+  font-size: 16px;
+}
+.btn-sign:hover,
+.btn-sign:focus,
+.btn-sign:active,
+.btn-sign.active {
+  background: #15957b;
+  border-color: #206c5d;
+}
+.btn-sign i {
+  color: #fff;
+}
+.status {
+  color: #555555; 
+  font-size: 10px; 
+  text-align: center;
+}

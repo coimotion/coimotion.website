@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="article">
+		<en>Article</en>
+		<zh>文章</zh>
+	</ph>
+	<ph id="sel">
+		<en>Please select the category of the article</en>
+		<zh>請選擇文章類別</zh>
+	</ph>
+	<ph id="add">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>	
+	<ph id="docTx">
+		<en>You cannot add new article by this resource</en>
+		<zh>無法透過此資源新增文章</zh>
+	</ph>	
+	<ph id="edit">
+		<en>Edit</en>
+		<zh>編輯</zh>
+	</ph>
+	<ph id="delete">
+		<en>Delete</en>
+		<zh>刪除</zh>
+	</ph>
+	<ph id="code">
+		<en>ID</en>
+		<zh>識別碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="summary">
+		<en>Summary</en>
+		<zh>引文</zh>
+	</ph>
+	<ph id="author">
+		<en>Author</en>
+		<zh>作者</zh>
+	</ph>
+	<ph id="file">
+		<en>Additional file</en>
+		<zh>附加檔</zh>
+	</ph>
+	<ph id="location">
+		<en>Location</en>
+		<zh>地理位置</zh>
+	</ph>
+	<ph id="time">
+		<en>The last modification time</en>
+		<zh>最後修改時間</zh>
+	</ph>
+	<ph id="function">
+		<en>Function</en>
+		<zh>功能</zh>
+	</ph>
+	<ph id="insert">
+		<en>Create</en>
+		<zh>新增</zh>
+	</ph>
+	<ph id="none">
+		<en>Nothing</en>
+		<zh>尚無任何內容</zh>
+	</ph>
+    <ph id="js_DEL_MSG">
+		<en>Are you sure to delete</en>
+		<zh>確定刪除</zh>
+	</ph>		
+</phrases>

@@ -1,0 +1,160 @@
+<% 	var  id = bi.uri.split('/').reverse()[0]; %>
+<!-- 主題內容開始 -->
+<div class="matter">
+    <!-- 新增按鈕列開始 -->
+	<div class="row plustitle">
+	    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 plus isManage">
+		    <a href="#" data-toggle="modal" data-target="#myModal">
+		        <i class="fa fa-plus"></i><span><%= ph.add %></span>
+		    </a>
+	    </div>
+	</div>
+	<!-- 新增按鈕列結束 -->
+
+  	<div class="row">  		
+  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			 <div class="widget">
+				<!-- Widget title -->
+				<div class="widget-head">
+				    <div class="pull-left"><!--自製內容集清單--></div>
+				    <div class="clearfix"></div>
+				</div>
+
+					<% if (value && value.list.length > 0)  { %>
+					<div class="widget-content">
+					    <table class="table table-striped table-bordered table-hover">
+					        <% value.list.forEach(function(item) { %>
+					        <tr>
+						        <td>
+									<div class="pull-right">
+										<a href="#" onclick="<%=ctrl%>.showInfo('<%= item.appCode %>');">
+						              		<button class="btn btn-lightGreen reset"><i class="fa fa-pencil"></i></button>
+						            	</a>
+						            	<a href="#" onclick="" class='deleteTd'>
+							                <% var msg = item.title.replace("'", "\\'"); %>
+							             	 <button class="btn btn-danger reset" onclick="<%=ctrl%>.deleteCon('<%=msg%>','<%=item.appCode%>');">
+							              		<i class="fa fa-trash-o"></i></button>
+						            	</a>
+						          	</div>
+						           	<h2><%= item.title %><small><%= ph.code %>：<%= item.appCode %></small></h2>
+						           	<p><%= ph.docTx %>：<%= item.descTx %></p>
+						            <div>
+						            	<span class="pull-left paT20"><%= ph.rsList %>：
+								            <%if (item.rsList && item.rsList.length > 0) { %>
+								            <% item.rsList.forEach(function(rsL) { %> <span><%=rsL.rs%></span> <% }); %>
+								            <% } else { %>
+								            <span>--</span>
+								            <% } %>
+							            </span>
+
+						            	<span class="pull-right">
+						              		<a href="/custContents/manage/<%= id %>?appCode=<%= item.appCode %>">
+						               	 		<button class="btn btn-green maT5">RS</button>
+						              		</a>
+						              		<a href="/custContents/tabView/<%= id %>?appCode=<%=item.appCode%>" target="WAppAPIData">
+						               			<button class="btn btn-green maT5">DATA</button>
+						              		</a>
+						              		<a href="/bkContents/detail/<%= id %>?appCode=<%=item.appCode%>" target="WAppAPIDoc">
+						               			<button class="btn btn-green maT5">API</button>
+						              		</a>
+						            	</span>
+						            </div>
+						        </td>
+					     	</tr>
+					      <% }); %>
+					    </table>
+					</div>
+
+					  <% } else { %>
+
+					<div class="widget-content">
+						<table class="table table-striped table-bordered table-hover">
+						    <tr>
+						    	<td><center><%= ph.status %></center></td>
+						    </tr>
+						</table>
+					</div>
+			  	<% } %>			  	
+
+			</div>
+			<!-- widget結束 -->
+
+			<!-- 提示字 -->			
+			<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12 col-xs-12 maT20">
+				<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+				<strong><%= ph.information %></strong>
+					<%= ph.note %>
+			</div>
+		</div>
+		<!-- col 結束 -->
+	</div>
+	<!-- row 結束 -->
+</div>
+<!-- 主題內容結束 -->
+
+<!-- 新增內容集 彈跳視窗開始 -->
+<div class="modal fade modalstyle isManage" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close alpha80" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title"></i>&nbsp;<%= ph.addR %></h3>
+      </div>
+      <div class="modal-body">
+        
+          <!-- 表單開始 -->
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.code %>：</label>
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" id="text" name="appCode" placeholder="<%= ph.key1 %>">                
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.title %>：</label>
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" id="text" name="title" placeholder="<%= ph.key2 %>">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%= ph.info %>：</label>
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <textarea class="form-control" id="text"  name="descTx"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%=ph.select%>：</label>
+              <div class="checkbox col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <label>
+                        <input type="checkbox" name="isPub" value="1" onclick="<%=ctrl%>.isShowFree();">
+                        <%=ph.open%>
+                    </label>
+              </div>
+            </div>
+            <div class="form-group isFreeBox" style="display:none;">
+              <label class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label"><%=ph.select2%>：</label>
+              <div class="checkbox col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <label>
+                        <input type="checkbox" name="isFree" value="1"> <%=ph.free%>
+                    </label>
+              </div>
+            </div>
+          </form>
+          <!-- 表單結束 -->        
+      	</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green wc30" onclick="<%=ctrl%>.create();"><%=ph.add%></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 彈跳視窗結束 -->
+
+<!--內容集：：基本資料 彈跳視窗開始 -->
+<div class="modal fade modalstyle" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="rsInfo modal-content"></div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 彈跳視窗結束 -->

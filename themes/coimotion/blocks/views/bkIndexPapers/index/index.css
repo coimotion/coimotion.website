@@ -1,0 +1,99 @@
+/* 最新消息-標題 */
+.caption{
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+.caption .caption-head{
+  /*圓角*/
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-top-right-radius: 2px;
+  -o-border-top-right-radius: 2px;
+  -ms-borde-top-right-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-top-right-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-top-left-radius: 2px;
+  -o-border-top-left-radius: 2px;
+  -ms-borde-top-left-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-top-left-radius: 2px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 15px;
+  font-style: normal;
+  background: #1fbba6;
+}
+.caption .caption-head .caption-icons i{
+  font-size: 14px;
+  margin: 0px 4px;
+}
+
+/*最新消息-結尾*/
+.caption-foot{
+  background-color: #bebab4;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-bottom-right-radius: 2px;
+  -o-border-bottom-right-radius: 2px;
+  -ms-borde-bottom-right-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-bottom-left-radius: 2px;
+  -o-border-bottom-left-radius: 2px;
+  -ms-borde-bottom-left-radius: 2px;
+  -ms-behavior: url("htc/PIE.htc");
+  border-bottom-left-radius: 2px;
+  padding: 2px 15px 7px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* 最新消息-內容 */
+.caption-content .padd{
+  padding: 13px 15px;
+}
+
+/* 最新消息-列表 */
+.latest-news{
+  margin: 0px;
+  padding: 0 10px;
+  list-style-type: none;
+}
+.latest-news li{
+  border-bottom: 1px solid #ddd;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  font-style: normal;
+}
+.latest-news li:last-child{
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.latest-news h6{
+  line-height: 13px;
+  font-style: normal;
+}
+.latest-news h6 span{
+  font-weight: normal;
+  font-size: 11px;
+  color: #666;
+  font-style: normal;
+}
+
+/* more 更多*/
+.caption .caption-foot p{
+  padding: 0px 0px 15px;
+  font-style: normal;
+}
+.caption .caption-foot p a, a.indexTitle{
+  color: #fff;
+  font-size:12px;
+  text-decoration:none;
+}
+.caption .caption-foot p a:hover, a.indexTitle:hover{
+  color: #eeeeee;
+}

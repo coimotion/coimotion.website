@@ -1,0 +1,54 @@
+<!--內容集詳細資料中的APP頁籤中的APP清單-->
+<!-- 分頁內容 -->
+<div class="widget">											
+	<!-- Widget content-->
+	<div class="widget-content">
+		<table class="table table-bordered table-hover table-condensed">
+    		<tbody>
+                <tr class="active">
+                    <th class="wc20"><center>引用的APP代碼</center></th>
+                    <th class="wc20"><center>APP名稱</center></th>
+                    <th class="wc20"><center>合作關係</center></th>
+                    <th class="wc20"><center>所屬團隊</center></th>
+                    <th class="wc20"><center>APP詳細資料</center></th>	                    
+                </tr>
+                <tr class="text-left">                            
+                    <td>test001</td>
+                    <td>test001</td>
+                    <td>請求引用</td>
+                    <td>gocharm001</td>			                    
+                    <td class="text-center">
+                    	<a href="#" class="btn btn-info" onclick="<%=ctrl%>.showAppDetail();">			                    	
+                    	APP介紹
+                    	<i class="icon-double-angle-right paL5"></i></a>
+					</td>
+                </tr>
+                <tr class="text-left">                            
+                    <td>test002</td>
+                    <td>test002</td>
+                    <td>已引用</td>	
+                    <td>gocharm002</td>		                    
+                    <td class="text-center">			                    	
+                    	<a href="#" onclick="<%=ctrl%>.embedAppDetail();" class="btn btn-info" data-toggle="modal" data-target="#myAPP">
+                    	APP介紹
+                    	<i class="icon-double-angle-right paL5"></i></a>
+					</td>								
+                </tr>
+                <tr class="text-left">                            
+                    <td>test003</td>
+                    <td>test003</td>
+                    <td>邀請中</td>
+                    <td>gocharm003</td>
+                    <td class="text-center">			                    	
+                    	<a href="#" onclick="<%=ctrl%>.embedAppDetail();" class="btn btn-info text-center" data-toggle="modal" data-target="#myAPP">
+                    	APP介紹
+                    	<i class="icon-double-angle-right paL5"></i></a>
+					</td>								
+                </tr>			                
+            </tbody>
+        </table>						
+	</div>
+	<!-- widget-content結束 -->
+</div>
+<!-- widget結束 -->
+

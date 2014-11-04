@@ -1,0 +1,38 @@
+<% 
+	var  params = bi.uri.split('/').reverse()[0].split('.'),
+		 appCode = params[0],
+		 rs = params[1],
+		 op = params[2];
+%>
+<!-- 下列列表開始 -->
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<!-- 列表開始 -->
+	<div class="region">
+		<!-- 標題開始 -->
+		<div class="region-head">
+			<div class="pull-left"><%=ph.list%></div>
+		</div>             
+		<!-- 標題結束 -->
+
+		<!-- 內容開始 -->
+  		<div class="region-content">                  
+   			<div class="padd">
+				<ul class="latest-news">
+					<li>
+						<h6><a href="#">Morbi ac felis nec </a>  <span class="pull-right">Jan 1, 2012</span></h6>
+		            	<p>Suspendisse potenti. Morbi ac felis fermentum. Aenean lacus hendrerit sed rhoncus erat hendrerit. </p>
+		          	</li>
+				</ul>
+			</div>
+     			<!-- padd結束 --> 
+   			<div class="region-foot">
+				<p><a href="#" class="pull-right"><i class="icon-double-angle-right"></i>&nbsp;more</a></p>
+   			</div>                                  
+  		</div>
+  		<!-- 內容結束 -->
+	</div>
+	<!-- 列表結束 -->
+</div>
+<!-- 下列列表結束 -->
+         

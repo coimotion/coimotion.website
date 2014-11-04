@@ -1,0 +1,48 @@
+<div id="lH"><%= ph.title %></div>
+<div id="lC"><img src="../../wcoim/theme/arrow.png"></div>  
+<div class="contactUsBody">
+  	<div class="title"><%= ph.title %></div>
+  	<div class="summary"><%= ph.summary %></div>
+  	<div class="body">
+      	<form class="form-horizontal">
+	          <% if (!value.isGuest) { %>
+	          <div class="form-group">
+	              <label class="col-sm-2 control-label"><%= ph.name %>:</label>
+	              <div class="col-sm-7">
+	                  <input class="form-control" readonly name="name" value="<%= value.dspName %>"></input>
+	              </div>
+	          </div>
+	          <% } else { %>
+	          <div class="form-group">
+	              <label class="col-sm-2 control-label"><%= ph.name %>:</label>
+	              <div class="col-sm-7">
+	                  <input class="form-control" type="text" name="name" value=""/>
+	              </div>
+	          </div>
+	          <% } %>					
+	          <div class="form-group">
+	              <label class="col-sm-2 control-label"><%= ph.email %>:</label>
+	              <div class="col-sm-7">
+	                  <input class="form-control" type="text" name="email" value=""/>
+	              </div>
+	          </div>
+	          <div class="form-group">
+	              <label class="col-sm-2 control-label"><%= ph.subject %>:</label>
+	              <div class="col-sm-7">
+	                  <input class="form-control" type="text" name="title" value=""/>
+	              </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-sm-2 control-label"><%= ph.commentsAndQuestion %>:</label>
+	              <div class="col-sm-7">
+	                  <textarea class="form-control" rows="6" name="summary"></textarea>
+	              </div>
+	          </div>								
+      	</form>
+  	</div>
+  	<div style="text-align:center; margin-bottom:30px;">
+  		<a href="javascript:<%= ctrl %>.doPost();">
+	      	<img src="../../wcoim/theme/ch_submit_Us.png">
+	    </a>
+  	</div>
+</div>

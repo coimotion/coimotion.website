@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>App :: Basic Introduction</en>
+		<zh>App :: 基本資料</zh>
+	</ph>
+	<ph id="key">
+		<en>App Key</en>
+		<zh>程式金鑰</zh>
+	</ph>
+	<ph id="tip">
+		<en>Another Way</en>
+		<zh>其他存取方式</zh>
+	</ph>
+	<ph id="caCode">
+		<en>Code</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="descTx">
+		<en>Info</en>
+		<zh>說明</zh>
+	</ph>
+	<ph id="confirm">
+		<en>Update</en>
+		<zh>確認</zh>
+	</ph>
+	<ph id="languages">
+		<en>Languages</en>
+		<zh>預設語系</zh>
+	</ph>
+	<ph id="js_CACORD_ERR">
+		<en>Please enter alphanumeric more than 6 yards.</en>
+		<zh>請輸入6碼以上的英數字</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+</phrases>

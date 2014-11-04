@@ -1,0 +1,28 @@
+<div class="pageListContainer">
+	<div class="pageItem">
+      	<input type="hidden" name="ngID" value="<%= value.list[2].ngID %>"/>
+      	<div class="title"><a href="/contents/home"><%= value.list[2].title %></a></div>
+      	<div style="float:right;"><a href="/contents/home"><img src="../../wcoim/theme/Section-1.png"/></a></div>
+      	<div class="summary" style="float:left; width:530px;"><%= value.list[2].summary %></div>
+      	<div class="pageBody" style="float:left; width:530px;"></div>
+  	</div>
+  	
+  	<div class="pageItem" style="background:#EEEEEE;">
+      	<div class="bar"><img src="../../wcoim/theme/shadow.png"/></div>
+      	<input type="hidden" name="ngID" value="<%= value.list[1].ngID %>"/>
+      	<div style="float:left; padding: 0px 40px 0px 30px; margin-top:30px;"><a href="/developers/home"><img src="../../wcoim/theme/Section-4.png"/></a></div>
+      	<div class="title"><a href="/developers/home"><%= value.list[1].title %></a></div>
+      	<div class="summary"><%= value.list[1].summary %></div>
+      	<div class="pageBody"></div>
+  	</div>
+  	<div class="bar" style="text-align:right;"><img src="../../wcoim/theme/shadow.png"/></div>
+  	
+	<div class="pageItem">  
+      	<input type="hidden" name="ngID" value="<%= value.list[0].ngID %>"/>
+      	<div class="title"><%= value.list[0].title %></div>
+      	<div class="summary"><%= value.list[0].summary %></div>
+      	<div style="float:right; margin-top:-40px;"><img src="../../wcoim/theme/Section-3.png"/></div>
+      	<div class="pageBody" style="float:left; width:550px;"></div>
+  	</div>
+  	<div style="clear:both;"></div> 
+</div>

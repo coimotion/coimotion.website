@@ -1,0 +1,18 @@
+<!-- 右側選單開始 -->
+	<div class="coreMenu" id="<%=bi.id%>">	
+		<ul class="sidebar-menu">
+			<li class="overview"><%= ph.overview %></li>
+			<% 
+				if(value && value.list.length > 0) { 
+					var  list = value.list.reverse();
+       				list.forEach(function(item) { 
+       		%>
+				<li class="coreItem<%=item.ngID%>">
+					<a href="/bkWrapper/core/<%=item.ngID%>">
+	                	<span><%=item.title%></span>
+					</a>
+				</li>
+			<% }); %>
+		<% } %>	
+		</ul>
+	</div>

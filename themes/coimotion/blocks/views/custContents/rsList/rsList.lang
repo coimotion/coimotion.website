@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+  <ph id="add">
+    <en>Create</en>
+    <zh>新增</zh>
+  </ph>
+  <ph id="list">
+    <en>Resources List</en>
+    <zh>資源清單</zh>
+  </ph>
+  <ph id="code">
+    <en>Code</en>
+    <zh>代碼</zh>
+  </ph>
+  <ph id="title">
+    <en>Title</en>
+    <zh>名稱</zh>
+  </ph>
+  <ph id="descTx">
+    <en>Info</en>
+    <zh>說明</zh>
+  </ph>
+  <ph id="opList">
+    <en>Operators</en>
+    <zh>功能元清單</zh>
+  </ph>
+  <ph id="extent">
+    <en>Extends</en>
+    <zh>繼承</zh>
+  </ph>
+  <ph id="operation">
+    <en>OP</en>
+    <zh>功能</zh>
+  </ph>
+  <ph id="manage">
+    <en>Management</en>
+    <zh>功能元管理</zh>
+  </ph>
+  <ph id="delete">
+    <en>Delete</en>
+    <zh>刪除</zh>
+  </ph>
+  <ph id="notFoundMsg">
+    <en>no resources</en>
+    <zh>尚無任何資源</zh>
+  </ph>
+  <ph id="note">
+    <en>By App code, content and source code assembly code composed. You can choose a different code to display the contents of the resource under.</en>
+    <zh>由App代碼、內容集代碼以及資源代碼所組成。您可以選擇不同的代碼來顯示該資源下的內容。</zh>
+  </ph>
+  <ph id="js_DEL_MSG">
+	<en>Are you sure to delete</en>
+	<zh>確定刪除</zh>
+  </ph>
+</phrases>

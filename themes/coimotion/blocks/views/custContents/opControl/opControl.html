@@ -1,0 +1,113 @@
+<div class="widget">
+	<!-- Widget title -->
+	<div class="widget-head">
+		<!-- title -->
+		<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+			 <a href="/custContents/manage/<%=bi.query.orgID%>?appCode=<%=bi.query.appCode%>"><%=bi.query.appCode%></a>
+		    	::&nbsp;<%=bi.query.rs%><i class="fa fa-angle-double-right"></i><%=ph.opControl%>
+		</div>
+		<!-- title 結束 -->	
+		<div class="clearfix"></div>	
+	</div>
+
+
+	<!-- Widget content --> 
+	<div class="widget-content row opControlParams " appCode="<%=bi.query.appCode%>" rs="<%=bi.query.rs%>">		        
+		<% if (value && value.list.length > 0) { %>   
+		<table class="table table-striped table-bordered table-hover">
+			<tr>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.op %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.design %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.manager %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.vip %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.member %></center></th>
+				<th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center"><center><%= ph.visitors %></center></th>
+			</tr>			
+			<% value.list.forEach(function(opItem) { %>
+			<tr class="<%= opItem.op %>" >
+				<td><center><%= opItem.op %></center></td>
+				<%  var  grants = opItem.grants; %>
+				<td class="dsn">
+					<center>
+						<% if (grants.dsn) { %>
+						<button type="button" class="btn btn-green btn-sm btn-block" isOk="0" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'dsn');">
+							<i class="fa fa-check"></i><%= ph.open %>
+						</button>
+						<% } else { %>
+						<button type="button" class="btn btn-default btn-sm btn-block" isOk="1" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'dsn');">
+							<i class="fa fa-times"></i><%= ph.close %>
+						</button>
+						<% } %>
+					</center>
+				</td>
+				<td class="mgn">
+					<center>
+						<% if (grants.mgn) { %>
+						<button type="button" class="btn btn-green btn-sm btn-block"  isOk="0" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'mgn');">
+							<i class="fa fa-check"></i><%= ph.open %>
+						</button>
+						<% } else { %>
+						<button type="button" class="btn btn-default btn-sm btn-block" isOk="1" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'mgn');">
+							<i class="fa fa-times"></i><%= ph.close %>
+						</button>
+						<% } %>
+					</center>
+				</td>
+				<td class="vip">
+					<center>
+						<% if (grants.vip) { %>
+						<button type="button" class="btn btn-green btn-sm btn-block" isOk="0" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'vip');">
+							<i class="fa fa-check"></i><%= ph.open %>
+						</button>
+						<% } else { %>
+						<button type="button" class="btn btn-default btn-sm btn-block" isOk="1" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'vip');">
+							<i class="fa fa-times"></i><%= ph.close %>
+						</button>
+						<% } %>
+					</center>
+				</td>
+				<td class="mbr">
+					<center>
+						<% if (grants.mbr) { %>
+						<button type="button" class="btn btn-green btn-sm btn-block" isOk="0" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'mbr');">
+							<i class="fa fa-check"></i><%= ph.open %>
+						</button>
+						<% } else { %>
+						<button type="button" class="btn btn-default btn-sm btn-block" isOk="1" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'mbr');">
+							<i class="fa fa-times"></i><%= ph.close %>
+						</button>
+						<% } %>
+					</center>
+				</td>
+				<td class="gst">
+					<center>
+						<% if (grants.gst) { %>
+						<button type="button" class="btn btn-green btn-sm btn-block" isOk="0" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'gst');">
+							<i class="fa fa-check"></i><%= ph.open %>
+						</button>
+						<% } else { %>
+						<button type="button" class="btn btn-default btn-sm btn-block" isOk="1" onclick="<%=ctrl%>.setGrant('<%= opItem.op %>', 'gst');">
+							<i class="fa fa-times"></i><%= ph.close %>
+						</button>
+						<% } %>
+					</center>
+				</td>
+			</tr>
+			<% }); %>
+			
+		</table>
+		<% } else {%>
+			<p><center><%= ph.docTx %></center></p>
+		<% } %>
+	</div>
+	<!-- widget-content結束 -->
+</div>
+<!-- widget結束 -->
+
+<!-- 提示字 
+<div id="pathInfo" class="alert alert-info alert-dismissable col-lg-12 col-md-12 col-sm-12  col-xs-12 maT15">
+	<button type="button" class="close" onclick="$('#pathInfo').hide();">&times;</button>
+	<strong><%= ph.opControl %></strong>
+	<%= ph.note %>
+</div>
+-->

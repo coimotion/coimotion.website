@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="information">
+		<en>Function Management</en>
+		<zh>功能元管理</zh>
+	</ph>
+	<ph id="appCode">
+		<en>AppCode</en>
+		<zh>代碼</zh>
+	</ph>
+	<ph id="title">
+		<en>Title</en>
+		<zh>標題</zh>
+	</ph>
+	<ph id="type">
+		<en>Type</en>
+		<zh>型態</zh>
+	</ph>
+	<ph id="inherit">
+		<en>Alias</en>
+		<zh>繼承</zh>
+	</ph>
+	<ph id="none">
+		<en>none</en>
+		<zh>無</zh>
+	</ph>
+	<ph id="update">
+		<en>Update</en>
+		<zh>變更</zh>
+	</ph>
+	<ph id="save">
+		<en>Save</en>
+		<zh>儲存</zh>
+	</ph>
+	<ph id="docTx">
+		<en>No additional resources yuan or any feature inherited object no choice</en>
+		<zh>資源尚無新增任何功能元或沒有選擇繼承對象</zh>
+	</ph>
+	<ph id="js_TITLE_ERR">
+		<en>Please enter the title.</en>
+		<zh>標題不可為空白</zh>
+	</ph>
+</phrases>

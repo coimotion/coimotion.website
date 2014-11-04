@@ -1,0 +1,34 @@
+<div class="matter" ngID="<%=bi.query.id%>">
+	<div id="newside">
+		<div id="newsSelector" style="float: left; margin-top: 30px">
+			<ul>
+			</ul>
+		</div>
+		<div class="row" style="float: right; width: 650px; margin: 0px;">
+			<div>
+				<ul class="newsub">
+					<li><span class="title"></span></li>
+					<li><p style="float:right;"><span class="strMdTime"></span> <span class="dspName"></span></p></li>
+					<li style="border-top: 1px #ccc solid;">
+						<article class="articletext body">
+
+						</article>
+					</li>
+
+					<li><button class="btn btn-green pull-right" value="回上一頁" onclick="window.history.back();">back</button></li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$('#newsSelector ul').delegate('a', 'mouseenter', function(e) {
+		$(this).next().addClass('shadow');
+	}).delegate('a', 'mouseleave', function(e) {
+		$(this).next().removeClass('shadow');
+	});
+});
+</script>

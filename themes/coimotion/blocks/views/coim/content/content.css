@@ -1,0 +1,173 @@
+#content {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	background: #d8fff1;
+}
+#content h3 {
+	font-size: 3em;
+	color: #00532E;
+	font-weight: bold;	
+	margin: 1.5em auto 1em;	
+}
+/*底圖*/
+.item img {
+	display: block;
+	margin: 0 auto;
+}
+/*內文*/
+.carousel-caption {
+  left: 40%;
+  right: 40%;  
+  text-align: center;
+  text-shadow: none;
+  padding-top: 1em;
+}
+.carousel-caption span {
+	color: #1f1f21; /*IE*/
+}
+.carousel-caption h4 {	
+	font-size: 2.3em;
+	color: #000;
+	font-weight: bold;	
+	margin-top: 1em;
+	margin-bottom: 0.6em;
+}
+.carousel-caption p {
+	font-size: 1.9em;
+	color: #000;
+	line-height: 1.5em;
+	margin: 0 auto 1.5em;	
+}
+.carousel-caption .icon-team,
+.carousel-caption .icon-app, 
+.carousel-caption .icon-repons,
+.carousel-caption .fa-database {
+	font-size: 6em;
+	display: block;
+    background: #dedede; /* Old browsers */
+    background: -moz-linear-gradient(top, #dedede 0%, #ffffff 50%, #ffffff 55%, #dadada 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dedede), color-stop(50%,#ffffff), color-stop(55%,#ffffff), color-stop(100%,#dadada)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #dedede 0%,#ffffff 50%,#ffffff 55%,#dadada 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #dedede 0%,#ffffff 50%,#ffffff 55%,#dadada 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #dedede 0%,#ffffff 50%,#ffffff 55%,#dadada 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #dedede 0%,#ffffff 50%,#ffffff 55%,#dadada 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text;
+	-o-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carousel-caption .icon-team {
+	font-size: 7em;
+}
+.carousel-caption .fa-database {
+	font-size: 5em;
+	padding-top: 3px;	
+}
+/*圖片編號*/
+.carousel-indicators li{
+  border: none;
+  background: #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.carousel-indicators li.active{
+  background: #666;
+}
+.carousel-indicators{
+  bottom: 14px !important;
+}
+/*左右控制鍵*/
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  text-shadow: none;
+  color: #000;
+} 
+.carousel-control .fa-angle-left,
+.carousel-control .fa-angle-right {
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 5em;  
+}
+.carousel-control.left {
+  left: 25%;
+}
+.carousel-control.right {
+  right: 25%;
+}
+
+/* -----Setting different browsers----- */
+
+@media screen and (max-width: 1429px) {
+  .carousel-caption {
+      left: 35% !important;
+      right: 35% !important;
+    }
+  .carousel-control.left {
+	  left: 20%;
+	}
+	.carousel-control.right {
+	  right: 20%;
+	}
+}
+@media screen and (max-width: 1216px) {
+  .carousel-caption {
+      left: 32% !important;
+      right: 32% !important;
+    }
+  .carousel-control.left {
+	  left: 15%;
+	}
+	.carousel-control.right {
+	  right: 15%;
+	}
+}
+@media screen and (max-width: 1008px) {
+  .carousel-caption {
+      left: 40% !important;
+      right: 40% !important;
+    }
+  .carousel-control.left {
+	  left: 10%;
+	}
+	.carousel-control.right {
+	  right: 10%;
+	}
+}
+@media screen and (max-width: 800px) {
+  .carousel-caption {
+      left: 35% !important;
+      right: 35% !important;
+    }
+  .carousel-control.left {
+	  left: 5%;
+	}
+	.carousel-control.right {
+	  right: 5%;
+	}
+  .carousel-indicators{
+	  bottom: 12px !important;
+	}
+}
+@media screen and (max-width: 708px) {
+  .carousel-caption {
+      left: 30% !important;
+      right: 30% !important;
+    }
+  .carousel-control.left {
+	  left: 2%;
+	}
+	.carousel-control.right {
+	  right: 2%;
+	}
+  .carousel-indicators{
+	  bottom: 15px !important;
+	}
+}
+

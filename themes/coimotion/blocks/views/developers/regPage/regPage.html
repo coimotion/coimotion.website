@@ -1,0 +1,37 @@
+<div id="pageView">
+    <div id="lH"><%= ph.title %></div>
+    <div id="lC"><img src="../../wcoim/theme/arrow.png"></div>  
+	<h3 class="h3"></h3>
+  	<div class="pageBody"></div>
+</div>
+<div class="regBody">
+	<form class="form-horizontal">
+		<input type="hidden" name="needAct" value="0">
+		<div class="form-group">
+			<label class="col-sm-3 control-label"><%= ph.accName %>:</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="accName" placeholder="<%= ph.accName %>"/>
+            </div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label"><%= ph.name %>:</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="fname" placeholder="<%= ph.name %>"/>
+            </div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label"><%= ph.passwd %>:</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="password" name="passwd" placeholder="<%= ph.passwdInfo %>"/>
+                <!--<span class="fcG6 fs07 paT5" style="display:block;">※</span>-->
+            </div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label"><%= ph.confirmPasswd %>:</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="password" name="passwd2" placeholder="<%= ph.confirmPasswd %>"/>
+            </div>
+		</div>
+	</form>
+  	<div class="regBtn" style="margin:60px 0 40px;"><a href="javascript:<%= ctrl %>.doJoinNow();"><img src="../../wcoim/theme/ch_submit_Ds.png"/></a></div>
+</div>

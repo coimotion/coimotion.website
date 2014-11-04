@@ -1,0 +1,108 @@
+.matter {
+  margin-top: 67px;
+  border-top: 1px solid #ddd; 
+  width:100%; 
+  padding:0em; 
+  background: #f7f7f7;
+}
+
+/*---------右側選單----------*/
+.blogRight{
+  width: 230px;
+  min-height: 820px;
+  max-height: auto;
+  float: right;
+  padding: 1em 0;
+  margin: 0;
+  background: #f7f7f7; 
+  position: absolute;
+  right: 0;  
+  z-index: 1;
+}
+ul li {
+  list-style-type: none !important;
+}
+ul{
+  -webkit-padding-start: -10px;  
+}
+ul.blogTitle{
+  list-style: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 0.7em;
+  margin: 1em auto 0;
+  width: 190px;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+}
+/*標題*/
+span.overview {
+  display: block;
+  margin: 1em auto;
+  /*color: #414f63;*/
+  color: #049D86;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+/*選單預設樣式*/
+ul.blogTitle li{    
+	width: 100%;
+  display: block;
+  position: relative;
+  overflow: visible;
+  height: 75px;
+  margin: 0;
+  padding: 15px 15px 10px;
+  border-bottom: #dae1e8 solid 1px;
+  -moz-box-shadow: 0 2px 1px -1px #fff;
+  -webkit-box-shadow: 0 2px 1px -1px #fff;
+  -ms-box-shadow: 0 2px 1px -1px #fff;
+  -o-box-shadow: 0 2px 1px -1px #fff;
+  box-shadow: 0 2px 1px -1px #fff;
+}
+ul.blogTitle li a {
+  line-height: 24px; 
+  text-decoration: none;
+  font-size: 16px;
+  color: #66808d;
+  cursor: pointer;
+}
+ul.blogTitle li a:hover{
+  color: #049D86;
+}
+.blogTitle li span.time{
+  font-size: 14px;
+  line-height: 30px;
+  color: #C6C6C6;
+  float: right;
+}
+
+/*左右換頁控制鈕*/
+.autoMarLR {
+  text-align: center;
+}
+.chang li a {
+  font-size: 0.8em;
+  color:#666;
+}
+.chang li a:hover,
+.chang li a.active {
+  background: #ddd;
+}
+
+/*----------左側內容----------*/
+.bkContent {
+  margin: 0;
+  padding: 0 1em;
+  min-height: 820px;
+  max-height: auto;  
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  margin-right: 230px;  
+  -webkit-transition: margin-right .3s ease;
+  -moz-transition: margin-right .3s ease;
+  -o-transition: margin-right .3s ease;
+  -ms-transition: margin-right .3s ease;
+  transition: margin-right .3s ease;  
+}

@@ -1,0 +1,16 @@
+/*--外框設定--*/
+.invitelist{
+  width:740px;
+  margin: 0px auto;
+  padding: 0px 15px 10px;
+  /*border: #ccc solid 1px;*/
+  display:table;
+}
+/*送出邀請 select下拉式選單*/
+.drop{
+  font-size: 16px;
+  line-height: 32px; 
+}
+.vaC{
+  vertical-align:middle;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="opList">
+		<en>OpList</en>
+		<zh>功能元清單</zh>
+	</ph>
+	<ph id="clear">
+		<en>Clear</en>
+		<zh>清除繼承</zh>
+	</ph>
+	<ph id="confirm">
+		<en>Set</en>
+		<zh>確定</zh>
+	</ph>
+	<ph id="js_INHERIT_MSG">
+		<en>Please select the inheritance target.</en>
+		<zh>請選擇要繼承的對象。</zh>
+	</ph>
+</phrases>
