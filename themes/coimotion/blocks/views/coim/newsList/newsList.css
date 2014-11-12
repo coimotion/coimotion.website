@@ -1,16 +1,16 @@
 /*----左側----*/
 #newsSelector{  
   width: 230px;
-  border-right: 1px solid #ccc;
+  /*border-right: 1px solid #ccc;*/
   margin: 0;
   float: left;
-  /*position: absolute;*/
+  position: absolute;
   left: 0;
   z-index: 1;
 }
 #newsSelector ul{  
   width: 100%;
-  padding: 20px 40px 40px;
+  padding: 20px 40px;
   list-style-type: none !important;
 }
 #newsSelector ul li{

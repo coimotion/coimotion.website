@@ -8,7 +8,7 @@ ctrl.startup = function() {
 		window.location = '/';
 
 	hover();
-	// overView();
+	//overView();
 };
 
 function hover() {
@@ -20,12 +20,12 @@ function hover() {
 		}, function() {
 		$(this).find('.teamMenu').hide();
 	});
-	/*$(".from").hover(function() {		
+	$(".from").hover(function() {		
 		$(this).find('.submenu').show();
 		$(".submenu").css('background','#eee');
 		}, function() {
 		$(this).find('.submenu').hide();
-	});*/
+	});
 }
 
 /*function overView() {

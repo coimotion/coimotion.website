@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phrases>
+	<ph id="core">
+		<en>Core Technical Documents</en>
+		<zh>核心技術文件</zh>
+	</ph>
+	<ph id="page1">
+		<en>COIMOTION 介紹</en>
+		<zh>COIMOTION 介紹</zh>
+	</ph>		
+	<ph id="page2">
+		<en>附屬資源</en>
+		<zh>附屬資源</zh>
+	</ph>
+	<ph id="time">
+		<en>2014/10/31</en>
+		<zh>2014/10/31</zh>
+	</ph>	
+</phrases>

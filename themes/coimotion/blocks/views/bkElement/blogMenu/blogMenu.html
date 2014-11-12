@@ -1,5 +1,5 @@
 <!-- 右側選單開始 -->
-<div class="blogMenu" id="<%=bi.id%>">    
+<div class="blogMenu">    
     <ul class="sidebar-menu">
         <!-- 
         <li class="searchLine">
@@ -10,9 +10,10 @@
         <li class="title">
             <span><%= ph.overview %></span>
         </li>
+        <% var  rs = bi.query.rs;%>
         <% if(value && value.list.length > 0) { %>
-            <% value.list.forEach(function(item) { %>
-            <li class="blogItem" ngID="<%=item.ngID%>">
+            <% value.list.reverse().forEach(function(item) { %>
+            <li class="blogItem">
                 <%  
                     var  time = new Date(item.mdTime),
                          pn = bi.query._pn,
@@ -26,7 +27,7 @@
                                     
                          href += "/"+item.ngID+"?_pn="+pn+"&_ps="+ps;
                 %>
-                <a href="javascript:<%=ctrl%>.show('<%=item.ngID%>');" class="page<%=item.ngID%>">                     
+                <a href="/<%=rs%>/blog/<%=item.ngID%>" class="page<%=item.ngID%>">                     
                     <span><%=item.title%></span>           
                 </a>
                 <span class="time"><%=strMdTime%></span>

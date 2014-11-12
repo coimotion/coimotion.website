@@ -21,9 +21,13 @@
 }
 ul li {
   list-style-type: none !important;
+  /*list-style-position: outside;*/
 }
-ul{
+ul border-image-repeat: {
   -webkit-padding-start: -10px;  
+}
+ol li {
+  list-style-type: none !important;
 }
 ul.blogTitle{
   list-style: none;
@@ -69,6 +73,9 @@ ul.blogTitle li a {
 }
 ul.blogTitle li a:hover{
   color: #049D86;
+}
+.blogTitle li a span {
+  line-height: 22px !important; 
 }
 .blogTitle li span.time{
   font-size: 14px;

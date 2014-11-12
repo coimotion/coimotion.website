@@ -1,10 +1,11 @@
+<!-- 由前台導向 舊方式-->
 <div class="matter">
 	<!-- 右側選單開始 -->
 	<div class="blogRight">
 		<span class="overview"><%= ph.overview %></span>
 		<ul class="blogTitle">
 		<% if(value && value.list.length > 0) { %>
-			<% value.list.forEach(function(item) { %>
+			<% value.list.reverse().forEach(function(item) { %>
 			<li class="blogItem" ngID="<%=item.ngID%>">
 				<%  
 					var  time = new Date(item.mdTime),

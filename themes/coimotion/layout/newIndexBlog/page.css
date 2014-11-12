@@ -1,0 +1,85 @@
+body{
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "微軟正黑體","Adobe 黑体 Std R", "Adobe 繁黑體 Std B",  Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;   
+  direction: ltr;  
+}
+#pgContainer{
+  padding:0;
+  margin: 0 auto;
+  /*width: 1280px;*/
+}
+#pgHead, #pgMain, #pgFooter {
+  padding:0;
+  margin: 0;
+  width: 100%;
+}
+#pgMain {
+  background: #f7f7f7;
+  border-top: 2px solid #ddd;
+  margin-top: 67px;
+}
+#pgContent{
+  margin: 0;
+  padding: 0;
+  float: left;
+  /*min-width: 83%;*/
+  max-height: auto;
+  min-height: 620px;  
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  margin-right: 230px;
+  border-right: 1px solid #dae3e9;
+  border-bottom: 1px solid #dae3e9;
+  box-shadow: -3px 3px 3px -2px #f1f1f3;
+  border-radius: 0px 0px 5px 0px;
+  -webkit-transition: margin-right .3s ease;
+  -moz-transition: margin-right .3s ease;
+  -o-transition: margin-right .3s ease;
+  -ms-transition: margin-right .3s ease;
+  transition: margin-right .3s ease;  
+}
+#pgRight {
+  width: 230px;
+  min-height: 600px;
+  float: right;
+  padding: 1em 0;
+  margin: 0;
+  background: #f7f7f7; 
+  position: absolute;
+  right: 0;
+  margin-top: 2em;
+  z-index: 1;
+}
+/*收合按鈕*/
+.ctrlBu {
+  position: absolute;
+  right: 10px;   
+  top: 50px;
+  z-index: 999;
+  color: #ddd;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/***********共同設定************/
+
+a, a:hover, a:link, a:active {
+  text-decoration: none;
+}
+ul li{
+  list-style-type: none;
+}
+/*主題內容*/
+.bkManage {
+  width:100%;    
+  padding: 0 3em; 
+  margin-bottom: 5em;  
+  margin-top: 5em;
+}

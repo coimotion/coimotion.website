@@ -218,5 +218,6 @@
 	"/coim/newsList"   : {"id":"maybe", "args":[], "service": "/coim/bkIndexNews/list"},
 	"/coim/newsView"   : {"id":"maybe", "args":[], "service": "/coim/bkIndexNews/view"},
 	"/coim/project"   : {"id":"no", "title": "PROJECT"},
-	"/coim/signup"   : {"id":"no", "title": "SIGNUP"}
+	"/coim/signup"   : {"id":"no", "title": "SIGNUP"},
+	"/coim/blog": {"id": "yes", "title": "BLOG"}
 }

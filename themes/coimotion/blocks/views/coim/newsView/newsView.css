@@ -1,11 +1,12 @@
 /*右側*/
 #newsPage { 
-  /*margin-top: 40px;*/
-  padding: 2em 1em 1em;
-  overflow: visible;
+  padding: 2em 3em;
+  overflow: hidden;
   position: relative;
-  margin-left: 260px;
+  margin-left: 230px;
   margin-right: 30px;
+  min-height: 730px;
+  border-left: 1px solid #ccc;
 }
 .newsub{
   width: 100%;
@@ -33,7 +34,7 @@
   margin-bottom: 15px;
 }
 span.strMdTime, span.dspName {
-  line-height: 2em;
+  line-height: 3em;
   font-size: 13px;
   color: #B4B4B4;
 }

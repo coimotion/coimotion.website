@@ -24,3 +24,4 @@
 /shared/js/wcoimJs/jquery.cleditor.min.js
 
 /shared/js/lib/sha1.js
+

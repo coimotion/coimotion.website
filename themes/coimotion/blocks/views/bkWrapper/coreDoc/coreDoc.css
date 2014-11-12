@@ -1,0 +1,20 @@
+.maR h4 {
+	color: #353535;
+	line-height: 36px;
+	font-weight: bold;
+}
+.maR h3 {
+	color: #353535;
+}
+.maR h5 {
+	line-height: 20px;
+  margin-top: -10px;
+}
+.setheight{
+	min-height: 200px;
+}
+img {
+  width: 185px !important;
+  height: auto !important;
+}
+

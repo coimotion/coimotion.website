@@ -1,16 +1,27 @@
-ctrl.startup = function()  {
+ctrl.startup = function() {
 	var active = '<div class="arrow"></div>';
 	active += '<div class="arrow_border"></div>';	
-	var id = ctrl.sel('.blogMenu').attr('id');	
-	if (id != 'null') {
-		ctrl.sel('ul#menu'+id).parent().prepend(active);
+	var id = location.pathname.split('/').reverse()[0];	
+	if (id) {
+		ctrl.sel('a.page'+id).prepend(active);
+		ctrl.sel('a.page'+id+" span").css('color','#049D86');
 	}
-	else
-		ctrl.sel('li.blogItem a').prepend(active); 
+	else {
+		ctrl.sel('li.blogItem a').prepend(active);
+		ctrl.sel('li.blogItem a span').css('color','#049D86');
+	}
+
+	//slideToggle();
 };
 
-ctrl.show = function(ngID) {
-	ctrl.embed('.bkContent', '/bkWrapper/blog', {id: ngID});
-	ctrl.sel(".blogItem a").css('color','#66808d');
-	ctrl.sel(".blogItem a.page"+ngID).css('color','#049D86');
+function slideToggle() {
+	$(window).resize(function() {
+	    var viewportWidth = $(window).width();	
+		if (viewportWidth < 1100){
+	       $('.blogMenu').hide();
+		}
+		else {
+		   $('.blogMenu').show();
+		}
+	});	
 };

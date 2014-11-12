@@ -24,55 +24,42 @@ ul.sidebar-menu {
 }
 
 /*選單預設樣式*/
-ul.sidebar-menu li{    
+ul.sidebar-menu > li{    
   width: 100%;
+  height: 65px;
   display: block;
   position: relative;
   overflow: visible;
-  margin: 0;
-  padding: 15px 15px 10px;
+  margin: 0px;
+  padding: 15px 0px 10px 10px;
   border-bottom: #dae1e8 solid 1px;
-  -moz-box-shadow: 0 2px 1px -1px #fff;
+  -moz-box-shadow: 0px 2px 1px -1px #fff;
   -webkit-box-shadow: 0 2px 1px -1px #fff;
-  -ms-box-shadow: 0 2px 1px -1px #fff;
-  -o-box-shadow: 0 2px 1px -1px #fff;
-  box-shadow: 0 2px 1px -1px #fff;
+  -ms-box-shadow: 0px 2px 1px -1px #fff;
+  -o-box-shadow: 0px 2px 1px -1px #fff;
+  box-shadow: 0px 2px 1px -1px #fff;
 }
 /*標題*/
-ul.sidebar-menu li.title {
+ul.sidebar-menu > li.title {
   width: 100%;
   display: block;
   position: relative;
   overflow: visible; 
   text-align: center;
   font-size: 22px;
-  line-height: 24px;
+  line-height: 22px;
+  height: 50px;
   color: #049D86;
   font-weight: bold;
-  margin: 1em auto 0;
+  margin: 2em auto 0;
+  padding: 0;
   border-bottom: none;
   box-shadow: none;
-}
-/*文字*/
-ul.sidebar-menu > li {  
-  width: 100%;
-  height: 75px;
-  display: block;
-  position: relative;
-  overflow: visible;
-  margin: 0;
-  padding: 15px 15px 10px;
-  border-bottom: #dae1e8 solid 1px;
-  -moz-box-shadow: 0 2px 1px -1px #fff;
-  -webkit-box-shadow: 0 2px 1px -1px #fff;
-  -ms-box-shadow: 0 2px 1px -1px #fff;
-  -o-box-shadow: 0 2px 1px -1px #fff;
-  box-shadow: 0 2px 1px -1px #fff;   
 }
 ul.sidebar-menu > li > a > span {
   text-decoration: none;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 22px;
   color: #66808d;
   cursor: pointer;
 }
@@ -108,8 +95,7 @@ ul.submenu a:hover {
 } */
 
 /*左邊白箭頭*/
-.arrow, 
-.arrow_border {
+.arrow, .arrow_border {
   width: 0;  
   border-width: 12px;
   border-style: solid;
@@ -159,3 +145,21 @@ input.search{
   top: 28px;
   z-index: 1;
 } */
+
+/* -----Setting ----- */
+
+@media (max-width: 1100px) {
+  ul.sidebar-menu > li.title { 
+    font-size: 2.8em !important;
+  }
+  ul.sidebar-menu > li > a > span {
+    font-size: 1.9em !important;  
+  }
+  ul.sidebar-menu > li > span.time{
+    font-size: 1.3em !important; 
+    line-height: 3em !important;   
+  }
+  ul.sidebar-menu > li {
+    height: 75px;
+  }
+}

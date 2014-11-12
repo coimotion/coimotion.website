@@ -12,5 +12,19 @@
            "wcoim": ""
        },
        "caCode": "wcoim"
+    },
+
+    "192.168.1.5": {
+       "title": "The official API website",
+       "validFrom": "",
+       "validTo":"",
+       "locale": "en",
+       "home": "/coim/manage",
+       "theme": "coimotion",
+       "appKeys": {
+           "tryApp": "386d4e63-1044-c268-efd1-2de1b2e5b4e1",
+           "wcoim": ""
+       },
+       "caCode": "wcoim"
     }
 }

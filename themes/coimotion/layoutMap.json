@@ -35,11 +35,12 @@
 	"/bkWrapper/docPage"    : "backTypeDoc",
 	"/bkWrapper/docView"    : "backTypeDoc",
 	"/bkWrapper/started"     :"backType", 
-	"/bkWrapper/core"       : "backTypeBlog",
+	"/bkWrapper/core"       : "backTypeCore",
 	"/bkWrapper/coreDoc"    : "backType",
 	"/bkWrapper/blogList"   : "newIndex2",
-	"/bkWrapper/blog"       : "backTypeBlog2",		
+	"/bkWrapper/blog"       : "backTypeBlog",		
 	"/coim" 	            : "newIndex2",
-	"/coimotion/forum"		: "newIndex2",
+	"/coim/blog"		    : "newIndexBlog",
+	"/coimotion/forum"		: "newIndex2",	
 	"/book/info"			: "default"
 }

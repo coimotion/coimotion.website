@@ -17,10 +17,10 @@ ctrl.startup = function() {
 	});
 };
 
-ctrl.loadShadow = function() {
+/*ctrl.loadShadow = function() {
 	$('#newsSelector ul').delegate('a', 'mouseenter', function(e) {
 			$(this).next().addClass('shadow');
 		}).delegate('a', 'mouseleave', function(e) {
 			$(this).next().removeClass('shadow');
 	});
-};
+};*/
